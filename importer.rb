@@ -1,6 +1,8 @@
 require 'rake'
 require 'nokogiri'
 require 'ruby-debug'
+require 'time'
+require File.join(File.dirname(__FILE__), "downmark_it")
 
 namespace :importer do
 
@@ -30,14 +32,26 @@ tags: []
 ---
 {% include JB/setup %}
 EOF
-      output << node.text
+
+      output << convert_output(node.text)
+
       skip_dates = ['2003-07-14', '2004-09-02', '2007-09-23', '2011-12-31']
       unless skip_dates.include?(date)
-        puts local_filename
-        File.open(local_filename, 'w') {|f| f.write(output) }
+        if Time.parse('2011-11-01') <  Time.parse(date)
+          puts local_filename
+          File.open(local_filename, 'w') {|f| f.write(output) }
+        end
       end
     end
     puts "done"
+  end
+
+  def convert_output(body)
+    #weird bug in JS parsing from github gists
+    body = body.gsub('></script>','> </script>')
+    body = body.gsub('_url','\_url')
+    body = DownmarkIt.to_markdown(body)
+    body
   end
 
 end
