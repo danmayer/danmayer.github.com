@@ -1,0 +1,15 @@
+---
+layout: post
+title: "SVM Spam Filtering"
+category:
+tags: []
+---
+{% include JB/setup %}
+Support Vector Machine (SVM) Spam filtering. After working more with SVM and my software to utilize it moving along nicely, I am begining to do work on a spam filter for my email. I have been getting a much larger amount of email in the last couple months.  The spam is highly recognizable and simple to see patterns in, 90% of it is related to buying prescription drugs. I figured that SVM should be able to detected this very easily. Since i have already written, a few java email applications, I thought it would be easy enough to write a program that will let me log on and list things as spam and then use that to train and SVM model, which takes far less training data than many other machine learning methods. For now i have done a very simplistic design, the first step will, be building a simple webmail system, it will really only be used to mark as spam, and check the spam folder to make sure there was no false positives. Then I will use my normal mail system to read and respond to the mail. When i first log into my simple webmail all new mail will be download and categorized. I will then be able to submit any missed items as spam. Anything newly categorized as spam or not will be places in either the spam, or real mail section of the database. The database will store who the mail was from, the subject, and the body of the message.  
+
+I have now created two folders in my mail system. old and spam. I have moved all my old real mail to the old folder and all spam to the spam folder. I have about 300 spam messages and about 520 real messages. I have finished hte code for the mail checking and sorting using java. I now imported my Text2SVM software and used the to create the orginal model file. Now similiarly to my NewShaker software all that is left to do is have autocategorization. For spam this should be a little simpler since there are only two classification levels. This should let me learn the process that I will need to use for Newsshaker, but at a little simpler level. I created a model using 170 of real mail, vs spam. With it I was getting an 80% recognition on my test data, I think with some simple fixes in the way I am creating my text from my mail, stop listing, and stemming I should be able to increase this rate. I should also be able to increase the rate once I add more training data. 
+
+(This was created as a sub project to create and test code that will be used for newsshaker)
+
+<BR>Here is my initial design.<BR><BR>
+<a href="./gif_1.gif"><img alt="gif_1.gif" src="./gif_1-thumb.gif" width="480" height="291" border="0" /></a>
