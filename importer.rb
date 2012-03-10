@@ -35,9 +35,10 @@ EOF
 
       output << convert_output(node.text)
 
-      skip_dates = ['2003-07-14', '2004-09-02', '2007-09-23', '2011-12-31']
+      #manually edit 2010-10-13
+      skip_dates = ['2003-07-14', '2004-09-02', '2007-09-23', '2011-12-31', '2010-10-13']
       unless skip_dates.include?(date)
-        if Time.parse('2011-11-01') <  Time.parse(date)
+        if Time.parse('2010-07-01') <  Time.parse(date)
           puts local_filename
           File.open(local_filename, 'w') {|f| f.write(output) }
         end
@@ -50,6 +51,10 @@ EOF
     #weird bug in JS parsing from github gists
     body = body.gsub('></script>','> </script>')
     body = body.gsub('_url','\_url')
+    body = body.gsub("\n\n",'<br/>')
+    #update image links and such
+    body = body.gsub(/http\:\/\/www\.mayerdan\.com\/assets_c\/\d+\/\d+\//im,'/assets/')
+    body = body.gsub(/http\:\/\/www\.mayerdan\.com\//im,'/assets/')
     body = DownmarkIt.to_markdown(body)
     body
   end
