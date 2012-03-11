@@ -35,10 +35,11 @@ EOF
 
       output << convert_output(node.text)
 
-      #manually edit 2010-10-13
-      skip_dates = ['2003-07-14', '2004-09-02', '2007-09-23', '2011-12-31', '2010-10-13']
+      #manually edit 2010-10-13, 2010-06-21, 2007-01-14 2006-01-19 2006-05-03
+      #2005-03-10 2005-02-08 2005-02-07 2004-09-09 2004-04-13 2004-04-13 2003-11-02
+      skip_dates = ['2003-07-14', '2004-09-02', '2007-09-23', '2011-12-31', '2010-10-13','2010-06-21', '2007-01-14', '2006-01-19', '2006-05-03', '2005-03-10', '2005-02-08', '2005-02-07', '2004-09-09', '2004-04-13', '2004-04-13','2003-11-02']
       unless skip_dates.include?(date)
-        if Time.parse('2010-07-01') <  Time.parse(date)
+        if Time.parse('2000-01-01') <  Time.parse(date)
           puts local_filename
           File.open(local_filename, 'w') {|f| f.write(output) }
         end
@@ -51,8 +52,16 @@ EOF
     #weird bug in JS parsing from github gists
     body = body.gsub('></script>','> </script>')
     body = body.gsub('_url','\_url')
-    body = body.gsub("\n\n",'<br/>')
-    #update image links and such
+    body = body.gsub("\n\n","\n\n  \n\n  ")
+
+    #replace code: sections
+    while(foundcode = body.match(/\[code:.*?\](.*?)\[\/code\]/m)) do
+      if foundcode && foundcode[0] && foundcode[1]
+        body = body.sub(/\[code:.*?\](.*?)\[\/code\]/m, "<pre>#{foundcode[1]}</pre>")
+      end
+    end
+
+    #update image links and assets
     body = body.gsub(/http\:\/\/www\.mayerdan\.com\/assets_c\/\d+\/\d+\//im,'/assets/')
     body = body.gsub(/http\:\/\/www\.mayerdan\.com\//im,'/assets/')
     body = DownmarkIt.to_markdown(body)
