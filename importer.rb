@@ -4,6 +4,11 @@ require 'ruby-debug'
 require 'time'
 require File.join(File.dirname(__FILE__), "downmark_it")
 
+desc "Start jekyll server"
+task :start_server do
+ `jekyll --server`
+end
+
 namespace :importer do
 
   desc "Import blog posts into jekyll"
