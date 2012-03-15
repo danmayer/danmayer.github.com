@@ -15,6 +15,8 @@ tagline: Dan Mayer's Dev Blog
       {{ first.content }}
     </div>
     <div class="span4">
+      <img src="/assets/dan_helicopter_sm.jpg" width='50%' />
+      <br/>
       Hello, this is where I am publishing my old development blog as well as making new posts in the future. I am not that active with my blogigng these days, but perhaps with a new blog setup I will be slightly more motivated. Currently I am mostly involved with Ruby and mobile development. You can find <a href="http://github.com/danmayer">my code on github</a>.
       <hr/>
 
