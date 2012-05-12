@@ -45,5 +45,4 @@
     </div>
 
         licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons License</a>.<br/>
-        <br/>
         <a href="http://creativecommons.org/licenses/by-sa/3.0/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" style="float:right"/></a>

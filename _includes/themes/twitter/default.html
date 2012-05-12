@@ -13,8 +13,11 @@
 
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    -->
     <link href="{{ ASSET_PATH }}/css/custom_style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -23,40 +26,49 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=1.0" />
   </head>
 
   <body>
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-	  <div class="nav-collapse">
-            <ul class="nav">
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
-            </ul>
+	<div class="navbar navbar-fixed-top">
+	  <div class="navbar-inner">
+	    <div class="container">
+	      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	      </a>
+	      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+	      <div class="nav-collapse">
+		<ul class="nav">
+		  {% assign pages_list = site.pages %}
+		  {% assign group = 'navigation' %}
+		  {% include JB/pages_list %}
+		</ul>
+	      </div>
+	    </div>
 	  </div>
-        </div>
-      </div>
-    </div>
+	</div>
 
     <div class="container below-nav">
 
-      <div class="content">
-        {{ content }}
-      </div>
+       <div class="content">
+         {{ content }}
+       </div>
 
-      <footer>
-        <p>&copy; {{ site.author.name }} 2012
-          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-        </p>
-      </footer>
+     </div> <!-- /container -->
 
-    </div> <!-- /container -->
+       <footer>
+         <p>&copy; {{ site.author.name }} 2012 with help from
+         <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+         and
+         <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+         </p>
+       </footer>
 
     {% include JB/analytics %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="{{ ASSET_PATH }}/js/bootstrap.js"></script>
   </body>
 </html>
