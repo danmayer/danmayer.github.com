@@ -1,17 +1,22 @@
-__Dan Mayer's developer Blog__
+__Dan Mayer's Developer Blog__
 
-## TODOS
+## Todos
+
 * fix look of code imports that used `` backticks
 * update formatting / theme, font size etc
 * better newline detection / fixes on import
 * pick using tags or categories or both and import them
 * try to recover some of the really old images from banddesigns url
 * alter / improve the layout
-* add picture of self
 * twitter integration?, show recent tweets
 * add link roll back to other bloggers etc
 * coderwall integration
-* move real domain to it
+
+## Topic / Post Ideas
+
+* first-responder on the team post
+* bugs per line of code
+
 
 This is built using Jekyll-Bootstrap
 
