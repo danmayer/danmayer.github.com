@@ -59,7 +59,7 @@ I do think heavily functional and succinct code is far better for back end syste
 
 ## Final Thoughts
 
->Keep your code tiny. Fight extra complexity and lines of code and strike down upon it with great vengeance & furious anger those who attempt to poison and destroy the codebase...
+>Keep your code tiny. Fight extra complexity and lines of code and strike down upon it with great vengeance & furious anger...
 
 --[not quite what was said in Pulp Fiction](http://quotes.dictionary.com/And_I_will_strike_down_upon_thee_with)
 
@@ -76,7 +76,7 @@ I am not saying all refactoring is bad, in fact I think bug LOC ratios increase 
 One failing in my keep the project as small as possible, is user input and UX. All those dedicated to succinct code, please show me great examples of user input error handling and complex conditional view layers. I still haven't seen good ways to approach these issues short of writing more code and trying to make all of the conditions as clear and small as possible. (Often products made for developers solve this by only allowing for tiny number of possible conditions. I don't think that approach works in reality when working with designers and UX teams, who often have clear use cases for each conditional)
 
 
-###### Additional Sources
+###### Additional Sources  
 
 
   * [Software Quality Metrics Overview, detailing defect tracking](http://www.informit.com/articles/article.aspx?p=30306)  
@@ -87,5 +87,5 @@ One failing in my keep the project as small as possible, is user input and UX. A
 
 
 
-*1) Obviously different bugs have different costs, and critical path bugs are much worse than a presentation bug. I am ignoring this issue to get to the larger point.
+(1) Obviously different bugs have different costs, and critical path bugs are much worse than minor presentational bugs. I am ignoring this issue to get to the larger point.
 
