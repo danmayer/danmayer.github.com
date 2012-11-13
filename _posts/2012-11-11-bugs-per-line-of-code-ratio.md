@@ -10,7 +10,7 @@ __The more development I do the more I feel like increased Lines Of Code (LOC), 
 
 I know that seems obvious at first, but hear me out, as many refactorings, abstractions, 'cleaner' code increases the LOC.
 
-I have been reviewing a lot of code lately and the larger the added LOC are the more concerned I am about being able to fully understand and review the code. Even when I fully understand the purpose of the new code, I know lurking in each line could be a subtile but important bug. Seems obvious at first, but shouldn't the overall complexity of the change and level of difficulty of the code be a large part of the equation as well? Most of the time the answer is not really. Reviewing new code going into a project each line introduces a new place for a bug to exist, even when each individual line is incredibly simple. So reviewing a 'simple' code change of 600 LOC is still often times far more risky than a complex change of 100 LOC**.
+I have been reviewing a lot of code lately and the larger the added LOC are the more concerned I am about being able to fully understand and review the code. Even when I fully understand the purpose of the new code, I know lurking in each line could be a subtile but important bug. Seems obvious at first, but shouldn't the overall complexity of the change and level of difficulty of the code be a large part of the equation as well? Most of the time the answer is not really. Reviewing new code going into a project each line introduces a new place for a bug to exist, even when each individual line is incredibly simple. So reviewing a 'simple' code change of 600 LOC is still often times far more risky than a complex change of 100 LOC (*1).
 
 My team has been working on refactoring and cleaning up a large older code base. One of the biggest issues now is just the sheer volume of unused, near duplicated, or overly abstracted code. The cognitive load associated with understanding all the implications of a change, and who might be relying on a specific quirk in a piece of existing code.
 
@@ -59,7 +59,9 @@ I do think heavily functional and succinct code is far better for back end syste
 
 ## Final Thoughts
 
->Keep your code tiny. Fight extra complexity and lines of code and strike down upon it with great vengeance & furious anger those who attempt to poison and destroy the codebase… [not quite what was said in Pulp Fiction](http://quotes.dictionary.com/And_I_will_strike_down_upon_thee_with)
+>Keep your code tiny. Fight extra complexity and lines of code and strike down upon it with great vengeance & furious anger those who attempt to poison and destroy the codebase...
+
+--[not quite what was said in Pulp Fiction](http://quotes.dictionary.com/And_I_will_strike_down_upon_thee_with)
 
 I think bugs to LOC ratio is one of the main reasons having a large codebase is bad. I believe the cognitive load of having to write code that functions around all the bugs/quirks in a code base is why progress slows so much on larger code bases.  I think large codebases being bad is why SOA, [Micro-Service Architecture](https://www.youtube.com/watch?v=2rKEveL55TY), Heroku's [Lightweight Web Services](http://rubyconf2008.confreaks.com/lightweight-web-services.html), and Github's [building mini-apps](http://zachholman.com/posts/scaling-github-employees/) is the solution all larger apps end up moving towards. 
 
@@ -73,15 +75,17 @@ I am not saying all refactoring is bad, in fact I think bug LOC ratios increase 
 
 One failing in my keep the project as small as possible, is user input and UX. All those dedicated to succinct code, please show me great examples of user input error handling and complex conditional view layers. I still haven't seen good ways to approach these issues short of writing more code and trying to make all of the conditions as clear and small as possible. (Often products made for developers solve this by only allowing for tiny number of possible conditions. I don't think that approach works in reality when working with designers and UX teams, who often have clear use cases for each conditional)
 
-** Obviously different bugs have different costs, and critical path bugs are much worse than a presentation bug. I am ignoring this issue to get to the larger point.
 
 ###### Additional Sources
 
-  * [Software Quality Metrics Overview, detailing defect tracking](http://www.informit.com/articles/article.aspx?p=30306)
-  * [Source of McConnell's defects per lines of code](http://amartester.blogspot.com/2007/04/bugs-per-lines-of-code.html)
-  * [McConnell, also thinks bugs ratios get worse with larger projects](http://www.stevemcconnell.com/articles/art06.htm)
-  * [While SOA helps solve the large code issue it introduces new complexities, covered a bit in Wycat's code cruft talk](http://confreaks.com/videos/1121-gogaruco2012-cruft-and-technical-debt-a-long-view)
-  * [Section 'Novices versus Experts', might explain the more ridged verbose earlier code](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)
+
+  * [Software Quality Metrics Overview, detailing defect tracking](http://www.informit.com/articles/article.aspx?p=30306)  
+  * [Source of McConnell's defects per lines of code](http://amartester.blogspot.com/2007/04/bugs-per-lines-of-code.html)  
+  * [McConnell, also thinks bugs ratios get worse with larger projects](http://www.stevemcconnell.com/articles/art06.htm)  
+  * [While SOA helps solve the large code issue it introduces new complexities, covered a bit in Wycat's code cruft talk](http://confreaks.com/videos/1121-gogaruco2012-cruft-and-technical-debt-a-long-view)  
+  * [Section 'Novices versus Experts', might explain the more ridged verbose earlier code](http://www.kitchensoap.com/2012/10/25/on-being-a-senior-engineer/)   
 
 
+
+*1) Obviously different bugs have different costs, and critical path bugs are much worse than a presentation bug. I am ignoring this issue to get to the larger point.
 
