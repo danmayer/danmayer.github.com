@@ -24,7 +24,7 @@ I think the best example of developer trajectory of verbosity to conciseness com
 
 In fact many developers talk about how [LOC is the enemy of software projects](http://www.codinghorror.com/blog/2006/07/diseconomies-of-scale-and-lines-of-code.html). The linked post references 37 Signals (several times), Seth Godin, and heavily quotes Steve McConnell all supporting how much more difficult and less time efficient it is to manage large code bases.
 
-I think in part the reason large codebases are such a problem is that as the code grows, so does the number of existing bugs in the system. The ratio of bugs per lines of code is pretty constant for a project based on the methods the team has followed while adding features and code to the project. 
+I think in part the reason large codebases are such a problem is that as the code grows, so does the number of existing bugs in the system. The ratio of bugs per lines of code is pretty constant for a project based on the methods the team has followed while adding features and code to the project. Many of the articles I am linking to, point out the the cost of adding code doesn't grow linerly but get's orders of magnitude worse as the code base grows.
 
 ### Bug to code ratios
 
@@ -63,7 +63,7 @@ I do think heavily functional and succinct code is far better for back end syste
 
 --[not quite what was said in Pulp Fiction](http://quotes.dictionary.com/And_I_will_strike_down_upon_thee_with)
 
-I think bugs to LOC ratio is one of the main reasons having a large codebase is bad. I believe the cognitive load of having to write code that functions around all the bugs/quirks in a code base is why progress slows so much on larger code bases.  I think large codebases being bad is why SOA, [Micro-Service Architecture](https://www.youtube.com/watch?v=2rKEveL55TY), Heroku's [Lightweight Web Services](http://rubyconf2008.confreaks.com/lightweight-web-services.html), and Github's [building mini-apps](http://zachholman.com/posts/scaling-github-employees/) is the solution all larger apps end up moving towards. 
+I think bugs to LOC ratio is one of the main reasons having a large codebase is bad. I believe the cognitive load of having to write code that functions around all the bugs/quirks in a code base is why progress slows so much on larger code bases.  I think large codebases being bad is one of the reasons why SOA, [Micro-Service Architecture](https://www.youtube.com/watch?v=2rKEveL55TY), Heroku's [Lightweight Web Services](http://rubyconf2008.confreaks.com/lightweight-web-services.html), and Github's [building mini-apps](http://zachholman.com/posts/scaling-github-employees/) is the solution all larger apps end up moving towards. 
 
 While I still place a incredibly high value on the readability of code, and often find a Collection#each accumulating into another variable more readable than Collection#inject. I think developers should error on the side of less code, unless there are clear improvements to having more code. Especially when trying to refactor to improve the readability of the code.
 
