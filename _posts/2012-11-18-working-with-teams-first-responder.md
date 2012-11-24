@@ -33,14 +33,22 @@ When our team introduced the first responder, we emailed all developers at the c
 
 We aren't the only team at our company that has been creating the first responder position, in fact we weren't even the first. Other teams naturally evolved similar positions. Since we have been using the first responder on our team for awhile now. I think I can safely say it has been a big improvement. I have been happy to see more teams adopting similar rotation roles as well, as it has been great to have someone as a point of contact when trying to work with a project when you less familiar with it.
 
-While the satisfaction of being the first responder is different than normal tasks, helping someone ship a big new feature for their team can be very rewarding. So can mentoring more junior developers to help them solve a problem in a better way. There is also a certain joy of helping review and ship 10 - 15 smaller deployments to production, getting a bit in the code review zone of a review deployment / cycle. I know that I believe it has helped increase the overall quality of the code getting to the production system. It has also helped us to streamline and more quickly process a rapid flow of pull requests without slowing down the development pace as much (So has standardizing and sharing a set of expectations for pull requests for our project, but more on that in another post). If your team seems to be frequently knocked off task by outside requests or facing a growing backlog of necessary code reviews, I highly recommend implementing the team first responder.
+While the satisfaction of being the first responder is different than normal tasks, helping someone ship a big new feature for their team can be very rewarding. So can mentoring more junior developers to help them solve a problem in a better way. There is also a certain joy of helping review and ship 10 - 15 smaller deployments to production, getting a bit in the code review zone of a review deployment / cycle. I know that I believe it has helped increase the overall quality of the code getting to the production system. It has also helped us to streamline and more quickly process a rapid flow of pull requests without slowing down the development pace as much (So has standardizing and sharing a set of expectations for pull requests for our project, but more on that in another post). I don't like adding to much process to the development flow, but I think the right amount of process helps keep healthy balance between [Stables and Volatiles](http://www.randsinrepose.com/archives/2012/11/14/stables_and_volatiles.html), ensuring they can work together while trying to get some of the benefits of each group. If your team seems to be frequently knocked off task by outside requests or facing a growing backlog of necessary code reviews, I highly recommend implementing the team first responder.
+
 
 ###### Additional Sources
 
+  * [A Protocol for Code Reviews](http://www.naildrivin5.com/blog/2012/04/02/a-protocol-for-code-reviews.html)
   * [reasons interruptions hurt productivity](http://blogs.atlassian.com/2012/10/collaboration-best-practices-3-reasons-interruptions-hurt-productivity/)
   * [37signals Getting Real chapter, Alone Time](http://gettingreal.37signals.com/ch07_Alone_Time.php)
-  * [Large collection of sources on StackOverflow about about developer interuptions](http://programmers.stackexchange.com/questions/105891/where-can-i-find-articles-on-why-interruptions-are-bad-for-programmers)
+  * [Large collection of sources on StackOverflow about about developer interruptions](http://programmers.stackexchange.com/questions/105891/where-can-i-find-articles-on-why-interruptions-are-bad-for-programmers)
   * Our first responder contact methods (email, group chat, IM) in part help people to follow [Tactics for avoiding colleague interruptions](http://programmers.stackexchange.com/questions/94800/best-tactics-for-avoiding-colleague-interruptions)
+  
+
+###### Unsolved First Responder Issue
+  
+  * A developer on my team pointed out one problem we have been having with the first responder rotation. We work on a distributed team, so we have rotations that involve developers in different timezones. If the first responder is on the west coast and a early morning issue occurs someone needs to respond. Currently a east coaster will drop what they are doing to step in to the first responder role to help with whatever live bug fighting is going on. We don't really have a good solution for this issue yet.  
+
   
   
  
