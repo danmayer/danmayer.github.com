@@ -6,7 +6,7 @@ require File.join(File.dirname(__FILE__), "downmark_it")
 
 desc "Start jekyll server"
 task :start_server do
- `jekyll --server`
+ `jekyll --server --pygments`
 end
 
 namespace :importer do
