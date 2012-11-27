@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First Responder, helping work with many development teams
+title: First Responder, helping large development teams coordinate and work together
 category: ruby
 tags: [programming, development, ruby]
 ---
