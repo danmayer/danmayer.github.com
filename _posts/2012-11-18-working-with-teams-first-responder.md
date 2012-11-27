@@ -38,13 +38,13 @@ While the satisfaction of being the first responder is different than normal tas
 
 ###### Additional Sources 
 
- 
-  * [A Protocol for Code Reviews](http://www.naildrivin5.com/blog/2012/04/02/a-protocol-for-code-reviews.html)
-  * [reasons interruptions hurt productivity](http://blogs.atlassian.com/2012/10/collaboration-best-practices-3-reasons-interruptions-hurt-productivity/)
-  * [37signals Getting Real chapter, Alone Time](http://gettingreal.37signals.com/ch07_Alone_Time.php)
-  * [Large collection of sources on StackOverflow about about developer interruptions](http://programmers.stackexchange.com/questions/105891/where-can-i-find-articles-on-why-interruptions-are-bad-for-programmers)
+
+  * [A Protocol for Code Reviews](http://www.naildrivin5.com/blog/2012/04/02/a-protocol-for-code-reviews.html)  
+  * [reasons interruptions hurt productivity](http://blogs.atlassian.com/2012/10/collaboration-best-practices-3-reasons-interruptions-hurt-productivity/)  
+  * [37signals Getting Real chapter, Alone Time](http://gettingreal.37signals.com/ch07_Alone_Time.php)  
+  * [Large collection of sources on StackOverflow about about developer interruptions](http://programmers.stackexchange.com/questions/105891/where-can-i-find-articles-on-why-interruptions-are-bad-for-programmers)  
   * Our first responder contact methods (email, group chat, IM) in part help people to follow [Tactics for avoiding colleague interruptions](http://programmers.stackexchange.com/questions/94800/best-tactics-for-avoiding-colleague-interruptions)  
-  
+
 
 ###### Unsolved First Responder Issue
   
