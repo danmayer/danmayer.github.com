@@ -2,18 +2,23 @@
 layout: post
 title: "Jekyll Ruby code formatting and running"
 category: javascript
-tags: [javascript]
+tags: [ruby]
 ---
 {% include JB/setup %}
 
 This post is showing how to setup Ruby code formatting for Jekyll and Github pages as well as Ruby code running.
 
-example JS code snippet:
+example Ruby code snippet:
 
 
-<div class='ruby-runner' data-sig="IiqKEkbRiy234EWryNc+xCsUEgY=">
+<div class='ruby-runner' data-sig="yes0Ez82as/DTibeFfh7KPzqGVE=">
 {% highlight ruby %}
-puts "code from ruby #{4+5} #{Time.now}"
+require 'pdfkit'
+
+kit = PDFKit.new('http://resume.mayerdan.com/')
+Dir.mkdir('./artifacts') unless File.exists?('./artifacts')
+file = kit.to_file('./artifacts/temp_pdf_kit.pdf')
+puts 'done'
 {% endhighlight %}
 </div>  
 
