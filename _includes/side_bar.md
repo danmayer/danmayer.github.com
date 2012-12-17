@@ -8,9 +8,19 @@
           <li class="nav-header">
             Recent Posts
           </li>
-        {% for post in site.posts limit: 5 %}
-          <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
+          {% for post in site.posts limit: 5 %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+
+          <!-- not yet functional
+          <li class="nav-header">
+            Possibly Related
+          </li>
+          {% for post in site.related_posts limit: 3 %}
+            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+          -->
+
         </ul>
       </div>
 

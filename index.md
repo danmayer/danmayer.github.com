@@ -14,6 +14,9 @@ tagline: Dan Mayer's Dev Blog
         <span>{{ first.date | date_to_long_string }}</span>
       </h3>
       {{ first.content }}
+
+      <br/>
+      <a href="{{ BASE_PATH }}{{ first.url }}" class="btn" style="float:right">comments</a>
     </div>
 
     <div class="span4">
