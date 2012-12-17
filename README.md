@@ -16,6 +16,8 @@ __Dan Mayer's Developer Blog__
 
 * first-responder on the team post
 * bugs per line of code
+* DCI is sort of interesting but seems to go against LOC==bugs and Kindom of Nouns post which really makes me upset to see DCI with .excute methods seems close to what I like and envision but actually to heavy weight
+  * http://vimeo.com/8235574 
 
 
 This is built using Jekyll-Bootstrap
