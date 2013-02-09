@@ -7,8 +7,7 @@ tags: [programming, development, ruby]
 {% include JB/setup %}
 
 __The more development I do the more I feel like increased Lines Of Code (LOC), nearly always results in increased bugs.__
-<div class="blog-header" data-title="ratio of bugs per line of code"></div>
-
+<div class='blog-header' data-title='ratio of bugs per line of code'</div>
 I know that seems obvious at first, but hear me out, as many refactorings, abstractions, 'cleaner' code increases the LOC.
 
 I have been reviewing a lot of code lately and the larger the added LOC are the more concerned I am about being able to fully understand and review the code. Even when I fully understand the purpose of the new code, I know lurking in each line could be a subtle but important bug. Seems obvious at first, but shouldn't the overall complexity of the change and level of difficulty of the code be a large part of the equation as well? Most of the time the answer is not really. Reviewing new code going into a project each line introduces a new place for a bug to exist, even when each individual line is incredibly simple. So reviewing a 'simple' code change of 600 LOC is still often times far more risky than a complex change of 100 LOC (^1).
@@ -27,8 +26,8 @@ In fact many developers talk about how [LOC is the enemy of software projects](h
 
 I think in part the reason large codebases are such a problem is that as the code grows, so does the number of existing bugs in the system. The ratio of bugs per lines of code is pretty constant for a project based on the methods the team has followed while adding features and code to the project. Many of the articles I am linking to, point out the the cost of adding code doesn't grow linerly but get's orders of magnitude worse as the code base grows.
 
-### Bug to code ratios
-<div class="blog-header" data-title="Bug to code ratios"></div>
+### Bug to code ratios 
+<div class='blog-header' data-title='Bug to code ratios'></div>
 
 The idea of bugs per lines of code isn't really a new idea. Steve McConnell, the primary source for the previously mentioned post, has written extensively on defects per lines of code. Covering average bugs per LOC stats in his great book [Code Complete](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670)
 
