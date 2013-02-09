@@ -1,3 +1,9 @@
 body { padding-top: 40px; }
 
 footer { margin-top: 8px; padding:16px 12px 16px; background-color: #EEE; }
+
+#current-header { padding: 9px 10px 11px;
+		  font-size: 20px;
+		  float: right; }
+
+/*.blog-header { display:none; }*/
