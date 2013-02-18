@@ -1,4 +1,4 @@
-__Dan Mayer's Developer Blog__
+#Dan Mayer's Developer Blog
 
 ## Todos
 
@@ -20,7 +20,7 @@ __Dan Mayer's Developer Blog__
 
 This is built using Jekyll-Bootstrap
 
-# Jekyll-Bootstrap
+## Jekyll-Bootstrap
 The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
 
 ## License
