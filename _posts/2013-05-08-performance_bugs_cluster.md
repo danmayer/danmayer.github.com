@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Performance Issues and Bugs Cluster"
+title: "Performance Issues and Bug Clusters"
 category: 
 tags: [Programming, Development, Learnings]
 ---
