@@ -34,7 +34,7 @@ Depending on the on the seriousness of the bug, likelihood of a one off mistake 
 * A much harder thing to fix but good to understand. Was the bug cluster caused by a bad data model. Code that isn't representative of the problem and task at hand? If so there might be a larger discussion or refactoring to start to consider.
 
 
-### Clusters, it's not just for bugs
+### Clusters, it's not just for bugs  
 <div class='blog-header' data-title='Clusters, it's not just for bugs'>
 </div>
 
