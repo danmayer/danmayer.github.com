@@ -35,7 +35,8 @@ Depending on the on the seriousness of the bug, likelihood of a one off mistake 
 
 
 ### Clusters, it's not just for bugs
-<div class='blog-header' data-title='Clusters, it's not just for bugs'></div>
+<div class='blog-header' data-title='Clusters, it's not just for bugs'>
+</div>
 
 Code patterns are everywhere: styles, library usage, thoughts, developers, late night bad hacking, good day, bad day, new shiny obsession, dead feature, big O blindness, N+1, slow methods, service abuse…
 
