@@ -44,7 +44,8 @@ Pretty much any pattern the human mind can recognize can and will cluster in cod
 
 I was working on performance problems for a specific Rails action. I found that it was doing the most naive and simple thing possible, which is great and in the past never really cause an issue. As the data size changed it was blatantly obvious that it was making hundreds of unnecessary calls per request and reducing the result set down for display to the first 5. Basically `get_massive_result_collection[0…5]`, Ok simple fix, added ability to pass a limit `get_massive_result_collection(:limit => 5)`. I realized that when the collection method was first added to the code, it's usage had been spread all through out the app. I got the important performance fix deployed to production and saw a order of magnitude difference proving this was a pretty valuable discovery. I immediately created a ticket to follow up on all calls to the existing collection method in the app and find how many were abusing it. Over the next week or two I was able to knock incredible amounts of time of nearly every page load as the method was being used in application layouts, common partials, and spread since it was originally implemented. The code changes where each simple after tracking down the initial performance mistake. I personally will always spend a bit of time spelunking the code now to follow up on related code after discovering a large performance win.
 
-### Humans are pattern recognition machines
-<div class='blog-header' data-title='Humans are pattern recognition machines'></div>
+### Humans are pattern recognition machines  
+<div class='blog-header' data-title='Pattern recognition machines'>
+</div>
 
 Seriously we are are pattern recognition machines, get good at it and use it! Keep a eye out for the patterns in your code. Understand that it can help you with bug fixing, refactoring, performance, dead code removal, and more. No piece of code is written in complete isolation, if it was it really wouldn't be able to do much. So consider the code clusters the surround your changes, and can help you prevent a bug that has gone undetected. 
