@@ -26,10 +26,32 @@
 * Tiny blog post about copy_files_and_maintain_structure method for ec2 copying
 * Fixing and improving my emacs setup, with links to some of the places I picked up tips, Avdi's blog, etc
 * Play with some of the easy to build automated mobile apps to build a silly app
-* Build something random to mashup spottily play with artist info and reviews pulled from wikipedia, etc
+* Build something random to mashup Spotify play with artist info and reviews pulled from wikipedia, etc
 * just include in your actual test class the module then hit methods on test class itself. (do this for nothing calendar and blog post about it)
 * Best things to happen to developers, AWS ec2 and instance / cheap ways to test all sorts of infrastructure. Github and all the great tools and integration around the github community. Online courses / education. Easy payments (stripe, square, etc)… Lacking from this list is great stuff from google, who actually has more restrictions and issues working with there data and apis… Try just getting some search data out of there system… etc Great time to be a developer
 * CI it isn't just to fix the 'it works on my machine problem'. It also is a developer performance multiplier. There are some tests that ever dev shouldn't be spending time and shouldn't normally need to worry about testing for each change. The cost of over testing and wasting developers time is worth worrying about. (Running the same test in 5 browser types, great on CI, shouldn't be part of every dev test run, fuzzy testing is great for CI opposed to local runs, testing the current system versus full integration system against live external dependancies), True integration tests… etc
+* blog about factories and fixtures
+  * factories for very custom
+  * fixtures for all basic example objects
+  * speed and how it really matters
+* Getting over the fear, sometimes everyone is afraid of a big scary piece of code. For months people know about the problem and propose all sorts of large solutions that might take weeks to implement so no one touches it. After talking about that and coming up against a wall in about one day I was able to get over 2X performance increase, drop a extremely long running data sync and kill off endpoints that were some of the largest blockers in migrating away from that system.
+* decided that live monitoring is likely more important than amazing test suite... Some things you can test for ever and the bug will still get to production, and once it is there you want a way to know that as quickly as possible 
+* The industry couldn't keep up with spammers
+  * commenting (spam), blogging (content farming), and the slashdot effect (spikes taking down sites) all outpaced the ability of normal people to maintain systems. Not to mention hacking against these systems. 
+  * Facebook solve peoples issues to publish themselves
+  * Twitter is the same as facebook
+  * we moved from the old media distribution systems and channels to the new media distribution setups. Facebook and google are the new distribution kings
+  * If you publish your content and don't have a site you post to facebook / google plus. They get more of the benifit  than you, but your distribution is wider
+  * A reason people use FB and SMS messages over email now? people don't email but message through these distribution systems because people trust them more, because there was less spam / attacks. And they better integrated with SMS and  mobile publishing than any other system
+* lessons learn from fitbit mini
+  * mobile changes fast
+  * more UI design and CSS harder than the backend
+  * USE rails not sinatra/etc if you have ANY front end work
+  * having a real API is much nicer than scraping
+  * building a small simple production released app is actually much more work than I would have guess. even when KISS
+  * other thoughts ideas mention mobile web / then android app, with api.
+* make my own scaffold replacement gem http://www.viget.com/extend/rails-3-generators-scaffolding/ look more at generators build one and post about it
+   
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
