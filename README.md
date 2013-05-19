@@ -51,15 +51,27 @@
   * building a small simple production released app is actually much more work than I would have guess. even when KISS
   * other thoughts ideas mention mobile web / then android app, with api.
 * make my own scaffold replacement gem http://www.viget.com/extend/rails-3-generators-scaffolding/ look more at generators build one and post about it
+* blog on happiness personal growth as a dev, vs getting stuff done... vs loner culture and being involved in the community
+* rebuilding AOL, why are we rebuilding AOL. The status message is just an away message. A facebook page is just a AIM profile picture and text box. The pictures and things shared in the facebook walled garden are the same as AOL only sites... facebook.com/nike is the same as aol target keyword: nike
    
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
 * Smokescreen, to discuss the importance of fast feedback loops and when a test suite grows to large good ways to focus in on the important changes (I actually run `bundle exec rake test:smokescreen:all_current` on almost all changes now which runs the critical tests along with test files that are likely to be affected by current changes)
 
+## Possible short posts more likely tweet sometime, if I can't elaborate enough for a post
+
+* pretty sure code readability matters more than DRY, cleverness, clean code, etc...
+* never let overly difficult testing get in the way of a good implementation
+* stop building for tomorrow, when you can build something that is complete and works today… YANGNI
+* why is it so many of the 'agile' people I know say process over people, but are continually about refining and adding more process
+* dont fear the opinionated, at least you know where they stand, fear those with no opinions
+* Harder to inspire or motivate than it is to be a critic or point out flaws or to demotivate and put people down.
+* 
+
 ## Jekyll-Bootstrap
 This blog is built using Jekyll-Bootstrap. The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
 
-## License
+### License
 
 [Creative Commons](http://creativecommons.org/licenses/by-nc-sa/3.0/)
