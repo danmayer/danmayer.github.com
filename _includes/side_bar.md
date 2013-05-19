@@ -25,7 +25,7 @@
       </div>
 
       <div class="well" style="padding: 8px 0;">
-        <h4><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
+        <h4 class="side-header"><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
         <ul class="nav nav-list" id="twitter_update_list"></ul>
       </div>
 <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js">
