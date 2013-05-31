@@ -18,7 +18,7 @@ Starting a brand new app takes time and a lot of the initial configuration is ve
 
 If I choose Rails over sinatra for a web project, in part I am assuming I will have higher front end needs for the project. Which likely means I will have accounts, logins, roles / rights, and want a more polished look and feel. Out of the box Rails requires you to setup a lot just to meet those basic needs. With Rails composer, I am basically good to go.
 
-* A solid starting design, Rails composer will give me [Twitter Bootstrap](http://twitterbootstrap.com) configured and ready to go out of the gate
+* A solid starting design, Rails composer will give me [Twitter Bootstrap](http://twitter.github.io/bootstrap/) configured and ready to go out of the gate
 * I am setup to perform most of my basic JS needs via Jquery which is ready to go from the beginning
 * Accounts, roles, and rights are covered by : Devise, cancan, and rolify. Quickly covering my basic account management needs.
 * The composer setups up a great way to share application specific configuration that isn't checked into the code repo via [figaro](https://github.com/laserlemon/figaro). Which also supposed publishing the environment to Heroku my preferred production deployment for personal projects.
