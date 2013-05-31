@@ -16,16 +16,17 @@ When I start a new rails project, I want to quickly get going with a login syste
 
 Starting a brand new app takes time and a lot of the initial configuration is very much the same. The composer options I choose are well understood common Rails gems I would often choose for my initial setup in the first place. I understand all the pieces that I setup with Rails composer so I don't feel like I am giving up any understanding by starting with the generated app. I would recommend making sure you 'could' setup any of the pieces Rails composer configures for you, and understanding them before using them in a generated project. If I am programming in my personal time I often have a problem I want to solve or a specific idea I want to test, getting to the point I can work on the primary focus with little lost has a big value to me.
 
-If I choose Rails over sinatra for a web project, in part I am assuming I will have higher front end needs for the project. Which likely means I will have accounts, logins, roles / rights, and want a more polished look and feel. Out of the box Rails requires you to setup a lot just to meet those basic needs. With Rails composer, I am basically good to go.
+If I choose Rails over Sinatra for a web project, in part I am assuming I will have higher front end needs for the project. Which likely means I will have accounts, logins, roles / rights, and want a more polished look and feel. Out of the box Rails requires you to setup a lot just to meet those basic needs. With Rails composer, I am basically good to go.
 
 * A solid starting design, Rails composer will give me [Twitter Bootstrap](http://twitter.github.io/bootstrap/) configured and ready to go out of the gate
 * I am setup to perform most of my basic JS needs via Jquery which is ready to go from the beginning
-* Accounts, roles, and rights are covered by : Devise, cancan, and rolify. Quickly covering my basic account management needs.
-* The composer setups up a great way to share application specific configuration that isn't checked into the code repo via [figaro](https://github.com/laserlemon/figaro). Which also supposed publishing the environment to Heroku my preferred production deployment for personal projects.
+* Accounts, roles, and rights are covered by : Devise, Cancan, and Rolify. Quickly covering my basic account management needs.
+* The composer setups up a great way to share application specific configuration that isn't checked into the code repo via [Figaro](https://github.com/laserlemon/figaro). Which also supposed publishing the environment to Heroku my preferred production deployment for personal projects.
 * Having a nice familiar base app as a starting point helps me more quickly get to building application specific pieces of code and get my idea out there. Using a normal configuration with gems I am familiar with.
 * Stand on the shoulders of giants, I don't want to spend my time building yet another authentication system, building in features like forgot password, email confirmation, etc.
 
-## Steps 0 to development with Rails composer
+## Nothing to development with Rails composer
+
 The example below is creating a new application call nothingcalendar2, which is a new version of a app I created awhile ago called nothing calendar to try out some JS ideas. Now I want to convert it to a modern rails application and add some new features. 
 
     rvm use ruby-1.9.3
@@ -83,7 +84,7 @@ Great we have a app how do we get it out there for the world to see? For persona
     
 ## Rails from nothing to production
 
-Following the steps above it how I start most of my rails apps these days. Getting me up and running very quickly so that I can focus on the goals at hand and not worry about some of the initial details of having a basic infastructure to build on. I have used this on a couple projects now and I am pretty happy with the process. I will likely continue to use this to quickly test out ideas, althougth for many simple progress I prefer the even lighter weight sinatra setup, but that is for another post.
+Following the steps above it how I start most of my rails apps these days. Getting me up and running very quickly so that I can focus on the goals at hand and not worry about some of the initial details of having a basic infrastructure to build on. I have used this on a couple projects now and I am pretty happy with the process. I will likely continue to use this to quickly test out ideas, although for many simple progress I prefer the even lighter weight Sinatra setup, but that is for another post.
 
 I think this is a great way to get going. Not everyone agrees with me for the opposing view checkout, [Why we don't use a Rails template](http://thunderboltlabs.com/posts/why-we-dont-use-a-rails-template.html) by [thunderboltlabs](http://thunderboltlabs.com/).
 
