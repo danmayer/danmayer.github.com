@@ -53,6 +53,12 @@
 * make my own scaffold replacement gem http://www.viget.com/extend/rails-3-generators-scaffolding/ look more at generators build one and post about it
 * blog on happiness personal growth as a dev, vs getting stuff done... vs loner culture and being involved in the community
 * rebuilding AOL, why are we rebuilding AOL. The status message is just an away message. A facebook page is just a AIM profile picture and text box. The pictures and things shared in the facebook walled garden are the same as AOL only sites... facebook.com/nike is the same as aol target keyword: nike
+* We do we program?
+  * Not why we currently on a day to day basis code, for a paycheck, a company a career, a family
+  * Why did we get into programming?
+  * I did get into it because I saw the ability to free information and send it across the world. To share knowledge so easily and freely. It was such a powerful idea that it scared governments (china firewall US Skype)
+  * I saw it as being able to contribute far more than a single persons abilities towards one thing. Early on I realized if I could 'codify' a strategy to solve a problem in a repeatable way it was far more powerful than manually doing the error prone task myself. It is part of what drew me to programmable calculators and early programming. To extend my own abilities beyond what I could actually do. To be able to extend my work beyond what I as a individual could do for a company.
+  * We have seen this we have likely all coded something that replaced anthers job, which is a bit sad in one sense, but in another it just should increase the productivity of everyone. In my mind that frees these people up to help work on the next tasks as there are many that still need actual people to help determine and make decisions and figure out what we can make a truly repeatable process.
    
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
@@ -65,9 +71,8 @@
 * never let overly difficult testing get in the way of a good implementation
 * stop building for tomorrow, when you can build something that is complete and works today… YANGNI
 * why is it so many of the 'agile' people I know say process over people, but are continually about refining and adding more process
-* dont fear the opinionated, at least you know where they stand, fear those with no opinions
+* don't fear the opinionated, at least you know where they stand, fear those with no opinions
 * Harder to inspire or motivate than it is to be a critic or point out flaws or to demotivate and put people down.
-* 
 
 ## Jekyll-Bootstrap
 This blog is built using Jekyll-Bootstrap. The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages

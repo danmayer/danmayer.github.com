@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Performance Issues and Bug Clusters"
-category: 
+category: Progamming
 tags: [Programming, Development, Learnings]
 ---
 {% include JB/setup %}
