@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "fast start rails with composer"
-category: Programming
+category: Ruby
 tags: [rails, ruby, programming, practices]
 ---
 {% include JB/setup %}
