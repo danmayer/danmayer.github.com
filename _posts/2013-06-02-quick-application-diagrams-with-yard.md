@@ -19,8 +19,10 @@ Churn
 
 ![Churn Diagram](http://mayerdan.com/assets/churn_app_diagram.jpg)
 
-Small Rails apps (Hearno followed by NothingCalendar2)
+Small Rails apps, Hearno
 
 ![Hearno Diagram](http://mayerdan.com/assets/hearno_app_diagram.jpg)
+
+and finally NothingCalendar2
 
 ![NothingCalendar2 Diagram](http://mayerdan.com/assets/nothingcalendar2_app_diagram.jpg)
