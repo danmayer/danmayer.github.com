@@ -6,7 +6,7 @@ tags: [Ruby, Development, Products, Ebooks]
 ---
 {% include JB/setup %}
 
-## Introducing Blog2Ebook
+## Take your Blogs to go
 
 I recently have been working improving my ability to quickly prototype projects from the ground up. I feel like in my day to day work I am frequently working on very large established systems. Where slow steady progress and refactoring are king. Working on smaller apps to try out new ideas and development methods can be a fun and educational habit. I built this app initially very quickly to solve a problem of my own. I have then expanded it a bit to build out out a app that might be useful for some to some other people.
 
