@@ -59,7 +59,11 @@
   * I did get into it because I saw the ability to free information and send it across the world. To share knowledge so easily and freely. It was such a powerful idea that it scared governments (china firewall US Skype)
   * I saw it as being able to contribute far more than a single persons abilities towards one thing. Early on I realized if I could 'codify' a strategy to solve a problem in a repeatable way it was far more powerful than manually doing the error prone task myself. It is part of what drew me to programmable calculators and early programming. To extend my own abilities beyond what I could actually do. To be able to extend my work beyond what I as a individual could do for a company.
   * We have seen this we have likely all coded something that replaced anthers job, which is a bit sad in one sense, but in another it just should increase the productivity of everyone. In my mind that frees these people up to help work on the next tasks as there are many that still need actual people to help determine and make decisions and figure out what we can make a truly repeatable process.
-   
+
+
+## Possible Project Ideas
+
+* Kindle Ebook walking tours Start with DC and partner with friends to have them write some about other cities   
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files

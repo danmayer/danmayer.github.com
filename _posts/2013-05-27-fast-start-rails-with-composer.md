@@ -27,7 +27,7 @@ If I choose Rails over Sinatra for a web project, in part I am assuming I will h
 
 ## Nothing to development with Rails composer
 
-The example below is creating a new application call nothingcalendar2, which is a new version of a app I created awhile ago called nothing calendar to try out some JS ideas. Now I want to convert it to a modern rails application and add some new features. 
+The example below is creating a new application called nothingcalendar2, which is a new version of a app I created awhile ago called nothing calendar to try out some JS ideas. Now I want to convert it to a modern rails application and add some new features. 
 
     rvm use ruby-1.9.3
     
