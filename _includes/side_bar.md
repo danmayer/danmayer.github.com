@@ -1,6 +1,8 @@
 <img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center"/>
-<br/>
+<div class="intro">
 I am Dan Mayer and this is my development blog. Currently it focuses mostly on Ruby development, a side of dev process, and best practices. It also has archives of my old development posts dating back to when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
+</div>
+<h4 class="side-header"><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
 
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
@@ -25,7 +27,6 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 </div>
 
 <div class="well" style="padding: 8px 0;">
-  <h4 class="side-header"><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
   <ul class="nav nav-list">
     <li class="nav-header">Projects</li>
     <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
