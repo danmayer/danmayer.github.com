@@ -12,7 +12,7 @@ In this post I show examples of how I setup Ruby code that can be executed on my
 
 Once I had javascript code execution working, I really wanted to be able to do the same with Ruby. I could even envision some real world use cases for running Ruby from a page. I happened to be working on another project that seemed like a good fit to making Ruby from JS happen. I am going to start with some examples before getting into how the remote Ruby runner works.
 
-__(The first run might take as long as 45 seconds to return a result, more on why below)__
+__(The first run might take as long as 60 seconds to return a result, more on why below)__
 
 #### Example Ruby code snippet
 
