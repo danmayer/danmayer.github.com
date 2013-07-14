@@ -9,5 +9,7 @@ footer { margin-top: 8px; padding:16px 12px 16px; background-color: #EEE; }
 .intro { padding-top: 8px; }
 .side-header { padding-top: 8px; padding-bottom: 12px; }
 
+.well .side-header { padding-left: 14px; }
+
 
 /*.blog-header { display:none; }*/
