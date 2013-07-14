@@ -8,7 +8,7 @@ tags: [ruby, javascript]
 
 I want to first say that all that follows is basically a terrible idea, but I enjoy building evil projects once in awhile. If you are looking for a nice solution to running Ruby from the web checkout [repl.it](http://repl.it/languages/Ruby), [TryRuby](http://tryruby.org/levels/1/challenges/0), or [codepad](http://codepad.org/).
 
-In this post I show examples of how I setup Ruby code that can be executed on my static generated blog. This is sort of a Ruby follow up to [Javascript formatting and highlighting on Jekyll and Github pages](/javascript/2012/12/15/js-formatter-and-runner/). Although, it doesn't show how to setup your own version as that wouldn't be very secure or safe.
+In this post I show examples of how I setup Ruby code that can be executed on my statically generated blog. This is sort of a Ruby follow up to [Javascript formatting and highlighting on Jekyll and Github pages](/javascript/2012/12/15/js-formatter-and-runner/). Although, it doesn't show how to setup your own version as that wouldn't be very safe or secure.
 
 Once I had javascript code execution working, I really wanted to be able to do the same with Ruby. I could even envision some real world use cases for running Ruby from a page. I happened to be working on another project that seemed like a good fit to making Ruby from JS happen. I am going to start with some examples before getting into how the remote Ruby runner works.
 
