@@ -81,9 +81,9 @@ I could modify and combine small pieces of the two projects to allow anyone to e
 
 ### Other examples of running Ruby code
 
-I will post more on deferred-server and server-responder at some point in the future. For now if you can read more about the [deferred-server script runner](http://git-hook-responder.herokuapp.com/examples) at the example section.
+I will post more on deferred-server and server-responder at some point in the future. For now you can read more about the [deferred-server script runner](http://git-hook-responder.herokuapp.com/examples) in the examples section.
 
-Also, you can check out my first real world usage to run custom Ruby on a static page. It uses a custom JS script on my resume, which runs embedded JS to [on the fly build a PDF](http://resume.mayerdan.com/) of my resume (click the PDF link to see it in action, view the page source to see how it works). The source for custom Ruby on the page is pretty hilarious.
+Also, you can check out my first real world usage to run custom Ruby on a static page. It uses a custom JS script on my resume, which runs embedded JS to [on the fly build a PDF](http://resume.mayerdan.com/) of my resume (click the PDF link to see it in action, view the page source to see how it works). This has been running 'in production' for months without issue. The source for custom Ruby on the page is pretty hilarious.
 
     <div class="ruby-runner-custom" style="display:none;" data-sig="IhFw4kpAHfpiBkbNv0s4ALR8tjc=" data-auto-init="false">
       <pre class="code">
