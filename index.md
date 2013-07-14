@@ -15,8 +15,8 @@ tagline: Dan Mayer's Dev Blog
       </h3>
       {{ first.content }}
 
-      <br/>
-      <a href="{{ BASE_PATH }}{{ first.url }}" class="btn" style="float:right">comments</a>
+      <a href="{{ BASE_PATH }}{{ first.url }}" class="btn index-comments" style="float:right">comments</a>
+      
     </div>
 
     <div class="span4">
