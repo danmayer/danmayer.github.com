@@ -77,11 +77,10 @@ I was a little confused after reading some of the information about configuring 
 
 I use [DNSimple](https://dnsimple.com) to manage my domains, it was easy to set up two manual entries in my DNS to cover the root and www versions of the page.
 
-* `URL	picoappz.com	600		http://www.picoappz.com`
-  * This is a alias that will have all root traffic forward to 'www'
-* `CNAME	www.picoappz.com	600		www.picoappz.com.s3-website-us-east-1.amazonaws.com`
-  * This CNAME points at my s3 bucket for the site.
-  
+* `URL	picoappz.com	600		http://www.picoappz.com` (This is a alias that will have all root traffic forward to 'www')
+* `CNAME	www.picoappz.com	600		www.picoappz.com.s3-website-us-east-1.amazonaws.com` (This CNAME points at my s3 bucket for the site.)
+
+ 
 For AWS S3, you just create a new bucket and configure some settings
 
 * Make sure to have 'Enable website hosting' turned on
