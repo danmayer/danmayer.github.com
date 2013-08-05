@@ -30,29 +30,40 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
   <ul class="nav nav-list">
     <li class="nav-header">Projects</li>
     <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
-    <li><a href="http://blog2ebook.herokuapp.com/">Blog2Ebook: convert blogs to Kindle ebooks</a></li>
-    <li><a href="https://github.com/danmayer/churn">Churn: track churn of your code over time</a></li>
-    <li><a href="https://github.com/danmayer/sinatra_template">Sinatra Template: startup App with opinionated configuration</a></li>
+    <li><a href="http://blog2ebook.picoappz.com/">Blog2Ebook: convert blogs to Kindle ebooks</a></li>
+    <li><a href="http://churn.picoappz.com">Churn: track churn of your code over time</a></li>
+    <li><a href="http://picoappz.com">Picoappz, tiny side project apps</a></li>
+    <li><a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a></li>
     <li>more baking in the oven...</li>
   </ul>
 </div>
 
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
-    <li class="nav-header">Links</li>
-    <li><a href="http://resume.mayerdan.com/">Dan Mayer's Resume</a></li>
-    <li><a href='http://github.com/danmayer'>Dan Mayer on Github</a></li>
-    <li><a href="http://www.erinashleymiller.com/">Erin Miller's Blog</a></li>
-    <li><a href="http://www.livejournal.com/~idq">Inscrutable Drama Queen's Blog</a></li>
-    <li><a href="http://bbrinck.com/">Ben Brinckerhoff's blog</a></li>
+    <li class="nav-header">Developer Links</li>
     <li><a href="http://avdi.org/devblog/">Avdi's development blog</a></li>
-    <li><a href="http://www.mark-ewing.com/">Mark's Blog</a></li>
-    <li><a href="http://mymovetola.com/">My Move to LA</a> </li>
-    <li><a href="http://magneticormosaic.com/">Magnetic or Mosaic music</a></li>
-    <li><a href="http://www.foresightphoto.com/">Foresight Aerial Photos</a></li>
     <li><a href="http://gilesbowkett.blogspot.com/">Giles Bowkett Ruby and Music</a></li>
+    <li><a href="http://erniemiller.org/">Ernie Miller's dev blog</a></li>
+    <li><a href="http://www.naildrivin5.com/">David Copeland's dev blog</a></li>
+    <li><a href="http://chadfowler.com">Chad Fowler's blog</a></li>
+    <li><a href="http://austenito.com/">Austen Ito's blog</a></li>
     <li><a href="http://devver.wordpress.com/">Archived Devver blog</a></li>
+  </ul>
+</div>
+
+<div class="well" style="padding: 8px 0;">
+  <ul class="nav nav-list">
+    <li class="nav-header">Other Links</li>
+
+    <li><a href="http://www.erinashleymiller.com">Erin Miller's Blog</a></li>
+    <li><a href="http://www.livejournal.com/~idq">Inscrutable Drama Queen's Blog</a></li>
+    <li><a href="http://bbrinck.com">Ben Brinckerhoff's blog</a></li>
+    <li><a href="http://magneticormosaic.com">Magnetic or Mosaic music</a></li>
+    <li><a href="http://www.foresightphoto.com">Foresight Aerial Photos</a></li>
+    <li><a href="http://www.wastedbrains.com">Dan's wastedbrains</a></li>
     <li><a href="http://del.icio.us/wastedbrains">my del.icio.us</a></li>
+    <li><a href='http://github.com/danmayer'>Dan Mayer on Github</a></li>
+    <li><a href="http://resume.mayerdan.com">Dan Mayer's Resume</a></li>
   </ul>
 </div>
 
