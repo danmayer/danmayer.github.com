@@ -16,7 +16,14 @@ I just wanted a place I can list ideas as I have them and then post links to eit
 * combiner allows multiple micro apps / apis to be combined by connecting them feeding one into another JSON can be uploaded or output nice html wysiwyg interface, has a container app for app running.
 * google map game... point on a map, red virus starts to spread... survive as long as possible, traveling and trying to be in the last city overtaken by the virus... Like the opposite of pandemic 2
 * community chess play as a team. (you make random moves in games with a collective group of people, your score is the aggregate of how many games you win. You never end up making a move in a game against yourself, but you can be in N/2 total games at any time.)
+* build something liked his but perhaps for stocks or ruby community? http://disqus.com/gravity/
 
+# Posts for API reviews
+
+* review https://www.codeship.io/
+* review nitrous.io 
+* review some of the online schools / code academy
+*  
 # Solved past Ideas
 
 * Better local development environment configuration: 
