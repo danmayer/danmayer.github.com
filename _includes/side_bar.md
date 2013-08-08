@@ -46,6 +46,7 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <li><a href="http://erniemiller.org">Ernie Miller's dev blog</a></li>
     <li><a href="http://www.naildrivin5.com/">David Copeland's dev blog</a></li>
     <li><a href="http://chadfowler.com">Chad Fowler's blog</a></li>
+    <li><a href="http://therealadam.com">The Real Adam's blog</a></li>
     <li><a href="http://austenito.com">Austen Ito's blog</a></li>
     <li><a href="http://http://tpitale.com">Tony Pitale's blog</a></li>
     <li><a href="http://www.timschmelmer.com">Tim Schmelmer on code</a></li>
