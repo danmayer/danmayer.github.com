@@ -43,11 +43,13 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <li class="nav-header">Developer Links</li>
     <li><a href="http://avdi.org/devblog/">Avdi's development blog</a></li>
     <li><a href="http://gilesbowkett.blogspot.com/">Giles Bowkett Ruby and Music</a></li>
-    <li><a href="http://erniemiller.org/">Ernie Miller's dev blog</a></li>
+    <li><a href="http://erniemiller.org">Ernie Miller's dev blog</a></li>
     <li><a href="http://www.naildrivin5.com/">David Copeland's dev blog</a></li>
     <li><a href="http://chadfowler.com">Chad Fowler's blog</a></li>
-    <li><a href="http://austenito.com/">Austen Ito's blog</a></li>
-    <li><a href="http://devver.wordpress.com/">Archived Devver blog</a></li>
+    <li><a href="http://austenito.com">Austen Ito's blog</a></li>
+    <li><a href="http://http://tpitale.com">Tony Pitale's blog</a></li>
+    <li><a href="http://www.timschmelmer.com">Tim Schmelmer on code</a></li>
+    <li><a href="http://devver.wordpress.com">Archived Devver blog</a></li>
   </ul>
 </div>
 
