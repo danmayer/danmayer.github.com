@@ -1,4 +1,5 @@
-#Dan Mayer's Developer Blog
+Dan Mayer's Developer Blog
+===
 
 ## Todos
 
@@ -7,16 +8,13 @@
 * better newline detection / fixes on import
 * pick using tags or categories or both and import them
 * try to recover some of the really old images from banddesigns url
-* alter / improve the layout
 * twitter integration?, show recent tweets
-* add link roll back to other bloggers etc
 * Coderwall integration (Achievements, projects, etc)
 
 ## Topic / Post Ideas
 
 * DCI is sort of interesting but seems to go against LOC==bugs and Kingdom of Nouns post which really makes me upset to see DCI with .excute methods seems close to what I like and envision but actually to heavy weight
-  * http://vimeo.com/8235574     
-* Improve JS runner to handle multiple examples, and do a post about that as a plugin and show some usage examples
+  * http://vimeo.com/8235574
 * post about JS titles I saw and incorporated along with having JS runner allow users to activate some of the example code.
     * <div class='blog-header' data-title='Bug to code ratios'></div> 
 * Graphite unused view layout / partial tracking
@@ -25,7 +23,7 @@
 * Automate everything, all the way down (chef/ec2, dot files / emacs, Boxen looks cool because of this, etc)
 * Tiny blog post about copy_files_and_maintain_structure method for ec2 copying
 * Fixing and improving my emacs setup, with links to some of the places I picked up tips, Avdi's blog, etc
-* Play with some of the easy to build automated mobile apps to build a silly app
+* Play with some of the easy to build automated mobile apps to build a silly app (possibly review for api reviews)
 * Build something random to mashup Spotify play with artist info and reviews pulled from wikipedia, etc
 * just include in your actual test class the module then hit methods on test class itself. (do this for nothing calendar and blog post about it)
 * Best things to happen to developers, AWS ec2 and instance / cheap ways to test all sorts of infrastructure. Github and all the great tools and integration around the github community. Online courses / education. Easy payments (stripe, square, etc)… Lacking from this list is great stuff from google, who actually has more restrictions and issues working with there data and apis… Try just getting some search data out of there system… etc Great time to be a developer
