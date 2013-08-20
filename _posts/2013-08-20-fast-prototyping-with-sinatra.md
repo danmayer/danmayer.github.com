@@ -82,6 +82,8 @@ Great we have an app how do we get it out there for the world to see? For person
 
 Following the steps above it how I start most of my Sinatra apps these days. Getting me up and running very quickly so that I can focus on the goals at hand and not worry about some of the initial app creation boilerplate. I have used this on a couple projects now and I am pretty happy with my Sinatra setup. I have continued to patch and evolve my base Sinatra template, and I expect it will continue to improve over time.
 
+I built both [blog2ebook](http://blog2ebook.picoappz.com/) and the [Code Churn](http://churn.picoappz.com/) site using Sinatra Template, if you would like to checkout some examples.
+
 #### Like the idea but not my Sinatra Template, Alternatives
 
 * [Zapnap's Sinatra Template](https://github.com/zapnap/sinatra-template)
