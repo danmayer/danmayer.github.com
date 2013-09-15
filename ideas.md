@@ -17,6 +17,7 @@ Project Ideas
 * community chess play as a team. (you make random moves in games with a collective group of people, your score is the aggregate of how many games you win. You never end up making a move in a game against yourself, but you can be in N/2 total games at any time.)
 * build something like this but perhaps for stocks or ruby community projects / posts / tweets? http://disqus.com/gravity/
 * Test results collector api, just a API that collects test time, speed, # failures, which tests failed, etc and reports over time
+* paid version of http://www.free-ocr.com/ using open source OCR tools
 
 Posts for API reviews
 ===
