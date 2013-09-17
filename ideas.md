@@ -28,6 +28,19 @@ Posts for API reviews
 * review travis CI
 * review https://kraken.io/ image optimization
 * review/try http://www.iron.io/ possibly to make ebook https://github.com/harrisj/iron_ebooks 
+* Blog post on some work related to the "[ruby-6] Metaprogramming challenge" search email for details but
+    * New Relic is looking for another "Ruby Instrumentation Engineer" chellange
+    * https://gist.github.com/3631742
+    
+          Your challenge, should you choose to accept it, is to write a Ruby library that will modify an existing program to output the number of times a specific method is called. 
+
+          You solution library should be required at the top of the host program, or via ruby's -r flag (i.e. ruby -r ./solution.rb host_program.rb)
+
+          Your solution library should read the environment variable COUNT_CALLS_TO to determine the method it should count.  Valid method signatures are Array#map!, ActiveRecord::Base#find, Base64.encode64, etc.
+
+          Your solution library should count calls to that method, and print the method signature and the number of times it was called when the program exits.
+
+          Also, your solution should have a minimal impact on the program's running time.  Sorry set_trace_func"
  
 Solved past Ideas
 ===
