@@ -6,7 +6,7 @@ tags: [ruby, testing]
 ---
 {% include JB/setup %}
 
-This post is a cross-post with the livingsocial tech blog. Livingsocial was nice enough to help opensource smokescreen so I could blog about it.
+This post is a cross-post with the [livingsocial tech blog](https://techblog.livingsocial.com/blog/2013/09/19/smokescreen-smoke-tests-for-ruby/#disqus_thread). Livingsocial was nice enough to help opensource smokescreen so I could blog about it.
 
 There is a staggering number of definitions of [smoke testing](http://en.wikipedia.org/wiki/Smoke_testing), and a good subset about how it relates to software development. I think the most common definition related to software can be quoted from the wikipedia article, "A subset of test cases that cover the most important functionality of a component or system." You can also find some good explanations covering [smoke tests on stack overflow](http://stackoverflow.com/questions/745192/what-is-a-smoke-testing-and-what-will-it-do-for-me). 
 
