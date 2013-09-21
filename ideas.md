@@ -51,3 +51,4 @@ Solved past Ideas
   * How to allow better overrides for multiple systems different dev configurations possibly different server deployments?
   * Looks like best solution is [figaro rails configuration](https://github.com/laserlemon/figaro)
 * Tiny micro services from people, this is pretty cool [fiverr](http://fiverr.com/)
+* Code language detection https://help.github.com/articles/my-repository-is-marked-as-the-wrong-language, I could use this for churn language detection and possibly to break down % of a file that is html, js, CSS
