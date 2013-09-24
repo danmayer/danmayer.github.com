@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JS bookmarklet to switch between environment & shell function to open branch in github"
+title: "JS bookmarklet to switch between environment and shell function to open branch in github"
 category: javascript
 tags: [javascript]
 ---
@@ -30,7 +30,7 @@ This is a really simple solution, which is very handy. Recently, I have found my
 
 I have been automating tasks with shell functions as well. The same basic idea as the bookmarklets above of having a tiny function to replace a repetitive error prone task. I think encoding logic like this into a bookmarklet or a shell function is a great way to remember the tricks you learn, and encode the knowledge in a way that is sharable. In fact [@tcopeland](https://twitter.com/tcopeland) shared a great shell function with me recently, to quickly jump from the terminal to my branch view in the browser.
 
-function open_branch { open http://github.com/danmayer/\`basename \`pwd\`\`/tree/$(git symbolic-ref head| sed -e 's/.*\///g'); }
+    function open_branch { open http://github.com/danmayer/\`basename \`pwd\`\`/tree/$(git symbolic-ref head| sed -e 's/.*\///g'); }
 
 The code above will open my browser to github on my current project and the branch I am currently working on.
 
