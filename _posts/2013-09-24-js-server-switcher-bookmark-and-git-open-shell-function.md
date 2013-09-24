@@ -15,16 +15,14 @@ Basically when switching environments I was manually applying a regex replacemen
 ##### Example url swapping bookmarklets
 
 
-{% highlight javascript %}	
-#bookmark named to_development
-javascript:(document.location.href = document.location.href.replace(document.location.host,'localhost:3000'))
-	
-#bookmark named to_churn_staging
-javascript:(document.location.href = document.location.href.replace(document.location.host,'churn-site-staging.heroku.com').replace(':3000',''))
-	
-#bookmark named to_churn_production
-javascript:(document.location.href = document.location.href.replace(document.location.host,'churn.picoappz.com').replace(':3000',''))
-{% endhighlight %}
+    #bookmark named to_development
+    javascript:(document.location.href = document.location.href.replace(document.location.host,'localhost:3000'))
+    	
+    #bookmark named to_churn_staging
+    javascript:(document.location.href = document.location.href.replace(document.location.host,'churn-site-staging.heroku.com').replace(':3000',''))
+    	
+    #bookmark named to_churn_production
+    javascript:(document.location.href = document.location.href.replace(document.location.host,'churn.picoappz.com').replace(':3000',''))
 	
 This is a really simple solution, which is very handy. Recently, I have found myself building a hand full of tiny custom bookmarklets to help with little tasks. More than JS bookmarklets, you can use tricks like this all over the place.
 
