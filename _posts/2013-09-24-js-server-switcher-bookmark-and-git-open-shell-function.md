@@ -35,3 +35,7 @@ I have been automating tasks with shell functions as well. The same basic idea a
 The code above will open my browser to github on my current project and the branch I am currently working on.
 
 I use a number of other shell functions to simplify my day to day tasks. I highly recommend building some of your own functions and getting them checked into your dotfiles repo (you do have your dotfiles in a git right?). If you have any great bookmarklets or shell functions definitely let me know by commenting or sending a note to [@danmayer](http://twitter.com/danmayer) on twitter.
+
+##### update
+
+In response to this post, [Andy A.](https://github.com/webandy) sent me a improved version of the bash `open_branch` function. Beyond being more flexible it adds some additional functionality like displaying your PRs and latest commit. Check out his improve [github helper shell functions](https://github.com/andyatkinson/dotfiles/blob/master/bash/functions)
