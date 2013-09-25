@@ -1,13 +1,7 @@
 require 'rake'
 require 'nokogiri'
-require 'ruby-debug'
 require 'time'
 require File.join(File.dirname(__FILE__), "downmark_it")
-
-desc "Start jekyll server"
-task :start_server do
- `jekyll --server --pygments`
-end
 
 namespace :importer do
 
