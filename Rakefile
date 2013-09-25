@@ -2,7 +2,9 @@ require "rubygems"
 require 'rake'
 require 'yaml'
 require 'time'
-require './importer'
+
+#enable just for importing
+#require './importer'
 
 desc "Start jekyll server"
 task :start_server do
