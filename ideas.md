@@ -9,6 +9,7 @@ This is a page, where I can list ideas as I have them. Then post links to either
 Project Ideas
 ===
 
+* pre git commit hook spellcheck, cmd-line likely using aspell or something build in osx 
 * Sinatra app that just polls mysql slow and displays it with history etc
 * github -> kindle reader format the code for kindle readability and have links / section browsing for the files.
 * remote ping pong pair programming over a shared updated git repo or gist.
@@ -18,6 +19,16 @@ Project Ideas
 * build something like this but perhaps for stocks or ruby community projects / posts / tweets? http://disqus.com/gravity/
 * Test results collector api, just a API that collects test time, speed, # failures, which tests failed, etc and reports over time
 * paid version of http://www.free-ocr.com/ using open source OCR tools
+* gem to monitor and send live line number / code usage over to server (find most common hot spots, least used code, and dead code) (http://codecovtest.herokuapp.com/, blog about the failed attempt where ruby keeps segfaulting)
+   * http://www.rubyinside.com/how-to-create-a-ruby-extension-in-c-in-under-5-minutes-100.html
+   * http://blog.jcoglan.com/2012/07/29/your-first-ruby-native-extension-c/
+   * https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/
+   * http://www.ruby-doc.org/stdlib-2.0.0/libdoc/coverage/rdoc/Coverage.html
+   * https://github.com/sj26/ruby-1.9.3-p0/blob/master/ext/coverage/coverage.c
+* web app that crawls site and finds common errors like mixed content warnings, missing images, broken links, etc, etc
+* crawler to find dead CSS
+* crawler to find dead JS
+* counters app, just tiny up down counters users can create and increment with icons and images private / public, user only or public can increment / decrement
 
 Posts for API reviews
 ===
