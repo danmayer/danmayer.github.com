@@ -22,6 +22,9 @@
     `docker run -p 49176:5601 -p 49175:514 -d ehazlett/logstash:latest`
     c31525eeb794        ehazlett/logstash:latest   /bin/sh -e /usr/loca   2 days ago          Up 2 days           49170->9200, 49171->9300, 49172->9301, 49173->9302, 49174->9292, 49175->514, 49176->5601
 
+    * adding redis which I pulled out at some point
+    docker run -p 6379 -i -t johncosta/redis /usr/bin/redis-server
+
 #### Issues
 * move to vagrant with vagrant up against digital ocean
 * multiple docker boxes trying to claim port 80 http://stackoverflow.com/questions/18497564/assigning-vhosts-to-docker-ports
