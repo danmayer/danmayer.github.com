@@ -2,13 +2,13 @@
 layout: post
 title: "Configuring a new OS X Mavericks development machine"
 category: Programming
-tags: [Programming, Development, OSX, Devops]
+tags: [Programming, Development, OSX, DevOps]
 ---
 {% include JB/setup %}
 
 These are the steps I took to setup a new OS X 10.9 (Mavericks) machine for development. I have heard on twitter that each time you setup a new machine you get 1% better and at this rate you can become good at it in a few hundred years! Ha while that seems to be true I am getting happier with the process and I am now at least trying to document it. This post won't serve as a rich tutorial on the configuration process, but should give some ideas on good ways to setup your own machine or ideas on how to fix some common gotchas I ran into with my setup.
 
-I know this is a very opinionated approach without much explination, so if you are new to development I recommend finding richer tutorial as a this is largely intended for my own documentation.
+I know this is a very opinionated approach without much explanation, so if you are new to development I recommend finding richer tutorial as a this is largely intended for my own documentation.
 
 # Initial setup steps
 
@@ -16,7 +16,7 @@ I know this is a very opinionated approach without much explination, so if you a
 * update password on account / machine (if one was previously configured)
 * install all OS X updates
 * install X code (this and the updates can be slow get this started as soon as you can)
-   * options download install pretty much all the requested pacakges
+   * options download install pretty much all the requested packages
    * cmd line `xcode-select --install`
 
 # While Xcode installs
@@ -34,7 +34,7 @@ I know this is a very opinionated approach without much explination, so if you a
 
 # After Xcode, install / run Boxen
 
-Installing boxen will take a long time, so you can continue any download and configuration steps while it runs although some things you want to install are dependant on boxen completing.
+Installing Boxen will take a long time, so you can continue any download and configuration steps while it runs although some things you want to install are dependent on Boxen completing.
 
 * [Boxen setup steps](https://github.com/boxen/our-boxen)
     
@@ -46,13 +46,13 @@ Installing boxen will take a long time, so you can continue any download and con
       script/boxen
 
 * install [iterm2](http://www.iterm2.com/#/section/home)
-* install coco-emacs or aquamacs
+* install coco-emacs or Aquamacs
 * install zsh brew install zsh
-   * change defauly shell to zsh `chsh -s /bin/zsh`
+   * change default shell to zsh `chsh -s /bin/zsh`
    * verify your running zsh after opening new terminal `ps -o comm $$`
-* install pygments `sudo easy_install Pygments` #my dotfiles use Pygments
+* install Pygments `sudo easy_install Pygments` #my dotfiles use Pygments
 * git clone [dotfiles](https://github.com/danmayer/dotfiles), or however you sync your environment
-  * sync your non git dot files encypted via scp or pgp dropbox sync (I keep .env_extras that contains some senative keys so it is not stored on github) 
+  * sync your non git dot files encypted via scp or pgp dropbox sync (I keep .env_extras that contains some sensative keys so it is not stored on github) 
 * configure VPN (if needed)
 * install [Mou](http://mouapp.com/) (markdown editor)
 * install campfire client ([Propane](http://propaneapp.com/))
@@ -73,7 +73,8 @@ Installing boxen will take a long time, so you can continue any download and con
 
 * begin to git clone all the things you love
 * start to rbenv install all the Ruby versions you need
-* 
+* bundle install all the things
+* verify tests are passing or apps start
 
 ## Updates Since installed
 
@@ -89,5 +90,6 @@ Installing boxen will take a long time, so you can continue any download and con
 ## Possible Improvements
 
 * Should I install emacs starter kit or start over? I need to fix my emacs setup
-* Automated way to reset all the osx default apps to open file types?
-* 
+* Automated way to reset all the OS X default apps to open file types?
+* Automate some of the app downloads and installs
+* Automate some of the common ruby version installs

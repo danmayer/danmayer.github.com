@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Accesing and API"
+title: "Accesing an API"
 category: Programming
 tags: [Programming, Development, APIs]
 ---
 {% include JB/setup %}
 
+Accessing data via an api is a simple concept that developers do every day. While it is a easy task, the complexity caused by the uncertainty of an api can quickly show how complicated and difficult programming can become. Through a series of examples I am trying to explore some of the issues developers face when pulling data over a web-api, and exploring some of the common patterns and solutions that people arrive at.
+
 ## Simple
 
-Accessing an api is simple right something like
+Accessing an api is simple right! Let's start with an easy example:
 
 	class Car
 	  API_ROOT = 'https://some-endpoint.com/'
@@ -73,3 +75,8 @@ At this point more complex logic may evolve
 	end
 
 	car = Car.get(22)
+	
+# Api Call Inception
+
+At some point as abstractions and improvements are added you might run into a problem that you you wish to solve with another API call. At that moment you have reached API call Inception, where there are api calls in your api calls. It might sound rediculous, but lets say you are trying to allow a cache key to be broken across distributed systems that all use a shared object. In our example a car. In standard Rails world you could rely on [ActiveRecordModel#cache_key](https://github.com/rails/rails/blob/04cda1848cb847c2bdad0bfc12160dc8d5547775/activerecord/lib/active_record/integration.rb#L48), but that breaks down across multiple systems.
+
