@@ -80,12 +80,11 @@ Installing Boxen will take a long time, so you can continue any download and con
 
 * [rbenv to get latest ruby 1.9.3-p484 thanks @obfuscurity](https://twitter.com/obfuscurity/status/403776103929888768)
 
-	  cd /opt/boxen/rbenv/plugins/ruby-build
-	  git pull; cd
-	  rbenv install 1.9.3-p484
-	  rbenv global 1.9.3-p484
-	  gem install bundler
-
+    	cd /opt/boxen/rbenv/plugins/ruby-build
+	    git pull; cd
+	    rbenv install 1.9.3-p484
+	    rbenv global 1.9.3-p484
+	    gem install bundler
 
 ## Possible Improvements
 
