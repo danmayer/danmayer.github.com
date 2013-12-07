@@ -55,4 +55,4 @@ http://coreos.com/docs/etcd/
 #### thanks
 
 * https://github.com/fgrehm/ventriloquist/issues/17
-* dhassler
+* dhassler https://github.com/dotcloud/docker/issues/1555
