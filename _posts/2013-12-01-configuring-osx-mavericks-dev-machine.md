@@ -85,6 +85,8 @@ Installing Boxen will take a long time, so you can continue any download and con
 	    rbenv install 1.9.3-p484
 	    rbenv global 1.9.3-p484
 	    gem install bundler
+	    
+* configure default global node.js `nodenv global v0.10.21`	    
 
 ## Possible Improvements
 
