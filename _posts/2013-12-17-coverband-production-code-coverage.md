@@ -6,16 +6,15 @@ tags: [ruby, metrics, code-quality]
 ---
 {% include JB/setup %}
 
-
 Rubyists have long used code coverage to help guide development. While our coverage reports are generated from tests, I wanted to see coverage of the production system as it was getting exercised by our users. After discussing with a number of developers and some failed attempts, I built [coverband](https://github.com/danmayer/coverband) to record production code coverage.
 
-### Why production code coverage
+## Why production code coverage
 
 Dead code is a bug waiting to happen. It makes reasoning about a system more complicated, maintaining large codebases is hard enough without thousands of lines of un-executed code.
 
-If your team is managing an aging production system, a rotating group of developers and years of refactoring can create many dead code paths. It is often easy to find all the endpoints being used with data from [new relic](http://newrelic.com), or any other web analytics. It is much harder to find all the helpers, unused model methods, and other code that has been refactored out of use. Using Coverband, we have found entire models which no longer get executed by any code path, but still had test coverage. It also made it easy to see conditional paths which are no longer followed in all directions. Dead code often has test coverage slowing your test suite, and occasionally developers have to spend time maintaining or fixing it when upgrading Ruby versions or frameworks. The less code you have the easier a system is to reason about, and the more clear the abstractions become.
+If your team is managing an aging production system, a rotating group of developers and years of refactoring can create many dead code paths. It is often easy to find all the endpoints being used with data from [New Relic](http://newrelic.com), or any other web analytics. It is much harder to find all the helpers, unused model methods, and other code that has been refactored out of use. Using Coverband, we have found entire models which no longer get executed by any code path, but still had test coverage. It also made it easy to see conditional paths which are no longer followed in all directions. Dead code often has test coverage slowing your test suite, and occasionally developers have to spend time maintaining or fixing it when upgrading Ruby versions or frameworks. The less code you have the easier a system is to reason about, and the more clear the abstractions become.
 
-### How Does it work
+## How Does it work
 
 Initially I was trying to use Ruby's standard library [Coverage](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/coverage/rdoc/Coverage.html). I tried to use Coverage on both Ruby 1.9.3 and Ruby 2.0 and ran into issues with it crashing. It didn't seem to play nicely with the idea of sampling the requests. It would often run smoothly for a short while, but would eventually segfault even on tiny example applications.
 
@@ -27,7 +26,7 @@ While I think there are various improvements that can be made to Coverband, afte
 
 This post will not cover the full usage and setup, as Coverband is under active development. The current detailed instructions can be found in the project's Readme. If you want to try it out, follow the setup instructions on the [Coverband github page](https://github.com/danmayer/coverband). Any issues or feature requests can be passed along as github issues.
 
-### What do you get
+## What do you get
 
 To avoid reinventing the wheel, Coverband coverage output looks just like most Ruby users have come to expect. It outputs in a [Simplecov](https://github.com/colszowka/simplecov) compatible format. This makes it easy to use any [Simplecov formatter](https://github.com/danmayer/coverband/blob/master/lib/coverband/reporter.rb#L51), which is what Coverband does by default.
 
