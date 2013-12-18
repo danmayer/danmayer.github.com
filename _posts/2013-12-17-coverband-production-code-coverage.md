@@ -1,16 +1,17 @@
 ---
 layout: post
-title: "Coverband: Production Code Coverage"
+title: "Coverband Production Code Coverage"
 category: ruby
 tags: [ruby, metrics, code-quality]
 ---
 {% include JB/setup %}
 
+
 Rubyists have long used code coverage to help guide development. While our coverage reports are generated from tests, I wanted to see coverage of the production system as it was getting exercised by our users. After discussing with a number of developers and some failed attempts, I built [coverband](https://github.com/danmayer/coverband) to record production code coverage.
 
 ### Why production code coverage
 
-Dead code is a bug waiting to happen. It makes reasoning about a system more complicated -- maintaining large codebases is hard enough without thousands of lines of un-executed code.
+Dead code is a bug waiting to happen. It makes reasoning about a system more complicated, maintaining large codebases is hard enough without thousands of lines of un-executed code.
 
 If your team is managing an aging production system, a rotating group of developers and years of refactoring can create many dead code paths. It is often easy to find all the endpoints being used with data from [new relic](http://newrelic.com), or any other web analytics. It is much harder to find all the helpers, unused model methods, and other code that has been refactored out of use. Using Coverband, we have found entire models which no longer get executed by any code path, but still had test coverage. It also made it easy to see conditional paths which are no longer followed in all directions. Dead code often has test coverage slowing your test suite, and occasionally developers have to spend time maintaining or fixing it when upgrading Ruby versions or frameworks. The less code you have the easier a system is to reason about, and the more clear the abstractions become.
 
@@ -32,6 +33,7 @@ To avoid reinventing the wheel, Coverband coverage output looks just like most R
 
 ![image](https://raw.github.com/danmayer/coverband/master/docs/coverband_details.png)
 
-##### Crosspost / thanks Livingsocial
+
+##### Thanks Livingsocial
 
 This post is a cross-post about [coverband on the Livingsocial tech blog](https://techblog.livingsocial.com/blog/2013/12/17/coverband-production-ruby-code-coverage/). I work at Livingsocial and we are hiring. At work we are using coverband in production on some applications to help drive refactoring and cleanup efforts.
