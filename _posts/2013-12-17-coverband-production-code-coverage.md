@@ -2,7 +2,7 @@
 layout: post
 title: "Coverband Production Code Coverage"
 category: ruby
-tags: [ruby, metrics, code-quality]
+tags: [ruby, metrics]
 ---
 {% include JB/setup %}
 
@@ -31,7 +31,6 @@ This post will not cover the full usage and setup, as Coverband is under active 
 To avoid reinventing the wheel, Coverband coverage output looks just like most Ruby users have come to expect. It outputs in a [Simplecov](https://github.com/colszowka/simplecov) compatible format. This makes it easy to use any [Simplecov formatter](https://github.com/danmayer/coverband/blob/master/lib/coverband/reporter.rb#L51), which is what Coverband does by default.
 
 ![image](https://raw.github.com/danmayer/coverband/master/docs/coverband_details.png)
-
 
 ##### Thanks Livingsocial
 
