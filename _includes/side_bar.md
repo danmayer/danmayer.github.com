@@ -29,9 +29,10 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
     <li class="nav-header">Projects</li>
-    <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
     <li><a href="http://blog2ebook.picoappz.com/">Blog2Ebook: convert blogs to Kindle ebooks</a></li>
     <li><a href="http://churn.picoappz.com">Churn: track churn of your code over time</a></li>
+    <li><a href="https://github.com/danmayer/coverband">Coverband: Ruby production code coverage</a></li>
+    <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
     <li><a href="http://picoappz.com">Picoappz, tiny side project apps</a></li>
     <li><a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a></li>
     <li>more baking in the oven...</li>
