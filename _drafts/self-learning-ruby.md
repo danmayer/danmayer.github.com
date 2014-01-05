@@ -11,9 +11,7 @@ tags: [Programming, Development, Learnings, Education]
 * http://www.codecademy.com/
 
 * http://jumpstartlab.com/
-  * https://www.gschool.it/
   
-* http://www.starterleague.com/
 
 * https://www.khanacademy.org/cs
 
@@ -27,28 +25,35 @@ tags: [Programming, Development, Learnings, Education]
 
 * https://www.udemy.com/courses/Technology
 
-* https://www.codeschool.com/
-
 * https://onemonthrails.com/
 
 * http://tryruby.org/levels/1/challenges/0
 
+### Teaching apps
+
+* http://techcrunch.com/2013/12/09/codecademy-releases-its-first-educational-app-a-k-a-my-new-subway-time-killer/
+
+### Fully Free with additional pieces at small cost
+
+* https://www.codeschool.com/
+* https://rubymonk.com
+
 ### Small cost
 
 * http://thenextweb.com/academy/class/from-rails-zero-to-hero
+* https://rubyoffrails.com/
+* https://www.codeschool.com/
 
+### Bootcamps
 
+* http://www.launchacademy.com/
+* https://www.bloc.io/
+* https://www.gschool.it/
+* http://www.starterleague.com/
 
-Posts
+### Posts / Articles / Tutorials
 
 * https://medium.com/learning-to-code/f5b3cc66659a
-
 * http://net.tutsplus.com/tutorials/ruby/the-best-way-to-learn-ruby-on-rails/
-
-* 
-
-also
-http://tutorials.jumpstartlab.com/
-
-particularly 
-http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html
+* http://tutorials.jumpstartlab.com/
+  * particularly http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html
