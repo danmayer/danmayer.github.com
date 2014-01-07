@@ -27,6 +27,7 @@ After that learning more and getting a deeper understand of a programming langua
   * Jumpstart Lab offers further [self learning Ruby and Javascript tutorials](http://tutorials.jumpstartlab.com/)
 * [CodeAcademy: free mobile 1 hour programming intro app](http://techcrunch.com/2013/12/09/codecademy-releases-its-first-educational-app-a-k-a-my-new-subway-time-killer/), a fun way to learn with spare time on your phone.
 * Khan Academy: one of the first free online classes, [offers a great self guided CS set of courses](https://www.khanacademy.org/cs)
+* [Rubymonk: free interactive tutorials](https://rubymonk.com)
 * [Code.org: part of the "hour of code" initiative, it offers tutorials and additional resources to get started learning to code](http://code.org/learn)
 
 ### Free, but unstructured
@@ -36,14 +37,12 @@ After that learning more and getting a deeper understand of a programming langua
 
 ### Mostly Free (some additional small upsells)
  
-* https://www.codeschool.com/
-* https://rubymonk.com
+
 
 ### Small cost (with some free)
 
-* http://thenextweb.com/academy/class/from-rails-zero-to-hero
-* https://rubyoffrails.com/
-* https://www.codeschool.com/
+* [code school: free beginner courses](https://www.codeschool.com/)($29 a month for intermediate and advanced courses)
+* [RubyOffRails: videos, mentorship, office hours](https://rubyoffrails.com/)($39 a month and 80% Discount for Women)
 * [Udemy: self paced video training technology courses](https://www.udemy.com/courses/Technology) (some free)
 * [Udacity: Self paced small cost self contained online coursed](https://www.udacity.com/) (some free)
 * [One Month Rails: self paced video tutorials and online community](https://onemonthrails.com/) ($99)
@@ -52,11 +51,15 @@ After that learning more and getting a deeper understand of a programming langua
 
 * [Coursera: Free university support online courses](https://www.coursera.org/category/cs-programming), these couses have start times enrollment periods, and require keeping up with the classes pace.
 
-### Bootcamps
+### Bootcamps (want to make a career of it?)
 
-* http://www.launchacademy.com/
-* https://www.bloc.io/
+* [Launch Academy](http://www.launchacademy.com/) 
+  * $12,500
+  * 6 weeks interactive
+  * 10 week in person bootcamp
+  * career placement support
 * https://www.gschool.it/
+* https://www.bloc.io/
 * http://www.starterleague.com/
 
 ### Posts / Articles / Tutorials
