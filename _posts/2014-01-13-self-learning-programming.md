@@ -31,6 +31,7 @@ After that, learning more and getting a deeper understand of a programming langu
 * Khan Academy: one of the first free online classes, [offers a great self guided CS set of courses](https://www.khanacademy.org/cs)
 * [Rubymonk: free interactive tutorials](https://rubymonk.com)
 * [Code.org: part of the "hour of code" initiative, it offers tutorials and additional resources to get started learning to code](http://code.org/learn)
+* [Why's Poignant guid to Ruby](http://mislav.uniqpath.com/poignant-guide/) - the most interesting and artist programming book you will ever find.
 
 ### Free - Unstructured
 
@@ -78,6 +79,11 @@ After that, learning more and getting a deeper understand of a programming langu
   * on-line video / mentoring bootcamp
   * approximately 12 weeks, but learn at your own pace
   * online meeting with mentor 3 times a week.
+* [Betamore Academy](http://www.betamore.com/academy)
+  * $3,000 - $3,400 
+  * 10 or 12 weeks
+  * front-end or back-end course focus, in person bootcamp
+  * career placement support 
 * [coding dojo](http://codingdojo.com)
   * $9,850
   * 12 weeks in person bootcamp
@@ -98,6 +104,10 @@ After that, learning more and getting a deeper understand of a programming langu
   * $9,000
   * 8 weeks in person bootcamp
   * mobile / iOS focus
+  * career placement support
+* [Metis](http://www.thisismetis.com/) - with the guys from ThoughtBot
+  * $12,500
+  * 12 weeks in person bootcamp
   * career placement support
 
 ### No Silver Bullet
