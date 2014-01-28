@@ -27,14 +27,14 @@ We want to get more benefits than just moving from various custom presenters and
 
 * [RABL](https://github.com/nesquena/rabl)
 * [Jbuilder](https://github.com/rails/jbuilder)
-* ...
+* ... list some more examples
 
 For those that might just be interested in the best way of building custom JSON responses of mapping Ruby objects to JSON, the change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated.
 
 
-### Benifits Beyond JSON Formats
+### Benefits Beyond JSON Formats
 
-One piece of the puzzle is following JSON formats. Right now many APIs are hand rolled and the structure of the data isn't ideal. Many apis are fairly loose and inconsistant in terms of how they serialize data. Some JSON format standards could help us improve that, as well as provide validators that could be integrated into the testing process. Others only help in terms of defining where endpoints exist, how endpoints are accessed, and what the responding data looks like. 
+One piece of the puzzle is following JSON formats. Right now many APIs are hand rolled and the structure of the data isn't ideal. Many apis are fairly loose and inconsistent in terms of how they serialize data. Some JSON format standards could help us improve that, as well as provide validators that could be integrated into the testing process. Others only help in terms of defining where endpoints exist, how endpoints are accessed, and what the responding data looks like. While these are interesting, they are more interesting when paired with tooling based on these standards. Most of the options mention below utilize one of these formats and some could support multiple formats in conjunction which seems promising.
 
 * [JSON API](http://jsonapi.org/)
   * A format by [Yehuda Katz](http://twitter.com/wycats) and [Steve Klabnik](http://twitter.com/steveklabnik).
@@ -54,12 +54,12 @@ One piece of the puzzle is following JSON formats. Right now many APIs are hand 
   * While Avro has a whole set of tooling one can choose to just support its format
   * The format helps define and enforce good data serialization habits.
   * Good language and platform support
-  * Useful beyond APIs hadoop and log processors, could utilize object and message serialization. Which would improve some issues we have seen with pure JSON
+  * Useful beyond APIs Hadoop and log processors, could utilize object and message serialization. Which would improve some issues we have seen with pure JSON
 
 
 ### Why not Thrift, Protocol Buffers
 
-The largest reason is in the end we want human readable APIs. We want to be able to debug and test with standard curl commands. We want to be able to use simple Ajax calls without additional tooling. The benifits of Thrift and Protocol Buffers seem to not be large enough to force our stack to always use non standard tooling and limit our choices in terms of integrating other tooling. Finally the support for these formats isn't quite as strong as we would like in terms of native mobile support. The only one of the data serialization and RPC systems that seems to not have as many limitations is Apache Avro, which will be covered a bit further below in the comparision list.
+The largest reason is in the end we want human readable APIs. We want to be able to debug and test with standard curl commands. We want to be able to use simple Ajax calls without additional tooling. The benefits of Thrift and Protocol Buffers seem to not be large enough to force our stack to always use non standard tooling and limit our choices in terms of integrating other tooling. Finally the support for these formats isn't quite as strong as we would like in terms of native mobile support. The only one of the data serialization and RPC systems that seems to not have as many limitations is Apache Avro, which will be covered a bit further below in the comparison list.
 
 
 ### Api Tooling Options
@@ -115,7 +115,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
   * Many example integrations
   * Stub Server support
   * __cons:__
-  * Early code gen tools, not yet stable. Ruby not supported
+  * Early code generation tools, not yet stable. Ruby not supported
   * Documentation of the API lives entirely outside of standard code flows and tools
   * While a open format, it is kind of a odd non-standard format
 
@@ -123,7 +123,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
 
 * [Rails-API](https://github.com/rails-api/rails-api) combined with [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
   * __pros:__
-  * Supports a common and stadardized format [JSON API](http://jsonapi.org/)
+  * Supports a common and standardized format [JSON API](http://jsonapi.org/)
   * Heavily integrated with Rails
   * Great Javascript client support
   * Enforced good data structure for API
@@ -135,7 +135,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
 
 * [Rocket Pants](https://github.com/Sutto/rocket_pants): opinionated rails api framework.
   * __pros:__
-  * Highly integrated into rails and activerecord (AR error support, AR object mapping support.)
+  * Highly integrated into rails and ActiveRecord (AR error support, AR object mapping support.)
   * Most standard rails coding style
   * build in support for easy caching
   * Easy Ruby client generation via [ApiSmith](https://github.com/Sutto/api_smith) integration
@@ -180,7 +180,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
 * [Apache Avro](http://avro.apache.org/docs/1.7.5/index.html)
   * __pros:__
   * Better native support than Thrift or Protocol Buffers, see why [Flurry chose Avro](http://tech.flurry.com/2012/07/12/apache-avro-at-flurry/)
-  * While supporting a pure json format they have a faster binary format as well
+  * While supporting a pure JSON format they have a faster binary format as well
   * Good platform and language support
   * "Simple integration with dynamic languages. Code generation is not required to read or write data files nor to use or implement RPC protocols. Code generation as an optional optimization, only worth implementing for statically typed languages."
   * Advantages in integration with Hadoop and log processing
@@ -201,7 +201,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
   * Extremely simple learning curve, could get up and running quickly
   * Could work with existing APIs
   * Server integration likely doesn't support our needs
-  * IDL generated as a seperate file, no tight server code or comments integration
+  * IDL generated as a separate file, no tight server code or comments integration
   * Supports multiple languages
   * __cons:__
   * Doesn't enforce good data serialization or URI practices
@@ -222,7 +222,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
     * We could take a system like FDoc or Barrister and add tooling to extend it to generate more robust swagger or ioDocs output
   * __cons:__
   * Higher learning curve
-  * Higher maintence costs
+  * Higher maintenance costs
   * Could make a bad call, all the other projects would have more community involvement
   * May be harder to support existing APIs
   * Likely overall looser integration than working with a fully integrated stack
@@ -230,7 +230,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
 
 ### Next Steps Towards Better APIs
 
-It is great that there are so many good options out there to improve tooling around developing APIs. Obviously, there are so many options it isn't really clear what the best option is. The next step seem to be to pick out and implement a couple of the options to explore them in more detail. Either trying a different option for a couple different services or implementing serveral of the options on the same API to see which seems like the best fit. In fact I have already started to do this with Swagger, which is why it has a bit more details describing it than several of the other options. One nice thing about researching all of these options and implementing one of them, has been learning how bad many of my APIs are. Seriously, trying to layer tooling like this on top of an awkward API and data response objects makes it abundantly clear that a poor URI scheme was used. It immediately makes the serializations used for the models seem awkward and overly verbose. Just going through the exercise should improve your APIs. Building a new API with any of the tools above would likely result in a better API because it would force you to really think about the contract the API is describing when it is being implemented.
+It is great that there are so many good options out there to improve tooling around developing APIs. Obviously, there are so many options it isn't really clear what the best option is. The next step seem to be to pick out and implement a couple of the options to explore them in more detail. Either trying a different option for a couple different services or implementing several of the options on the same API to see which seems like the best fit. In fact I have already started to do this with Swagger, which is why it has a bit more details describing it than several of the other options. One nice thing about researching all of these options and implementing one of them, has been learning how bad many of my APIs are. Seriously, trying to layer tooling like this on top of an awkward API and data response objects makes it abundantly clear that a poor URI scheme was used. It immediately makes the serializations used for the models seem awkward and overly verbose. Just going through the exercise should improve your APIs. Building a new API with any of the tools above would likely result in a better API because it would force you to really think about the contract the API is describing when it is being implemented.
 
 I will follow up soon with more specifics on some example implementations of some of the options above. So stay tuned and see you next time.
 
