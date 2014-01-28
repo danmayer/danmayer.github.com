@@ -17,15 +17,22 @@ There were other things we wanted, but this was the most common and most desired
 
 Basically, with the growing number of APIs we wanted something similar to [Google APIs Discovery Service](https://developers.google.com/discovery/). Google's tools are great, but not really an option as they haven't open sourced the document generation, service discovery server, or much language side tooling. What has been open sourced is a [client code generator](https://code.google.com/p/google-apis-client-generator/), which doesn't have as much language support as we would like (Java, Java/GWT, .NET, and PHP). Also, open sourced was the [google-apis-explorer](https://code.google.com/p/google-apis-explorer/) which while cool doesn't quite cover full documentation. Which would work for you if you build out APIs that match their schema, but their supported languages are limited and don't include my primary language Ruby. 
 
-### Why not just a Rails JSON api
+### Why not just standard restful JSON apis
 
-Basically the state of APIs is already like this today. The response formats are slightly different. The documentation is lacking and inconsistent. The clients sometimes are small configurations on rest-client, and sometimes built out a large custom client gems. This makes the tests, caching, usability, a whole new ballgame with each API. So we are looking to get more benefits than just moving from various custom presenters and JSON formatters to a consistent usage of something like [Jbuilder](https://github.com/rails/jbuilder). Similarly the if we are looking for larger improvements, the list of options below can be excluded:
+Basically the state of APIs is already like this today. Api response formats and tools are slightly different. The documentation is lacking and inconsistent. Clients sometimes are thin configurations of [rest-client](https://github.com/rest-client/rest-client), and other times large custom client gems with heavy models. Across many APIs this makes the tests, caching, usability, and matching expectations a new challenge with each API.
+
+We want to get more benefits than just moving from various custom presenters and JSON formatters to a consistent usage of a JSON generator, or specific JSON formats. Since most of our APIs are in Ruby there are a number of tools this means we can look beyond.
 
 * [RABL](https://github.com/nesquena/rabl)
-
+* [Jbuilder](https://github.com/rails/jbuilder)
 
 For those that might just be interested in the best way of building custom JSON responses of mapping Ruby objects to JSON, the change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated.
 
+
+### Beyond formats and validators
+
+*
+* [JSON API](http://jsonapi.org/): A format by [Yehuda Katz](http://twitter.com/wycats) and [Steve Klabnik](http://twitter.com/steveklabnik). The default ember data format 
 
 ### Why not Thrift, Protocol Buffers, or Avro
 
@@ -47,10 +54,21 @@ Avro doesn't seem to have great Ruby support http://www.igvita.com/2010/02/16/da
 
 ### Api Tooling Options
 
+* [Rails-API](https://github.com/rails-api/rails-api) combined with [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
+  * __pros:__
+  * Supports a common and stadardized format [JSON API](http://jsonapi.org/)
+  * Heavily integrated with Rails
+  * Great Javascript client support
+  * Enforced good resource / data structure for API
+  * Simple model for building dynamic clients
+  * __cons:__
+  * No built in documentation support
+  * Little in the way of tooling: validations, client generators, 
+  * Still a work in progress
+  
 * [Rocket Pants](https://github.com/Sutto/rocket_pants): opinionated rails api framework.
   * __pros:__
-  * Highly integrated into rails and activerecord (AR error support, AR object mapping support. 
-)
+  * Highly integrated into rails and activerecord (AR error support, AR object mapping support.)
   * Most standard rails coding style
   * build in support for easy caching
   * Easy Ruby client generation via [ApiSmith](https://github.com/Sutto/api_smith) integration
@@ -73,110 +91,63 @@ Avro doesn't seem to have great Ruby support http://www.igvita.com/2010/02/16/da
 * [Heroics](https://github.com/heroku/heroics): Ruby Client generation from JSON Schema
   * [Generating a Go client](http://www.paasmag.com/2014/01/09/auto-generating-a-go-api-client-for-heroku/)
 
-* [Barrister](http://barrister.bitmechanic.com/)
-
-http://jsonapi.org/
 
 * [RAML](http://raml.org/): A YAML description language for rest-line JSON apis, built by [Mulesoft](http://www.mulesoft.com/)
 * __pros:__
-*  Very polished tooling & extremely good documentation, seems to have community support via [RAML workgroup](http://raml.org/about.html)
-*  Sharable [API notebooks](https://api-notebook.anypoint.mulesoft.com/?ref=apihub) to share example usage and scripts, might be an interesting way to share configuring and usage.
-*  Interactive Documentation
-*  Nearly all components open sourced
-*  __cons:__
-*  Early code gen tools, Ruby not supported
-*  Documentation of the API lives entirely outside of standard code flows and tools
-*  While a open format, it is kind of a odd non-standard format
+* Very polished tooling & extremely good documentation, seems to have community support via [RAML workgroup](http://raml.org/about.html)
+* Sharable [API notebooks](https://api-notebook.anypoint.mulesoft.com/?ref=apihub) to share example usage and scripts, might be an interesting way to share configuring and usage.
+* Interactive Documentation
+* Nearly all components open sourced
+* __cons:__
+* Early code gen tools, Ruby not supported
+* Documentation of the API lives entirely outside of standard code flows and tools
+* While a open format, it is kind of a odd non-standard format
 
-https://github.com/seomoz/interpol
+* [interpol](https://github.com/seomoz/interpol)
+* __pros:__
+* __cons:__
 
-https://github.com/mashery/iodocs   examples http://dev.mashery.com/iodocs
+* [Barrister](http://barrister.bitmechanic.com/)
+* __pros:__
+* __cons:__
 
 
-### Working with swagger and Ruby
+* [Swagger](http://developers.helloreverb.com/swagger/): An API stack built by [Reverb](https://helloreverb.com/)
+* __pros:__
+* Very usable, interactive documenation
+* Built on the JSON Schema standard
+* Good community support, active [swagger google group](https://groups.google.com/forum/#!forum/swagger-swaggersocket), highly responsive IRC room
+* Picked up and in use by several large companies like Salesforce
+* All related tools open sourced, with active contributions
+* Code generation support in many languages include our primary focuses (Javascript, Ruby, Scala, Andriod, iOS)
+* Allows for service discovery for all APIs
+* Docs can be written for existing APIs, opposed to having to build new APIs to support the format
+* Has integrated server side support for generating the swagger JSON docs
+* Server / comment integration means more likely to keep in docs and clients in sync with changes.
+* LIVE DEMO
+* __cons:__
+* Client code generation is mixed quality, good JS and Scala libs, while Ruby isn't so great
+* Server code generation is mixed quality, again Scala being a great example with Ruby being OK
+* Current Ruby server side implementation likely would require comments in code, as the framework integration seems too immature
+* The Ruby code both server and client would likely need heavy contributions
+* While encourages good restful behavior, doesn't really enforce any data format standards
+* Some of the tools are still in early / active development. Because of this documentation is a bit lacking, errors are difficult to interperate. This leads to a larger learning curve than some other tools
 
-swagger helps build api documentation, and clients.
+* [ioDocs](https://github.com/mashery/iodocs)
+* __pros:__
+* __cons:__
+* [LIVE DEMO](http://dev.mashery.com/iodocs)
 
-http://developers.helloreverb.com/swagger/
-
-### Pros
-
-* The documentation generated is extremely usable
-* automatically builds clients
-* Keeping the API spec with the code increases the chances it will stay in sync
-* Open source we could contribute and fix any issues we have
-
-### Cons
-
-* Littering code with hard to read 'comments' that is really just injecting another language into the comments of your code seems gross.
-* A self describing and following api seems more discoverable.
-* While the api doc JSON is human readable it
-* Code is littered with long and verbose comments
-* Errors while generating documentation or clients are pretty unhelpful.
-* Learning curve a bit higher than expected
-
-### Tips
-
-* build it one endpoint and model at a time
-* make sure you can test locally as the generate docs, deploy, generate code cycle can be slow
-* make only one change at a time between testing both doc and client source code generation
-* frequently it is best to view the final JSON output to help diagnose what looks wrong somewhere. [JSONView extension](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) for chrome is extremely helpful when reading the JSON docs.
-
-### CMDS
-
-install: https://github.com/wordnik/swagger-core
-add it to path
-
-look at this example
-https://github.com/wordnik/swagger-core/tree/master/samples/ruby-source2swagger
-
-use this gem
-https://github.com/solso/source2swagger
-
-follow this example and steal it's rake file task
-https://github.com/mstine/sinatra-swagger-example
-
-cp swagger-ui dist folder to public docs
-
-add these routes
-
-run `bundle exec rake swagger` and view /api-docs
-
-hit /docs
-
-alter index.html to default to your docs
-
-update lots of comments... notes on errors, models, return types...
-
-Try to generate a client...
-
-run https://github.com/wordnik/swagger-codegen
-`./bin/runscala.sh com.wordnik.swagger.codegen.BasicRubyGenerator http://churn.picoappz.com/api-docs "key"`
-
-### additional reading
-
-* [Swagger Api-docs](https://github.com/wordnik/swagger-core/wiki/Api-Declaration)
-* [Swagger parameter docs](https://github.com/wordnik/swagger-core/wiki/parameters)
+* Pick A data / messaging standard and start to build our own tooling on top of it
+* __pros:__
 * [Heroko's JSON schema support for platform API](https://blog.heroku.com/archives/2014/1/8/json_schema_for_heroku_platform_api). Mentions JSON schema support for swagger, but doesn't seem to be fully support swagger format.
-* Salesforce Swagger usage:
-  * [Start visualizing your Force.com RESTful services.](https://force-com-rest-swagger.herokuapp.com/)
-  * [Salesforce swagger api slideshow](http://www.slideshare.net/developerforce/df13-exposing-salesforce-rest-service-using-swagger-1)
-  * [Unio](https://github.com/ttezel/unio): one rest client to rule them all. Javascript and Python implementations. Describe a service in JSON, dynamically build a client for it.
+
+### Next Steps
+
+Pick a few of the options and implement them for a service or two.
+
+
+
+
   
-### Examples
 
-http://churn.picoappz.com/docs/index.html#!/churn
-
-data
-http://churn.picoappz.com/api-docs
-http://churn.picoappz.com/api-docs/churn
-
-when struggling compare to their examples
-http://petstore.swagger.wordnik.com/api/api-docs/pet
-
-### Modifying Swagger-Code-Gen 
-
-If you change the scala files just rerun. If you change the mustache files you must rerun `/sbt assembly` to cache the new template changes. 
-
-
-### Other Ruby api integrations worth looking at
