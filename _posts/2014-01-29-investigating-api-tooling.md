@@ -33,7 +33,7 @@ The growing number of APIs we wanted something similar to [Google APIs Discovery
 
 ### Why not just standard restful JSON apis
 
-Because this is the state of most APIs I use today. Without any tooling jost building rest-like APIs response formats, tool chains, documentation is slightly different. Often documentation is or not vary accessible. API Client are a mix of thin configurations of [rest-client](https://github.com/rest-client/rest-client) or large custom client gems with heavy models. Across many APIs this makes the tests, caching, usability, and usage expectations a new challenge with each API.
+Because this is the state of most APIs I use today. Without any tooling just building rest-like APIs response formats, tool chains, documentation is slightly different. Often documentation is or not vary accessible. API Client are a mix of thin configurations of [rest-client](https://github.com/rest-client/rest-client) or large custom client gems with heavy models. Across many APIs this makes the tests, caching, usability, and usage expectations a new challenge with each API.
 
 I want to get more benefits than just moving from various custom presenters and JSON formatters to a consistent usage of a JSON serializing tool / specific JSON formats. Since most of the APIs I work with are in Ruby there are a number of tools that solve only that limited set of issues. I am just looking for a bigger win than the various Libraries below provide:
 
