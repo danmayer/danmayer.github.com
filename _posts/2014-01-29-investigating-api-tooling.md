@@ -44,7 +44,7 @@ I want to get more benefits than just moving from various custom presenters and 
 * [Grape](https://github.com/intridea/grape) (although admittedly this one starts to get closer, with some of the optional integrations with other gems)
 * and more...
 
-For people interested in just having a solid Ruby api with a great format and code to help you build that one of the above options might be a great choice. The change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated. Also, watch the various [Railscast API videos](http://railscasts.com/episodes?utf8=%E2%9C%93&search=api) before you get started, it can help save you from a silly mistake.
+For people interested in just having a solid Ruby api with a great format and code to help you build that one of the above options might be a great choice. The change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated. Also, watch the various [Railscast API videos](http://railscasts.com/episodes?search=api) before you get started, it can help save you from a silly mistake.
 
 
 ### Benefits Beyond JSON Formats
