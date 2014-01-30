@@ -1,40 +1,55 @@
+---
+layout: post
+title: "Investigating Api Developer Tooling"
+category: Programming
+tags: [Programming, Development, APIs, Tools]
+---
+{% include JB/setup %}
+
 ### Evaluating API development tools
 
-I have been evaluating and looking over various API tools lately. In part as I develop more APIs myself for personal projects. Mostly because I have learned that all projects these days will have some sort of API backend and multiple front ends: web, mobile apps, native desktop, internal reporting tools, etc, etc. Basically, if you can generate any sort of interesting data eventually people will want it in other formats. Because of this anything that has data I am starting to think about API first. Many other developers are starting to focus more on internal and external APIs as well, which is why there is a variety of great tooling popping up related to it.
+I have been evaluating various API tools lately. In part as I develop more APIs myself for personal projects, as well as the importance they play in the systems I work on professionally. I have learned that all web projects will have some sort of API backend and multiple front ends: web, mobile apps, native desktop, internal reporting tools, etc, etc.
 
-I had been playing a bit with some API tools such as [Apiary](http://apiary.io/), and [Fdoc](https://github.com/square/fdoc) a bit on my side projects. At work, various discussions about the future of our APIs began to heat up. [Adam Keys](http://therealadam.com/), [Cloves Carneiro](https://twitter.com/ccjr), and [Tim Schmelmer](http://www.timschmelmer.com/) were leading the charge in having better tooling around our APIs. The discussions lead to some features we wanted to support, which caused me to start to take a much closer look at some of the API tools available.
+If you can generate any sort of interesting data eventually people will want it in other formats. This has changed how I look at data sources, with data I am starting to think about API first. Many other developers are starting to focus more on internal and external APIs as well, which is why there is a variety of great tooling and competing standards growing related to it.
 
+I had been playing around with some API tools such as [Apiary](http://apiary.io/), and [Fdoc](https://github.com/square/fdoc) on my side projects. At work, various discussions about the future of our APIs has recently become a focus. [Adam Keys](http://therealadam.com/), [Cloves Carneiro](https://twitter.com/ccjr), and [Tim Schmelmer](http://www.timschmelmer.com/) are leading the charge in having better tooling around our APIs. The discussions lead to some features we wanted to support, which caused me to start to take a much closer look at some of the API tools available. I decided to try to take notes as I dug in to research a variety of options.
+
+![image](/assets/api_tools.jpg)  
+image courtesy of [marc_smith](http://www.flickr.com/photos/marc_smith/8924975889/)
 
 ### Features we wanted
 
-The most common features we wanted after discussing our APIs looking over some existing tools.
+The most common features we wanted after discussing our APIs looking over existing tools.
 
 * Support for multiple languages. (preferably all the ones we use in the company)
 * Support for automatically generating client code from an [IDL definition](http://en.wikipedia.org/wiki/Interface_description_language)
 * Support for generating service-side generation of API documentation, based on the IDL definition of the APIs
 * Support for cURL / browser based service interaction, to analyze requests / responses in a "human-readable" format
 
-There were other things we wanted, but this was the most common and most desired list of features. I will also say that since we are considering this for use in our day job, I wanted solutions that would work all self-hosted / behind the firewall. Which makes some of the hosted solutions like [Apiary](http://apiary.io/) less interesting although large parts of their solution is open sourced, like [API Blueprint](http://apiblueprint.org/). 
+Other features were mentioned, but this was the most common and most desired list of features. Since we are considering tools for integration for professional apis, I wanted solutions that would work self-hosted / behind the firewall. Which makes some of the hosted solutions like [Apiary](http://apiary.io/) less interesting although large parts of their solution is open sourced, like [API Blueprint](http://apiblueprint.org/). 
 
-Basically, with the growing number of APIs we wanted something similar to [Google APIs Discovery Service](https://developers.google.com/discovery/). Google's tools are great, but not really an option as they haven't open sourced the document generation, service discovery server, or much language side tooling. What has been open sourced is a [client code generator](https://code.google.com/p/google-apis-client-generator/), which doesn't have as much language support as we would like (Java, Java/GWT, .NET, and PHP). Also, open sourced was the [google-apis-explorer](https://code.google.com/p/google-apis-explorer/) which while cool doesn't quite cover full documentation. Which would work for you if you build out APIs that match their schema, but their supported languages are limited and don't include my primary language Ruby. 
+The growing number of APIs we wanted something similar to [Google APIs Discovery Service](https://developers.google.com/discovery/). Google's tools are great, but not really an option as they haven't open sourced the document generation, service discovery server, or much server side language tooling. What has been open sourced is a [client code generator](https://code.google.com/p/google-apis-client-generator/), which doesn't have as much language support as we would like (Java, Java/GWT, .NET, and PHP). Also, open sourced was the [google-apis-explorer](https://code.google.com/p/google-apis-explorer/) which while cool doesn't quite cover full documentation needs. These tools would work for you if you build out APIs that match their schema, but their supported languages are limited and don't include my primary language Ruby.
 
 
 ### Why not just standard restful JSON apis
 
-Basically the state of APIs is already like this today. Api response formats and tools are slightly different. The documentation is lacking and inconsistent. Clients sometimes are thin configurations of [rest-client](https://github.com/rest-client/rest-client), and other times large custom client gems with heavy models. Across many APIs this makes the tests, caching, usability, and matching expectations a new challenge with each API.
+Because this is the state of most APIs I use today. Without any tooling jost building rest-like APIs response formats, tool chains, documentation is slightly different. Often documentation is or not vary accessible. API Client are a mix of thin configurations of [rest-client](https://github.com/rest-client/rest-client) or large custom client gems with heavy models. Across many APIs this makes the tests, caching, usability, and usage expectations a new challenge with each API.
 
-We want to get more benefits than just moving from various custom presenters and JSON formatters to a consistent usage of a JSON generator, or specific JSON formats. Since most of our APIs are in Ruby there are a number of tools this means we can look beyond.
+I want to get more benefits than just moving from various custom presenters and JSON formatters to a consistent usage of a JSON serializing tool / specific JSON formats. Since most of the APIs I work with are in Ruby there are a number of tools that solve only that limited set of issues. I am just looking for a bigger win than the various Libraries below provide:
 
 * [RABL](https://github.com/nesquena/rabl)
 * [Jbuilder](https://github.com/rails/jbuilder)
-* ... list some more examples
+* [Acts_as_API](https://github.com/fabrik42/acts_as_api)
+* [Roar](https://github.com/apotonick/roar)
+* [Grape](https://github.com/intridea/grape) (although admittedly this one starts to get closer, with some of the optional integrations with other gems)
+* and more...
 
-For those that might just be interested in the best way of building custom JSON responses of mapping Ruby objects to JSON, the change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated.
+For people interested in just having a solid Ruby api with a great format and code to help you build that one of the above options might be a great choice. The change log has a good post on [crafting JSON output](http://thechangelog.com/a-few-tools-to-build-a-json-api-in-a-ruby-web-app/), which shows some examples, although it is a little dated. Also, watch the various [Railscast API videos](http://railscasts.com/episodes?utf8=%E2%9C%93&search=api) before you get started, it can help save you from a silly mistake.
 
 
 ### Benefits Beyond JSON Formats
 
-One piece of the puzzle is following JSON formats. Right now many APIs are hand rolled and the structure of the data isn't ideal. Many apis are fairly loose and inconsistent in terms of how they serialize data. Some JSON format standards could help us improve that, as well as provide validators that could be integrated into the testing process. Others only help in terms of defining where endpoints exist, how endpoints are accessed, and what the responding data looks like. While these are interesting, they are more interesting when paired with tooling based on these standards. Most of the options mention below utilize one of these formats and some could support multiple formats in conjunction which seems promising.
+One piece of the puzzle is using standardize JSON formats. Try not to just make up your URIs and data representation yourself, I promise you will regret it. Right now many APIs I use and some I have developed (I know for shame) are hand rolled and the structure of the data isn't ideal. Many apis are fairly loose and inconsistent in terms of how they serialize data. Some JSON format standards could help us improve that, as well as provide validators that could be integrated into the testing process, etc. Others only help in terms of defining where endpoints exist, how endpoints are accessed, and what the responding data looks like. While these are interesting, they are more interesting when paired with tooling based on these standards. Most of the tools mention in my list utilize one of these formats and some could support multiple formats in conjunction which seems promising.
 
 * [JSON API](http://jsonapi.org/)
   * A format by [Yehuda Katz](http://twitter.com/wycats) and [Steve Klabnik](http://twitter.com/steveklabnik).
@@ -59,7 +74,7 @@ One piece of the puzzle is following JSON formats. Right now many APIs are hand 
 
 ### Why not Thrift, Protocol Buffers
 
-The largest reason is in the end we want human readable APIs. We want to be able to debug and test with standard curl commands. We want to be able to use simple Ajax calls without additional tooling. The benefits of Thrift and Protocol Buffers seem to not be large enough to force our stack to always use non standard tooling and limit our choices in terms of integrating other tooling. Finally the support for these formats isn't quite as strong as we would like in terms of native mobile support. The only one of the data serialization and RPC systems that seems to not have as many limitations is Apache Avro, which will be covered a bit further below in the comparison list.
+The largest reason is in the end I want human readable APIs. I want to be able to debug and test with standard curl commands. We want to be able to use simple Ajax calls without additional tooling. The benefits of Thrift and Protocol Buffers seem to not be large enough to force our stack to always use non standard tooling and limit our choices in terms of integrating other options. Finally the support for these formats isn't quite as strong as we would like in terms of native mobile support. The only one of the data serialization and RPC systems that seems to not have as many limitations is Apache Avro, which will be covered in more data in the comparison list.
 
 
 ### Api Tooling Options
@@ -84,7 +99,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
 
 * [Swagger](http://developers.helloreverb.com/swagger/): An API stack built by [Reverb](https://helloreverb.com/)
   * __pros:__
-  * Very usable, interactive documenation, [Live Demo](http://swagger.wordnik.com/#!/pet/) of the interactive docs
+  * Very usable, interactive documentation, [Live Demo](http://swagger.wordnik.com/#!/pet/) of the interactive docs
   * Built on the JSON Schema standard
   * Good community support, active [swagger google group](https://groups.google.com/forum/#!forum/swagger-swaggersocket), highly responsive IRC room
   * Picked up and in use by several large companies like Salesforce
@@ -119,7 +134,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
   * Documentation of the API lives entirely outside of standard code flows and tools
   * While a open format, it is kind of a odd non-standard format
 
-##### Highly integrated with Ruby
+##### Highly Integrated with Ruby
 
 * [Rails-API](https://github.com/rails-api/rails-api) combined with [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
   * __pros:__
@@ -159,7 +174,7 @@ The largest reason is in the end we want human readable APIs. We want to be able
   * Limited non Ruby language support
   * The doc files are kept in separate files, no server code or comments integration
   
-* [interpol](https://github.com/seomoz/interpol): A toolkit for working with API endpoint definition files, built by [Seomoz](http://moz.com/)
+* [Interpol](https://github.com/seomoz/interpol): A toolkit for working with API endpoint definition files, built by [Seomoz](http://moz.com/)
   * __pros:__
   * Integrated Ruby testing tools to validate endpoints
   * Stub server support
@@ -230,15 +245,9 @@ The largest reason is in the end we want human readable APIs. We want to be able
 
 ### Next Steps Towards Better APIs
 
-It is great that there are so many good options out there to improve tooling around developing APIs. Obviously, there are so many options it isn't really clear what the best option is. The next step seem to be to pick out and implement a couple of the options to explore them in more detail. Either trying a different option for a couple different services or implementing several of the options on the same API to see which seems like the best fit. In fact I have already started to do this with Swagger, which is why it has a bit more details describing it than several of the other options. One nice thing about researching all of these options and implementing one of them, has been learning how bad many of my APIs are. Seriously, trying to layer tooling like this on top of an awkward API and data response objects makes it abundantly clear that a poor URI scheme was used. It immediately makes the serializations used for the models seem awkward and overly verbose. Just going through the exercise should improve your APIs. Building a new API with any of the tools above would likely result in a better API because it would force you to really think about the contract the API is describing when it is being implemented.
-
-I will follow up soon with more specifics on some example implementations of some of the options above. So stay tuned and see you next time.
+It is great that there are so many good options being built to improve tooling around developing APIs. Obviously, there are so many options it isn't really clear what the best option is. The next step seem to be to pick out and implement a couple of the options to explore them in more detail. Either trying a different option for a couple different services or implementing several of the options on the same API to see which seems like the best fit. 
 
 
+In fact I have already started to do this with Swagger, which is why it has a more detail describing it than several of the other options. One nice thing about researching all of these options and implementing one of them, has been learning how bad many of my APIs are. Seriously, trying to layer tooling like this on top of an awkward API and data response objects makes it abundantly clear that a poor planning was involved. It immediately makes the serializations used for the models seem awkward and overly verbose and the URI endpoints poorly chosen. Going through the exercise should improve your APIs. Building a new API with any of the tools or libraries above would likely result in a better API because it would force you to really think about the contract the API is describing when it is being implemented.
 
-
-
-
-
-  
-
+I will follow up with more specifics on some example implementations of some of the options above. So stay tuned and see you next time.
