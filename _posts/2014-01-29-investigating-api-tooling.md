@@ -55,21 +55,21 @@ One piece of the puzzle is using standardize JSON formats. Try not to just make 
   * A format by [Yehuda Katz](http://twitter.com/wycats) and [Steve Klabnik](http://twitter.com/steveklabnik).
   * The default ember data format.
   * The format restricts how you represent your JSON data, but to a list of tried and true best practices for representing your objects.
-  * Example implementations exist for Ruby and other languages
+  * Example implementations exist for Ruby and other languages.
 * [JSON-RPC](http://www.jsonrpc.org/specification)
-  * A JSON standard with a highly used version 2.0 spec
+  * A JSON standard with a highly supported version 2.0 spec.
   * Defines rules for making [JSON remote procedure calls](http://en.wikipedia.org/wiki/JSON-RPC), has client support in many languages.
-  * Defines good input, client, and error behavior
-  * Doesn't define or enforce good JSON data serialization of your objects. Allows for any 
+  * Defines good input, client, and error behavior.
+  * Doesn't define or enforce good JSON data serialization of your objects. Allows for any format.
 * [JSON Schema](http://json-schema.org/)
-  * A format to describe APIs in JSON
+  * A format to describe APIs in JSON.
   * The basis of a [growing list of tools](http://json-schema.org/implementations.html), including some on this list like swagger.
-  * While this format describes how your JSON api data is represented. It doesn't enforce any good data serialization habits.
+  * While this format describes how your JSON api data is represented. It doesn't enforce any good data serialization habits, allows for any format.
 * [Apache Avro JSON](http://avro.apache.org/docs/1.7.5/spec.html#json_encoding)
   * While Avro has a whole set of tooling one can choose to just support its format
   * The format helps define and enforce good data serialization habits.
-  * Good language and platform support
-  * Useful beyond APIs Hadoop and log processors, could utilize object and message serialization. Which would improve some issues we have seen with pure JSON
+  * Good language and platform support.
+  * Useful beyond APIs Hadoop and log processors, could utilize object and message serialization. Which would improve some issues we have seen with pure JSON.
 
 
 ### Why not Thrift, Protocol Buffers
@@ -88,7 +88,7 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * Open source support for the [Google Discovery Document Format](https://developers.google.com/discovery/v1/reference#resource_discovery)
   * Built on the JSON Schema standard
   * Allows for service discovery for all APIs
-  * Could be used with a JSON format, adding format validation to the tool chain for future APIs would be easy.
+  * Could be used with a JSON format, adding format validation to the tool chain for future APIs would be easy
   * Supports various authentication mechanisms
   * Many example integrations
   * __cons:__
@@ -108,9 +108,9 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * Code generation support in many languages include our primary focuses (Javascript, Ruby, Scala, Andriod, iOS)
   * Docs can be written for existing APIs, opposed to having to build new APIs to support the format
   * Has integrated server side support for generating the swagger JSON docs
-  * Integrated Server code (or annotated comments) more likely to keep in docs and clients in sync with changes.
+  * Integrated Server code (or annotated comments) more likely to keep in docs and clients in sync with changes
   * Allows for service discovery for all APIs
-  * Could be used with a JSON format, adding format validation to the tool chain for future APIs would be easy.
+  * Could be used with a JSON format, adding format validation to the tool chain for future APIs would be easy
   * Supports various authentication mechanisms
   * __cons:__
   * Client code generation is mixed quality, good JS and Scala libs, while Ruby isn't so great
@@ -145,10 +145,10 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * Simple model for building dynamic clients
   * __cons:__
   * No built in documentation support
-  * Little in the way of tooling: validations, client generators, 
+  * Little in the way of tooling: validations, client generators, or other tools
   * Still a work in progress
 
-* [Rocket Pants](https://github.com/Sutto/rocket_pants): opinionated rails api framework.
+* [Rocket Pants](https://github.com/Sutto/rocket_pants): opinionated rails api framework
   * __pros:__
   * Highly integrated into rails and ActiveRecord (AR error support, AR object mapping support.)
   * Most standard rails coding style
@@ -157,7 +157,7 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * Consistent and enforced good data structure for data serialization
   * __cons:__
   * Doesn't include pretty documentation generation support
-  * Also a pro but heavily tied to rails.
+  * Also a pro, but heavily tied to rails and no other language support
   * Custom format doesn't yet support [JSON Schema](http://json-schema.org/)
   * Client generation is Ruby only
 
@@ -205,7 +205,7 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * [Avro Ruby code needs some love](http://www.igvita.com/2010/02/16/data-serialization-rpc-with-avro-ruby/) and performance improvements 
   * No built in documentation generators
   * A bit heavy weight with a higher learning curve than others
-  * No way to support old existing APIs could only move over as part of upgrades.
+  * No way to support old existing APIs could only move over as part of upgrades
 
 * [Barrister](http://barrister.bitmechanic.com/)
   * __pros:__
@@ -228,7 +228,7 @@ The largest reason is in the end I want human readable APIs. I want to be able t
 * __Roll Your Own__
   * __pros:__
   * Complete control over all pieces and stages of the tool chain 
-  * [Heroko's JSON schema support for platform API](https://blog.heroku.com/archives/2014/1/8/json_schema_for_heroku_platform_api). Heroku did it! They support standard formats but rolled their own versions of document and client code generators. Seems very close to Swagger format and mentions Swagger standard, but doesn't seem fully compatible and they went their own way for some of their tooling.
+  * [Heroko's JSON schema support for platform API](https://blog.heroku.com/archives/2014/1/8/json_schema_for_heroku_platform_api). Heroku did it! They support standard formats but rolled their own versions of document and client code generators. Seems very close to Swagger format and mentions Swagger standard, but doesn't seem fully compatible and they went their own way for some of their tooling
     * [Heroics](https://github.com/heroku/heroics): Heroku's Ruby client generation from JSON Schema
     * [Generating a Go client](http://www.paasmag.com/2014/01/09/auto-generating-a-go-api-client-for-heroku/) a tutorial building a Go client
   * Leverage tools released from other companies efforts  
@@ -241,7 +241,7 @@ The largest reason is in the end I want human readable APIs. I want to be able t
   * Could make a bad call, all the other projects would have more community involvement
   * May be harder to support existing APIs
   * Likely overall looser integration than working with a fully integrated stack
-  * There are pretty big projects so it might be a large undertaking, depending on features you want to support.
+  * There are pretty big projects so it might be a large undertaking, depending on features you want to support
 
 ### Next Steps Towards Better APIs
 
