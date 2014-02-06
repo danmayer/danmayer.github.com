@@ -38,6 +38,9 @@ related to being about to pass [localhost to refer to the ports on the container
 
 
 [forcing specific docker ports](http://stackoverflow.com/questions/18497564/assigning-vhosts-to-docker-ports)
+[Port redirection and linking](http://docs.docker.io/en/latest/use/port_redirection/)
+[binding port to address](https://github.com/dotcloud/docker/issues/1139)
+[connect docker containers together](http://stackoverflow.com/questions/18460016/connect-from-one-docker-container-to-another)
 [add collected](https://github.com/dotcloud/collectd-graphite/blob/master/Dockerfile)
 
 [docker best practices](http://crosbymichael.com/dockerfile-best-practices.html)
@@ -56,3 +59,48 @@ http://coreos.com/docs/etcd/
 
 * https://github.com/fgrehm/ventriloquist/issues/17
 * dhassler https://github.com/dotcloud/docker/issues/1555
+
+
+### random notes
+  
+    #build a docker file in the current directory and tag it
+    docker build -t="hi_docker" ./
+    #run that tagged docker
+    docker run -i -t "hi_docker"
+    #run that docker but bind the internal port to the host machine
+    docker run -i -t -p 8000:8000 "hi_docker"
+    
+    
+### Redhat docker
+
+* http://docs.docker.io/en/latest/installation/rhel/ //docs
+* sudo yum -y install docker-io
+* sudo yum -y update docker-io
+* sudo service docker start
+* sudo chkconfig docker on //docker at boot?
+
+### Example Dockerfiles
+
+* [Ruby box](https://github.com/gorsuch/dockerfile-examples/blob/master/rubybox/Dockerfile)
+* [Jenkin's box](https://index.docker.io/u/aespinosa/jenkins/)    
+    
+### Docker specific use cases
+
+[Jenkins Docker](https://index.docker.io/u/orchardup/jenkins/)
+    docker run -p 8888:8080 -d bacongobbler/jenkins
+    
+    
+### Vagrant
+
+* [vagrant using host DNS](https://gist.github.com/mitchellh/1277049)
+* fixing vagrant tools version issues: `https://github.com/dotless-de/vagrant-vbguest`    
+* pick #1 if it asks, when DNS works but actual connections don't `en0: Wi-Fi (AirPort)` 
+* //http://docs.vagrantup.com/v2/networking/public_network.html
+
+http://blog.docker.io/2013/07/how-to-use-your-own-registry/    
+    
+### Deals
+
+    sudo docker build -t deals_base . # => 8ed34a3b8e8f
+    sudo docker tag 8ed34a3b8e8f localhost:5000/deals_base
+    sudo docker push localhost:5000/deals_base #pushes to local repo

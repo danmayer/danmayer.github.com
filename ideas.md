@@ -29,6 +29,10 @@ Project Ideas
 * crawler to find dead CSS
 * crawler to find dead JS
 * counters app, just tiny up down counters users can create and increment with icons and images private / public, user only or public can increment / decrement
+* App that allows you to turn any ruby object into an api call. Preferably with persistance via serialization.
+  * look at https://github.com/madx/roy
+  * look at http://rubydoc.info/gems/apiary/0.0.5/frames
+  * possibly allow JSON
 
 Posts for API reviews
 ===
