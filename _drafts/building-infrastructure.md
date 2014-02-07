@@ -88,7 +88,16 @@ http://coreos.com/docs/etcd/
 
 [Jenkins Docker](https://index.docker.io/u/orchardup/jenkins/)
     docker run -p 8888:8080 -d bacongobbler/jenkins
+
+### Linux
+
+`sudo usermod -a -G docker jenkins`
+  //redhat has some docker issues
+  Error mounting '/dev/mapper/docker-252:0-1329382-33d868dfbf5b8e7d8aa67b5b9f4b01cd9ff3a3360c16b09f3061c09878e933ec'
     
+### OSX docker
+
+When you expose a port on OSX docler with -p it only exposes for the OSX thin virtual machine. To expose on real localhost open virtual box. Edit machine networking port forwarding and add the forward rules you need.   
     
 ### Vagrant
 
@@ -97,10 +106,16 @@ http://coreos.com/docs/etcd/
 * pick #1 if it asks, when DNS works but actual connections don't `en0: Wi-Fi (AirPort)` 
 * //http://docs.vagrantup.com/v2/networking/public_network.html
 
-http://blog.docker.io/2013/07/how-to-use-your-own-registry/    
+* [running a local docker registry](http://blog.docker.io/2013/07/how-to-use-your-own-registry/)
+  * `docker run -d -p 5000:5000 samalba/docker-registry` 
     
 ### Deals
 
-    sudo docker build -t deals_base . # => 8ed34a3b8e8f
-    sudo docker tag 8ed34a3b8e8f localhost:5000/deals_base
-    sudo docker push localhost:5000/deals_base #pushes to local repo
+	rm log/*.log #shrink required build context
+	cd base_docker
+    docker build -t deals_base . # => 8ed34a3b8e8f
+    docker tag 8ed34a3b8e8f localhost:5000/deals_base
+    docker push localhost:5000/deals_base #pushes to local repo
+    cd /projects/deals
+    docker build -t deals .
+    
