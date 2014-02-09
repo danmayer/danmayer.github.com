@@ -70,6 +70,9 @@ http://coreos.com/docs/etcd/
     #run that docker but bind the internal port to the host machine
     docker run -i -t -p 8000:8000 "hi_docker"
     
+    #debug a random point in a docker build, jump in prior to error run commands till works 
+    # then fix docerfile and rerun
+    docker run -i -t  e53384904c8d
     
 ### Redhat docker
 
@@ -79,10 +82,19 @@ http://coreos.com/docs/etcd/
 * sudo service docker start
 * sudo chkconfig docker on //docker at boot?
 
+	    //silly redhat
+	    sudo yum update
+	    sudo yum -y install docker-io
+		//add to ~/.bash_profile
+		PATH=$PATH:/sbin
+		source ~/.bash_profile
+		sudo /usr/sbin/useradd jenkins -s /bin/bash -m -G docker
+
 ### Example Dockerfiles
 
 * [Ruby box](https://github.com/gorsuch/dockerfile-examples/blob/master/rubybox/Dockerfile)
 * [Jenkin's box](https://index.docker.io/u/aespinosa/jenkins/)    
+* [Linking Docker images](http://docs.docker.io/en/latest/use/working_with_links_names/)
     
 ### Docker specific use cases
 
@@ -94,6 +106,8 @@ http://coreos.com/docs/etcd/
 `sudo usermod -a -G docker jenkins`
   //redhat has some docker issues
   Error mounting '/dev/mapper/docker-252:0-1329382-33d868dfbf5b8e7d8aa67b5b9f4b01cd9ff3a3360c16b09f3061c09878e933ec'
+  
+
     
 ### OSX docker
 
@@ -108,14 +122,4 @@ When you expose a port on OSX docler with -p it only exposes for the OSX thin vi
 
 * [running a local docker registry](http://blog.docker.io/2013/07/how-to-use-your-own-registry/)
   * `docker run -d -p 5000:5000 samalba/docker-registry` 
-    
-### Deals
-
-	rm log/*.log #shrink required build context
-	cd base_docker
-    docker build -t deals_base . # => 8ed34a3b8e8f
-    docker tag 8ed34a3b8e8f localhost:5000/deals_base
-    docker push localhost:5000/deals_base #pushes to local repo
-    cd /projects/deals
-    docker build -t deals .
     
