@@ -33,6 +33,7 @@ Project Ideas
   * look at https://github.com/madx/roy
   * look at http://rubydoc.info/gems/apiary/0.0.5/frames
   * possibly allow JSON
+* Improved hash my superhash ideas, and this https://github.com/koleksiuk/parsable_hash and hashie::mash etc
 
 Posts for API reviews
 ===
