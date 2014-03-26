@@ -43,7 +43,7 @@ __note:__ Since writing this CFP I gave a portion of this talk as a 5 minute lig
 
 ## Links to past talks you've given (video, audio, etc):
 
-None. Mostly I have written about code on my blog, http://mayerdan.com. For instance, I [http://mayerdan.com/ruby/2013/12/17/coverband-production-code-coverage/](introduced Coverband on my blog).
+None. Mostly I have written about code on my blog, http://mayerdan.com. For instance, I [introduced Coverband on my blog](http://mayerdan.com/ruby/2013/12/17/coverband-production-code-coverage/).
 
 Other Samples:
 
