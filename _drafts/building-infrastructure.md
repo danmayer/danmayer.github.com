@@ -1,3 +1,19 @@
+#### Links
+
+* [things to know prior to aws](http://wblinks.com/notes/aws-tips-i-wish-id-known-before-i-started/)
+* [docker best practices](http://crosbymichael.com/dockerfile-best-practices.html)
+* [docker book sample chapter](http://dockerbook.com/TheDockerBook_sample.pdf)
+* [Continuous Integration Using Docker](https://www.activestate.com/blog/2014/01/using-docker-run-ruby-rspec-ci-jenkins)
+* [Integrating Docker with a Rails App](http://www.powpark.com/blog/programming/2014/01/29/integrating-docker-with-jenkins-for-ruby-on-rails-app)
+* [Your Docker Image is likely broken](http://phusion.github.io/baseimage-docker/)
+* [Passenger Docker, lots of heavy lifting done for you](https://github.com/phusion/passenger-docker)
+* [Ansible & Docker](http://thechangelog.com/ansible-docker/)
+* __Continous Delivery series by how are you__
+  * [Continuous delivery with docker](http://blog.howareyou.com/post/62157486858/continuous-delivery-with-docker-and-jenkins-part-i)
+  * [Continuous delivery with docker part2](http://blog.howareyou.com/post/65048170054/continuous-delivery-with-docker-and-jenkins-part-ii)
+  * [Source Code for the Related examples](https://github.com/cambridge-healthcare/hi_sinatra-docker)
+* [Zero Downtime Deployments with Docker](http://brianketelsen.com/2014/02/25/using-nginx-confd-and-docker-for-zero-downtime-web-updates/) 
+
 * step 1: get digital ocean box
 
   utility server: https://www.digitalocean.com/community/articles/how-to-use-the-digitalocean-docker-application
@@ -30,17 +46,41 @@
 * multiple docker boxes trying to claim port 80 http://stackoverflow.com/questions/18497564/assigning-vhosts-to-docker-ports
 * in a docker VM can it see ports on other vms, or a way to share them?
 * vagrant to docker to digital ocean
-* 
+* loose net connection for your mac docker: `./boot2docker restart`
+* with boot2docker you need to open virtualbox and have it expose any boot2docker ports you want to reach
+
+#### Process
+
+Make a base image that includes the depenancies 
+
+    docker build -t ruby_base .
+	# Successfully built f3e7481ef6f5
+	
+Then tag that image and push it to the official or your local registry
+
+	docker tag f3e7481ef6f5 localhost:5000/ruby_base
+	#or push to the public registry
+	docker push danmayer/ruby_base
+
+Then upload it to your locker or the public docker registery
+
+    docker push localhost:5000/ruby_base
+        	
+Build a project specific repo
+
+    docker build -t server_responder .
+
+Run it in foreground or background
+
+    docker run -t -i -p 8999:8999 72f8510b2b39
 
 ###### Docker parent hostname passed into containers 
 [how to pass host names](https://github.com/dotcloud/docker/issues/243)
-related to being about to pass [localhost to refer to the ports on the container host](https://github.com/dotcloud/docker/issues/1403)
-
-
 [forcing specific docker ports](http://stackoverflow.com/questions/18497564/assigning-vhosts-to-docker-ports)
 [Port redirection and linking](http://docs.docker.io/en/latest/use/port_redirection/)
 [binding port to address](https://github.com/dotcloud/docker/issues/1139)
 [connect docker containers together](http://stackoverflow.com/questions/18460016/connect-from-one-docker-container-to-another)
+[example connecting two dockers together](http://docs.docker.io/en/latest/examples/running_redis_service/)
 [add collected](https://github.com/dotcloud/collectd-graphite/blob/master/Dockerfile)
 
 [docker best practices](http://crosbymichael.com/dockerfile-best-practices.html)
@@ -54,6 +94,8 @@ get the full docker cmd run along with options: `docker ps -notrunc`
 * upgrade to kibana 3
 
 http://coreos.com/docs/etcd/
+
+https://github.com/kencochrane/docker-guidebook/blob/master/docker-guidebook.rst
 
 #### thanks
 
@@ -73,6 +115,8 @@ http://coreos.com/docs/etcd/
     #debug a random point in a docker build, jump in prior to error run commands till works 
     # then fix docerfile and rerun
     docker run -i -t  e53384904c8d
+    
+    sudo docker run -i -t 54495ad388a3 /bin/bash
     
 ### Redhat docker
 
@@ -95,6 +139,8 @@ http://coreos.com/docs/etcd/
 * [Ruby box](https://github.com/gorsuch/dockerfile-examples/blob/master/rubybox/Dockerfile)
 * [Jenkin's box](https://index.docker.io/u/aespinosa/jenkins/)    
 * [Linking Docker images](http://docs.docker.io/en/latest/use/working_with_links_names/)
+* [Docker cookbooks](https://github.com/Krijger/docker-cookbooks)
+* [Redis Docker and example link](http://docs.docker.io/en/latest/examples/running_redis_service/)
     
 ### Docker specific use cases
 
@@ -122,4 +168,18 @@ When you expose a port on OSX docler with -p it only exposes for the OSX thin vi
 
 * [running a local docker registry](http://blog.docker.io/2013/07/how-to-use-your-own-registry/)
   * `docker run -d -p 5000:5000 samalba/docker-registry` 
+  
+### Dockers I love
+
+
+    # unless docker running redis run
+    # sudo docker run -d -p 6379:6379 dockerfile/redis
+
+    # unless docker running mysql run it
+    # sudo docker run -d -p 3306:3306 orchardup/mysql
+    
+    * [nice jenkins base](https://index.docker.io/u/zaiste/jenkins/)
+      * how it handles plugins
+      https://github.com/zaiste/docker-jenkins/blob/master/run
+
     
