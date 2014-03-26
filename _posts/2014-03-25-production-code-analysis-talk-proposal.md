@@ -2,13 +2,13 @@
 layout: post
 title: "Talk Proposal Help"
 category: Programming
-tags: [Programming, Development, APIs, Tools]
+tags: [Programming, Talks, Ruby]
 ---
 {% include JB/setup %}
 
-I wrote my first CFP and submitted a talk to [GoRuCo](http://goruco.com/). Sadly, I wasn't selected, but I think thing I have something worth working on. I got some additional feedback that I hadn't received in time to update my GoRuCo proposal. I have incorporated the changes and now plan to submit my talk idea to [RubyNation](http://www.rubynation.org/). I would love to get some additional feedback on other ways to improve the proposal or make sure it is interesting to the audience. 
+I wrote my first CFP and submitted a talk to [GoRuCo](http://goruco.com/). Sadly, I wasn't selected, but I think thing I have something worth working on. I got some additional feedback that I hadn't received in time to update my GoRuCo proposal. I have incorporated the changes and now plan to submit my talk idea to [RubyNation](http://www.rubynation.org/) (6 days left of CFPs). I would love to get some additional feedback on other ways to improve the proposal or make sure it is interesting to the audience. 
 
-If you have any feedback on the proposal below you can use [draftin to submit your changes to my document](https://draftin.com/documents/274844?token=h7aF8uWWI1NuUgmL_yLkADMAcUivguDlKzZLGCU39oQQIBeW2SPv6r9XLoEk4jFpogNem7o9arZSgLkIceeZh8M).
+If you have any feedback on the proposal below you can use [draftin to submit your changes to my document](http://bit.ly/1hWVh9f).
 
 ## Talk Title
 
@@ -47,5 +47,5 @@ None. Mostly I have written about code on my blog, http://mayerdan.com. For inst
 
 Other Samples:
 
-* [http://mayerdan.com/ruby/2012/11/11/bugs-per-line-of-code-ratio/](bugs per line of code)
-* [http://mayerdan.com/programming/2014/01/29/investigating-api-tooling/](investigating api tooling)
+* [bugs per line of code](http://mayerdan.com/ruby/2012/11/11/bugs-per-line-of-code-ratio/)
+* [investigating api tooling](http://mayerdan.com/programming/2014/01/29/investigating-api-tooling/)
