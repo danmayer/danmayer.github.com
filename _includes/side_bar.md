@@ -7,6 +7,31 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
     <li class="nav-header">
+      Search
+    </li>
+	<li>
+      <form>
+        <input type="text" id="st-search-input" class="st-search-input" />
+      </form>
+      <script type="text/javascript">
+      var Swiftype = window.Swiftype || {};
+      (function() {
+      Swiftype.key = 'WMctAVi8bArVJhxn4ymA';
+
+        /** DO NOT EDIT BELOW THIS LINE **/
+        var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+        script.src = "//s.swiftypecdn.com/embed.js";
+        var entry = document.getElementsByTagName('script')[0];
+        entry.parentNode.insertBefore(script, entry);
+        }());
+      </script>
+    </li>
+  </ul>
+</div>
+
+<div class="well" style="padding: 8px 0;">
+  <ul class="nav nav-list">
+    <li class="nav-header">
       Recent Posts
     </li>
     
