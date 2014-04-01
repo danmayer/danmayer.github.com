@@ -10,7 +10,7 @@ tagline: Dan Mayer's Dev Blog
 
     <div class="span8">
       <h3 class="index-title">
-        {{ first.title }} <small>{{first.sub_title}}</small>
+        <a href="{{ first.url }}" class="noStyle">{{ first.title }}</a> <small>{{first.sub_title}}</small>
         <span>{{ first.date | date_to_long_string }}</span>
       </h3>
       {{ first.content }}
