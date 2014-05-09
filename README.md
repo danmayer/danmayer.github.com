@@ -60,6 +60,8 @@ Dan Mayer's Developer Blog
 ## Possible Project Ideas
 
 * Kindle Ebook walking tours Start with DC and partner with friends to have them write some about other cities   
+* tequila review blog with Erin
+  * The Top 10 Best Tequila Websites | Taste Tequila http://tastetequila.com/2010/the-top-ten-best-tequila-websites/ 
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
