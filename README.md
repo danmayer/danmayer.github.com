@@ -56,12 +56,19 @@ Dan Mayer's Developer Blog
   * I saw it as being able to contribute far more than a single persons abilities towards one thing. Early on I realized if I could 'codify' a strategy to solve a problem in a repeatable way it was far more powerful than manually doing the error prone task myself. It is part of what drew me to programmable calculators and early programming. To extend my own abilities beyond what I could actually do. To be able to extend my work beyond what I as a individual could do for a company.
   * We have seen this we have likely all coded something that replaced anthers job, which is a bit sad in one sense, but in another it just should increase the productivity of everyone. In my mind that frees these people up to help work on the next tasks as there are many that still need actual people to help determine and make decisions and figure out what we can make a truly repeatable process.
 * Working with great developer's is awesome, and list some of the great devs we work with and there blogs and posts.
+* Talk about a self-review... looking over the code and projects you have worked on. GH and things like:
+    * `git log --numstat --pretty="%H" --author="dan.mayer" --since="1 year ago" app | awk 'NF==3 {plus+=$1; minus+=$2} END {printf("+%d, -%d\n", plus, minus)}'` 
+* code science vs fud:
+   * @lissijean: The crap code. As the deadline approaches, people don't have the option to fix code problems. @cyetain #lkna14 http://t.co/e1ke1AT5tD 5/6/14, 2:28 PM
+   * This is an example of just fake data we hold up as truth... This doesn't help anyone
+ 
 
 ## Possible Project Ideas
 
 * Kindle Ebook walking tours Start with DC and partner with friends to have them write some about other cities   
 * tequila review blog with Erin
-  * The Top 10 Best Tequila Websites | Taste Tequila http://tastetequila.com/2010/the-top-ten-best-tequila-websites/ 
+  * The Top 10 Best Tequila Websites | Taste Tequila http://tastetequila.com/2010/the-top-ten-best-tequila-websites/
+* Could one build a pry plugin that step through a debugger inside a block or a start and stop call and checked for when the code path of data representation first changed? Logged it... further other than just doing this in development, what about being able to run that in production between releases or different servers to find issues... ()specifically thinking about the redis 3 issue. as an example use case).
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
