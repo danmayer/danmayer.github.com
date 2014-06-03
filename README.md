@@ -61,6 +61,13 @@ Dan Mayer's Developer Blog
 * code science vs fud:
    * @lissijean: The crap code. As the deadline approaches, people don't have the option to fix code problems. @cyetain #lkna14 http://t.co/e1ke1AT5tD 5/6/14, 2:28 PM
    * This is an example of just fake data we hold up as truth... This doesn't help anyone
+* why I open via the full path for project files...
+   * each path is part of the spacial awareness of the project
+   * from the root ~/projects I can help stay spacially aware of how the projects relate to each other
+   * in my mind I have a little city and each directory is part of the street adress to compartmentalize the code
+   *talk about spacially breaking up code and how that can help to visualize things.
+* Post series on building of a talk over time.   
+       
  
 
 ## Possible Project Ideas
