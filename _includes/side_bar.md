@@ -60,6 +60,9 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
     <li><a href="http://picoappz.com">Picoappz, tiny side project apps</a></li>
     <li><a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a></li>
+    <li>
+	  <a  href="http://www.mayerdan.com/rubynation-production-code-analysis/">Production  Code Analysis</a>
+    </li>
     <li>more baking in the oven...</li>
   </ul>
 </div>
