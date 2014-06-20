@@ -76,6 +76,12 @@ Dan Mayer's Developer Blog
 * tequila review blog with Erin
   * The Top 10 Best Tequila Websites | Taste Tequila http://tastetequila.com/2010/the-top-ten-best-tequila-websites/
 * Could one build a pry plugin that step through a debugger inside a block or a start and stop call and checked for when the code path of data representation first changed? Logged it... further other than just doing this in development, what about being able to run that in production between releases or different servers to find issues... ()specifically thinking about the redis 3 issue. as an example use case).
+* endless sherlock: Sherlock is out of copywrite.
+    * Build ngram to generate new sherlock stories... possibly using plots from other out of copywrite books but forcing in shelock style / characters
+    * the community book writing project towards sherlock
+    * custom sherlock book insert you or a friends name as one of the characters
+    * sell ebook versions of highly rated output
+    * other ways to extend the sherlock value online
 
 ## Post Ideas I might do on LS techblog or clear with work to post here
 * Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
