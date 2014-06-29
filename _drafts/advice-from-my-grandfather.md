@@ -1,26 +1,28 @@
 ---
 layout: post
-title: "Advice from my grandfather about being good at your job"
+title: "Advice from my grandfather"
 category: Programming
 tags: [Programming, Development, LifeHacks, Career]
 ---
 {% include JB/setup %}
 
-## Show up
+## Advice from my Grandfather, "Show up"
 
-My grandfather had some advice for me at some point in life. I am not sure when exactly he passed it on to me, it might have been before college or when I visited after college right before my first job. Regardless of when he shared this little piece of advice, it has always suck with me, and seems more true the older I get. I don't remember the exact words, but more the spirit of the thought.
+My grandfather had some advice for me about being good at your job. He shared this with me at some point in life. I am not sure when exactly he passed it on to me, it might have been before college or when I visited after college right before my first job. It has always suck with me, and I think of it often as I approach challenges or teaching. I don't remember the exact quotable, but more the spirit of the thought.
 
-"90% of being good at something is just to keep showing up"
+#### "90% of being good at something is just to keep showing up"
 
-Faced with something hard, keep showing up and work at it.
+Faced with something hard, keep showing up and work at it. Sometimes take on the hard challenge no one else is taking on. Push your self, take on challenges just out of your own grasp.
 
-10,000 hours to become a expert, keep showing up and working at it http://en.wikipedia.org/wiki/Outliers_%28book%29 over 10 years http://www.newyorker.com/online/blogs/sportingscene/2013/08/psychology-ten-thousand-hour-rule-complexity.html
+I think in the end this is a bit related to the common advice that it takes [10,000 hours to become a expert](http://en.wikipedia.org/wiki/Outliers_%28book%29). Want to get to 10,000 hours? Keep showing up and working at your craft, it can [take over 10 years](http://www.newyorker.com/online/blogs/sportingscene/2013/08/psychology-ten-thousand-hour-rule-complexity.html) to become an expert.
 
-is there a really important project that no one seems to find 'cool' enough to work on, show up
+### Reminding me of the advice motivates me
 
-unexpected issues days before a release, dig in solve it, solve it for the release
+* is there a really important project that no one seems to find 'cool' enough to work on, show up
+* unexpected issues days before a release, dig in solve it, solve it for the release.
+* finished with the 90% interesting part of the project but that last mile needs to get done. Show up up for the team to help pull it through to the end.
 
-This is important for a variety of reasons. The actions you take shape the way people view you. By always being willing to pitch in, everyone on your team will appreciate you. Your manager and your company will appreciate you for it. You want to be a leader or become one of the best on the team? You might not start as the best, but if you are one of the people the consistently shows up and steps in when needed, you will become one. How does one really become skilled in all areas of a career, but taking on tasks and challenges when they need to be done even if you don't know how to do them. Where I work there are a number of developers that work this way, some of the junior developers have even stuck around to just watch over the shoulder while other devs dug into and solved an emergency. Sure enough next time something like that came up, the junior devs who had watched before stepped in and jumped on the tasks themselves while a senior dev checked in to see that it was going well. It can be amazing to see how much people can learn this way.
+Showing up, is important for a variety of reasons. The actions you take shape the way people view you. Being willing to pitch in, everyone on your team will appreciate your efforts and know your willing to help get whatever job done. Your manager and your company will appreciate you for it. Want to be a leader or become one of the best on the team? Showing up is a great way to always learn. You might not start as the best, but if you are one of the people the consistently shows up and steps in when needed, you will become one. How do you become skilled in all areas of a career, by taking on tasks and challenges when they need to be done even if you don't know the solution. You can see knowledge spread to people who work this way, some of the junior developers on multiple occasions have stuck around to watch over the shoulders of more experience devs while they dug into and solved an emergency. Sure enough next time similar issues came up, the junior develops who had watched before stepped in and jumped on the tasks themselves while a senior dev checked in to see that it was going well. It can be amazing how much knowledge gets shared this way.
 
 If you like to learn new things this is always a great thing to do as well. Who wants to just get really good at solving the same problem over and over? Unknown mystery exceptions occurring a handful of times. Add monitoring, metrics, read up on the related systems, put in probes to verify your understand. Track it down and suddenly you know more about a subsystem than anyone else around. 
 
