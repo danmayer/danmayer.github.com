@@ -13,6 +13,7 @@
 * [Your first Ruby native extension: C](https://blog.jcoglan.com/2012/07/29/your-first-ruby-native-extension-c/)
 * [Working with Ruby strings in C](http://clalance.blogspot.com/2011/01/writing-ruby-extensions-in-c-part-8.html)
 * [Working with Ruby numbers in C](http://yard.ruby-doc.org/stdlib-2.1.0/Num2int.html)
+* [Converting Ruby Strings to C Strings](http://stackoverflow.com/questions/10210624/how-to-convert-a-string-taken-out-from-a-ruby-array-into-a-c-c-string)
 
 ### Examples
 
