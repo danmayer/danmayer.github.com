@@ -45,4 +45,4 @@ Once you're a go-to to answer questions about the systems, a large part of your 
 
 ### One word of warning
 
-This doesn't mean you need to work all the time. It doesn't mean let people or business walk all over you assigning you more work than one can handle. It doesn't mean you should always be doing the work no one else would be willing to, but it does mean taking on any challenge and not ignoring important work and parts of the business, to only work on fun or traditional 'developer' projects.
+This doesn't mean you need to work all the time. It doesn't mean let people or business walk all over you assigning you more work than one can handle. It doesn't mean you should always be doing the work no one else would be willing to. It does mean taking on any challenge and not ignoring important parts of the business, to only work on fun or traditional 'developer' projects.
