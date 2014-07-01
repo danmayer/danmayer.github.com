@@ -8,24 +8,24 @@ tags: [Programming, Development, LifeHacks, Career]
 
 ## Advice from my Grandfather, "Show up"
 
-My grandfather had some advice for me about being good at your job. He shared this with me at some point in life. I am not sure when exactly he passed it on to me, it might have been before college or when I visited after college right before my first job. It has always stuck with me, and I think of it often as I approach challenges or teaching. I don't remember the exact quotable, but more the spirit of the thought.
+My grandfather had some advice for me about being good at your job. I am not exactly sure when  he shared the advice with me, it might have been before college or when I visited after college right before my first job. But I think of it often --
 
-#### "90% of being good at something is just to keep showing up"
+#### "90% of being good at something is to just keep showing up"
 
-The full quote is above, but the short version, "show up". Faced with something hard, keep showing up and work at it. Take on the hard challenge no one else is taking on, even the dull challenges which are important occasionally. Push your self, take on challenges just out of your comfort zone.
+Or the short version, "show up". Faced with something hard, keep showing up and work at it. Take on the hard challenge no one else is taking on, even the dull challenges which are important occasionally. Push yourself, take on challenges just out of your comfort zone.
 
 I think in the end this is a bit related to the common advice that it takes [10,000 hours to become a expert](http://en.wikipedia.org/wiki/Outliers_%28book%29). Want to get to 10,000 hours? Keep showing up and working at your craft, it can [take over 10 years](http://www.newyorker.com/online/blogs/sportingscene/2013/08/psychology-ten-thousand-hour-rule-complexity.html) to become an expert.
 
-### Showing up, motivates me
+### Showing up: motivates me
 
-* is there a really important project that no one seems to find 'cool' enough to work on, show up
-* unexpected issues days before a release, dig in solve it, solve it for the release.
-* finished with the 90% interesting part of the project but that last mile needs to get done. Show up up for the team to help pull it through to the end.
-* Production issues taking systems down, on code no one seems to remember how it works, dig in.
+* if there is there a really important project that no one seems to find 'cool' enough to work on, show up
+* if there are unexpected issues days before a release, dig in and solve it for the release.
+* if the team is finished with the 90% interesting part of the project but that last mile needs to get done, show up for the team to help pull it through to the end.
+* If production issues are taking systems down and no one seems to remember how it works, dig in.
 
-Showing up, is important for a variety of reasons. The actions you take shape the person you are. Being ready to pitch in often, and your team will appreciate your efforts and know your willing to help get whatever job done. Your manager and your company will appreciate you for it. You will be trusted to make other good decisions as you have shown up and come through in the past.
+Showing up is important for a variety of reasons. The actions you take shape the person you are. Being ready to pitch in often, and your team will appreciate your efforts and know your willing to help get whatever job done. Your manager and your company will appreciate you for it. You will be trusted to make other good decisions because you have shown up and come through in the past.
 
-### Showing up, is a great way to learn
+### Showing up: is a great way to learn
 
 Want to be a leader or become one of the most knowledgable on the team? Showing up is a great way to always learn. You might not start as the best, but if you are one of the people that consistently shows up and steps in when needed, you will become one. How do you become skilled in all areas of a career, by taking on tasks and challenges when they need to be done even if you don't know the solution.
 
@@ -39,7 +39,7 @@ So if you want to learn a ton, be one of the best on your team, become irreplace
 
 ### Know the systems? Congrats you've earned the the "tour guide" badge
 
-Once your are a go-to to answer questions about the systems, a large part of your job is teaching all that knowledge to others on the team. As Adam keys describes in [Developers are From Mars, Developers are From Venus](http://www.confreaks.com/videos/3068-bigruby2014-developers-are-from-mars-developers-are-from-venus), you will reach a tour guide level of knowledge. 
+Once you're a go-to to answer questions about the systems, a large part of your job is teaching all that knowledge to others on the team. As Adam keys describes in [Developers are From Mars, Developers are From Venus](http://www.confreaks.com/videos/3068-bigruby2014-developers-are-from-mars-developers-are-from-venus), you will reach a tour guide level of knowledge. 
 
 ### One word of warning
 
