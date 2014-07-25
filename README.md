@@ -66,8 +66,16 @@ Dan Mayer's Developer Blog
    * from the root ~/projects I can help stay spacially aware of how the projects relate to each other
    * in my mind I have a little city and each directory is part of the street adress to compartmentalize the code
    *talk about spacially breaking up code and how that can help to visualize things.
-* Post series on building of a talk over time.   
-       
+* Post series on building of a talk over time.
+* Why to work at a large or smaller company
+  * large company can build something far bigger than one person ever could
+  * small company you can individual change the course of the whole product or company   
+* Why I think a human readable web-api is so important, a full post explaining some thoughts on this.
+  * a co worker was comparing to mysql, image munipulation all weird non human readable interfaces and asking why I require it for the web.
+  * I really think images is so far out there I can't compare
+  * mysql someone was like you can dump the request that goes in and the log of changes that come out that is your transaction... how is that different
+  * the thoughts on this were related to using soap, binarary, thrift other protocals for APIs
+  * my thoughts are even with mysql you have to capture and log in and out in some way it isn't really part of the final protocal, that is the same as logging AFTER binarary or thrift is converted to a human format and logging... All is fine so long as the conversion always works and no data is ever thrown away or lost in the process.... but thrift for instance expects a schema and ignores additional attributes debugging some client that can't pass a param because they typoed it won't be so helpful if the converted message doesn't include the ignored information.
  
 
 ## Possible Project Ideas

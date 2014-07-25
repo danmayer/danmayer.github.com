@@ -15,6 +15,7 @@
 * [Working with Ruby numbers in C](http://yard.ruby-doc.org/stdlib-2.1.0/Num2int.html)
 * [Converting Ruby Strings to C Strings](http://stackoverflow.com/questions/10210624/how-to-convert-a-string-taken-out-from-a-ruby-array-into-a-c-c-string)
 
+
 ### Examples
 
 * [Stackprof.c](https://github.com/tmm1/stackprof/blob/master/ext/stackprof.c)
@@ -35,6 +36,8 @@
 
 ### Perf Progress
 
+`ab -n 100 -c5 http://admin.lsdev.co:80/`
+
 No Coverband
 
 Time taken for tests:   3.980 seconds /  3.999 seconds
@@ -50,6 +53,30 @@ Time taken for tests:   14.679 seconds / 12.033 seconds
 Ruby Coverband C Ext V2 with Regex
 
 Time taken for tests:   6.131 seconds / 6.321 seconds
+
+##### PL app
+
+`ab -n 50 -c5 http://pipeline.lsdev.co:80/pipeline/cities`
+
+No Coverband
+
+Time taken for tests:   31.347 seconds / 31.298 seconds
+
+Ruby Coverband
+
+(moved to, so slow `ab -n 10 -c5 http://pipeline.lsdev.co:80/pipeline/cities`, then multiplied by 5 to keep the numbers in line)
+Time taken for tests:   336.53 seconds / 331.89 seconds
+
+Ruby Coverband C Ext V2 with Regex (back to the default 50 requests)
+
+Time taken for tests:   42.785 seconds / 43.343 seconds
+
+### C code to debug
+
+    rb_eval_string("puts 'self is:'");
+    rb_funcall(rb_mKernel, rb_intern("puts"), 1, self);
+    rb_eval_string("puts 'klass is:'");
+    rb_funcall(rb_mKernel, rb_intern("puts"), 1, klass);
 
 ### Warnings I need to fix
 
@@ -100,11 +127,19 @@ Working with ifdef to detect and deal with ruby version differences
       typedef rb_event_t rb_event_flag_t;
     #endif
     
+#### Interesting Related
+
+[flame graphs in miniprofiler](http://samsaffron.com/archive/2013/03/19/flame-graphs-in-ruby-miniprofiler)
+    
 ### Other Links
 
 try with adding ALL the headers to the folder
 
 https://github.com/banister/binding_of_caller/tree/master/ext/binding_of_caller/ruby_headers/193
+
+https://github.com/banister/binding_of_caller/blob/master/ext/binding_of_caller/extconf.rb
+
+https://github.com/banister/binding_of_caller/blob/master/ext/binding_of_caller/binding_of_caller.c
 
 plane does this as well to work on 1.9.2 and 1.9.3
 
