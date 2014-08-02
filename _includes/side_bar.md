@@ -90,7 +90,8 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
     <li class="nav-header">Other Links</li>
-
+    <li><a href="http://millermayersadventures.com">Miller Mayers
+  Adventures, our travel blog</a></li>
     <li><a href="http://www.erinashleymiller.com">Erin Miller's Blog</a></li>
     <li><a href="http://www.livejournal.com/~idq">Inscrutable Drama Queen's Blog</a></li>
     <li><a href="http://bbrinck.com">Ben Brinckerhoff's blog</a></li>
