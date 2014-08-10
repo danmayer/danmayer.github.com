@@ -59,11 +59,12 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <li><a href="https://github.com/danmayer/coverband">Coverband: Ruby production code coverage</a></li>
     <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
     <li><a href="http://picoappz.com">Picoappz, tiny side project apps</a></li>
-    <li><a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a></li>
     <li>
-	  <a  href="http://www.mayerdan.com/rubynation-production-code-analysis/">Production  Code Analysis</a>
+      <a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a>
     </li>
-    <li>more baking in the oven...</li>
+    <li>
+	    <a href="http://www.mayerdan.com/rubynation-production-code-analysis/">Production Code Analysis Slides</a>
+    </li>
   </ul>
 </div>
 
