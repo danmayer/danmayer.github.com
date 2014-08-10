@@ -125,3 +125,7 @@ I think all of this is really promising and interesting, but the industry is you
 __Thanks__  
 
 Thanks goes out to [Andrew Thal](https://twitter.com/athal7), [Ed Weng](https://twitter.com/wengzilla), and [ Emily Rocheleau ](http://www.linkedin.com/pub/emily-rocheleau/12/5a1/9a1) for reading the draft of this post and making improvements. I am sure anyone who read the post understands it better for the help.
+
+__Update__
+
+A friend is running a to help people find a dev camp that fits them well. Check out [Coursereport.com](http://coursereport.com) - A programming bootcamp directory that features reviews, ratings for over 100 bootcamps worldwide.
