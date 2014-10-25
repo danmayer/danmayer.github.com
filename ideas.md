@@ -57,6 +57,14 @@ Posts for API reviews
           Your solution library should count calls to that method, and print the method signature and the number of times it was called when the program exits.
 
           Also, your solution should have a minimal impact on the program's running time.  Sorry set_trace_func"
+
+Thoughts
+===
+
+live cheap
+demand what your worth
+if you want to spend more
+increase your value and worth first
  
 Solved past Ideas
 ===
