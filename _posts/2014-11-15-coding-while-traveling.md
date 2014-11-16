@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Advice from my grandfather"
+title: "Coding while traveling"
 category: Programming
-tags: [Programming, Development, LifeHacks, Career]
+tags: [Programming, Development, LifeHacks, Travel]
 ---
 {% include JB/setup %}
 
