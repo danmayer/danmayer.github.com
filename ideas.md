@@ -65,6 +65,9 @@ live cheap
 demand what your worth
 if you want to spend more
 increase your value and worth first
+
+phone camera thought:
+ A ring around the lenses that only goes around the lenses. I like not having a case but my camera now sucks show before and after photos of the same nexus model as proof... Also recommend phone makes built something in or support we'll ng them
  
 Solved past Ideas
 ===
