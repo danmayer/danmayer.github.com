@@ -41,7 +41,7 @@ __Ensure correct additional information and photos of your establishments pages_
   
   
   * [TripAdvisor](http://www.tripadvisor.com/GetListedNew)
-  * [Google Local][https://support.google.com/business/answer/2911778?hl=en] (google places, google plus, google maps all seem to fall under the name google local for business)
+  * [Google Local](https://support.google.com/business/answer/2911778?hl=en) (google places, google plus, google maps all seem to fall under the name google local for business)
   * [Facebook page](https://www.facebook.com/help/104002523024878)
   
 __For lodging that includes a restaurant ensure both hotel and food listings__
