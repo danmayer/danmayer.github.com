@@ -27,6 +27,8 @@ __Have at least a basic website.__
 __Ensure correct location information on your establishments on mapping sites__
 
   I can't count the number of times we WANTED to visit a restaurant and could not find it. TripAdvisor has many restaurants with inaccurate location information. Google maps can't find the business at all. The official website doesn't link to any map or even have an address that shows up when entered into online map services.
+  
+  
   * add your location or fix the location of your establishment on google maps, bing maps, apple maps, mapquest
   * verify the location information is correct on popular review sits like TripAdvisor
   * if you are a hotel, B&B, check location information on hotels.com, agoda, priceline, or where ever else you have previously accepted reservations from
@@ -36,6 +38,8 @@ __Ensure correct location information on your establishments on mapping sites__
 __Ensure correct additional information and photos of your establishments pages__
 
   Maintain your online pages, adding photos, ensuring correct information (address, phone number, website, map locations). I would recommend maintaining at least these 3 pages:
+  
+  
   * [TripAdvisor](http://www.tripadvisor.com/GetListedNew)
   * [Google Local][https://support.google.com/business/answer/2911778?hl=en] (google places, google plus, google maps all seem to fall under the name google local for business)
   * [Facebook page](https://www.facebook.com/help/104002523024878)
