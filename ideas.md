@@ -69,6 +69,12 @@ increase your value and worth first
 phone camera thought:
  A ring around the lenses that only goes around the lenses. I like not having a case but my camera now sucks show before and after photos of the same nexus model as proof... Also recommend phone makes built something in or support we'll ng them
  
+TripAdvisor filters:
+
+you want to be able to filter the reviews to those who have only been to X or more countries (reviewed in X or more). Also a filter to find not super popular. If the avg number of reviews on a restaurant is 30 I want to throw out places with 90+ reviews as clearly they are the major tourist stops, looking for smaller more local food.
+
+also open now as a filter to hide all the restaurants not running available.
+ 
 Solved past Ideas
 ===
 
