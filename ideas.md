@@ -74,7 +74,10 @@ TripAdvisor filters:
 you want to be able to filter the reviews to those who have only been to X or more countries (reviewed in X or more). Also a filter to find not super popular. If the avg number of reviews on a restaurant is 30 I want to throw out places with 90+ reviews as clearly they are the major tourist stops, looking for smaller more local food.
 
 also open now as a filter to hide all the restaurants not running available.
- 
+
+Makes a post about this and some of the thoughts around how we handled and I learned to handle things like this at LS:
+https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
+
 Solved past Ideas
 ===
 
