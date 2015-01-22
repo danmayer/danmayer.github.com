@@ -81,7 +81,7 @@ The community in Malaysia was amazing, it was clearly growing fast and had great
 
 Thanks one more time to [Chin Xin-Ci](https://twitter.com/search?q=Chin%20Xin-Ci%20&src=typd&mode=users) co-founder of [Watch Over Me](http://watchovermeapp.com/), for taking the time to chat with me about her companies growth and struggles as a startup. It was awesome to gain such good insight into a Malaysian startup.
 
-I really enjoyed helping do code reviews with the [Code Division bootcamp](codedivision.my), as well as chatting with the teacher and students over dinner. A really big thank you goes out to [Josh Teng](http://joshteng.com/), who showed me a great time around KL and introduced me to many amazing people. It was a blast to see where you work, your apartment, and get driven around town by a local Rubyist showing off an awesome startup city. Thanks!
+I really enjoyed helping with code reviews for the [Code Division bootcamp class](codedivision.my), as well as chatting with the teacher and students over dinner. A really big thank you goes out to [Josh Teng](http://joshteng.com/), who showed me a great time around KL and introduced me to many amazing people. It was a blast to see where you work, your apartment, and get driven around town by a local Rubyist showing off an awesome startup city. Thanks!
 
 ### Final thoughts
 
