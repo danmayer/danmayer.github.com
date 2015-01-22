@@ -27,8 +27,7 @@ While I want to talk a bit about each country specifically, it was interesting t
 
 First I want to thank [Katherine Pe](https://c.kat.pe/), who through [Rails Girls](http://railsgirls.com), connected me with [Samnang Chhun](http://twitter.com/samnangchhun). Samnang organizes the [Cambodia Ruby users group](http://pailin.github.io/) and is a core member of a web development meetup group called [sharevisionteam](http://www.sharevisionteam.org/). Samnang organized a developer lunch, for me to meet some of the developers from the area. It was great to meet freelancers, organizers, and some developers who worked at [InSTEDD iLabs SE Asia](http://instedd.org/ilabs/southeast-asia/). Thanks for spending some time chatting with me [@ungsophy](https://twitter.com/ungsophy), [@channaly](https://twitter.com/channaly), and [@ksokmesa](https://twitter.com/ksokmesa).
 
-![image](/assets/img/rubyists_cambodia_1.jpg)
-![image](/assets/img/rubyists_cambodia_2.JPG)
+![image](/assets/img/rubyists_cambodia_1_enhance.jpg)
 
 While out at lunch, I learned a lot about pieces of the current development community in Cambodia. I didn't know much going in, so just learning common knowledge things like most of the community being in Phnom Penh, was interesting to me. Below is a short list of thoughts I had after visiting a few developers.
 
