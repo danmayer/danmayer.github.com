@@ -10,7 +10,9 @@ tags: [Programming, Development, Career]
 
 ### Rubyists are a welcoming community everywhere
 
-Some great things are going on in the development communities in SE Asia. As we were traveling I decided I would like to meet some Ruby communities along the way in other parts of the world. I reached out to [Rails Girls](http://railsgirls.com/)
+Some great things are going on in the Ruby communities in SE Asia. As [we were traveling](http://millermayersadventures.com/) I decided I would like to meet some Ruby communities along the way in other parts of the world.
+
+I reached out to [Rails Girls](http://railsgirls.com/)
 , specifically [Linda Liukas](http://lindaliukas.fi/), who was extemely helpful putting me in touch with local organizers around the world. I also met some organizers by searching for local Ruby user groups, specifically [Cape Town Ruby Brigade](https://groups.google.com/forum/#!forum/cape-town-ruby-brigade). Specifically, wanted to thank Steve Barnett the organizer of [Cape Town Ruby Brigade](https://groups.google.com/forum/#!forum/cape-town-ruby-brigade) for trying to setup a meetup with me while I was in South Africa, even though it didn't end up working out with my schedule. Finally, while this didn't help me internationally if you are looking for Ruby user groups it is worth checking out [RubyUserGroups.org](http://rubyusergroups.org/).
 
 It was amazing to me that shooting a single email to [Rails Girls](http://railsgirls.com), resulted in at least 5 organizers responding to me and putting me in touch with other contacts to help me meet up with some Rubyists while visiting. Everyone was extremely accommodating and happy to try to get together. I talked with other developers and startups as well, but my initial connection was always through the Ruby community.
