@@ -83,7 +83,7 @@ Thanks one more time to [Chin Xin-Ci](https://twitter.com/search?q=Chin%20Xin-Ci
 
 I really enjoyed helping do code reviews with the [Code Division bootcamp](codedivision.my), as well as chatting with the teacher and students over dinner. A really big thank you goes out to [Josh Teng](http://joshteng.com/), who showed me a great time around KL and introduced me to many amazing people. It was a blast to see where you work, your apartment, and get driven around town by a local Rubyist showing off an awesome startup city. Thanks!
 
-### Final Thoughts
+### Final thoughts
 
 I heard a lot about Singapore, when reaching out to the Ruby community in SE Asia and in person. I wish my travels had taken me through Singapore as it seems like the programming and startup hub of SE Asia from what I heard. Hopefully I can make a trip to visit the community in Singapore in the future.
 
