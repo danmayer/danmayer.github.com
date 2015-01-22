@@ -6,9 +6,9 @@ tags: [Programming, Development, Career]
 ---
 {% include JB/setup %}
 
-### Rubyists are a welcoming community everywhere
-
 ![image](/assets/img/rubyists_malaysia_2.jpg)
+
+### Rubyists are a welcoming community everywhere
 
 Some great things are going on in the development communities in SE Asia. As we were traveling I decided I would like to meet some Ruby communities along the way in other parts of the world. I reached out to [Rails Girls](http://railsgirls.com/)
 , specifically [Linda Liukas](http://lindaliukas.fi/), who was extemely helpful putting me in touch with local organizers around the world. I also met some organizers by searching for local Ruby user groups, specifically [Cape Town Ruby Brigade](https://groups.google.com/forum/#!forum/cape-town-ruby-brigade). Specifically, wanted to thank Steve Barnett the organizer of [Cape Town Ruby Brigade](https://groups.google.com/forum/#!forum/cape-town-ruby-brigade) for trying to setup a meetup with me while I was in South Africa, even though it didn't end up working out with my schedule. Finally, while this didn't help me internationally if you are looking for Ruby user groups it is worth checking out [RubyUserGroups.org](http://rubyusergroups.org/).
@@ -27,7 +27,7 @@ While I want to talk a bit about each country specifically, it was interesting t
 
 First I want to thank [Katherine Pe](https://c.kat.pe/), who through [Rails Girls](http://railsgirls.com), connected me with [Samnang Chhun](http://twitter.com/samnangchhun). Samnang organizes the [Cambodia Ruby users group](http://pailin.github.io/) and is a core member of a web development meetup group called [sharevisionteam](http://www.sharevisionteam.org/). Samnang organized a developer lunch, for me to meet some of the developers from the area. It was great to meet freelancers, organizers, and some developers who worked at [InSTEDD iLabs SE Asia](http://instedd.org/ilabs/southeast-asia/). Thanks for spending some time chatting with me [@ungsophy](https://twitter.com/ungsophy), [@channaly](https://twitter.com/channaly), and [@ksokmesa](https://twitter.com/ksokmesa).
 
-![image](/assets/img/rubyists_cambodia_1.JPG)
+![image](/assets/img/rubyists_cambodia_1.jpg)
 ![image](/assets/img/rubyists_cambodia_2.JPG)
 
 While out at lunch, I learned a lot about pieces of the current development community in Cambodia. I didn't know much going in, so just learning common knowledge things like most of the community being in Phnom Penh, was interesting to me. Below is a short list of thoughts I had after visiting a few developers.
