@@ -6,7 +6,7 @@ tags: [Programming, Career]
 ---
 {% include JB/setup %}
 
-![image](/assets/img/dan-fishes-sm.gif)
+![image](/assets/img/dan-fishes.gif)
 
 I posted the [best articles I read while traveling](http://millermayersadventures.com/2015/01/24/best-articles-i-read-while-traveling/) and my [travel book list](http://millermayersadventures.com/2015/01/18/reading-while-traveling/) on our family blog. On my dev blog, I figured I could share my slightly nerdier posts.
 

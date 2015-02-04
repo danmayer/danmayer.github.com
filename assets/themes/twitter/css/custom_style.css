@@ -22,4 +22,9 @@ h3 .index-title span {
   font-size: 14px;
 }
 
+.index-title span {
+  padding-left: 16px;
+  font-size: 14px;
+}
+
 /*.blog-header { display:none; }*/
