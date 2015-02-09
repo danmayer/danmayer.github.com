@@ -18,3 +18,10 @@ My nephew is interested in robots. I told him that we could build a robot togeth
 * Looking to build something my newphew could keep and play with.
 
 If anyone has any ideas shoot me an email, comment, or tweet.
+
+## Thanks! Current ideas (shared, sent, and found)
+* [makeymakey](http://makeymakey.com/) //thanks [@Marchdoe](http://twitter.com/marchdoe)
+* [smallest solar power car kit](http://www.amazon.com/dp/B004FEXUP4/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I1G491QO401CBH&psc=1)
+* [solar race car kit](http://www.amazon.com/dp/B000WWV4MY/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I37DRKYOUINY3X)
+* [tin can robot](http://www.amazon.com/dp/B0014WO96Y/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I1Y9YWH8Q1VV9D)
+* [owi 14-in-1 robot kit](http://www.amazon.com/dp/B00CAWP9YI/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I2CM7MFN20NNXY)
