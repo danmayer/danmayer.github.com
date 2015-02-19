@@ -95,7 +95,7 @@ Since every situation is a bit different. I want to try to give a bit better ide
 I didn't realize the code had spread so far and wide through out the app and just figured. I could create the object one place in the request and then switch all the calls to it. Basically the change was something like below.
 
 * in `app/controllers/application_controller.rb`
-  * I removed the module: `git diff => -  include ContentNegotiation`
+  * I removed the module: `git diff => -  include HelpfulModule.new`
   * I removed all the various helper methods `git diff =>`
   
         - helper_method :helpful_check?
