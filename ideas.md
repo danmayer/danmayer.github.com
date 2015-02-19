@@ -9,6 +9,7 @@ This is a page, where I can list ideas as I have them. Then post links to either
 Project Ideas
 ===
 
+* coverband could collect for this http://tenderlovemaking.com/2015/02/13/predicting-test-failues.html
 * pre git commit hook spellcheck, cmd-line likely using aspell or something build in osx 
 * Sinatra app that just polls mysql slow and displays it with history etc
 * github -> kindle reader format the code for kindle readability and have links / section browsing for the files.
