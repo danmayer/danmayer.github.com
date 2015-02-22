@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Continuously Deployed
+title: 
 tagline: Dan Mayer's Dev Blog
 ---
 {% include JB/setup %}

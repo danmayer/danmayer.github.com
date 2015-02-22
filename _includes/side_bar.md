@@ -20,6 +20,7 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_5b66a725371ebccef646cdb7b_86dcfbcec5" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
+	(emailed once a week, if new posts)
 </form>
 </div>
 <!--End mc_embed_signup-->
