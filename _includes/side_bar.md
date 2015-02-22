@@ -1,8 +1,30 @@
 <img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center"/>
 <div class="intro">
 I am Dan Mayer and this is my development blog. Currently it focuses mostly on Ruby development, a side of dev process, and best practices. It also has archives of my old development posts dating back to when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
-</div>
+
 <h4 class="side-header"><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
+
+<!-- Begin MailChimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="//mayerdan.us10.list-manage.com/subscribe/post?u=5b66a725371ebccef646cdb7b&amp;id=86dcfbcec5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<label for="mce-EMAIL">Subscribe for email posts</label>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_5b66a725371ebccef646cdb7b_86dcfbcec5" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<!--End mc_embed_signup-->
+
+</div>
 
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
