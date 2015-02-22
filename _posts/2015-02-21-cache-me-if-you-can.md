@@ -42,8 +42,15 @@ One nice solution, I've seen was done by [@gfmurphy](https://twitter.com/gfmurph
       class DataGetter
         NullData = Struct.new()
      
-        def get_slow_data
-          @slow_data_or_nil ||= (SomeService.slow_data(params) || NullData.new())
+        def get_slow_data_rails_cache
+          @slow_data_or_nil = Rails.cache.fetch("cache_key_#{params[:id]}", :expires_in => 30.minutes) {
+            SomeService.slow_data(params) || NullData.new()
+          }
+          @slow_data_or_nil.is_a?(NullData) ? nil : @slow_data_or_nil
+        end
+     
+        def get_slow_data_memoize
+          @slow_data_or_nil ||= SomeService.slow_data(params) || NullData.new()
           @slow_data_or_nil.is_a?(NullData) ? nil : @slow_data_or_nil
         end
       end
@@ -52,6 +59,7 @@ One nice solution, I've seen was done by [@gfmurphy](https://twitter.com/gfmurph
 Another solution I have seen a number of times, so I don't know who to give original credit to, I will call the existence check.
  
     class DataGetter
+      # this solution only works for memoization
      
       # This will not cache nils
       def get_slow_data__bad
