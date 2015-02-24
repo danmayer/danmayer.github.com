@@ -22,7 +22,7 @@ At first glance it seems fine, it looks like this is a normal cache call and sho
 
 ## Remember to take special care if you need to cache nil
 
-Looking back at the logs, I noticed this was only occurring for objects that were no longer available. A minority of requests for sure, but they would happen over and over... Because the API client was turning the 404 response into nil. Unlike the case with an object `Rails.cache.fetch` won't cache `nil`.
+Looking back at the logs, I noticed this was only occurring for objects that were no longer available. A minority of requests for sure, but they would happen over and over... Because the API client was turning the 404 response into nil. Unlike the case with an object `Rails.cache.fetch` won't cache `nil`. To read a bit more about features of `Rails.cache.fetch` or how it might not match expectations read the [cache.fetch documentation](http://api.rubyonrails.org/classes/ActiveSupport/Cache/Store.html#method-i-fetch).
 
 There are two places I see this error pop up:
 
