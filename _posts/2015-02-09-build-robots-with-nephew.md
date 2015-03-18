@@ -25,3 +25,9 @@ If anyone has any ideas shoot me an email, comment, or tweet.
 * [solar race car kit](http://www.amazon.com/dp/B000WWV4MY/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I37DRKYOUINY3X)
 * [tin can robot](http://www.amazon.com/dp/B0014WO96Y/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I1Y9YWH8Q1VV9D)
 * [owi 14-in-1 robot kit](http://www.amazon.com/dp/B00CAWP9YI/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I2CM7MFN20NNXY)
+
+## Results
+
+I ended up going with, the [tin can robot](http://www.amazon.com/dp/B0014WO96Y/ref=wl_it_dp_o_pC_nS_ttl?_encoding=UTF8&colid=NT2OSIG2COH&coliid=I1Y9YWH8Q1VV9D). Which worked out great. Since he is 6 and the product is recommended for 8 and up, it was a lot more of me putting it together and him helping, but it did maintain his interest the entire time and we were able to finish the robot. I did have issues screwing nearly all of the joints together. I gave up on a number of them and ended up just taping a few pieces together with invisible tape. Overall, still worked out great, he learned some things it sparked his interest, and he asked great questions.
+
+![image](/assets/img/soda_can_robot.jpg)
