@@ -82,6 +82,7 @@ Run it in foreground or background
 [connect docker containers together](http://stackoverflow.com/questions/18460016/connect-from-one-docker-container-to-another)
 [example connecting two dockers together](http://docs.docker.io/en/latest/examples/running_redis_service/)
 [add collected](https://github.com/dotcloud/collectd-graphite/blob/master/Dockerfile)
+[docker cheat sheat](https://github.com/wsargent/docker-cheat-sheet)
 
 [docker best practices](http://crosbymichael.com/dockerfile-best-practices.html)
 
@@ -120,7 +121,7 @@ https://github.com/kencochrane/docker-guidebook/blob/master/docker-guidebook.rst
     
 ### Redhat docker
 
-* http://docs.docker.io/en/latest/installation/rhel/ //docs
+* http://docs.docker.io/en/latest/installation/rhel/ //docsfor
 * sudo yum -y install docker-io
 * sudo yum -y update docker-io
 * sudo service docker start
