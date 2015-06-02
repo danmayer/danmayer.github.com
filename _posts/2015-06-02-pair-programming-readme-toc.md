@@ -1,3 +1,11 @@
+---
+layout: post
+title: "pair programming readme toc"
+category: Programming
+tags: [Programming, Development]
+---
+{% include JB/setup %}
+
 # Pairing Around the Globe
 
 I met a number of [Ruby devs when traveling](http://www.mayerdan.com/programming/2015/01/21/ruby-in-south-east-asia/). One developer I met [Samnang Chhun](http://samnang.me/) have been keeping in touch and wanting to pair on something. We hooked up online for a bit, while chatting we thought it would be nice if github readme's had a nice table of contents. So we decided to hack something up real quick. 
