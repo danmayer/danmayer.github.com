@@ -154,7 +154,14 @@ https://github.com/kencochrane/docker-guidebook/blob/master/docker-guidebook.rst
   //redhat has some docker issues
   Error mounting '/dev/mapper/docker-252:0-1329382-33d868dfbf5b8e7d8aa67b5b9f4b01cd9ff3a3360c16b09f3061c09878e933ec'
   
+### upgrading a running docker
 
+    sudo docker run -u root -i -t sentry741 /bin/bash
+    pip install sentry-slack
+    #in host machine
+    sudo docker commit 4258980f702e sentry741:slack_integration
+    sudo docker stop sentry741:latest
+    sudo sudo docker run --name setry-web-slack --link redis1:redis -p 80:9000 -v ~/sentry.conf.py:/home/user/.sentry/sentry.conf.py -d -u user sentry741:slack_integration sentry start
     
 ### OSX docker
 
@@ -172,7 +179,6 @@ When you expose a port on OSX docler with -p it only exposes for the OSX thin vi
   
 ### Dockers I love
 
-
     # unless docker running redis run
     # sudo docker run -d -p 6379:6379 dockerfile/redis
 
@@ -183,4 +189,7 @@ When you expose a port on OSX docler with -p it only exposes for the OSX thin vi
       * how it handles plugins
       https://github.com/zaiste/docker-jenkins/blob/master/run
 
-    
+### Docker command reference
+
+* show all dockers `docker ps -a`
+* remove docker by name: `docker rm name-given-when-run`
