@@ -160,11 +160,10 @@ sup {
 
 <p>You can drag the bookmarklet into you nav bar to quickly add a TOC onto any github page.</p>
 
-<p><a href="javascript:function tocLink(a,e,n){var s='<li class=\"tooltipped tooltipped-w\" aria-label=\"'+e+'\"><a href=\"'+n+'\" aria-label=\"'+e+'\"class=\"js-selected-navigation-item sunken-menu-item\"><span class=\"full-word\">'+e+\"</span></a></li>\";return s}var header=\"<li class='tooltipped tooltipped-w'><strong>&nbsp;Table of Contents</strong></li>\",rows=[];$(\"a[class=anchor\").each(function(a,e){$anchor=$(e),$heading=$anchor.parent(),rows.push(tocLink($heading.prop(\"tagName\").toLowerCase(),$heading.text(),$anchor.attr(\"href\")))});var template=\"<div class='repository-sidebar'><nav class='sunken-menu repo-nav' role='navigation'><div class='sunken-menu-separator'></div><ul class='sunken-menu-group'>\"+header+rows.join(\"\")+\"</ul></nav></div>\";$($(\".repository-with-sidebar.with-full-navigation .repository-sidebar\")[0]).append(template)">Readme TOC</a></p>
-
 <p>
-<a href="http://samnang.me/">Samnang</a> is a Rails developer currently looking for remote contracting or full time Ruby gig's. If you are looking for someone get in touch with him.</p>
 
-<p>how to bookmarklet: http://code.tutsplus.com/tutorials/create-bookmarklets-the-right-way--net-18154</p>
+<a href="javascript:function tocLink(a,e,n){var s='<li class=\"tooltipped tooltipped-w\" aria-label=\"'+e+'\"><a href=\"'+n+'\" aria-label=\"'+e+'\"class=\"js-selected-navigation-item sunken-menu-item\"><span class=\"full-word\">'+e+\"</span></a></li>\";return s}var header=\"<li class='tooltipped tooltipped-w'><strong>&nbsp;Table of Contents</strong></li>\",rows=[];$(\"a[class=anchor\").each(function(a,e){$anchor=$(e),$heading=$anchor.parent(),rows.push(tocLink($heading.prop(\"tagName\").toLowerCase(),$heading.text(),$anchor.attr(\"href\")))});var template=\"<div class='repository-sidebar'><nav class='sunken-menu repo-nav' role='navigation'><div class='sunken-menu-separator'></div><ul class='sunken-menu-group'>\"+header+rows.join(\"\")+\"</ul></nav></div>\";$($(\".repository-with-sidebar.with-full-navigation .repository-sidebar\")[0]).append(template);">Readme TOC</a>
+
+</p>
 </body>
 </html>
