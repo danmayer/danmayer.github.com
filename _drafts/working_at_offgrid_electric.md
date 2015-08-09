@@ -1,3 +1,5 @@
+![image](http://www.mayerdan.com/assets/img/Dan-Roof-Install-2.JPG)
+
 # Investing Your Time
 
 This post is what initially got me thinking about [working at Offgrid Electric](https://medium.com/electric-africa/a-dream-job-for-someone-who-loves-adventure-d256b8d21a97)
