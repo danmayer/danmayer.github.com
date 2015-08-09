@@ -79,6 +79,13 @@ also open now as a filter to hide all the restaurants not running available.
 Makes a post about this and some of the thoughts around how we handled and I learned to handle things like this at LS:
 https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 
+The Spreadsheet problem:
+  * people love excel because they can get the data and munipulate it to their needs without a dev
+  * accuracy, keeping up to date, bugs, data size
+  * trying to replace that flexibility in an app means you have to build all the functions people love and need from excel
+  * what about google docs hooked to an API? 2-way sync, ability to push results back into the system. Some ability to validate data?
+  * could be an interesting compromise to trying to replace a flexible user driven excel process with completely custom software.
+
 Solved past Ideas
 ===
 

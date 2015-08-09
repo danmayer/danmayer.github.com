@@ -161,7 +161,10 @@ https://github.com/kencochrane/docker-guidebook/blob/master/docker-guidebook.rst
     #in host machine
     sudo docker commit 4258980f702e sentry741:slack_integration
     sudo docker stop sentry741:latest
-    sudo sudo docker run --name setry-web-slack --link redis1:redis -p 80:9000 -v ~/sentry.conf.py:/home/user/.sentry/sentry.conf.py -d -u user sentry741:slack_integration sentry start
+    #restart upgraded instances
+    sudo docker run --name setry-web-slack --link redis1:redis -p 80:9000 -v ~/sentry.conf.py:/home/user/.sentry/sentry.conf.py -d -u user sentry741:slack_integration sentry start
+    sudo docker run --name setry-celery-slack --link redis1:redis -v ~/sentry.conf.py:/home/user/.sentry/sentry.conf.py -d -u user sentry741:slack_integration sentry celery worker -B -l WARNING
+
     
 ### OSX docker
 
