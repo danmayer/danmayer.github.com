@@ -7,11 +7,11 @@ tags: [Programming, Development]
 {% include JB/setup %}
 
 
-![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 Some folks have asked about how I ended up at a job like [Off Grid Electric](https://medium.com/@Offgrid). I thought, I would share a bit of that. I recently took a sabbatical to travel for about 5 months with my wife. While I was traveling, I was thinking about my career, the future, what is important to me. I felt like I hadn't been pushing myself enough lately, and I had lost some of the passion I always liked to bring into my work. 
 
-# TL;DR
+### TL;DR
 
 > "Across sub-Saharan Africa, fully 590 million people lack access to power. And it's a life-or-death issue: Indoor air pollution from wood stoves now kills 3.5 million people per year, more than AIDS and malaria combined." --[Brad Plumer: Washington Post](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/07/02/a-closer-look-at-obamas-7-billion-plan-to-bring-electricity-to-africa/)
 
@@ -32,9 +32,10 @@ Seeing many different countries in my world definitely changed my thoughts on wh
 * access to education
 * income inequality
 
+
 > [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1.JPG)
 > [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-2-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-2.JPG)
-> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3.JPG)
+> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3.JPG)
 >
 > Climbing onto a roof to install solar panels
 
@@ -82,11 +83,13 @@ I know other folks that are looking to make changes. If this is the kind of work
 
 ### Open Engineering Positions at Off Grid Electric
 
-[Lead Android Engineer](https://medium.com/electric-africa/lead-android-engineer-d35e149745e3)
+* [Lead Android Engineer](https://medium.com/electric-africa/lead-android-engineer-d35e149745e3)
 
-[User Experience Lead](https://medium.com/electric-africa/surge-ui-engineer-c0d116f06d71)
+* [User Experience Lead](https://medium.com/electric-africa/surge-ui-engineer-c0d116f06d71)
 
-Ruby Generalist - full job posting coming soon.
+* Ruby Generalist - full job posting coming soon.
+
+We also have [non-software jobs](http://offgrid-electric.com/jobs/), if you aren't about writing code all day ;)
 
 ### Not your thing?
 
