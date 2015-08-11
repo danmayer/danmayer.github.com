@@ -1,3 +1,12 @@
+---
+layout: post
+title: "Working at Off Grid Electric"
+category: Programming
+tags: [Programming, Development]
+---
+{% include JB/setup %}
+
+
 ![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 Some folks have asked about how I ended up at a job like [Off Grid Electric](https://medium.com/@Offgrid). I thought, I would share a bit of that. I recently took a sabbatical to travel for about 5 months with my wife. While I was traveling, I was thinking about my career, the future, what is important to me. I felt like I hadn't been pushing myself enough lately, and I had lost some of the passion I always liked to bring into my work. 
@@ -46,7 +55,7 @@ I started to think that many of the best engineers, I know work at a cross secti
 
 Around that time I started to come across a post on my social media. I must have seen it three or four times before I decided it was something I needed to follow up on. I do know that [Micah](http://learntoduck.net/), whom I had know through [@techstars](http://www.techstars.com/) had posted the job to Facebook. His post was the final push to motivate me to finally click through and contact [@Off Grid Electric](https://twitter.com/offgride). The job post really seemed to be a great fit for what I was looking for, [a dream job for someone who loves adventure](https://medium.com/electric-africa/a-dream-job-for-someone-who-loves-adventure-d256b8d21a97).
 
-# Know What Your Want 
+# Know What You Want 
 
 After a bit of time talking with [Thor Muller](https://twitter.com/tempo), it became clear that Off Grid Electric, also satisfied other parts of a job I find important.
 
