@@ -87,7 +87,7 @@ I know other folks that are looking to make changes. If this is the kind of work
 
 * [User Experience Lead](https://medium.com/electric-africa/surge-ui-engineer-c0d116f06d71)
 
-* Ruby Generalist - full job posting coming soon.
+* [Ruby Generalist](https://medium.com/electric-africa/surge-platform-developer-274d3b9f2a69)
 
 We also have [non-software jobs](http://offgrid-electric.com/jobs/), if you aren't about writing code all day ;)
 
