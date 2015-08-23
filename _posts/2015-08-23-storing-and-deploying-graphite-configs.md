@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Storing and deploying graphite configs"
+category: Programming
+tags: [Programming, Development]
+---
+{% include JB/setup %}
+
 # Storing & deploying graphite configs
 
 When I worked [@livingsocialeng](https://twitter.com/livingsocialeng) a engineer on the team [Josh Sharpe](https://github.com/crankharder) improved how we dealt with graphite dashboards. He wrote Rake tasks to push and pull our graphite dashboards into each project's git repo. This made it easier to collaborate on dashboards and see the history of a dashboard. It is really handy to keep your dashboard under version control. If you don't know why you want graphite dashboards or why it would be good to keep them in version control, checkout [a practical guid to graphite monitoring](http://matt.aimonetti.net/posts/2013/06/26/practical-guide-to-graphite-monitoring/).
