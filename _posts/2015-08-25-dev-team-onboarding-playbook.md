@@ -57,6 +57,6 @@ This is my current draft on building out an onboarding playbook:
   * with other key players (QA, etc)
 * Scheduled items should be added to new dev's calendar
  
-Thanks [@mariagutierrez](https://twitter.com/mariagutierrez), [@glv](https://twitter.com/glv), [@sonia_pdx](https://twitter.com/sonia_pdx), [@davetron5000](https://twitter.com/davetron5000) for ideas and inspiration.
+Thanks [@mariagutierrez](https://twitter.com/mariagutierrez), [@glv](https://twitter.com/glv), [@tempo](https://twitter.com/tempo), [@sonia_pdx](https://twitter.com/sonia_pdx), & [@davetron5000](https://twitter.com/davetron5000) for ideas and inspiration.
 
 If you have ideas, please share in the comments or hit me up on twitter [@danmayer](https://twitter.com/danmayer)
