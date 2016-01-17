@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Developer Team Onboarding Playbook"
-category: Programming
-tags: [Programming, Development]
+category: Tech Management
+tags: [Programming, Development, Management, Process]
 ---
 {% include JB/setup %}
 

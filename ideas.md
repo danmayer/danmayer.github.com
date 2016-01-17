@@ -59,6 +59,20 @@ Posts for API reviews
 
           Also, your solution should have a minimal impact on the program's running time.  Sorry set_trace_func"
 
+# Post Ideas
+===
+
+A generic, Today I learned: 
+
+To export data from redshift, you can send it to S3
+
+`UNLOAD ('select * from table') TO 's3://redshift-export/table_name_' credentials 'aws_access_key_id=XXX;aws_secret_access_key=XXX';`
+
+If you need to sync data after exporting a bunch of Redshift data you can pull it down using AWS sync.
+
+`aws s3 sync s3://redshift-export .`
+
+
 Thoughts
 ===
 
@@ -85,6 +99,9 @@ The Spreadsheet problem:
   * trying to replace that flexibility in an app means you have to build all the functions people love and need from excel
   * what about google docs hooked to an API? 2-way sync, ability to push results back into the system. Some ability to validate data?
   * could be an interesting compromise to trying to replace a flexible user driven excel process with completely custom software.
+
+
+
 
 Solved past Ideas
 ===
