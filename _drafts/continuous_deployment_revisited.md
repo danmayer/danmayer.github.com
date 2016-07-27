@@ -6,7 +6,7 @@ The ideal web software deployment process lets you quickly deploy features as th
 2. Stakeholder feedback
 3. Long running branches (large groups of related features, 3rd party integrations, etc)
 
-In each of the cases above. There is a time where you want a deployment, which is deployed and available to some set of users (beyond the developers machine). This gets beyond the simple continuous deployment of `dev` branch to the staging server and `master` to production. How do you scale continuous deployment?
+We had each of the above cases, at [Offgrid-Electric](http://offgrid-electric.com/). All the cases point towards a staging environment. In normal feature development flow is a time where you want share your work, which should be deployed and available to some set of users. Let's explore how a single staging doesn't solve everything.
 
 # Staging Servers
 
@@ -19,7 +19,7 @@ The first thing people often do for QA and stakeholders is setup a staging serve
 * When QA is working on testing one feature they are often running into bugs for another feature complicating testing and debugging.
 * Training? We have a lot of internal tools that can't be released until users are informed and trained on the new system. The feedback loop on training, can block features for weeks.
 
-At this point sometimes folks setup multiple staging servers or use tools like [xip.io/](http://xip.io/) to share developers boxes. These solutions are bandaids for and only solve small pieces of the problem. In the end, you want to be able to take any branch and dynamically create a deployed environment and keep it around as needed.
+At this point sometimes folks setup multiple staging servers or use tools like [xip.io/](http://xip.io/) to share developers boxes. These solutions are bandaids for and only solve small pieces of the problem. In the end, you want to be able to take any branch and dynamically create a deployed environment and keep it around as needed. This gets beyond the simple continuous deployment of `dev` branch to the staging server and `master` to production. How do you scale continuous deployment?
 
 # Feature Branch Staging
 
