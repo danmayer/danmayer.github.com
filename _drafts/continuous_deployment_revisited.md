@@ -1,4 +1,4 @@
-# Team Deployment Processes
+# Continuous Deployment for Feature Branches 
 
 The ideal web software deployment process lets you quickly deploy features as they are ready and tested. I previously wrote about [continuous-deployment](http://www.mayerdan.com/programming/2013/08/04/thoughts-on-continuous-deployment/) previously, and most of those thoughts remain. I do think that continuous deployment can have some other issues beyond automated testing that make it a challenge, in this post I want to focus more on the human feedback loop opposed to the automated one.
 
@@ -27,7 +27,7 @@ With the cloud and related tools, it isn't much harder to go from continuous dep
 
 ### What does it look like?
 
-A developer starts a feature branch from `master`. They work on the feature say `feature/new_cool_page`, and check it into git. The team CI (Continious Integration) server is already running the tests on each commit. At some point, the developers are ready to share and get external feedback from stakeholders, PM team, and QA. The developers can run some command `create_branch_staging`. Which will stand up a new server deployment using their branch and return a URL based on the branch name `new_cool_page.staging-domian.com`. From then on future git pushes can deploy to the feature branch if CI finds a matching staging environment, or you can continue to deploy to the feature staging server manually.
+A developer starts a feature branch from `master`. They work on the feature say `feature/new_cool_page`, and check it into git. The team CI (Continuous Integration) server is already running the tests on each commit. At some point, the developers are ready to share and get external feedback from stakeholders, PM team, and QA. The developers can run some command `create_branch_staging`. Which will stand up a new server deployment using their branch and return a URL based on the branch name `new_cool_page.staging-domian.com`. From then on future git pushes can deploy to the feature branch if CI finds a matching staging environment, or you can continue to deploy to the feature staging server manually.
 
 Once you have a feature on a viewable staging branch, there can be a lot of feedback and discussion among the team. Often PRs with comments from devs will link to issues on the feature staging server. When everything is finally ready to go, you merge the branch to `master` and deploy to production. Destroy the feature staging environment `destroy_branch_staging` and celebrate another victory!
 
@@ -35,7 +35,7 @@ We still manage a "shared" staging server as well, this is for any features that
 
 The process enabled by being able to create multiple environments dynamically solves most of the issues with a shared staging server. It significantly increased our velocity. Increased the confidence of our smaller deploys, and made it simpler to prototype and throw away ideas. Beyond the developer process. It additionally has other nice benefits.
 
-* Forcing function to fully automate your infrastructure (encouraging DevOps)
+* Forcing function to fully automate your infrastructure (encouraging DevOps), basically [immutable infrastructure](https://blog.codeship.com/immutable-infrastructure/).
 * Easy to test infrastructure changes independantly from code changes (ha-proxy, Nginx config, different memory CPU and instances, etc.)
 * Depending on how you solve some of the data replication challenges (mentioned shortly), it is built in testing for backup and restore
 * Discover bottlenecks in your infrastructure earlier before production
