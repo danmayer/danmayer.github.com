@@ -53,7 +53,7 @@ The process enabled by being able to create multiple environments dynamically so
 
 While this sounds great, it does bring up some additional challenges from having a more traditional CI deployments to staging and production environments. It isn't quite as simple as the prior case of deploying to single environment that was often configured by hand and had it's data smoothed over the ages. Think about all the dependencies that go into running your app and how they relate to one another, such as how you seed your staging environment data. Here are some of the challenges we faced.
 
-* __Seed Data:__ our staging uses and old snapshot of production with additional QA data layered on top
+* __Seed Data:__ our staging uses an old snapshot of production with additional QA data layered on top
   * __our solution:__ daily snapshots of staging. Each feature branch starts with the most recent RDS (AWS Postgres) snapshot to dynamically create a new DB. Then any migrations since the snapshot are applied on top. (We can easily pull our production snapshots as well if we need to debug production data issues)
 * __Multiple Data Sources:__ Our app requires Postgres, Redis, and Solr and each needs data seeded per environment
   * __our solution:__ each data store has its individual requirements.
