@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Feature Branch Staging Servers"
+category: Programming
+tags: [Programming, Development, Management, Process, Planning]
+---
+{% include JB/setup %}
+
 # Continuous Deployment for Feature Branches 
 
 The ideal web software deployment process lets you quickly deploy features as they are ready and tested. I previously wrote about [continuous-deployment](http://www.mayerdan.com/programming/2013/08/04/thoughts-on-continuous-deployment/) previously, and most of those thoughts remain. I do think that continuous deployment can have some other issues beyond automated testing that make it a challenge, in this post I want to focus more on the human feedback loop opposed to the automated one.
