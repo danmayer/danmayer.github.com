@@ -6,15 +6,15 @@ tags: [Programming, Development]
 ---
 {% include JB/setup %}
 
-
-[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
-> installing our system on a roof in a remote village of Karatu, Tanzania
-
 ### A job that will inspire you daily
 
 The work we do at [Off Grid Electric](https://medium.com/@Offgrid), has a clear impact. The mission is inspiring and the immediate benefits we deliver are obvious and extremely rewarding. 
 
 Our team is amazing, and driven to rise to a challenge. We face unique challenges operating without physical addresses,  60% network coverage, and customer support for people without internet. We take distributed work both challenges and benefits seriously, building a team and process to enjoy it's freedoms.
+
+[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+
+> installing our system on a roof in a remote village of Karatu, Tanzania
 
 __We are hiring__
 
@@ -50,3 +50,25 @@ Musk clearly believes in it because he is an investor in Offgrid Electric, throu
 
 > "This allows you to go completely off grid. It’s analogous to the way that mobile leapfrogged landlines." --[Tesla Energy Will Help World’s Poor Leapfrog the Grid](http://www.bloomberg.com/news/articles/2015-05-01/musk-says-tesla-energy-will-help-world-s-poor-leapfrog-the-grid)
 
+# Offrid Electric in Tanzania
+
+Our global headquarters is in Arusha Tanzania. While we are launching in other countries, Tanzania is by far the most developed part of our business. We recently rebranded Offgrid Electric's offerings from M-Power to Zola in Tanzania.
+
+> [![image](http://www.mayerdan.com/assets/img/zola_building.jpg)](http://www.mayerdan.com/assets/img/zola_building.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_sales.jpg)](http://www.mayerdan.com/assets/img/zola_sales.jpg)
+> [![image](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)
+>
+> Office in Arusha, TZ, field visit with Sales team, hanging out employee cottage
+
+We have partnerships and sell at gas stations through out Tanzania.
+
+> [![image](http://www.mayerdan.com/assets/img/zola_ad.jpg)](http://www.mayerdan.com/assets/img/zola_ad.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_demo.jpg)](http://www.mayerdan.com/assets/img/zola_demo.jpg)
+>
+> Banner ad outside gas station, Demo unit inside Total gas station
+
+We sell most frequently to areas with limited or no access to the power grid. Often these are more modern villages just to remote for access, but we also sell to Maasai villages, which can spread over large distances into the mountains.
+
+> [![image](http://www.mayerdan.com/assets/img/maasai village.jpg)](http://www.mayerdan.com/assets/img/maasai village.jpg)
+>
+> Panoramic view from hilltop down to base of Maasai village, we have a number of customers in the village
