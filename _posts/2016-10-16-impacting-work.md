@@ -54,16 +54,16 @@ Musk clearly believes in it because he is an investor in Offgrid Electric, throu
 
 Our global headquarters is in Arusha Tanzania. While we are launching in other countries, Tanzania is by far the most developed part of our business. We recently rebranded Offgrid Electric's offerings from M-Power to Zola in Tanzania.
 
-> [![image](http://www.mayerdan.com/assets/img/zola_building.jpg)](http://www.mayerdan.com/assets/img/zola_building.jpg)
-> [![image](http://www.mayerdan.com/assets/img/zola_sales.jpg)](http://www.mayerdan.com/assets/img/zola_sales.jpg)
-> [![image](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_building_sm.jpg)](http://www.mayerdan.com/assets/img/zola_building.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_sales_sm.jpg)](http://www.mayerdan.com/assets/img/zola_sales.jpg)
+> [![image](http://www.mayerdan.com/assets/img/Offgrid_cottage_sm.jpg)](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)
 >
 > Office in Arusha, TZ, field visit with Sales team, hanging out employee cottage
 
 We have partnerships and sell at gas stations through out Tanzania.
 
-> [![image](http://www.mayerdan.com/assets/img/zola_ad.jpg)](http://www.mayerdan.com/assets/img/zola_ad.jpg)
-> [![image](http://www.mayerdan.com/assets/img/zola_demo.jpg)](http://www.mayerdan.com/assets/img/zola_demo.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_ad_sm.jpg)](http://www.mayerdan.com/assets/img/zola_ad.jpg)
+> [![image](http://www.mayerdan.com/assets/img/zola_demo_sm.jpg)](http://www.mayerdan.com/assets/img/zola_demo.jpg)
 >
 > Banner ad outside gas station, Demo unit inside Total gas station
 
