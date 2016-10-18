@@ -23,7 +23,7 @@ Our Software team is hiring the positions below. There are other non software po
 * [Sr. Data Engineer](https://medium.com/electric-africa/sr-data-engineer-bc6c3d5d476a#.u8yqw5qh7), big data, ETL, and data infrastructure.
 * [Full Stack Ruby](https://medium.com/@Offgrid/surge-platform-developer-274d3b9f2a69#.9ma62xwfr), APIs, integrations, and IOT.
 * [Sr. Android Engineer](https://medium.com/@Offgrid/sr-android-engineer-fff5ac2fccc0#.6jc3z3i2t), majority of our workforce is on motorcycles with an Android.
-* QA Engineer (job description coming soon)
+* [QA Engineer](https://medium.com/@Offgrid/sr-qa-engineer-335fdf0adea3#.v0iwehsxz), test automation, team management, web/mobile testing.
 
 ### Don't take my word for it
 
