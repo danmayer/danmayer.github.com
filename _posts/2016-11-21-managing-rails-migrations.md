@@ -90,6 +90,8 @@ Rarely there is a reason to bypass migrations entirely and make a change manuall
 Basically the same as above __BUT__:
 
 1. migration file should never run in production, we still want it for dev, testing, and likely staging though. In this case skip the `_` naming part of the process mentioned above.  
+
+
 ```ruby
 class AddTransactionDate < ActiveRecord::Migration
   def up
