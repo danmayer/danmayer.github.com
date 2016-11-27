@@ -152,6 +152,7 @@ I like to be able to check things off my list so to speak, these symbols I try t
 
 Daily Standup, is the workhorse of the system. The section where I put in what I plan to do for a day, but also adjust it to what I am doing during the day. At the start of the week, I write down a few of the things I know for the full week. As the week progresses, there is more and more detail and often my days get fully booked up with work scheduled.
 
+We share our text standups in a Slack channel, so I try to share mine at the end of most days or at the end of the week. I used to share at start of day, but to often unexpected items end up changing my plans. 
 
 ```Markdown
 # Standup
