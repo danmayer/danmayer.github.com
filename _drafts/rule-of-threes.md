@@ -8,3 +8,4 @@ if it takes 3 times longer to make a small specific library generic and reusable
 
 It using memcache over some custom cache.
 
+http://sourcesofinsight.com/the-rule-of-3/
