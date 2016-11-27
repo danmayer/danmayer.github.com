@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Standup Markdown History"
+title: "Staying Organized with Markdown"
 category: Programming
 tags: [Programming, Tech Management]
 ---
