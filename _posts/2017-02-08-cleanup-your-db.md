@@ -12,7 +12,7 @@ As systems grow sometimes tables and models come and go. Often things don't get 
 
 I first tried to do this in pure SQL with a subquery, but when I was having trouble making it work, I found a post basically saying don't do that. It's point was if you are going to run a subquery over a collection of all your tables us code not SQL. In the end I made a simple Rake task to output the data I wanted.  You should be able to drop it into your own project and get a good idea of tables that might not be needed and get to drop the related code as well. In my case it brought about 14 tables to our attention to schedule for cleanup.
 
-```
+```ruby
 namespace :database do
   desc 'List all tables in surge DB and last usage, help find tables to remove'
   task :list_recent do
