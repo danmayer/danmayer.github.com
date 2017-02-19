@@ -7,7 +7,7 @@ tags: [Programming, Development]
 {% include JB/setup %}
 
 
-[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+[![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 Some folks have asked about how I ended up at a job like [Off Grid Electric](https://medium.com/@Offgrid), so I thought I would share a bit of that. I recently took a sabbatical to travel for about 5 months with my wife. While I was traveling, I was thinking about my career, the future, and what is important to me. I felt like I hadn't been pushing myself enough lately, and I had lost some of the passion I always liked to bring into my work. 
 
@@ -34,9 +34,9 @@ Seeing many different countries in my world definitely changed my thoughts on wh
 * income inequality
 
 
-> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1.JPG)
-> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-2-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-2.JPG)
-> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3-sm.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3.JPG)
+> [![image](/assets/img/Offgrid-Tanzania/Dan-Climb-1-sm.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-1.JPG)
+> [![image](/assets/img/Offgrid-Tanzania/Dan-Climb-2-sm.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-2.JPG)
+> [![image](/assets/img/Offgrid-Tanzania/Dan-Climb-3-sm.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Climb-3.JPG)
 >
 > Climbing onto a roof to install solar panels
 
@@ -72,7 +72,7 @@ After a bit of time talking with [Thor Muller](https://twitter.com/tempo), it be
 
 The list goes on, there was a lot to make everything seem right to me. It is good to take some time and reflect deeply on what you want, and what you want to be doing X years from now. Then find a path that can take you in that direction. I feel fortunate to have found that role.
 
-> [![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Mpower-Regional-Office-2-sm.jpg)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Mpower-Regional-Office-2.jpg)
+> [![image](/assets/img/Offgrid-Tanzania/Mpower-Regional-Office-2-sm.jpg)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Mpower-Regional-Office-2.jpg)
 >
 > Debugging in the Karatu regional office with Dmitry
 

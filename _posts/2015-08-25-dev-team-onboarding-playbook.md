@@ -6,7 +6,7 @@ tags: [Programming, Development, Management, Process]
 ---
 {% include JB/setup %}
 
-> ![image](http://www.mayerdan.com/assets/img/playbook.png)
+> ![image](/assets/img/playbook.png)
 > 
 > photo credit: [opensourceway](https://www.flickr.com/photos/opensourceway/5537336155)
 
