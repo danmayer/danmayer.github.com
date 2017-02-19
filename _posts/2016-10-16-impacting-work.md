@@ -12,7 +12,7 @@ The work we do at [Off Grid Electric](https://medium.com/@Offgrid), has a clear 
 
 Our team is amazing, and driven to rise to a challenge. We face unique challenges operating without physical addresses,  60% network coverage, and customer support for people without internet. We take distributed work both challenges and benefits seriously, building a team and process to enjoy it's freedoms.
 
-[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+[![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 > installing our system on a roof in a remote village of Karatu, Tanzania
 
@@ -54,21 +54,21 @@ Musk clearly believes in it because he is an investor in Offgrid Electric, throu
 
 Our global headquarters is in Arusha Tanzania. While we are launching in other countries, Tanzania is by far the most developed part of our business. We recently rebranded Offgrid Electric's offerings from M-Power to Zola in Tanzania.
 
-> [![image](http://www.mayerdan.com/assets/img/zola_building_sm.jpg)](http://www.mayerdan.com/assets/img/zola_building.jpg)
-> [![image](http://www.mayerdan.com/assets/img/zola_sales_sm.jpg)](http://www.mayerdan.com/assets/img/zola_sales.jpg)
-> [![image](http://www.mayerdan.com/assets/img/Offgrid_cottage_sm.jpg)](http://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)
+> [![image](/assets/img/zola_building_sm.jpg)](https://www.mayerdan.com/assets/img/zola_building.jpg)
+> [![image](/assets/img/zola_sales_sm.jpg)](https://www.mayerdan.com/assets/img/zola_sales.jpg)
+> [![image](/assets/img/Offgrid_cottage_sm.jpg)](https://www.mayerdan.com/assets/img/Offgrid_cottage.jpg)
 >
 > Office in Arusha, TZ, field visit with Sales team, hanging out employee cottage
 
 We have partnerships and sell at gas stations through out Tanzania.
 
-> [![image](http://www.mayerdan.com/assets/img/zola_ad_sm.jpg)](http://www.mayerdan.com/assets/img/zola_ad.jpg)
-> [![image](http://www.mayerdan.com/assets/img/zola_demo_sm.jpg)](http://www.mayerdan.com/assets/img/zola_demo.jpg)
+> [![image](/assets/img/zola_ad_sm.jpg)](http://www.mayerdan.com/assets/img/zola_ad.jpg)
+> [![image](/assets/img/zola_demo_sm.jpg)](http://www.mayerdan.com/assets/img/zola_demo.jpg)
 >
 > Banner ad outside gas station, Demo unit inside Total gas station
 
 We sell most frequently to areas with limited or no access to the power grid. Often these are more modern villages just to remote for access, but we also sell to Maasai villages, which can spread over large distances into the mountains.
 
-> [![image](http://www.mayerdan.com/assets/img/maasai village.jpg)](http://www.mayerdan.com/assets/img/maasai village.jpg)
+> [![image](/assets/img/maasai village.jpg)](https://www.mayerdan.com/assets/img/maasai village.jpg)
 >
 > Panoramic view from hilltop down to base of Maasai village, we have a number of customers in the village
