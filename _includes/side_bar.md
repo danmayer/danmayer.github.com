@@ -132,6 +132,6 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <h4 class="side-header">licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons License</a>.</h4>
   <a href="http://creativecommons.org/licenses/by-sa/3.0/">
-    <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" style="padding-left:14px;" />
+    <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" style="padding-left:14px;" />
   </a>
 </div>
