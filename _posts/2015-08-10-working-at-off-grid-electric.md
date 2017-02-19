@@ -100,4 +100,4 @@ Like a bigger team, more interested in consumer products at scale, [LivingSocial
 
 If neither interests you, but you're looking for something new, feel free to get in touch. I know various teams trying to pick up Ruby, Clojure, and Mobile devs.
 
-[![image](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Arusha-Park-Dan-Thor-Waterfall-sm.jpg)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Arusha-Park-Dan-Thor-Waterfall.jpg)
+[![image](/assets/img/Offgrid-Tanzania/Arusha-Park-Dan-Thor-Waterfall-sm.jpg)](http://www.mayerdan.com/assets/img/Offgrid-Tanzania/Arusha-Park-Dan-Thor-Waterfall.jpg)
