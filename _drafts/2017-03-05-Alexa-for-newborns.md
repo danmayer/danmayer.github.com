@@ -2,17 +2,17 @@
 
 ![image](/assets/img/TheosCrib.gif)
 
-Erin and I recently welcomed, [Theo](https://millermayersadventures.com/2017/02/23/theodore-harley-mayer/), our first baby into the world. We had to learn lots of new things to take care of Theo and ourselves. Particularly, we had to learn how to do many things with a single hand or even better hands free. As, I struggled to do things while feeding a baby and trying to keep him quite so Erin could sleep, I started to get a bit more creative and utilize [Amazon's Alexa](https://www.amazon.com/echo) more to ease some tasks.
+Erin and I recently welcomed, [Theo](https://millermayersadventures.com/2017/02/23/theodore-harley-mayer/), our first baby into the world. We had to learn lots of new things to take care of Theo and ourselves. Particularly, we had to learn how to do many things with a single hand or even better hands free. As I struggled to do things while feeding a baby and trying to keep him quiet so Erin could sleep, I started to get a bit more creative and utilize [Amazon's Alexa](https://www.amazon.com/echo) more to ease some tasks.
 
 ## Introduced to Alexa
 
-I had received an echo dot for Xmas, we set it up for some music. I got two Alexa plugs and a lightbulb. While kind of neat the home automation wasn't that helpful. We mostly used it for news flash, [Pandora](https://www.pandora.com/), and some silly fun. I programmed an Alexa app to compliment my wife for me, "Alexa, tell my wife she is pretty." Which spews random funny compliments much to our amusement, but that is the subject of upcoming post. My wife enjoyed following pregnancy tips using the [What To Expect](https://www.amazon.com/Everyday-Health-Inc-What-Expect/dp/B01JK91WBW) skill during her pregnancy as well. We even played around with a fun baby name [Alexa skill](https://www.amazon.com/andrew-smith-Baby-Name/dp/B01N94A1A6). In general prior to our baby's arrival Alexa was kind of neat, but I hadn't really thought of it as something that would be helpful or extremely helpful for raising a newborn.
+I had received an Echo Dot for Xmas, we set it up for some music. I got two Alexa plugs and a lightbulb. While kind of neat the home automation wasn't that helpful. We mostly used it for news flash, [Pandora](https://www.pandora.com/), and some silly fun. I programmed an Alexa app to compliment my wife for me, "Alexa, tell my wife she is pretty." This makes Alexa spew random funny compliments much to our amusement, but that is the subject of upcoming post. My wife enjoyed following pregnancy tips using the [What To Expect](https://www.amazon.com/Everyday-Health-Inc-What-Expect/dp/B01JK91WBW) skill during her pregnancy as well. We even played around with a fun baby name [Alexa skill](https://www.amazon.com/andrew-smith-Baby-Name/dp/B01N94A1A6). In general prior to our baby's arrival Alexa was kind of neat, but I hadn't really thought of it as something that would be helpful or extremely helpful [bhb - "helpful or extremely helpful"? Not sure if you intended this phrase or something like "useful or extremely helpful"?] for raising a newborn.
 
 ## The Lightbulb Moment
 
-The lightbulb went off in my head about how useful Alexa could be when I was exhausted bottle feeding baby in the middle of the very first night we had him home. The baby was crying after not getting quite enough milk from the last breast feeding, Erin really needed some sleep, and I was supplementing with donor milk in a bottle. 
+The lightbulb went off in my head about how useful Alexa could be when I was exhausted bottle feeding the baby in the middle of the very first night we had him home. The baby was crying after not getting quite enough milk from the last breast feeding, Erin really needed some sleep, and I was supplementing with donor milk in a bottle. 
 
-As I sit in a room that is to dark, I am bored and sleepy as I forgot my phone and kindle. Theo is more playing than eating, so I just sit in the silence for over an hour trying to stay awake. I realize, that Alexa could solve my problem. I could be entertained without my phone with music, audio books, and more. As for the lights being able to control and dim those by voice would do the trick. When I change the baby and try to get him into deep sleep before returning to our bedroom, I could also have Alexa sooth the baby with white noise back into a deep sleep. All of this sounded great, I wanted an Echo in our nursery right now, and if I had one, I could have used it to order one ;) The next morning in a sleepy haze I ordered another echo and some color echo enabled lights.
+As I sit in a room that is too dark, I am bored and sleepy as I forgot my phone and kindle. Theo is more playing than eating, so I just sit in the silence for over an hour trying to stay awake. I realize that Alexa could solve my problem. I could be entertained without my phone with music, audio books, and more. As for the lights being able to control and dim those by voice would do the trick. When I change the baby and try to get him into deep sleep before returning to our bedroom, I could also have Alexa sooth the baby with white noise back into a deep sleep. All of this sounded great, I wanted an Echo in our nursery right now, and if I had one, I could have used it to order one ;) The next morning in a sleepy haze I ordered another echo and some colored echo-enabled lights.
 
 ## Lights, Sounds, & Actions
 
@@ -22,7 +22,7 @@ A brief list of our Alexa usage. See the section below for a far more detailed e
 
 ![image](/assets/img/TheosRoom.gif)
 
-__Crib Light:__ We want to check on Theo occasionally through out the night or one of us needs to pick him up to sooth him out of the room. This light is our primary way to do that. Off course it is [Red Light](http://www.health.com/sleep/red-spectrum-light-sleep) to help us sleep.
+__Crib Light:__ We want to check on Theo occasionally through out the night or one of us needs to pick him up to soothe him out of the room. This light is our primary way to do that. Off course it is [Red Light](http://www.health.com/sleep/red-spectrum-light-sleep) to help us sleep.
 __Theo's Room:__ Generally when I walk into the Nursery my hands are full, baby, bottle, extra blankets, etc. Control either the full room or the bedside lamp. 
 
 ### Sounds
@@ -42,13 +42,13 @@ __Theo's Room:__ Generally when I walk into the Nursery my hands are full, baby,
 
 ## Alexa Bedtime Routine
 
-I continued to think of ideas and started to use the echo in other ways. The list below shows how we use Alexa as part of our night time baby routine. You can see how we use [red lights](http://www.health.com/sleep/red-spectrum-light-sleep) around all sleep area lighting to reduce light in the middle of the night impacting our sleep.
+I continued to think of ideas and started to use the echo in other ways. The list below shows how we use Alexa as part of our nighttime baby routine. You can see how we use [red lights](http://www.health.com/sleep/red-spectrum-light-sleep) around all sleep area lighting to reduce light in the middle of the night impacting our sleep.
 
 ![image](/assets/img/Bedroom.gif)
 
 * Due to Theo's low birth weight and weight loss we had to track feedings, pees, & poops.
   * We did this on paper, but towards the end of our tracking discovered the Alexa skill [Baby Stats](https://www.amazon.com/cWix-Baby-Stats/dp/B01F7RG94G/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1488651039&sr=1-1-catcorr&keywords=baby+stats)
-* To encourage milk production and get Theo's weight gaining we had to follow a "Triple feed diet"
+* To encourage milk production and get Theo to gain weight we had to follow a "Triple feed diet"
   * Feed at least every three hours (unless baby requests food earlier)
      * `"Alexa, set alarm for 3 hours"`
   * Start feeding with breast feeding at least 10 minutes a side
