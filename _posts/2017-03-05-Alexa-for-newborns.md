@@ -1,10 +1,12 @@
 # A Newborn & Alexa
 
 ![image](/assets/img/dan_theo.jpg)
+> Theo doing his best Spock hand
 
 Erin and I recently welcomed, [Theo](https://millermayersadventures.com/2017/02/23/theodore-harley-mayer/), our first baby into the world. We had to learn lots of new things to take care of Theo and ourselves. Particularly, we had to learn how to do many things with a single hand or even better hands free. As I struggled to do things while feeding a baby and trying to keep him quiet so Erin could sleep, I started to get a bit more creative and utilize [Amazon's Alexa](https://www.amazon.com/echo) more to ease some tasks.
 
 ![image](/assets/img/TheosCrib.gif)
+> The crib light to check on baby: red light, 10% and 90% brightness
 
 ## Introduced to Alexa
 
@@ -23,6 +25,7 @@ A brief list of our Alexa usage. See the section below for a far more detailed e
 ### Lights
 
 ![image](/assets/img/TheosRoom.gif)
+> The nursery has two lights that can be controlled together or independently 
 
 __Crib Light:__ We want to check on Theo occasionally through out the night or one of us needs to pick him up to soothe him out of the room. This light is our primary way to do that. Off course it is [Red Light](http://www.health.com/sleep/red-spectrum-light-sleep) to help us sleep.
 __Theo's Room:__ Generally when I walk into the Nursery my hands are full, baby, bottle, extra blankets, etc. Control either the full room or the bedside lamp. 
@@ -47,6 +50,7 @@ __Theo's Room:__ Generally when I walk into the Nursery my hands are full, baby,
 I continued to think of ideas and started to use the echo in other ways. The list below shows how we use Alexa as part of our nighttime baby routine. You can see how we use [red lights](http://www.health.com/sleep/red-spectrum-light-sleep) around all sleep area lighting to reduce light in the middle of the night impacting our sleep.
 
 ![image](/assets/img/Bedroom.gif)
+> The two lights in our bedroom including the Crib light, which is the one we use the most.
 
 * Due to Theo's low birth weight and weight loss we had to track feedings, pees, & poops.
   * We did this on paper, but towards the end of our tracking discovered the Alexa skill [Baby Stats](https://www.amazon.com/cWix-Baby-Stats/dp/B01F7RG94G/ref=sr_1_cc_1?s=aps&ie=UTF8&qid=1488651039&sr=1-1-catcorr&keywords=baby+stats)
