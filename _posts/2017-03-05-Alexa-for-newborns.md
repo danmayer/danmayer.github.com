@@ -6,7 +6,7 @@
 Erin and I recently welcomed, [Theo](https://millermayersadventures.com/2017/02/23/theodore-harley-mayer/), our first baby into the world. We had to learn lots of new things to take care of Theo and ourselves. Particularly, we had to learn how to do many things with a single hand or even better hands free. As I struggled to do things while feeding a baby and trying to keep him quiet so Erin could sleep, I started to get a bit more creative and utilize [Amazon's Alexa](https://www.amazon.com/echo) more to ease some tasks.
 
 ![image](/assets/img/TheosCrib.gif)
-> The crib light to check on baby: red light, 10% and 90% brightness
+> The crib light to check on baby: red light, 10% and 90% brightness, can change colors.
 
 ## Introduced to Alexa
 
