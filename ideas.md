@@ -35,6 +35,15 @@ Project Ideas
   * look at http://rubydoc.info/gems/apiary/0.0.5/frames
   * possibly allow JSON
 * Improved hash my superhash ideas, and this https://github.com/koleksiuk/parsable_hash and hashie::mash etc
+* Small offline mobile app for Safari Bingo
+   * generate cards so folks can play bingo while on safari together
+   * animals and possible other common things like songs, beer, etc
+* Animal recognition (sound, picture, offline)
+   * So you can figure out what things are on safari and such
+* Safari checklist
+   * mark off all the things you see and add things you want to make sure you see before your trip.
+* trip itinerary advice per city... custom research based on location, likes, actives, etc... $200 per city.
+* webhook reformatter. Often you have a system that sends a webhook in one format, but the system you want to integrate expects a different format. Allow this service to receive one format and convert it to another.     
 
 Posts for API reviews
 ===
