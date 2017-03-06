@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "Alexa For Newborns"
-category: Tips
+title: "Alexa for Newborns"
 tags: [Alexa, Tips]
 ---
 {% include JB/setup %}
