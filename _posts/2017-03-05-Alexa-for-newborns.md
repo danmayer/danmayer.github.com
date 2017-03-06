@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Alexa for Newborns"
+category: Tips
+tags: [Alexa, Tips]
+---
+{% include JB/setup %}
+
 # A Newborn & Alexa
 
 ![image](/assets/img/dan_theo.jpg)
