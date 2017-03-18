@@ -8,6 +8,9 @@ tags: [Programming, javascript, Alexa]
 
 # Alexa, tell my wife she's pretty
 
+![image](/assets/img/Erin_Pretty_Theo.JPG)
+> Erin holding baby Theo
+
 I have a hobby of playing around with new technology while ignoring the super bowl on TV. This year I decided to learn some of the Alexa API. I had received an [Echo](https://www.amazon.com/b/?ie=UTF8&node=9818047011&ref_=fs_ods_fs_aucc_cp) for Christmas and thought it would be fun to build a really simple app. I decided to make a little app to help me compliment my wife. We try to [compliment each other daily](https://www.gottman.com/blog/the-positive-perspective-dr-gottmans-magic-ratio/), something we learned in our marriage class ;)
  
 # Alexa Skill: "My Wife"
@@ -23,12 +26,6 @@ I had the basic functions working by the end of the Super Bowl. After tweaking i
 
 I plan to add some more fun features eventually, but this was amusing enough for me to start with.
 
-# Code
-
-This is the full [source code](https://gist.github.com/danmayer/34c645ef1780fed7510cf904e04dcc7b), feel free to use it to learn some Alexa basics. It basically extends some concepts from the [sample space facts](https://github.com/alexa/skill-sample-nodejs-fact) and [high low game](https://github.com/alexa/skill-sample-nodejs-highlowgame/blob/master/src/index.js) examples.
-
-<script src="https://gist.github.com/danmayer/34c645ef1780fed7510cf904e04dcc7b.js"></script>
-
 # Alexa Links
 
 I have been having fun with our Echo's, you can see how I have been using [Alexa for newborns](https://www.mayerdan.com/2017/03/05/Alexa-for-newborns) to help us adjust to our baby. I plan to try to do even more with Alexa in the future.
@@ -40,3 +37,9 @@ If you want to get started with Alexa programming. Amazon made it super simple, 
 * getting started with [skills kit](https://developer.amazon.com/alexa-skills-kit#Ready%20to%20start%3F)
 * a good [trivia game tutorial](https://developer.amazon.com/blogs/post/TxDJWS16KUPVKO/new-alexa-skills-kit-template-build-a-trivia-skill-in-under-an-hour)
 * a nice [Fact skills step by step guide](https://developer.amazon.com/blogs/post/Tx3DVGG0K0TPUGQ/updated-alexa-skills-kit-fact-template-step-by-step-guide-to-build-a-fact-skill)
+
+# Code
+
+This is the full [source code](https://gist.github.com/danmayer/34c645ef1780fed7510cf904e04dcc7b), feel free to use it to learn some Alexa basics. It basically extends some concepts from the [sample space facts](https://github.com/alexa/skill-sample-nodejs-fact) and [high low game](https://github.com/alexa/skill-sample-nodejs-highlowgame/blob/master/src/index.js) examples.
+
+<script src="https://gist.github.com/danmayer/34c645ef1780fed7510cf904e04dcc7b.js"></script>
