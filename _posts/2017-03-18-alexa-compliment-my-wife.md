@@ -8,7 +8,7 @@ tags: [Programming, javascript, Alexa]
 
 # Alexa, tell my wife she's pretty
 
-![image](/assets/img/Erin_Pretty_Theo_verticle.jpg)
+![image](/assets/img/Erin_Pretty_Theo_verticle_sm.jpg)
 > Erin holding baby Theo
 
 I have a hobby of playing around with new technology while ignoring the super bowl on TV. This year I decided to learn some of the Alexa API. I had received an [Echo](https://www.amazon.com/b/?ie=UTF8&node=9818047011&ref_=fs_ods_fs_aucc_cp) for Christmas and thought it would be fun to build a really simple app. I decided to make a little app to help me compliment my wife. We try to [compliment each other daily](https://www.gottman.com/blog/the-positive-perspective-dr-gottmans-magic-ratio/), something we learned in our marriage class ;)
