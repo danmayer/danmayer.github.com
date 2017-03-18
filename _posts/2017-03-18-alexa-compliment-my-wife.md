@@ -8,8 +8,14 @@ tags: [Programming, javascript, Alexa]
 
 # Alexa, tell my wife she's pretty
 
-![image](/assets/img/Erin_Pretty_Theo_verticle_sm3.jpg)
-> Erin holding baby Theo
+> Erin holding baby Theo  | Alexa, My Wife
+------------- | -------------
+![image](/assets/img/Erin_Pretty_Theo_verticle_sm3.jpg) | > User: "Alexa, tell my wife she is pretty."  
+> Alexa: "Hey Wife, Wow, that confidence looks sexy on you."  
+> User: "Alexa, tell my wife set name to Erin"  
+> Alexa: "Wife's name is now set to Erin"  
+> User: "Alexa, tell my wife Erin she is sexy"
+> Alexa: "Dang Girl is your name Wifi ? Because I’m feeling a connection!"
 
 I have a hobby of playing around with new technology while ignoring the super bowl on TV. This year I decided to learn some of the Alexa API. I had received an [Echo](https://www.amazon.com/b/?ie=UTF8&node=9818047011&ref_=fs_ods_fs_aucc_cp) for Christmas and thought it would be fun to build a really simple app. I decided to make a little app to help me compliment my wife. We try to [compliment each other daily](https://www.gottman.com/blog/the-positive-perspective-dr-gottmans-magic-ratio/), something we learned in our marriage class ;)
  
@@ -17,12 +23,7 @@ I have a hobby of playing around with new technology while ignoring the super bo
 
 I had the basic functions working by the end of the Super Bowl. After tweaking it a bit more and adding a name variable I decided it was good enough to publish. It is a silly skill, but it was something fun to learn and do in a couple of hours. It has also inspired me to start working on some other Alexa skills. Without further ado, feel free to install the [MyWife Alexa skill](https://www.amazon.com/DanMayer-MyWife/dp/B06XDX5QPM/ref=sr_1_2?s=digital-skills&ie=UTF8&qid=1489859248&sr=1-2&keywords=my+wife)
 
-> User: "Alexa, tell my wife she is pretty."  
-> Alexa: "Hey Wife, Wow, that confidence looks sexy on you."  
-> User: "Alexa, tell my wife set name to Erin"  
-> Alexa: "Wife's name is now set to Erin"  
-> User: "Alexa, tell my wife Erin she is sexy"
-> Alexa: "Dang Girl is your name Wifi ? Because I’m feeling a connection!"
+
 
 I plan to add some more fun features eventually, but this was amusing enough for me to start with.
 
