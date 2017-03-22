@@ -21,9 +21,9 @@ I had the basic functions working by the end of the Super Bowl. After tweaking i
 > Alexa: "Hey Wife, Wow, that confidence looks sexy on you."  
 > User: "Alexa, tell my wife set name to Erin"  
 > Alexa: "Wife's name is now set to Erin"  
-> User: "Alexa, tell my wife Erin she is sexy"
-> Alexa: "Dang Girl is your name Wifi ? Because I’m feeling a connection!"
-> User: "Alexa, tell my wife I love her"
+> User: "Alexa, tell my wife Erin she is sexy"  
+> Alexa: "Dang Girl is your name Wifi ? Because I’m feeling a connection!"  
+> User: "Alexa, tell my wife I love her"  
 > Alexa: "I want to grow old with you."
 
 I plan to add some more fun features eventually, but this was amusing enough for me to start with.
