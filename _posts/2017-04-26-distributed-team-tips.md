@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Distributed Team Tips"
+category: Tech Management
+tags: [Programming, Development, practices, Career, Process, Management]
+---
+{% include JB/setup %}
+
 # Distributed Team Tips
 
 A awhile ago a developer friend [@Qrush](https://twitter.com/qrush) asked folks for thoughts on how distributed teams should work on twitter. He asked specific questions, I responded and thought it might be helpful to share the slightly cleaned up answers with others.
@@ -6,7 +14,7 @@ A awhile ago a developer friend [@Qrush](https://twitter.com/qrush) asked folks 
 
 A quick note to make the tips a bit more relevant. Our company is highly distributed across timezones, cultures, and languages. This means some things that work for people just dealing with East Coast and West Coast, don't work so well when handling from Denver to Tanzania. Obviously, keep it simple and if you don't need as many processes around managing timezones, don't worry about it.
 
-## What’s one unique thing you feel your team does differently than other orgs to work better with everyone across different timezones/asynchronously?
+### What’s one unique thing you feel your team does differently than other orgs to work better with everyone across different timezones/asynchronously?
 
 At [Offgrid Electric](http://offgrid-electric.com/) we have done a couple things, I don't think there is any one magic bullet but it is a combination of efforts that helps to make a highly distributed team work.
 
@@ -44,7 +52,7 @@ At [Offgrid Electric](http://offgrid-electric.com/) we have done a couple things
 	* Slack / Team Jokes, I am sure folks love GIFs if they are distributed.
 	* Emoji :)
 
-## Whats your main method of communication? Chat/email/something else? If you could change anything about how that works to help remote folks: what would it be?
+### Whats your main method of communication? Chat/email/something else? If you could change anything about how that works to help remote folks: what would it be?
 
 Slack, it is our primary comms, and it is a bit noisy... I would encourage people to turn it off a bit more often for focus work. 
 
