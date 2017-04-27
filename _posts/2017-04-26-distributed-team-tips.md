@@ -22,10 +22,10 @@ At [Offgrid Electric](http://offgrid-electric.com/) we have done a couple things
 	* It also manages a company calendar showing the 'recommended' hours for cross time zone meetings.
 * __Maker Day Wednesday (No Meeting Wednesday)__: This is on the company calendar for all the groups that are software stakeholders (operations, finance, PM, etc).
 	* This is frequently people's favorite day of the week and often when they get the most done.
-* __Encourage Async Communications__
+* __Encourage Async Communications__:
      * conversations should be in tickets (Asana/Jira), documents (lots of google docs attached to tickets with comments, screen shots, etc), or github (PRs)
      * slack is for more real time questions, not to record decisions, prioritize work, or cover details.
-* Meetings 
+* __Meetings__: 
      * Have a document outlining some meeting best practices the company encourages. 
      * Our company doc pushes "core meeting hours". Tuesday and Thursday have core hours that work for nearly all timezones, the bulk of meetings should be scheduled during these hours.
      * Record meetings, don't expect everyone in every time zone will always be able to make meetings that are on weird hours, record the video and let them watch async
