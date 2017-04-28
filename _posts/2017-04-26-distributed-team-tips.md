@@ -8,6 +8,9 @@ tags: [Programming, Development, practices, Career, Process, Management]
 
 # Distributed Team Tips
 
+![image](/assets/img/Centralised-decentralised-distributed.png)
+> credit: [wikimedia.org](http://wikimedia.org)
+
 A awhile ago a developer friend [@Qrush](https://twitter.com/qrush) asked folks for thoughts on how distributed teams should work on twitter. He asked specific questions, I responded and thought it might be helpful to share the slightly cleaned up answers with others.
 
 ## How Distributed?
