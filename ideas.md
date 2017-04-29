@@ -20,17 +20,11 @@ Project Ideas
 * build something like this but perhaps for stocks or ruby community projects / posts / tweets? http://disqus.com/gravity/
 * Test results collector api, just a API that collects test time, speed, # failures, which tests failed, etc and reports over time
 * paid version of http://www.free-ocr.com/ using open source OCR tools
-* gem to monitor and send live line number / code usage over to server (find most common hot spots, least used code, and dead code) (http://codecovtest.herokuapp.com/, blog about the failed attempt where ruby keeps segfaulting)
-   * http://www.rubyinside.com/how-to-create-a-ruby-extension-in-c-in-under-5-minutes-100.html
-   * http://blog.jcoglan.com/2012/07/29/your-first-ruby-native-extension-c/
-   * https://www.ruby-lang.org/en/documentation/ruby-from-other-languages/to-ruby-from-c-and-cpp/
-   * http://www.ruby-doc.org/stdlib-2.0.0/libdoc/coverage/rdoc/Coverage.html
-   * https://github.com/sj26/ruby-1.9.3-p0/blob/master/ext/coverage/coverage.c
 * web app that crawls site and finds common errors like mixed content warnings, missing images, broken links, etc, etc
 * crawler to find dead CSS
 * crawler to find dead JS
 * counters app, just tiny up down counters users can create and increment with icons and images private / public, user only or public can increment / decrement
-* App that allows you to turn any ruby object into an api call. Preferably with persistance via serialization.
+* App that allows you to turn any ruby object into an api call. Preferably with persistence via serialization.
   * look at https://github.com/madx/roy
   * look at http://rubydoc.info/gems/apiary/0.0.5/frames
   * possibly allow JSON
@@ -43,7 +37,8 @@ Project Ideas
 * Safari checklist
    * mark off all the things you see and add things you want to make sure you see before your trip.
 * trip itinerary advice per city... custom research based on location, likes, actives, etc... $200 per city.
-* webhook reformatter. Often you have a system that sends a webhook in one format, but the system you want to integrate expects a different format. Allow this service to receive one format and convert it to another.     
+* webhook reformatter. Often you have a system that sends a webhook in one format, but the system you want to integrate expects a different format. Allow this service to receive one format and convert it to another.
+* Scratch That my markdown scratch file and history      
 
 Posts for API reviews
 ===
@@ -99,11 +94,10 @@ you want to be able to filter the reviews to those who have only been to X or mo
 
 also open now as a filter to hide all the restaurants not running available.
 
-Makes a post about this and some of the thoughts around how we handled and I learned to handle things like this at LS:
-https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
+
 
 The Spreadsheet problem:
-  * people love excel because they can get the data and munipulate it to their needs without a dev
+  * people love excel because they can get the data and manipulate it to their needs without a dev
   * accuracy, keeping up to date, bugs, data size
   * trying to replace that flexibility in an app means you have to build all the functions people love and need from excel
   * what about google docs hooked to an API? 2-way sync, ability to push results back into the system. Some ability to validate data?
@@ -112,7 +106,7 @@ The Spreadsheet problem:
 
 
 
-Solved past Ideas
+Solved Past Ideas
 ===
 
 * [churn as a tiny app / service run on deferred-servers](http://churn.picoappz.com), I ended up completing this project.

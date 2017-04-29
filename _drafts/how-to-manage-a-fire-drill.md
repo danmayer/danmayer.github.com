@@ -1,8 +1,11 @@
-# How to manage a firedrill
+# How to Manage a Fire Drill
+
+![image](/assets/img/Medical-Vehicle.png)
+> credit: [maxpixel](http://maxpixel.freegreatpicture.com/Emergency-Ambulance-Fire-Drill-Medical-Emergency-1057706)
 
 At some point a fire drill will happen, people will scramble and rush. When you are small really that is all that can or needs to happen. As organizations grow. Being able to plan, organize, manage, and learn from fire drills is increasingly important.
 
-In the past I learned a lot from [Aaron B](https://twitter.com/abatalion) managing fire drills when we were a small team of less than 10 engineers. Getting all the devs together and quickly discussing and pushing out solutions. Often then I was just watching and occasionally throwing in a thought. Later quickly implementing something to get a quick visual review before deploying out a solution. As the organization grew more often Patrick J taught me a lot about managing a larger and increasingly remote team during fire drills, at this time I was often intimately involved often taking a roll in a piece of the solution. Since then I have managed some fire drills on my own but often the largest and most complex I have helped develop solutions or manage solutions under Doug R and Muness. In my time at Livingsocial I have learned a lot about how to handle fire drills and we have improved the process as we have grown. I think it is something hard to learn and often overlooked in the startup / software blogging world. So I wanted to to cover some things I have learned along the way.
+In the past I learned a lot from [Aaron B](https://twitter.com/abatalion) managing fire drills when we were a small team of less than 10 engineers. Getting all the devs together and quickly discussing and pushing out solutions. Often then I was just watching and occasionally throwing in a thought. Later quickly implementing something to get a quick visual review before deploying out a solution. As the organization grew more often Patrick J taught me a lot about managing a larger and increasingly remote team during fire drills, at this time I was often intimately involved often taking a roll in a piece of the solution. Since then I have managed some fire drills on my own but often the largest and most complex I have helped develop solutions or manage solutions under Doug R and Muness. In my time at LivingSocial I have learned a lot about how to handle fire drills and we have improved the process as we have grown. I think it is something hard to learn and often overlooked in the startup / software blogging world. So I wanted to to cover some things I have learned along the way.
 
 ### Steps
 
@@ -42,7 +45,7 @@ We didn't have or need all of these processes from the beginning, but as we have
  
  * If any normal processes needed to be suspended make sure to let all the teams know what process is out of whack and why. When it is OK to go back to normal let people know that while there might be some remaining issues it is OK to resume normal processes.
  
- * Be nice… Extra nice even, people are stressed, tired, and putting in extra effort. Go team go, not debbie downer.
+ * Be nice… Extra nice even, people are stressed, tired, and putting in extra effort. Go team go, not Debbie downer.
  
  
      
