@@ -38,7 +38,14 @@ Project Ideas
    * mark off all the things you see and add things you want to make sure you see before your trip.
 * trip itinerary advice per city... custom research based on location, likes, actives, etc... $200 per city.
 * webhook reformatter. Often you have a system that sends a webhook in one format, but the system you want to integrate expects a different format. Allow this service to receive one format and convert it to another.
-* Scratch That my markdown scratch file and history      
+* Scratch That my markdown scratch file and history
+* A game let's say a deck building game
+   * deck building for simplicity could be a design a town / set resources / whatever
+   * given some constraints like a deck and cards like magic
+   * users build and create a deck and 'deploy' it
+   * where it competes in many simulations winning and loosing
+   * scores are based on those games
+   * users don't actually play the game only do the building step and AI with some randomness etc controls play / simulations       
 
 Posts for API reviews
 ===

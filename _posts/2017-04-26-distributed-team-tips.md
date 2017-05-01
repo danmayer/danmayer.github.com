@@ -60,3 +60,9 @@ At [Offgrid Electric](http://offgrid-electric.com/) we have done a couple things
 Slack, it is our primary comms, and it is a bit noisy... I would encourage people to turn it off a bit more often for focus work. 
 
 Make sure there is a agreed on video conferencing software for the company, that it is known to work well in the locations you operate. We have found that Zoom works very well for us and works even with low bandwidth connections.
+
+##### We are hiring
+
+Know any great project managers? Do you want to work with me on off-grid electricity in Africa?
+
+* [Product Manager, Logistics](https://medium.com/electric-africa/product-manager-service-logistics-41f5b404a8dd)

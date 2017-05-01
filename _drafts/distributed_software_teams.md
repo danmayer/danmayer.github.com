@@ -18,5 +18,9 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 * Deploy Checklist
 * Weekly Software Update (Doug and Jessie's links)
 * Squad Model
+* Face to Face time
 * Team Cadence: IPM (sprint kickoff, demo, team retro)
-* Vacation Policy
+* Vacation Policy / Work While Traveling
+* Work From Home
+   * amazing for baby 
+* Co-working spaces (guest author)
