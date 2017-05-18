@@ -6,7 +6,7 @@ tags: [Programming, Development, practices, Career, Process, Management]
 ---
 {% include JB/setup %}
 
-![image](assets/img/weekly_update_sm.png)
+![image](/assets/img/weekly_update_sm.png)
 
 ## Stay in Sync
 
