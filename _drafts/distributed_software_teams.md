@@ -5,6 +5,7 @@ A good list of practices and processes to help manage software teams. Particular
 * [Distributed Team Tips](https://www.mayerdan.com/tech%20management/2017/04/26/distributed-team-tips)
 
 * Distributed Recruiting, Interviews, and Hiring
+  * getting your first distributed job 
 * First Responder
   * follow up on escalation and distributed on-call 
 * Incident Response: How to Manage a Fire Firefight
@@ -16,11 +17,13 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 * [Data Change Management Process](https://www.mayerdan.com/programming/2016/11/21/managing-rails-migrations)
    * Information Architecture Redesign Flow 
 * Deploy Checklist
+  * link to Pat's post 
 * Weekly Software Update (Doug and Jessie's links)
 * Squad Model
 * Face to Face time
 * Team Cadence: IPM (sprint kickoff, demo, team retro)
 * Vacation Policy / Work While Traveling
+  * not unlimited and not bound 
 * Work From Home
    * amazing for baby 
 * Co-working spaces (guest author)
