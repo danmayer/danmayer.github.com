@@ -64,3 +64,23 @@ As another week starts, the sun still creates energy
      * Best talks from Railsconf, http://confreaks.tv/events/railsconf2017
      * Switching to Kotlin, https://medium.com/@magnus.chatt/why-you-should-totally-switch-to-kotlin-c7bbde9e10d5
 ```
+
+Which when rendered becomes.
+
+As another week starts, the sun still creates energy
+    
+* :keyboard: Dev first-responder: John  
+* :todo: PM Release Coordinator: Galt  
+* :calendar: Holidays / Vacations  
+     * Dan is working from Paris Monday / Tuesday  
+     * Annyce is at Google I/O on T - F  
+     * John is off on Friday  
+     * Tanzania folks are out of office for a Holiday Friday  
+* :speaker: Updates:  
+     * Software Support is out this week so let’s try to pay extra care to #software-bugs
+     * welcome Konrad, onboarding new dev on the 21st
+     * We are looking for a [good PM pass it around](https://medium.com/electric-africa/product-manager-service-logistics-41f5b404a8dd)
+* :newspaper: Articles:
+     * [Sinatra hits 2.0](https://github.com/sinatra/sinatra/tree/v2.0.0)
+     * [Best talks from Railsconf](http://confreaks.tv/events/railsconf2017)
+     * [Switching to Kotlin](https://medium.com/@magnus.chatt/why-you-should-totally-switch-to-kotlin-c7bbde9e10d5)
