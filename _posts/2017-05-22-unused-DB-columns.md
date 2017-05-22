@@ -6,7 +6,7 @@ tags: [Programming, Development, Database, Refactoring]
 ---
 {% include JB/setup %}
 
-![image](/assets/img/polar_bear.jpg)
+![image](/assets/img/polar_bear_sm.jpg)
 > a search for 'unused database' brings up this awesome [wikimedia](https://upload.wikimedia.org/wikipedia/commons/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg) image for some reason.
 
 # Detecting DB Column Usage
