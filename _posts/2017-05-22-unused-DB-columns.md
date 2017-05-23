@@ -6,7 +6,7 @@ tags: [Programming, Development, Database, Refactoring]
 ---
 {% include JB/setup %}
 
-![image](/assets/img/polar_bear_sm.jpg)
+![image detect](/assets/img/polar_bear_sm.jpg)
 > a search for 'unused database' brings up this awesome [wikimedia](https://upload.wikimedia.org/wikipedia/commons/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg) image for some reason.
 
 # Detecting DB Column Usage
@@ -61,23 +61,18 @@ The below functions and tasks can be added to any rake task file.
 
 ```
 def find_ar_models
-  array=[], model_array=[]
   Rails.application.eager_load!
-  array=ActiveRecord::Base.descendants.collect{|x| x.to_s if x.table_exists?}.compact
-  array.each do |x|
-    if  x.split('::').last.split('_').first != "HABTM"
-      model_array.push(x)
-      end
-    model_array.delete('ActiveRecord::SchemaMigration')
-  end
-  model_array
+
+  array = ActiveRecord::Base.descendants.collect { |x| x.to_s if x.table_exists? }.compact - ['ActiveRecord::SchemaMigration']
+
+  array.reject { |x| x.split('::').last.split('_').first == "HABTM" }
 end
 
 desc 'List when column was last updated'
 task :list_recent_columns => :environment do
   ignore_models = %w(RailsSettings::Settings Devise::Oauth::Client)
   models = find_ar_models
-  models = models.select{|model| !ignore_models.include?(model.to_s) }
+  models = models.reject{|model| ignore_models.include?(model.to_s) }
   
   ignored_columns = %(id created_at updated_at)
   results = {}
@@ -91,16 +86,12 @@ task :list_recent_columns => :environment do
     puts "*"*60
     model.attribute_names.each do |attr|
       next if ignored_columns.include?(attr)
-      result = PaperTrail::Version.where(:item_type => model.to_s)
+      result = PaperTrail::Version.where(item_type: model.to_s)
                  .where("created_at >= ?",[3.months.ago])
                  .where("object_changes ILIKE ?",["%#{attr}%"])
                  .order("created_at DESC")
                  .limit(1).first
-      if result
-        model_results[attr] = result.created_at.to_date
-      else
-        model_results[attr] = 'No updates in 3 months'
-      end
+      model_results[attr] = result&.created_at&.to_date || 'No updates in 3 months'
       puts "#{attr}: #{model_results[attr]}"
     end
     results[model.to_s] = model_results
