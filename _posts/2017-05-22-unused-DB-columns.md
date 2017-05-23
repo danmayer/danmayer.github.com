@@ -11,11 +11,11 @@ tags: [Programming, Development, Database, Refactoring]
 
 # Detecting DB Column Usage
 
-I am always interested in ways to automate and [cleanup old unused code](https://github.com/danmayer/coverband). Removing the clutter helps focus in on the things that matter and make more clear patterns emerge. Continuing on some work to [cleanup unused tables in a database](https://www.mayerdan.com/programming/2017/02/08/cleanup-your-db), I really wanted a way to find unused columns / fields. I came up with two easy ways to try to automate detecting this in a Rails app. The first is to query your [paper_trail](https://github.com/airblade/paper_trail) history, which is easy if you are already using paper_trail.
+I am always interested in ways to automate and [cleanup old unused code](https://github.com/danmayer/coverband). Removing the clutter helps focus in on the things that matter and make more clear patterns emerge. Continuing on some work to [cleanup unused tables in a database](https://www.mayerdan.com/programming/2017/02/08/cleanup-your-db), I really wanted a way to find unused columns / fields. I came up with two easy ways to try to automate detecting this in a Rails app. The first is to query the DB's [paper_trail](https://github.com/airblade/paper_trail) history, which is easy if you are already using paper_trail. The second I will cover in another post soon.
 
 ## Column Usage Output
 
-The output you get after running the queries should be pretty clear.
+What does column usage look like, well for each table it is a list of fields and the last date it was modified. The simple output should be pretty clear.
 
 ```
 ____________________________________________________________
@@ -27,7 +27,7 @@ fixed_location_id: No updates in 3 months
 agent_id: No updates in 3 months
 account_id: 2017-05-20
 house_latitude: No updates in 3 months
-house_longtitude: No updates in 3 months
+house_longitude: No updates in 3 months
 house_location_accuracy: No updates in 3 months
 ...
 notes: 2017-05-20
@@ -51,7 +51,7 @@ assigned_at: No updates in 3 months
 
 ## Detect Columns via Paper_Trail
 
-If you use the gem [paper_trail](https://github.com/airblade/paper_trail) to track the history of changes on some of your models, you are already recording when any column was last changed. All one has to do is come up with the queries to pull the data out. Doing this by hand would be a huge pain, but luckily it is easy to hook into our code and automate the process.
+If you use the gem [paper_trail](https://github.com/airblade/paper_trail) to track the history of changes on some of your models, you are already recording when any column was last changed. All one has to do is come up with the queries to pull the data out. Doing this by hand would be a huge pain, but luckily it is easy to hook into our code and automate the process. We just find all models that support paper_trail, then iterate through the fields.
 
 ## Show Me the Code
 
