@@ -1,4 +1,4 @@
-<img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center"/ alt="logo">
+<img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center" alt="logo" />
 <div class="intro">
 I am Dan Mayer and this is my development blog. Currently it focuses mostly on Ruby development, a side of dev process, and best practices. It also has archives of my old development posts dating back to when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
 
