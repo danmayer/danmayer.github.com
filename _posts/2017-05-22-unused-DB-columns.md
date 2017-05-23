@@ -49,6 +49,8 @@ assigned_at: No updates in 3 months
 ...
 ```
 
+Obviously, a developer will need to interpret this, some tables aren't often updated it doesn't mean they have no purpose. For example we have some configuration tables that are only modified when we integrate new partners into our system. So they will show up in my list with "No updates in 3 months" but that can be quickly filtered out.
+
 ## Detect Columns via Paper_Trail
 
 If you use the gem [paper_trail](https://github.com/airblade/paper_trail) to track the history of changes on some of your models, you are already recording when any column was last changed. All one has to do is come up with the queries to pull the data out. Doing this by hand would be a huge pain, but luckily it is easy to hook into our code and automate the process. We just find all models that support paper_trail, then iterate through the fields.
