@@ -5,6 +5,11 @@ A good list of practices and processes to help manage software teams. Particular
 * [Distributed Team Tips](https://www.mayerdan.com/tech%20management/2017/04/26/distributed-team-tips)
 
 * Distributed Recruiting, Interviews, and Hiring
+  * getting your first distributed job 
+  * distributed onboarding
+* Team documentation
+  * gitlabs [open source handbook](https://about.gitlab.com/2016/07/12/our-handbook-is-open-source-heres-why/)
+  * [docs](https://about.gitlab.com/handbook/)
 * First Responder
   * follow up on escalation and distributed on-call 
 * Incident Response: How to Manage a Fire Firefight
@@ -15,12 +20,18 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 * [Developer Team Onboarding Playbook](https://www.mayerdan.com/tech%20management/2015/08/25/dev-team-onboarding-playbook)
 * [Data Change Management Process](https://www.mayerdan.com/programming/2016/11/21/managing-rails-migrations)
    * Information Architecture Redesign Flow 
-* Deploy Checklist
-* Weekly Software Update (Doug and Jessie's links)
+* Deploy Checklist (link patrick's talk / post)
+* [Weekly Software Update](https://www.mayerdan.com/tech%20management/2017/05/18/weekly-software-updates) (Doug and Jessie's links)
 * Squad Model
+  * spotify posts 
 * Face to Face time
 * Team Cadence: IPM (sprint kickoff, demo, team retro)
+  * types of retros / good retros 
 * Vacation Policy / Work While Traveling
 * Work From Home
    * amazing for baby 
 * Co-working spaces (guest author)
+* Link to talks by GLV, Maria, & Jessie
+* Link to blogs by GLV, Maria, & others
+   * series http://vanderburg.org/blog/series/managing-distributed-teams/ 
+   * Dave Cs how to be a good remote developer 
