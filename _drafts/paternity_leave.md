@@ -25,7 +25,7 @@ behavior-modification, how scientific ;)
 > * a behavior-modification tool that has been shown to boost male participation in the household, enhance female participation in the labor force, and promote gender equity in both domains. 
 > * Among labor economists, overly long maternity leaves are now recognized as creating a barrier to pay equity. At home, meanwhile, long leaves result in women doing most of the housework and child care. (referencing that it is better to have some leave for mom and dad opposed to long mom only leave)
 > * policy makers decided to make men an offer they would feel ashamed to refuse 
-> * study suggests that paternity leave might give men a new mind-set, prompting them to trade more money for more time at home, more flexibility, or both.
+> * study suggests that paternity leave might give men a new mind-set, prompting them to trade more money for more time at home, more flexibility, or both.  
 > -- [Daddy Track: The Case for Paternity Leave](https://www.theatlantic.com/magazine/archive/2014/01/the-daddy-track/355746/)
 
 # It's good for for Father / Child Relationships
