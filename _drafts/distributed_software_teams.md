@@ -33,6 +33,8 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 
 ### Distributed Workflows
 
+* Async vs real time
+  * throughput vs individual 
 * [Data Change Management Process](https://www.mayerdan.com/programming/2016/11/21/managing-rails-migrations)
    * Information Architecture Redesign Flow 
 * Deploy Checklist (link patrick's talk / post)
@@ -40,10 +42,9 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 * Squad Model
   * spotify posts 
 * Face to Face time
-* Team Cadence: IPM (sprint kickoff, demo, team retro)
+* Team Cadence: IPM (sprint kickoff, design review, demo, team retro)
   * types of retros / good retros 
 
-* Link to talks by GLV, Maria, & Jessie
 * Link to blogs by GLV, Maria, & others
    * series http://vanderburg.org/blog/series/managing-distributed-teams/ 
    * Dave Cs how to be a good remote developer 
