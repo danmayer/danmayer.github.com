@@ -25,7 +25,7 @@ USA, get it together ;)
 > 79: Number of countries that have laws requiring paternity leave  
 > -- [Paternity Leave By The Numbers](https://www.thebump.com/a/paternity-leave-for-men)
 
-Tech industry is leading the way, keep pushing it forward.
+[Tech industry is leading the way (change.org most generous leave in tech)](http://money.cnn.com/2014/10/20/news/companies/change-org-maternity-paternity-leave/index.html), keep pushing it forward.
 
 > * this year alone, Amazon, Netflix, and Microsoft have all announced extended parental leave. This is of particular importance because for the first time, we’re seeing a move towards expanded leave for fathers as well as for mothers.  
 > * found that men increased their time spent on household chores by 23% after taking paternity leave.
