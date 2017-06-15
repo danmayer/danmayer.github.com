@@ -44,7 +44,7 @@ behavior-modification, how scientific ;)
 
 ![image detect](/assets/img/baby_tummy_time.jpg)
 
-It helps you bond with your baby, and it has been show to increase the interest and time a father spends with his kids through out life. Ever here of of men jealous of the relationship between kids and their mothers. It is easy to see why kids could be closer to their moms, but taking paternity leave helps you to develop your own bond.
+It helps you bond with your baby, and it has been showm to increase the interest and time a father spends with his kids through out life. Ever hear about men jealous of the relationship between kids and their mothers? It is easy to see why kids could be closer to their moms, but taking paternity leave helps you to develop your own bond.
 
 # Daddy Paternity Leave Activities
 
