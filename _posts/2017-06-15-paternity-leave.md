@@ -1,4 +1,14 @@
-I am on Paternity leave, actually my second of 2 staggered Paternity leaves. I am about 1 week into my second leave, hanging out with little Theo. I have some time off to bond with my kid, but more importantly my wife has some time to go back to work and stay focused knowing, I've got this.
+---
+layout: post
+title: "Paternity Leave"
+category: Tips
+tags: [Programming, Career, Tips, LifeHacks]
+---
+{% include JB/setup %}
+
+![image detect](/assets/img/theo_pooper.jpg)
+
+I am on paternity leave, actually my second of 2 staggered Paternity leaves. I am about 1 week into my second leave, hanging out with little Theo. I have some time off to bond with my kid, but more importantly my wife has some time to go back to work and stay focused knowing, I've got this.
 
 # Men's Paternity Promotes Gender Equity
 
@@ -30,6 +40,8 @@ behavior-modification, how scientific ;)
 
 # It's good for for Father / Child Relationships
 
+![image detect](/assets/img/baby_tummy_time.jpg)
+
 It helps you bond with your baby, and it has been show to increase the interest and time a father spends with his kids through out life. Ever here of of men jealous of the relationship between kids and their mothers. It is easy to see why kids could be closer to their moms, but taking paternity leave helps you to develop your own bond.
 
 # Daddy Paternity Leave Activities
@@ -46,6 +58,8 @@ What do we spend our days doing?
 * Teaching the kid about Operation Ivy, and other Punk Rock.
 * Writing code and blog posts, the kid has to sleep sometime.
 * Visit a museum, kiddo loves being carried around to look at new things 
+
+![image detect](/assets/img/dad_luggage.jpg)
 
 # Paternity Leave Stigma
 
@@ -74,3 +88,5 @@ Taking maternity or paternity leave in the US at all means you are pretty privil
 As with most of my posts and life, I understand my ability to take leave, work from home, and live with reduce income from my wife and I taking leave is lucky. As is the flexibility of my career / current job to support staggered paternity leave (split between baby's birth and Mom returning to work). As are many other things, the key point is if Paternity leave is available and viable to you as a mother or father, take it.
 
 Also, it is fine if a Mom chooses not go back to work, a father taking paternity leave is still a good thing that lets you bond with your child and promotes all people's choices.
+
+![image detect](/assets/img/baby_sit.jpg)
