@@ -87,7 +87,7 @@ Yep, I hear that.
 
 Taking maternity or paternity leave in the US at all means you are pretty privileged. Only [12% of Americans have access to paid parental leave](http://www.techrepublic.com/article/10-things-you-need-to-know-about-maternity-leave-in-the-us/) and [the US is one of only three countries left in the world that do not guarantee paid maternity leave](http://www.techrepublic.com/article/10-things-you-need-to-know-about-maternity-leave-in-the-us/).
 
-As with most of my posts and life, I understand my ability to take leave, work from home, and live with reduce income from my wife and I taking leave is lucky. As is the flexibility of my career / current job to support staggered paternity leave (split between baby's birth and Mom returning to work). As are many other things, the key point is if Paternity leave is available and viable to you as a mother or father, take it.
+As with most of my posts and life, I understand my ability to take leave, work from home, and live with reduced income from my wife and I taking leave is lucky. As is the flexibility of my career / current job to support staggered paternity leave (split between baby's birth and Mom returning to work). As are many other things, the key point is if Paternity leave is available and viable to you as a mother or father, take it.
 
 Also, it is fine if a Mom chooses not go back to work, a father taking paternity leave is still a good thing that lets you bond with your child and promotes all people's choices.
 
