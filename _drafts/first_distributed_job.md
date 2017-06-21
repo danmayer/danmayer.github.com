@@ -1,5 +1,7 @@
 I have worked with distributed teams for awhile. A surprising number of developers ask how they can get a job, not a developer job mind you a distributed job. Obviously, for some people working with a distributed team and being able to work from home or while traveling is a major perk. I do think that often these folks, if they haven't worked on a distributed team before only see the benefits not the challenges and issues that come along with it. In fact many are folks who are looking for their first time professional developer roles. 
 
+https://medium.com/walmartlabs/we-are-distributed-4c64ec6109f4
+
 ### Pros
 
 * Working from home as a Parent: less folks post on this because of stigma, but I know a lot of folks that work from home as they get to see their kids more.
@@ -15,6 +17,7 @@ I have worked with distributed teams for awhile. A surprising number of develope
 * Lack of community / comradery 
 * Slower and more complex communication
 * Async communication can be harder than high bandwidth real time communication
+* https://tablegroup.com/hub/post/05/21/2017/virtual-teams-are-worse-than-i-thought
 
 
 [distributed not remote](http://vanderburg.org/blog/2016/05/31/mdt_2_distributed.html)
