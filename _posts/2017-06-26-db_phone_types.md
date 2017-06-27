@@ -343,7 +343,7 @@ Let's revisit our questions:
 
 > Is there a valid reason to use `bigint` vs `varchar`?
 
-Perhaps, the query improvements are smaller than I thought, but noticeable. The table size difference is real, but also not that large. It would really depend on your needs and the size of your tables.
+Perhaps, the query improvements are smaller than I thought, but noticeable. The table size difference is real, but also not that large. It would really depend on your needs and the size of your tables. In the end [Google says never store phone numbers as numeric data](https://github.com/googlei18n/libphonenumber/blob/master/FALSEHOODS.md) (rule #24), but given a known set of countries and query performance, you can examine the tradeoffs. 
 
 > What is the difference in DB table storage size?
 
