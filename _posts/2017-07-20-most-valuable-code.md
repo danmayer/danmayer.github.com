@@ -6,22 +6,20 @@ tags: [Programming, Development, Tips, Rails]
 ---
 {% include JB/setup %}
 
-<figure>
 ![image detect](/assets/img/obama_code.jpg)
 > Obama writing JS with [code.org](https://twitter.com/codeorg/status/541997370356269057?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Fmashable.com%2F2014%2F12%2F09%2Fpresident-obama-code%2F).
-</figure>
 
 # The Value of Code
 
 While both of the below examples are obviously a bit exaggerated they do capture the point. The code we write has value because it solves some challenge.
 
 > The Best Code is No Code At All  
-> - [Jeff Atwood](https://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
+> -[Jeff Atwood](https://blog.codinghorror.com/the-best-code-is-no-code-at-all/)
 
 or
 
-> Programming is a means to an end, not an end in itself. You should be trying to do as little of it as possible to make the thing that you want.
-> - [Jake Levine](http://www.niemanlab.org/2013/03/jake-levine-why-learning-to-code-isnt-as-important-as-learning-to-build-something/)
+> Programming is a means to an end, not an end in itself. You should be trying to do as little of it as possible to make the thing that you want.  
+> -[Jake Levine](http://www.niemanlab.org/2013/03/jake-levine-why-learning-to-code-isnt-as-important-as-learning-to-build-something/)
 
 # Most Valuable Code I've Written
 
