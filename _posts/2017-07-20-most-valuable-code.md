@@ -57,7 +57,7 @@ When used on important pages, it would generally result in all the primary conte
 
 # Stands the Test of Time
 
-My thoughts about this particular piece of code isn't new. In face below is what I had to say about it when I moved on from LivingSocial in a email farewell to fellow engineers.
+My thoughts about this particular piece of code isn't new. In face below is what I had to say about it when I moved on from LivingSocial a few years ago in a email farewell to fellow engineers.
 
 > ensure_safe: I still consider this the most valuable piece of code I have ever written. Luckily, the era of frequent exceptions and downtime has passed, but back when we were pushing 12+ minute deploys and we didn't have ls-deploy rollback when a bug went live we would often have 20+ minutes of purchase flow downtime. Knocking out deals#show or a purchase page would halt all revenue for about 20 minutes while we scrambled to revert and redeploy. The silly method would let some portions of the view safely explode while sending us exceptions but keeping the site running. It often headed off 10-30K exceptions per incident often with no users the wiser that an issue occurred. I wish there was a graphite stat counter on how many times that method saved the site from going down ;)
 
