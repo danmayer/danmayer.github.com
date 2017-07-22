@@ -116,9 +116,9 @@ back to my first CS classes during college when I was first learning programming
     <li><a href="http://www.erinashleymiller.com">Erin Miller's Blog</a></li>
     <li><a href="http://millermayersadventures.com">Miller Mayers Adventures, our travel blog</a></li>
     <li><a href="http://bbrinck.com">Ben Brinckerhoff's blog</a></li>
-    <li><a href="http://magneticormosaic.com">Magnetic or Mosaic music</a></li>
     <li><a href="http://www.foresightphoto.com">Foresight Aerial Photos</a></li>
     <li><a href='http://github.com/danmayer'>Dan Mayer @ Github</a></li>
+    <li><a href='https://plus.google.com/+danmayer'>+DanMayer on Google+</a></li>
   </ul>
 </div>
 

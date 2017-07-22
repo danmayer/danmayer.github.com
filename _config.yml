@@ -20,7 +20,6 @@ author :
   email : dan@mayerdan.com
   github : danmayer
   twitter : danmayer
-  feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -44,6 +43,7 @@ social:
     - https://twitter.com/danmayer
     - https://www.linkedin.com/in/danmayer/
     - https://github.com/danmayer
+    - https://plus.google.com/+danmayer
 
 twitter:
   username: danmayer
