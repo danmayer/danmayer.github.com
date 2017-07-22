@@ -123,7 +123,7 @@ back to my first CS classes during college when I was first learning programming
 </div>
 
 <div class="well" style="padding: 8px 0;">
-  <h4 class="side-header">licensed under a <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons License</a>.</h4>
+  <h3 class="side-header">license <a href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons</a></h3>
   <a href="http://creativecommons.org/licenses/by-sa/3.0/">
     <img alt="Creative Commons License" src="https://i.creativecommons.org/l/by-sa/3.0/88x31.png" style="padding-left:14px;" />
   </a>
