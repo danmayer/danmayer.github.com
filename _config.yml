@@ -13,6 +13,8 @@ highlighter: rouge
 #
 title : Continuously Deployed
 tagline: "Dan Mayer's Dev Blog"
+description: "Dan Mayer's Dev Blog"
+url : https://www.mayerdan.com
 author :
   name : Dan Mayer
   email : dan@mayerdan.com
@@ -28,11 +30,23 @@ author :
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://www.mayerdan.com
+production_url : https://www.mayerdan.com
 
 # to generate galleries
 # gems:
 #  - jekyll-gallery-generator
+gems:
+  - jekyll-seo-tag
+
+social:
+  name: Dan Mayer
+  links:
+    - https://twitter.com/danmayer
+    - https://www.linkedin.com/in/danmayer/
+    - https://github.com/danmayer
+
+twitter:
+  username: danmayer
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
