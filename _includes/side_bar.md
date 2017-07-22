@@ -1,8 +1,11 @@
 <img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center" alt="logo" />
 <div class="intro">
-I am Dan Mayer and this is my development blog. Currently it focuses mostly on Ruby development, a side of dev process, and best practices. It also has archives of my old development posts dating back to when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
+Welcome to Dan Mayer's development blog. I primary write about Ruby
+development, distributed teams, and dev/PM process. The archives go
+back to my first CS classes during college when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
 
-<h4 class="side-header"><a href="http://twitter.com/danmayer">@DanMayer</a> on Twitter</h4>
+<h4 class="side-header"><a href="http://twitter.com/danmayer">@danmayer</a> on Twitter</h4>
+<h4 class="side-header"><a href="http://github.com/danmayer">@danmayer</a> on Github</h4>
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -20,7 +23,6 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_5b66a725371ebccef646cdb7b_86dcfbcec5" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </div>
-	(emailed once a week, if new posts)
 </form>
 </div>
 <!--End mc_embed_signup-->
@@ -77,11 +79,7 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
     <li class="nav-header">Projects</li>
-    <li><a href="http://blog2ebook.picoappz.com/">Blog2Ebook: convert blogs to Kindle ebooks</a></li>
-    <li><a href="http://churn.picoappz.com">Churn: track churn of your code over time</a></li>
     <li><a href="https://github.com/danmayer/coverband">Coverband: Ruby production code coverage</a></li>
-    <li><a href="http://nothingcalendar.com/">Nothingcalendar: track daily your progress</a></li>
-    <li><a href="http://picoappz.com">Picoappz, tiny side project apps</a></li>
     <li>
       <a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a>
     </li>
@@ -93,8 +91,8 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
-    <li class="nav-header">Developer Links</li>
-    <li><a href="http://avdi.org/devblog/">Avdi's development blog</a></li>
+  <li class="nav-header">Developer Links</li>
+    <li><a href="http://growingdevs.com/">Growing Devs</a></li>
     <li><a href="http://gilesbowkett.blogspot.com/">Giles Bowkett Ruby and Music</a></li>
     <li><a href="http://erniemiller.org">Ernie Miller's dev blog</a></li>
     <li><a href="http://www.naildrivin5.com/">David Copeland's dev blog</a></li>
@@ -102,11 +100,11 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
     <li><a href="http://therealadam.com">The Real Adam's blog</a></li>
     <li><a href="http://austenito.com">Austen Ito's blog</a></li>
     <li><a href="http://tpitale.com">Tony Pitale's blog</a></li>
+    <li><a href="http://avdi.org/devblog/">Avdi's development blog</a></li>
     <li><a href="http://blog.mikesilvis.com">Mike Silvis's blog</a></li>
     <li><a href="http://www.timschmelmer.com">Tim Schmelmer on code</a></li>
     <li><a href="http://michaelevans.org">Michael Evan's blog</a></li>
     <li><a href="http://dotsara.github.io">Dot Sara's blog</a></li>
-    <li><a href="http://steveakers.com/category/technology/">Steve Akers's blog</a></li>
     <li><a href="http://devver.wordpress.com">Archived Devver blog</a></li>
     <li><a href="http://coursereport.com">CourseReport: dev bootcamp directory</a></li>
   </ul>
@@ -115,17 +113,12 @@ I am Dan Mayer and this is my development blog. Currently it focuses mostly on R
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
     <li class="nav-header">Other Links</li>
-    <li><a href="http://millermayersadventures.com">Miller Mayers
-  Adventures, our travel blog</a></li>
     <li><a href="http://www.erinashleymiller.com">Erin Miller's Blog</a></li>
-    <li><a href="http://www.livejournal.com/~idq">Inscrutable Drama Queen's Blog</a></li>
+    <li><a href="http://millermayersadventures.com">Miller Mayers Adventures, our travel blog</a></li>
     <li><a href="http://bbrinck.com">Ben Brinckerhoff's blog</a></li>
     <li><a href="http://magneticormosaic.com">Magnetic or Mosaic music</a></li>
     <li><a href="http://www.foresightphoto.com">Foresight Aerial Photos</a></li>
-    <li><a href="http://www.wastedbrains.com">Dan's wastedbrains</a></li>
-    <li><a href="http://del.icio.us/wastedbrains">my del.icio.us</a></li>
-    <li><a href='http://github.com/danmayer'>Dan Mayer on Github</a></li>
-    <li><a href="http://resume.mayerdan.com">Dan Mayer's Resume</a></li>
+    <li><a href='http://github.com/danmayer'>Dan Mayer @ Github</a></li>
   </ul>
 </div>
 
