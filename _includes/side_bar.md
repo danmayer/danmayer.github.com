@@ -4,7 +4,7 @@ Welcome to Dan Mayer's development blog. I primary write about Ruby
 development, distributed teams, and dev/PM process. The archives go
 back to my first CS classes during college when I was first learning programming. I contribute to a few OSS projects and often work on my own projects, You can find <a href="http://github.com/danmayer">my code on github</a>.
 
-<h4 class="side-header">Twitter <a href="http://twitter.com/danmayer">@danmayer</a> on </h4>
+<h4 class="side-header">Twitter <a href="http://twitter.com/danmayer">@danmayer</a></h4>
 <h4 class="side-header">Github <a href="http://github.com/danmayer">@danmayer</a></h4>
 
 <!-- Begin MailChimp Signup Form -->
