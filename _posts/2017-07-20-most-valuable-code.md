@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Most Valuable Code"
+image: /assets/img/obama_code.jpg
 category: Programming
 tags: [Programming, Development, Tips, Rails]
 ---
