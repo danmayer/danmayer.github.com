@@ -14,5 +14,6 @@ ways to improve
    * Information Architecture Redesign Flow 
 
 * data unused tables
-* unused columns
-* move to a gem   
+* unused columns *2
+* move DB stuff to a gem (table and columns)  
+* gemify the information architecture change approach

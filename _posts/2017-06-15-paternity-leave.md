@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Paternity Leave"
+image: /assets/img/theo_pooper.jpg
 category: Tips
 tags: [Programming, Career, Tips, LifeHacks]
 ---
