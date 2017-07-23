@@ -7,7 +7,7 @@ tags: [Programming, Development, Tips, Rails]
 ---
 {% include JB/setup %}
 
-![image detect](/assets/img/information_architecture_changes.png)
+![image DB Schema Changes](/assets/img/information_architecture_changes.png)
 > Visualizing DB Schema Changes via DOT files
 
 # Information Architecture Changes
@@ -25,6 +25,12 @@ Our Goals:
 * Ability to incremental evolve the model quickly during discussions
 * Ability to see high and low level details using the same data
 * Ability to narrow in to only the models under discussion
+
+# Live & Collaborative Refactoring Your DB Schema
+
+It might be easier to understand the goal with a quick animation to show the flow, than just describing it. Here is the flow one can expect to get into when working on DB model / schema changes.
+
+![image DB Model Change Animation](/assets/img/refactor_db.gif)
 
 # DB Schema Change Process
 
