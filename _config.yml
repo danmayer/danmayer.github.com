@@ -36,6 +36,7 @@ production_url : https://www.mayerdan.com
 #  - jekyll-gallery-generator
 gems:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 social:
   name: Dan Mayer
