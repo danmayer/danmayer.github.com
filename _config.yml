@@ -37,6 +37,7 @@ production_url : https://www.mayerdan.com
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
 
 social:
   name: Dan Mayer
