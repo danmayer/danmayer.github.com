@@ -15,7 +15,7 @@ I first tried to do this in pure SQL with a subquery, but when I was having trou
 ```ruby
 namespace :database do
   desc 'List all tables in surge DB and last usage, help find tables to remove'
-  task :list_recent do
+  task :list_recent => :environment do
     table_data = {}
     skip_large_slow_tables = ['some_table', 'versions']
 
