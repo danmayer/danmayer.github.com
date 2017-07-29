@@ -73,6 +73,10 @@ Posts for API reviews
 # Post Ideas
 ===
 
+* rethinking software teams with increasing needs to collaborate between product, data, and IT
+
+---
+
 A generic, Today I learned: 
 
 To export data from redshift, you can send it to S3
