@@ -22,10 +22,10 @@ Below, I will lay out a proposal we are working to adopt as part of our OGE Team
 
 Our Goals:
 
+* Ability to communicate clearly across Dev, PM, and BI teams anticipated impacts
 * Quickly visualize and be able to discuss changes (faster feedback loop)
-* Ability to communicate across Dev, PM, and BI teams anticipated impacts
-* Reduce bad data models making it live prior to cross functional review
-* Supports asynchronous communication styles that work best for our distributed team
+* Reduce bad data models making hitting production prior to full cross functional review and understanding
+* Support asynchronous communication styles that work best for our distributed team
 * Ability to incremental evolve the model quickly during discussions
 * Ability to see high and low level details using the same data
 * Ability to narrow in to only the models under discussion
@@ -45,14 +45,19 @@ The process creates some artifacts that help support a robust understanding and 
 
 ### High Level Visual Assets
 
-<img src="/assets/img/customer_phone_clean.png" alt="detailed customer cleanup" width="100%">
-> A high detail visual representation of the expected end result
+<img src="/assets/img/customer_phone_clean.png" alt="visual details customer cleanup" width="100%">
+
+> A high detail visual representation of the expected end result  
 
 The high level view are images that can include class or class and field information about the models under change. The PR will typically include both the before and after image so one can see how the classes and associations will change over type. If fields are moved you can also see a class shrinking as fields move to newly associated objects. This type of view can help see the bigger relationships and structures of the data model.
 
 ### Low Level Details
 
-The low level details will result in a `git diff` showing the specific fields and associations that are added and removed. While this might be verbose for some folks. For the developer implementing and the business intelligence analyst reviewing to make sure it meets their needs it will be very helpful.
+<img src="/assets/img/db_refactor_out_phone.png" alt="low level details refactoring out phone number" width="100%">
+
+> A textual diff showing low level details when refactoring out a phone number
+
+The low level details will result in a `git diff` easily viewed as part of the PR. It makes clear specific fields and associations that are added and removed. While this might be verbose for some folks, it is the level of details needed for a developer implementing and the business intelligence analyst reviewing. Seeing the specific fields makes it clear if the data will meet their needs. It can also be very helpful to discuss low level details such as field type.
 
 ## Example Live Refactoring Your DB Model
 
