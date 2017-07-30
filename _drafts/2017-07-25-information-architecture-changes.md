@@ -65,7 +65,7 @@ The low level textual details will result in a `git diff` easily viewed as part 
 
 It might be easier to understand the goal with a quick animation to show the flow, than just describing it. Here is the flow one can expect to get into when working on DB model / schema changes.
 
-![image DB Model Change Animation](/assets/img/refactor_db.gif)
+![image DB Model Change Animation](/assets/img/refactor_db_loop.gif)
 
 ## Team Discussion Workflow
 
