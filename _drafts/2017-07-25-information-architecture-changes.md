@@ -45,21 +45,21 @@ The process creates some artifacts that help support a robust understanding and 
 
 ### High Level Visual Assets
 
+The high level view are images that can include class or class and field information about the models under change. The PR will typically include both the before and after image so one can see how the classes and associations will change over type. If fields are moved you can also see a class shrinking as fields move to newly associated objects. This type of view can help see the bigger relationships and structures of the data model.
+
 <img src="/assets/img/customer_phone_clean.png" alt="visual details customer cleanup" width="100%">
 
 > A high detail visual representation of the expected end result  
 
-The high level view are images that can include class or class and field information about the models under change. The PR will typically include both the before and after image so one can see how the classes and associations will change over type. If fields are moved you can also see a class shrinking as fields move to newly associated objects. This type of view can help see the bigger relationships and structures of the data model.
-
 ### Low Level Details
-
-<img src="/assets/img/db_refactor_out_phone.png" alt="low level details refactoring out phone number" width="100%">
-
-> A textual diff showing low level details when refactoring out a phone number
 
 By building image models from a textual diagraming format (`DOT` files), one can get much more details and control for the diagrams.
 
 The low level textual details will result in a `git diff` easily viewed as part of the PR. It makes clear specific fields and associations that are added and removed. While this might be verbose for some folks, it is the level of details needed for a developer implementing and the business intelligence analyst reviewing. Seeing the specific fields makes it clear if the data will meet their needs. It can also be very helpful to discuss low level details such as field type.
+
+<img src="/assets/img/db_refactor_out_phone.png" alt="low level details refactoring out phone number" width="100%">
+
+> A textual diff showing low level details when refactoring out a phone number
 
 ## Example Live Refactoring Your DB Model
 
