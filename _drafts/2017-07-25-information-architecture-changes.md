@@ -12,7 +12,7 @@ tags: [Programming, Development, Tips, Rails]
 
 # Information Architecture Changes
 
-Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on project can cut a teams velocity significantly. As time is spent trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html) where needed, and refactoring towards a more appropriate data model. 
+Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on project can cut a team's velocity significantly. As time is spent trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html) where needed, and refactoring towards a more appropriate data model. 
 
 __What can we do to ensure a more robust model from the start and increase the confidence we have in data model changes?__
 
@@ -24,9 +24,9 @@ Our Goals:
 
 * Ability to communicate clearly across Dev, PM, & BI teams anticipated impacts
 * Quickly visualize and be able to discuss changes (faster feedback loop)
-* Reduce bad data models making hitting production prior to full cross functional review and understanding
+* Reduce bad data models making it to production prior to full cross functional review and understanding
 * Support asynchronous communication styles that work best for our distributed team
-* Ability to incremental evolve the model quickly during discussions
+* Ability to incrementally evolve the model quickly during discussions
 * Ability to see high and low level details using the same data
 * Ability to focus in to only the models under discussion
 * Easily integrates into our tool chain
@@ -39,7 +39,7 @@ It is important to note this is for [data schema changes not for data migrations
 
 The process creates some artifacts that help support a robust understanding and conversation around the data changes.
 
-1. A PR is used to group the artifacts, description and reasoning for the change, and to focus the discussion
+1. A pull request (PR) is used to group the artifacts, description and reasoning for the change, and to focus the discussion
 2. A high leveled visual asset on changes to quickly understand the lay of the land so to speak (including before and after images)
 3. A low level view showing column level removals and additions to the schema, colorized via `git diff` support
 
@@ -91,12 +91,12 @@ This should walk through the steps required to implement this process on your ow
    * new branch: `git checkout -b feature/db_phone_change`
    * edit to reflect your changes: `open doc/customer.dot` 
    * convert updated DOT file to updated image: `neato -Tpng doc/customer.dot > doc/customers.png`
-   * view PNG & Refactor until happy
+   * view PNG & refactor until happy
    * create a PR and upload the before and after images, diff will be automatically created for the DOT file changes.
 
-## Dependancies
+## Dependencies
 
-Their are many tools that could do this. If you don't have the ability to automatically create diagrams from your code, or access to graphviz. You could build out much of the diagrams by hand with a tool like [draw.io](https://www.draw.io/). If you are using Rails, I recommend the below setup.
+There are many tools that could do this. If you don't have the ability to automatically create diagrams from your code or access to graphviz, you could build out much of the diagrams by hand with a tool like [draw.io](https://www.draw.io/). If you are using Rails, I recommend the below setup.
 
 ### Add to your `gemfile` in your dev/test group
 
