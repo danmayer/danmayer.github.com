@@ -30,6 +30,7 @@ https://blog.heroku.com/archives/2014/5/9/incident-response-at-heroku
 * Expenses
 * Brownbags
 * types of teams hub and spoke, decentralized, distributed
+* Polish / Clean-up week
 
 ### Distributed Workflows
 
