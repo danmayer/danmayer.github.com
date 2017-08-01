@@ -12,23 +12,21 @@ tags: [Programming, Development, Tips, Rails]
 
 # Information Architecture Changes
 
-Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on project can cut a team's velocity significantly. As time is spent trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html) where needed, and refactoring towards a more appropriate data model. 
+Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools available for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on,  can cut a team's velocity significantly. This is due to time being spent on trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html), and refactoring towards a more appropriate data model. 
 
 __What can we do to ensure a more robust model from the start and increase the confidence we have in data model changes?__
 
 ## A Proposal For More Communicative Data Model Changes
 
-Below, I will lay out a proposal we are iterating on as part of our OGE team practices.
+Below, I will lay out a proposal we are iterating on as part of our OGE team best practices.
 
 Our Goals:
 
-* Ability to communicate clearly across Dev, PM, & BI teams anticipated impacts
-* Quickly visualize and be able to discuss changes (faster feedback loop)
-* Reduce bad data models making it to production prior to full cross functional review and understanding
-* Support asynchronous communication styles that work best for our distributed team
-* Ability to incrementally evolve the model quickly during discussions
+* Ability to communicate anticipated impacts of our data model changes clearly across Development, Project Management, & Business Intelligence teams
+* Ability to quickly visualize changes (faster feedback loop)
+* Reduce bad data models making it to production
+* Support both interactive & asynchronous communication styles that work best for our distributed team
 * Ability to see high and low level details using the same data
-* Ability to focus in to only the models under discussion
 * Easily integrates into our tool chain
 
 While this does add additional overhead while working on data changes to our system. It helps us to collaborate and socialize the data model. Working towards ubiquitous language across our teams and with our stakeholders.
@@ -39,13 +37,13 @@ It is important to note this is for [data schema changes not for data migrations
 
 The process creates some artifacts that help support a robust understanding and conversation around the data changes.
 
-1. A pull request (PR) is used to group the artifacts, description and reasoning for the change, and to focus the discussion
-2. A high leveled visual asset on changes to quickly understand the lay of the land so to speak (including before and after images)
+1. A Pull Request (PR) is used to group the artifacts, description and reasoning for the change, and to focus the discussion
+2. A high level visual asset on changes, to quickly understand the lay of the land, so to speak (including before and after images)
 3. A low level view showing column level removals and additions to the schema, colorized via `git diff` support
 
 ### High Level Visual Assets
 
-The high level view are images that can include class or class and field information about the models under change. The PR will typically include both the before and after image so one can see how the classes and associations will change over type. If fields are moved you can also see a class shrinking as fields move to newly associated objects. This type of view can help see the bigger relationships and structures of the data model.
+The high level view are images that can include class or class and field information about the models under change. The PR will typically include both the before and after images so one can see how the classes and associations will change over time. If fields are moved you can also see a class shrinking as fields move to newly associated objects. This type of view can help see the bigger relationships and structures of the data model.
 
 <img src="/assets/img/customer_phone_clean.png" alt="visual details customer cleanup" width="100%">
 
@@ -53,7 +51,7 @@ The high level view are images that can include class or class and field informa
 
 ### Low Level Details
 
-By building image models from a textual diagraming format (`DOT` files), one can get much more details and control for the diagrams.
+By building image models from a textual diagramming format (`DOT` files), one can get much more details and control for the diagrams.
 
 The low level textual details will result in a `git diff` easily viewed as part of the PR. It makes clear specific fields and associations that are added and removed. While this might be verbose for some folks, it is the level of details needed for a developer implementing and the business intelligence analyst reviewing. Seeing the specific fields makes it clear if the data will meet their needs. It can also be very helpful to discuss low level details such as field type.
 
