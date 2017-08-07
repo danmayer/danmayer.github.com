@@ -12,7 +12,7 @@ tags: [Programming, Development, Tips, Rails]
 
 # Information Architecture Changes
 
-Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools available for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on,  can cut a team's velocity significantly. This is due to time being spent on trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html), and refactoring towards a more appropriate data model. 
+Creating a robust Data Model for your business & application is one of the most important things to get right. We still don't have great tools available for discussing proposed database schema changes. Fixing a bad data model after data has started flowing on a production system is more complicated & time consuming than folks estimate. A series of not fully thought out data decisions early on can cut a team's velocity significantly. This is due to time being spent on trying to fix bad & invalid data, adding missing [DB constraints & validations](http://naildrivin5.com/blog/2015/11/15/rails-validations-vs-postgres-check-constraints.html), and refactoring towards a more appropriate data model. 
 
 __What can we do to ensure a more robust model from the start and increase the confidence we have in data model changes?__
 
