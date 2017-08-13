@@ -1,4 +1,4 @@
-<img src="/assets/dan_mayer_hiking_sm.jpg" width='100%' align="center" alt="logo" />
+<img src="/assets/img/dan_mayer_right_rail.jpg" width='100%' align="center" alt="Dan Mayer Profile Pic" />
 <div class="intro">
 Welcome to Dan Mayer's development blog. I primary write about Ruby
 development, distributed teams, and dev/PM process. The archives go
