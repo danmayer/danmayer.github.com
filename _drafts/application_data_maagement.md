@@ -17,3 +17,4 @@ ways to improve
 * unused columns *2
 * move DB stuff to a gem (table and columns)  
 * gemify the information architecture change approach
+* [IA Change Process Presentation](https://www.mayerdan.com/ia_change/IA_Change_Process.htm)
