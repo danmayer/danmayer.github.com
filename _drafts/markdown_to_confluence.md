@@ -16,6 +16,8 @@ I didn't want to take the time to move over 80+ documents by hand. So I wrote a 
 
 # Show Me the Code
 
+You can view the [gist](https://gist.githubusercontent.com/danmayer/9629fa62e8e855472f5dc7dda1ac29bc/raw/fcfdcfbbede3675121b33855b0278a85b3bf0a71/markdown_to_confluence.rb) or see the code below.
+
 ```ruby
 #!/usr/bin/env ruby
 
