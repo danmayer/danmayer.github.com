@@ -59,6 +59,12 @@ The low level textual details will result in a `git diff` easily viewed as part 
 
 > A textual diff showing low level details when refactoring out a phone number
 
+## Change Process Presentation
+
+This is a version of the presentation I gave internally when getting
+our team on board. Feel free to have a look
+[Information Architecture Change Process](https://www.mayerdan.com/ia_change/IA_Change_Process.htm)
+
 ## Example Live Refactoring Your DB Model
 
 It might be easier to understand the goal with a quick animation to show the flow, than just describing it. Here is the flow one can expect to get into when working on DB model / schema changes.
