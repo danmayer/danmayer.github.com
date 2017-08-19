@@ -59,12 +59,6 @@ The low level textual details will result in a `git diff` easily viewed as part 
 
 > A textual diff showing low level details when refactoring out a phone number
 
-## Change Process Presentation
-
-This is a version of the presentation I gave internally when getting
-our team on board. Feel free to have a look
-[Information Architecture Change Process](https://www.mayerdan.com/ia_change/IA_Change_Process.htm)
-
 ## Example Live Refactoring Your DB Model
 
 It might be easier to understand the goal with a quick animation to show the flow, than just describing it. Here is the flow one can expect to get into when working on DB model / schema changes.
@@ -98,7 +92,19 @@ This should walk through the steps required to implement this process on your ow
    * view PNG & refactor until happy
    * create a PR and upload the before and after images, diff will be automatically created for the DOT file changes.
 
-## Dependencies
+## Change Process Presentation
+
+This is a version of the presentation I gave internally when getting
+our team on board. Feel free to have a look
+[Information Architecture Change Process](https://www.mayerdan.com/ia_change/IA_Change_Process.pdf)
+
+<iframe src="https://docs.google.com/presentation/d/1IjZATQlvL8hT7r3OUWPJpMAE10cQyWhJTK5l7Mpcgzw/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+## Code & Development Details
+
+See below for details on how to implement this yourself.
+
+### Dependencies
 
 There are many tools that could do this. If you don't have the ability to automatically create diagrams from your code or access to graphviz, you could build out much of the diagrams by hand with a tool like [draw.io](https://www.draw.io/). If you are using Rails, I recommend the below setup.
 
