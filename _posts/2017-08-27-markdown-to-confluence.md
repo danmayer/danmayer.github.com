@@ -1,10 +1,23 @@
+---
+layout: post
+title: "Markdown to Confluence Wikis"
+image: /assets/img/Markdown-Confluence.png
+category: Programming
+tags: [Programming, Development, Tips, Ruby, Confluence]
+---
+{% include JB/setup %}
+
+![image DB Schema Changes](/assets/img/Markdown-Confluence.png)
+> Markdown converted for Atlassian's Confluence
+
+
 If you ever have a need to convert a bunch of markdown or html files to confluence it is really easy. Their Rest-API is pretty clean and if you use Ruby there is a small [Confluence API gem](https://github.com/amishyn/confluence-api-client) to make it even easier.
 
 # Why Move To Confluence?
 
-Why would we move our documentation from Markdown in a git repo, to Confluence? Well our team is growing and we interact with more and more non developers, who could benefit and contribute to our documentation. While some of our documentation was very technical much of it wasn't. It would be helpful to our Support, IT, Project Management, and Stakeholders. Markdown and git aren't the best way to get other folks comfortable reading or contributing to our documentation.
+Why would we move our documentation from Markdown in a git repo, to Confluence? Well our team is growing and we interact with more and more non developers, who could benefit and contribute to our documentation. While some of our documentation was very technical much of it wasn't. It would be helpful to our Support, IT, Project Management, and Stakeholders. Markdown and git aren't the best way to get other folks comfort	able reading or contributing to our documentation.
 
-* Increased colaboration
+* Increased collaboration
 * Simplified access control to read
 * Ability to mix ticketing, widgets, and wiki docs
 

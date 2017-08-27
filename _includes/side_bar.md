@@ -84,7 +84,7 @@ back to my first CS classes during college when I was first learning programming
       <a href="https://github.com/danmayer/sinatra_template">Sinatra Template: generator app with opinionated configuration</a>
     </li>
     <li>
-	    <a href="http://www.mayerdan.com/rubynation-production-code-analysis/">Production Code Analysis Slides</a>
+	  <a href="http://www.mayerdan.com/rubynation-production-code-analysis/">Production Code Analysis Slides</a>
     </li>
   </ul>
 </div>
@@ -92,8 +92,8 @@ back to my first CS classes during college when I was first learning programming
 <div class="well" style="padding: 8px 0;">
   <ul class="nav nav-list">
   <li class="nav-header">Developer Links</li>
+    <li><a href="https://tech.offgrid-electric.com/">Off Grid Electric Tech</a></li>
     <li><a href="http://growingdevs.com/">Growing Devs</a></li>
-    <li><a href="http://gilesbowkett.blogspot.com/">Giles Bowkett Ruby and Music</a></li>
     <li><a href="http://erniemiller.org">Ernie Miller's dev blog</a></li>
     <li><a href="http://www.naildrivin5.com/">David Copeland's dev blog</a></li>
     <li><a href="http://chadfowler.com">Chad Fowler's blog</a></li>
