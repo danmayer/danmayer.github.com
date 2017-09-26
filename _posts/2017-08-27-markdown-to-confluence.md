@@ -22,10 +22,18 @@ Why would we move our documentation from Markdown in a git repo, to Confluence? 
 * Ability to mix ticketing, widgets, and wiki docs
 
 That was enough for us to decide on moving our documentation over.
+<!--more-->
 
 # Bulk Conversion & Upload
 
-I didn't want to take the time to move over 80+ documents by hand. So I wrote a script to help. I created a page in our confluence space for imported docs. I set that as a parent page and then just converted all of the Markdown to HTML and uploaded it in a single step. Linking to the original document in case anything was lost in translation. Now we can pull content and link to the old content, but start building out newer documentation on our confluence space.
+I didn't want to take the time to move over 80+ documents by hand. So
+I wrote a script to help. I created a page in our confluence space for
+imported docs. I set that as a parent page and then just converted all
+of the Markdown to HTML and uploaded it in a single step. Linking to
+the original document in case anything was lost in translation. Now we
+can pull content and link to the old content, but start building out
+newer documentation on our confluence space.
+
 
 # Show Me the Code
 

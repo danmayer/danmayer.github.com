@@ -28,6 +28,7 @@ Our Goals:
 * Support both interactive & asynchronous communication styles that work best for our distributed team
 * Ability to see high and low level details using the same data
 * Easily integrates into our tool chain
+<!--more-->
 
 While this does add additional overhead while working on data changes to our system. It helps us to collaborate and socialize the data model. Working towards ubiquitous language across our teams and with our stakeholders.
 

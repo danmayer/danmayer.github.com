@@ -16,6 +16,7 @@ I am on paternity leave, actually my second of 2 staggered Paternity leaves. I a
 My wife started sharing a bunch of information about paternity leave when we started discussing having a child. The choices men make to be more involved with the kid can help women who choose to work to avoid some of the associated career setbacks that often come with becoming a mother. There is some interesting research going on here, it seems to impact both work and home life. Increasing men's participation in chores and playing with children. I suspect that has something to do with the empathy gained, spending time at home alone with the kiddo.
 
 ![image detect](/assets/img/outside.jpg)
+<!--more-->
 
 Gotta make that dollar...
 > A mother’s future earnings increased 7% for every month that her partner took parental leave.   

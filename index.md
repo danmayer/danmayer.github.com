@@ -5,23 +5,26 @@ tagline: Dan Mayer's Dev Blog
 ---
 {% include JB/setup %}
 
-{% for first in site.posts limit: 1 %}
-  <div class="row">
+<div class="row">
+  <div class="span8">
 
-    <div class="span8">
+{% for post in site.posts limit: 7 %}
+     <div class="index-summary">
+
       <h3 class="index-title">
-        <a href="{{ first.url }}" class="noStyle">{{ first.title }}</a> <small>{{first.sub_title}}</small>
-        <span>{{ first.date | date_to_long_string }}</span>
+        <a href="{{ post.url }}" class="noStyle">{{ post.title }}</a> <small>{{post.sub_title}}</small>
+        <span>{{ post.date | date_to_long_string }}</span>
       </h3>
-      {{ first.content }}
+      {{ post.excerpt }}
 
-      <a href="{{ BASE_PATH }}{{ first.url }}" class="btn index-comments" style="float:right">comments</a>
-      
+      <a href="{{ BASE_PATH }}{{ post.url }}" class="btn index-comments" style="float:right">comments</a>
+      <hr/>
+      </div>
+{% endfor %}
+
     </div>
-
     <div class="span4">
       {% include side_bar.md %}
     </div>
 
   </div>
-{% endfor %}

@@ -19,6 +19,7 @@ After taking on full tales, I wanted a way to find unused fields. I came up with
 
 * Previously covered: Query the [DB's paper_trail history]((https://www.mayerdan.com/programming/2017/05/22/unused-DB-columns))
 * In this post: We will cover query logging and searching field usage via a log aggregator.
+<!--more-->
 
 ## DB Field Usage Output
 

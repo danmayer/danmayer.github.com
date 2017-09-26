@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+gem 'jekyll'
 gem 'github-pages'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
+gem 'jemoji'
+gem 'jekyll-mentions'
+gem 'jekyll-seo'
 gem 'rake'
-# gem 'jekyll-gallery-generator'

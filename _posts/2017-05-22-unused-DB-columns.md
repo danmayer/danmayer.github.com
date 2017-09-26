@@ -16,6 +16,7 @@ I am always interested in ways to automate and [cleanup old unused code](https:/
 ## Column Usage Output
 
 What does column usage look like, well for each table it is a list of fields and the last date it was modified. The simple output should be pretty clear.
+<!--more-->
 
 ```
 ____________________________________________________________

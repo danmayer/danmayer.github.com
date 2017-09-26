@@ -22,6 +22,7 @@ It actually lead to far more responses, questions, and discussion about the best
 
 [![image columns](/assets/img/twitter_convo_always.png)](https://twitter.com/danmayer/status/879033778169151488)
 > a pretty strong statement saying we got this wrong 
+<!--more-->
 
 ## Open Questions
 

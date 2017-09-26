@@ -24,7 +24,10 @@ or
 
 # Most Valuable Code I've Written
 
-Given that I think the most valuable code I have currently ever written is a stupid and simple method. This is a recreation of the method below avoiding un-important internals.
+Given that I think the most valuable code I have currently ever
+written is a stupid and simple method. This is a recreation of the
+method below avoiding un-important internals.
+<!--more-->
 
 ```ruby
 def ensure_safe
