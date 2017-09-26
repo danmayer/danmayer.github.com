@@ -6,7 +6,7 @@ footer { margin-top: 8px; padding:16px 12px 16px; background-color: #EEE; }
 		  font-size: 20px;
 		  float: right; }
 
-.index-comments { margin-top:12px; margin-bottom:12px; }
+.index-comments { margin-top:-18px; }
 
 .intro { padding-top: 8px; }
 .side-header { padding-top: 8px; padding-bottom: 12px; }
@@ -15,6 +15,19 @@ footer { margin-top: 8px; padding:16px 12px 16px; background-color: #EEE; }
 
 .noStyle {
   color: rgb(51, 51, 51);
+}
+
+div.index-summary {
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: 28px
+}
+
+h3.index-title {
+    padding-top: 8px;
+    font-size: 34px;
 }
 
 h3 .index-title span {
