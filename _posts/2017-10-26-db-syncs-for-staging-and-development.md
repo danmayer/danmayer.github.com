@@ -11,7 +11,7 @@ tags: [Ruby, Rails, Database, AWS, Postgres]
 ![Random Links](/assets/img/database-sync.jpg)
 > DB Syncs [CC image from Pixabay](https://pixabay.com/p-1954920/?no_redirect)
 
-# Database Across Environments
+# Syncing Databases Across Environments
 
 It seems that often when a business grows, at some point it is hard to create useful QA, development, and staging data to cover all the cases that can occur on production. Eventually, there is a need to try to replicate certain cases or debug various issues that is much easier when you can pull the production data to another system to experiment and debug safely. Nearly, everywhere I have worked eventually we need to clone large portions of the production DB to staging... Quickly followed by wanting to pull staging data to local development. While sometimes various privacy and security concerns must be taken into account, in general we are just talking about replicating a database or tables from one place to another. I will cover some approaches to moving DBs.
 
