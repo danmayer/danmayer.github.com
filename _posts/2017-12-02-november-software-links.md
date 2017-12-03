@@ -61,6 +61,7 @@ Some of my favorite links from November. If you have any good links I missed pas
 ### Random
 
 * [Things Many People Find Too Obvious To Have Told You](https://twitter.com/patio11/status/936616624378978304)
+* [Parental Leave in the US vs the World](http://www.investmentzen.com/data-visualization/parental-leave-in-the-united-states-vs-the-world/)
 
 
 ![Random Links](/assets/img/chain-links.jpg)
