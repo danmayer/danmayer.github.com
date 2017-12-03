@@ -10,13 +10,6 @@ tags: [programming, ruby, database]
 Some of my favorite links from November. If you have any good links I missed pass them my way.
 
 
-
-* https://twitter.com/davetron5000/status/934803721917222913
-
-
-
-
-
 ### Software Development
 
 * A follow up to last months [part one](https://mtlynch.io/human-code-reviews-1/), [part two of human code reviews](https://mtlynch.io/human-code-reviews-2/)
