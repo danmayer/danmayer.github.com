@@ -2,6 +2,7 @@
 layout: post
 title: "On Tech Challenges"
 category: Tech Management
+image: /assets/img/job-challenge.jpg
 tags: [Management, Hiring, Teams]
 ---
 {% include JB/setup %}
