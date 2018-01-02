@@ -17,7 +17,7 @@ Some of my favorite links from December. If you have any good links I missed pas
 ### Software Development
 
 * [one-click PDF microservice](https://elements.heroku.com/buttons/kimmobrunfeldt/url-to-pdf-api)
-* [on Kafka andEedis streams](https://medium.com/@timothy_downs/introduction-to-redis-streams-133f1c375cd3)
+* [on Kafka and Redis streams](https://medium.com/@timothy_downs/introduction-to-redis-streams-133f1c375cd3)
 * [distributed system with one process representing every user / shared resource in Elixir](https://www.infoq.com/presentations/elixir-distributed-system#.WkVr2AWFpx4.twitter), great talk [@myobie](https://twitter.com/myobie)
 * [Understand why Serverless matters](https://what-problem-does-it-solve.com/serverless/index.html) another great write up by [@davetron5000](https://twitter.com/davetron5000)
 
