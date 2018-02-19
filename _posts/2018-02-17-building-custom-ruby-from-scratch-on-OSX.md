@@ -50,6 +50,13 @@ It is a bit hard to resolve on OS X yourself, but luckily we can just use ruby-b
 * make sure to open a new shell so ChRuby (or RbEnv) find the new ruby.
 * you can now reference the new build in your `.ruby-version` file in any project
 
+If you want to build from your local git to avoid pushing to a remote branch while testing this is how your build file should end up.
+
+```
+install_package "openssl-1.1.0g" "https://www.openssl.org/source/openssl-1.1.0g.tar.gz#de4d501267da39310905cb6dc8c6121f7a2cad45a7707f76df828fe1b85073af"  mac_openssl --if has_broken_mac_openssl
+install_git "coverage_pause" "/Users/danmayer/projects/ruby" "feature/coverage_pause" ldflags_dirs autoconf standard_build standard_install_with_bundled_gems verify_openssl
+```
+
 If all is working as expected you should see this.
 
 ```
