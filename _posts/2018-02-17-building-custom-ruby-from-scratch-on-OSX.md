@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Building Your Own Ruby"
+category: Ruby
+tags: [Ruby, Development]
+---
+{% include JB/setup %}
+
 # Building & Using Your Own Ruby
 
 If you want to work on changes or learn more about the internals of the  Ruby language, you can alter the source and build your own from scratch. It isn't that hard or scary, you will learn a bit more about Ruby just by building it. This is a quick start to building Ruby from scratch on OSX, and using it to run your local apps.
