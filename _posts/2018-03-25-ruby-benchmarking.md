@@ -34,7 +34,7 @@ When I need to quickly benchmark something, I look no further than Ruby's simple
 * [a Small project to benchmark Ruby web frameworks](https://github.com/luislavena/bench-micro)
 * [Alternative to Benchmark Module, ReadyGo](https://github.com/garybernhardt/readygo)
 
-# Benchmarking Your own Change to Ruby
+# Learning by Benchmarking A Proposed Ruby Change
 
 I previously covered how to [build Ruby from scratch on OS X](https://www.mayerdan.com/ruby/2018/02/17/building-custom-ruby-from-scratch-on-OSX). I posted that as I was working on a feature, I was hoping to get into Ruby. I proposed a change to Ruby's Coverage that I hoped would lead to large performance improvements adding [Coverage Pause & Resume](https://bugs.ruby-lang.org/issues/9572#note-4) support. A little discussion with [@tenderlove](https://twitter.com/tenderlove), lead me to try to prove the value of the feature in terms of performance. In the end, I actually proved my feature idea was unnecessary and that Ruby's Coverage was significantly faster than [Ruby's Tracepoint](https://ruby-doc.org/core-2.0.0/TracePoint.html). Below, I will walk through some of the steps and code, I used while driving towards better benchmarks and understanding of what was really impacting performance while trying to collect the line of code runtime.
 
