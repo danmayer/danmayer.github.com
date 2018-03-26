@@ -13,7 +13,7 @@ If you work on a large app, publish, gems, or are interested in the Ruby communi
 
 This post will talk about measuring the performance of Ruby and benchmarking your own code and applications. In a future post, I will dig more into good practices around benchmarking Ruby gems.
 
-![Stopwatch](assets/img/stopwatch-3206383_1280.jpg)
+![Stopwatch](/assets/img/stopwatch-3206383_1280.jpg)
 > image from [pixabay](https://pixabay.com/en/stopwatch-time-stop-time-training-3206383/)
 
 # Ruby Benchmarking Projects
