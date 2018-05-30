@@ -109,7 +109,7 @@ For example to get the most basic results of Ruby without Coverage loaded, one w
 
 This would output a bunch of data about the benchmark results.
 
-```
+```shell
 Benchmarking 127.0.0.1 (be patient)
 
 Server Software:
