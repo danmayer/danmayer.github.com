@@ -155,7 +155,7 @@ desc 'runs all benchmarks'
 task benchmarks: ['benchmarks:run', 'benchmarks:run_coverage']
 ```
 
-## Benchmark Output
+## Benchmark Results
 
 Below is a sample of the output generated when all the benchmarks are run. For each test, it configures Coverband and outputs the configuration settings, along with the same code executed with and without Coverband. The key point being the output below for the new Coverband implementation. 
 
@@ -164,6 +164,10 @@ Below is a sample of the output generated when all the benchmarks are run. For e
 coverband         0.320000   0.010000   0.330000 (  0.322387)
 no coverband      0.320000   0.000000   0.320000 (  0.321767)
 ```
+
+![Stopwatch](https://chart.googleapis.com/chart?chtt=Time%20in%20Sec%20Vs%20Benchmark%20Type&chxt=x,y&cht=bvs&chxr=1,0,1.5&chds=0,1.5&chd=t:1.350,1.3100,0.32,0.32&chco=76A4FB&chbh=23,100,75&chs=500x325&chxl=0:|Tracepoint%20to%20File|Tracepoint%20to%20Redis|Coverage%20to%20Redis|Without%20Coverband)
+> User time from benchmark results below graphed
+
 
 While it is easy to see the performance impact of the previous `tracepoint collector`, at `1.350000` vs `0.320000` the current benchmark can't even detect a performance slowdown using the new `Coverage` collector. While this means, I should further extend the Gems performance tests, the new implementation is significantly and easily proved to be far more performant than the previous implementation.
 
