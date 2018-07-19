@@ -9,14 +9,14 @@ tags: [Programming, Conference, Stickers, Talks]
 
 # A Unique Conference
 
-I attended [#LeadDevLondon](https://twitter.com/hashtag/LeadDevLondon) this year, it was a nice and different conference. Generally I have attended more language specific conferences. There were basically no language specific talks at all during the conf, as everything was a bit more general about building and working well with technology teams. Given that these days a large part of what I do is manage teams of devs, it was good to hear other folks talk through some of the challenges and solutions they have gone through during their journey.
+I attended [#LeadDevLondon](https://twitter.com/hashtag/LeadDevLondon) this year, it was a nice and different conference. Generally, I have attended more language-specific conferences. There were basically no language-specific talks at all during the conf, as everything was a bit more general about building and working well with technology teams. Given that these days a large part of what I do is manage teams of devs, it was good to hear other folks talk through some of the challenges and solutions they have gone through during their journey.
 
 ![leaddev london stickers](/assets/img/leaddev_london_stickers.jpg)
 > My swag bag full of stickers
 
 # Some Favorite Slides
 
-For my very favorite slide see the section with my tweets below ;) Otherwise enjoy some favorite slides with little to no context ;) You can generally find the full presentation slides on the [talks page](https://london2018.theleaddeveloper.com/schedule) and the full videos of the [#LeadDevLondon talks on youtube](https://www.youtube.com/playlist?list=PLBzScQzZ83I_VX8zgmLqIfma_kJs3RRmu).
+For my very favorite slide see the section with my tweets below ;) Otherwise, enjoy some favorite slides with little to no context ;) You can generally find the full presentation slides on the [talks page](https://london2018.theleaddeveloper.com/schedule) and the full videos of the [#LeadDevLondon talks on youtube](https://www.youtube.com/playlist?list=PLBzScQzZ83I_VX8zgmLqIfma_kJs3RRmu).
 
 ![leaddev london slides](/assets/img/leaddev_london/container_manual_1.jpg)
 > [@alicegoldfuss](https://twitter.com/alicegoldfuss) explaining containers
@@ -66,13 +66,13 @@ I guess I really liked what [@ramtop](https://twitter.com/ramtop) had to say abo
 
 # A Talk Pattern I Want To See
 
-One thing I noticed and really came away with from the talks is that every piece of advice and best practice really fits into part of a companies growth curve. Even the most agreeed on advice can't and shouldn't apply the same to a single person startup and a company of thousdands of people and hundreds of engineers. This made me crave a talk that opposed to saying how some team approaches a challenge and the ways it works for them, but how a best practice or process changes and adapts to different growth stages of a company...
+One thing I noticed and really came away with from the talks is that every piece of advice and best practice really fits into part of a companies growth curve. Even the most agreed on advice can't and shouldn't apply the same to a single person startup and a company of thousands of people and hundreds of engineers. This made me crave a talk that opposed to saying how some team approaches a challenge and the ways it works for them, but how a best practice or process changes and adapts to different growth stages of a company...
 
-As a single talk example let's consider continious delivery of the growth of a team. While the end best practices involve style checkers, peer code review, automated test suites, deployment to one or more staging, and feature flag or percentage based releases to production, before / after metric analysis on the impact of deploys... It would not be possible to start there nor would it be sensable to set up all that complexity when just getting started... I feel like the flow would naturally look something more like this
+As a single talk, an example let's consider continuous delivery of the growth of a team. While the end best practices involve style checkers, peer code review, automated test suites, deployment to one or more staging, and feature flag or percentage based releases to production, before/after metric analysis on the impact of deploys... It would not be possible to start there nor would it be sensible to set up all that complexity when just getting started... I feel like the flow would naturally look something more like this.
 
-* 1 person startup -> manually run CLI deployment task from dev machine
+* 1 person startup -> manually run CLI deployment task from the dev machine
 * 2-3 people -> CI test suite, manual CLI deployment
-* 3-8 people -> static style checker, CI test suite, code review, staging deployment with stakeholder / QA review, push button deployments and rollbacks automated on CI
+* 3-8 people -> static style checker, CI test suite, code review, staging deployment with stakeholder / QA review, push-button deployments and rollbacks automated on CI
 * 8-16 -> all the above, with multiple staging environments, some integrated with 3rd party sandboxes, feature flag based releases, metrics tied to specific deployed releases, and deployment queue to help schedule deployments
 * etc, etc, etc...
 
@@ -99,7 +99,7 @@ Some of the tweets I shared during the conf.
 
 # The Most Important Part, Stickers
 
-Seriously, thanks to all the sponsors and friends handing out stickers. I love collecting stickers at conferences to come back and cover my climbing wall. I am building a large collage covering the entire climbing wall in layers of stickers. After returning from a conference I always have a huge collection of stickers to use, which is great. In this case I basically was able to make an entire tile of my climbing wall a #leaddevlondon tile full of stickers I picked up during the trip.
+Seriously, thanks to all the sponsors and friends handing out stickers. I love collecting stickers at conferences to come back and cover my climbing wall. I am building a large collage covering the entire climbing wall in layers of stickers. After returning from a conference I always have a huge collection of stickers to use, which is great. In this case, I basically was able to make an entire tile of my climbing wall a #leaddevlondon tile full of stickers I picked up during the trip.
 
 ![leaddev london stickers](/assets/img/leaddev_london/stickers_1.jpg)
 
