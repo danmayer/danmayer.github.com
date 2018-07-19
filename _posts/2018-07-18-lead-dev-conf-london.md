@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Lead Developer London"
-image: /assets/img/stopwatch-3206383_1280.jpg
-category: Ruby
+image: /assets/img/leaddev_london_stickers.jpg
+category: Programming
 tags: [Programming, Conference, Stickers, Talks]
 ---
 {% include JB/setup %}
