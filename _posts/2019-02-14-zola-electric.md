@@ -9,7 +9,7 @@ tags: [Ruby, Jobs]
 
 # Zola Electric Career
 
-Tomorrow is my last day at [Zola Electric](http://offgrid-electric.com/), it is time for a different challenge. It has been an amazing ride over the last 4+ years. Helping grown from a single country with non connected devices to smart devices that can power a large variety of appliances. During my time there Zola has grown to provide energy access to over 1 million people without access to the power grid in Africa. It has been a rewarding and learning experience. I wanted to share my favorite story from working at Zola over the last few years.
+Tomorrow is my last day at [Zola Electric](http://offgrid-electric.com/), it is time for a different challenge. It has been an amazing ride over the last 4+ years. Helping grown from a single country with non connected devices to smart devices that can power a large variety of appliances. During my time with Zola it has grown to provide energy access to over 1 million people without grid access in Africa. It has been a rewarding and challenging experience. I wanted to share my favorite story from working at Zola over the last few years.
 
 ![Installing Solar](/assets/img/dan_rooftop_solar.jpg)
 > My first installation in Tanzania
