@@ -17,12 +17,12 @@ Above was all that was needed to get rails app diagrams like those below.
 
 Churn  
 
-![Churn Diagram](http://mayerdan.com/assets/churn_app_diagram.jpg)
+![Churn Diagram](/assets/churn_app_diagram.jpg)
 
 Small Rails apps, Hearno
 
-![Hearno Diagram](http://mayerdan.com/assets/hearno_app_diagram.jpg)
+![Hearno Diagram](/assets/hearno_app_diagram.jpg)
 
 and finally NothingCalendar2
 
-![NothingCalendar2 Diagram](http://mayerdan.com/assets/nothingcalendar2_app_diagram.jpg)
+![NothingCalendar2 Diagram](/assets/nothingcalendar2_app_diagram.jpg)

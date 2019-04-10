@@ -18,7 +18,7 @@ I put the app together pretty quickly using Sinatra (using [Sinatra-Template](ht
 
 
 
-&nbsp; | ![Churn Graph](http://mayerdan.com/assets/churn-graph.png) | &nbsp;
+&nbsp; | ![Churn Graph](/assets/churn-graph.png) | &nbsp;
 :----------- | :-----------: | -----------:
 &nbsp;         | [churn data for Metric-Fu](http://churn.picoappz.com/metricfu/metric_fu)         | &nbsp; 
 
