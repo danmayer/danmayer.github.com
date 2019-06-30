@@ -105,8 +105,6 @@ back to my first CS classes during college when I was first learning programming
     <li><a href="http://www.timschmelmer.com">Tim Schmelmer on code</a></li>
     <li><a href="http://michaelevans.org">Michael Evan's blog</a></li>
     <li><a href="http://dotsara.github.io">Dot Sara's blog</a></li>
-    <li><a href="http://devver.wordpress.com">Archived Devver blog</a></li>
-    <li><a href="http://coursereport.com">CourseReport: dev bootcamp directory</a></li>
   </ul>
 </div>
 
@@ -118,7 +116,6 @@ back to my first CS classes during college when I was first learning programming
     <li><a href="http://bbrinck.com">Ben Brinckerhoff's blog</a></li>
     <li><a href="http://www.foresightphoto.com">Foresight Aerial Photos</a></li>
     <li><a href='http://github.com/danmayer'>Dan Mayer @ Github</a></li>
-    <li><a href='https://plus.google.com/+danmayer'>+DanMayer on Google+</a></li>
   </ul>
 </div>
 
