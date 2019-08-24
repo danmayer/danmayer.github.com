@@ -9,3 +9,4 @@ gem 'jekyll-sitemap'
 gem 'jekyll-seo'
 gem 'jemoji'
 gem 'rake'
+gem "nokogiri", ">= 1.10.4"
