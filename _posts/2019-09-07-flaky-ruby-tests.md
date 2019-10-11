@@ -110,6 +110,7 @@ Push a fix on a branch and run it a number of times to see if it improves the ov
 * [Capybara Cheat Sheet](https://devhints.io/capybara), ensure you are following the best practices, to avoid common mistakes.
 * [Write Reliable, Asynchronous Integration Tests With Capybara](https://thoughtbot.com/blog/write-reliable-asynchronous-integration-tests-with-capybara)
 * [Capybara::SlowFinderErrors](https://github.com/ngauthier/capybara-slow_finder_errors)
+* [Tearing Down Capybara Tests of AJAX Pages](https://www.salsify.com/blog/engineering/tearing-capybara-ajax-tests)
 
 # Make It Right
 

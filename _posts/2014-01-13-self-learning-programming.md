@@ -20,7 +20,7 @@ I really recommend everyone starts by learning the basics of web programming. Th
 
 1. [HTML & CSS](http://www.codecademy.com/tracks/web)
 2. [Javascript](http://www.codecademy.com/tracks/javascript)
-3. Finally a "backend" language like [Ruby](http://www.codecademy.com/tracks/ruby) or [Python](http://www.codecademy.com/tracks/python)
+3. Finally a "backend" language like [Ruby](http://www.codecademy.com/tracks/ruby) or [Python](https://www.codecademy.com/catalog/language/python)
 
 After that, learning more and getting a deeper understand of a programming language of computer science basics in general makes sense.
 
@@ -36,6 +36,7 @@ After that, learning more and getting a deeper understand of a programming langu
 ### Free - Unstructured
 
 * [Teaching Tree, free online video lectures it doesn't have order courses but can quickly help you learn specific concepts in depth](http://www.teachingtree.co/)
+* [6 best online courses for ethical hackers](https://www.comparitech.com/blog/information-security/hacking-python-courses-online/)
 
 ### Free - Structured
 
