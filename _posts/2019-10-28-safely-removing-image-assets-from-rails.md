@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Safely Removing Imnage Assets from Rails"
+title: "Safely Removing Image Assets from Rails"
 image: /assets/img/vacuum-cleaner.jpg
 category: Ruby
 tags: [Ruby, Testing, Deployment]
