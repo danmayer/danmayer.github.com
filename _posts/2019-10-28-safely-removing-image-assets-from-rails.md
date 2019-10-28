@@ -46,7 +46,7 @@ Not surprisingly, other folks have wanted this and Sprockets has a built-in opti
 
 > When set to a truthy value, a result will be returned even if the requested asset is not found in the asset pipeline. When set to a falsey value it will raise an error when no asset is found in the pipeline. Defaults to true.
 
-So let's set it to false: `Rails.application.config.assets.unknown_asset_fallback`. Now if you have a deleted image referenced like below:
+So let's set it to false: `Rails.application.config.assets.unknown_asset_fallback = false`. Now if you have a deleted image referenced like below:
 
 ```ruby
 <%= image_tag("deleted_image.svg") %>
