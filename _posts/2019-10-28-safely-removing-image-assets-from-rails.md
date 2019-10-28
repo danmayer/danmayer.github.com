@@ -16,11 +16,11 @@ Why would we want to more safely delete image assets?
 * a clean repo is easier to jump into and maintain over time
 * cruft that isn't in use can be confusing over time
 * image assets can slow down your test and deploy pipeline
-   * Rails tests frequently need to dynamically or initialize building all assets, this is often a slow hit on a Rails test suite
-   * Deployment needs to work with assets as well, often multiple steps
-      * building all assets `rake assets:precompile`
-      * compressing asset bundle
-      * uploading assets to a CDN
+  * Rails tests frequently need to dynamically or initialize building all assets, this is often a slow hit on a Rails test suite
+* Deployment needs to work with assets as well, often multiple steps
+  * building all assets `rake assets:precompile`
+  * compressing asset bundle
+  * uploading assets to a CDN
 
 All of this time adds up, assets compilation on a large legacy Rails app still adds around 40 seconds to the build time, down from 1m30s in the past. While asset preparation and deployment before cleanup and optimization of that flow and files was adding over 3 minutes to our deploy time.
 
@@ -35,9 +35,9 @@ OK, hopefully now you would love to delete all the images in your `app/assets/im
 What I wanted was a way to delete a folder of images or a single image that I believed was no longer in use, but have the build fail if there was any reference to the image. I wanted Rails to fail in these cases:
 
 
-   * a page is loaded in dev mode referencing a missing asset
-   * tests are run against a page referencing a missing asset (ActionDispatch::IntegrationTest, request spec, etc)
-   * bundle exec rake assets:precompile
+* a page is loaded in dev mode referencing a missing asset
+* tests are run against a page referencing a missing asset (ActionDispatch::IntegrationTest, request spec, etc)
+* bundle exec rake assets:precompile
 
 ### Sprockets Unknown Asset Fallback
 
