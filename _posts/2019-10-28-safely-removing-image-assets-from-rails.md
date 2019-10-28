@@ -8,6 +8,7 @@ tags: [Ruby, Testing, Deployment]
 {% include JB/setup %}
 
 ![Bugs](/assets/img/vacuum-cleaner.jpg)
+> photo credit [cleaning: pixabay](https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/)
 
 # Why Cleanup Rails Image Assets?
 
