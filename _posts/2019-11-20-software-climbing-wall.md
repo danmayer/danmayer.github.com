@@ -7,7 +7,7 @@ tags: [Programming, Climbing, Learniings]
 ---
 {% include JB/setup %}
 
-![Theo Copies Erin on The Wall](/assets/img/theo_mama_wall.jpg)
+![Theo Copies Erin on The Wall](/assets/img/theo_mama_wall.jpg?cache=buster)
 > Theo liked to imitate as he was learning to walk.
 
 # TL;DR: This post is just for fun!
@@ -71,7 +71,7 @@ Our wall was a big hit with so many kids, I have added a lot of easier holds and
 
 __Software:__ You can't build a team, recruit, and mentor folks if you have a software project that is all expert level. Ensure it is easy to set up the apps development environment and it is easy to add features, test, and deploy safely so new folks can learn with confidence.
 
-![Theo Wall Climb](/assets/img/theo_climbing.jpg)
+![Theo Wall Climb](/assets/img/theo_climbing_2.jpg)
 > Theo Climbing, click for [video](/assets/img/theo_climb.mov)
 
 ## Set Milestones
