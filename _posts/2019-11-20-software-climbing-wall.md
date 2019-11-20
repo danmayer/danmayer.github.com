@@ -15,13 +15,13 @@ tags: [Programming, Climbing, Learniings]
 I didn't really learn about programming, this is just a catchy title, and I wanted to share a big project I have continued to work on that has nothing to do with programming. I thought I could make a kind of funny post by stringing together a bunch of programming 'wisdom' that could really be associated with nearly anything.
 
 ![The Wall's Current State](/assets/img/wall_final_pano.jpg)
-> The Climbing Wall's Current State
+> climbing wall's current state
 
 # Prototype, Iterate, Test, and Iterate More
 
-__Climbing Wall:__ If you aren't sure how much you will use the wall, or how much effort you want to put into you can start small. Build and expand over time.
+__Climbing Wall:__ If you aren't sure how much you will use the wall, or how much effort you want to put into it you can start small. Build and expand over time.
 
-__Software:__ In software most of the time these days folks take an agile / lean approach and try to deliver working MVPs along the life of the project to deliver continuous value and learning.
+__Software:__ In software, most of the time these days folks take an agile / lean approach and try to deliver working MVPs along the life of the project to deliver continuous value and learning.
 
 ## Prototype
 
