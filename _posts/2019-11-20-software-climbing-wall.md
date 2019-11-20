@@ -7,7 +7,7 @@ tags: [Programming, Climbing, Learniings]
 ---
 {% include JB/setup %}
 
-![Theo Copies Erin on The Wall](/assets/img/theo_mama_wall.jpg | width=600)
+![Theo Copies Erin on The Wall](/assets/img/theo_mama_wall.jpg)
 > Theo liked to imitate as he was learning to walk.
 
 # TL;DR: This post is just for fun!
@@ -56,7 +56,6 @@ __Software:__ In software you are always working with stakeholders, PMs, designe
 ![negotiation with my partner](/assets/img/erin_wall_reach.jpg)
 > negotiation with my partner
 
-
 ## It Starts with A Plan
 
 Initially, I started with just a small idea, but it expanded out, especially after my wife decided she also really enjoyed climbing on the wall as well.
@@ -72,7 +71,7 @@ Our wall was a big hit with so many kids, I have added a lot of easier holds and
 
 __Software:__ You can't build a team, recruit, and mentor folks if you have a software project that is all expert level. Ensure it is easy to set up the apps development environment and it is easy to add features, test, and deploy safely so new folks can learn with confidence.
 
-![Theo Wall Climb](/assets/img/theo_climbing.jpg | width=700)
+![Theo Wall Climb](/assets/img/theo_climbing.jpg)
 > Theo Climbing, click for [video](/assets/img/theo_climb.mov)
 
 ## Set Milestones
