@@ -3,17 +3,15 @@ Dan Mayer's Developer Blog
 
 ## Todos
 
-* Fix look of code imports that used `` back ticks
+* let's update the entire style and look:
+   * inspiration 
+   * https://brandur.org/idempotency-keys
 * update formatting / theme, font size etc (look at using one of the nicer plugin fonts)
 * pick using tags or categories or both and import them
-* twitter integration?, show recent tweets, could use nathan H's thing
 * Coderwall integration (Achievements, projects, etc)
 
 ## Topic / Post Ideas
 
-* ensure_safe
-* possible goodbye ls post
-* post on the #standup driven readme file. (even got my wife doing text only work notes)
 * DCI is sort of interesting but seems to go against LOC==bugs and Kingdom of Nouns post which really makes me upset to see DCI with .excute methods seems close to what I like and envision but actually to heavy weight
   * http://vimeo.com/8235574
 * post about JS titles I saw and incorporated along with having JS runner allow users to activate some of the example code.

@@ -1,0 +1,1 @@
+* [test only adapters for external services](https://thoughtbot.com/blog/faking-external-services-in-tests-with-adapters)
