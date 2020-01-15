@@ -17,7 +17,7 @@ I have written about how our teams are [dealing with flaky ruby tests](https://w
 In this post, I want to introduce a new project [Rails Flaky Spec Examples](https://github.com/danmayer/rails_flaky_spec_examples). I created the example flaky Rails spec suite for an internal code clinic at Stitch Fix. We ran it as a 1-hour workshop to teach about common flaky test issues and how to resolve them. I am hoping that over time, I can continue to grow the example base and talk about some of the more complex flaky tests and how we could perhaps more systematically avoid them. As I work with this project over time, I hope to make it into a good learning tool for the community.
 
 ![Flaky vs Stable Suite](/assets/img/flaky_specs.gif)
-> Gif showing both suites
+> Running the flaky and thens stable suite
 
 # Why A Rails Suite? One Problem with Flaky Test Posts
 
@@ -31,7 +31,7 @@ The majority of the posts don't have runnable examples. While they might have so
 
 Since the examples aren't runnable it makes it a bit harder to use them as a teaching tool, or show more complex tests or CI interactions. This project aims to be in the sweet spot, where it is still small enough to easily understand the issues, but it is part of a real runnable app that can be extended to highlight more complex Rails and JS testing issues. Adding things like common libraries (Faker, Capybara, etc) and different levels of tests including browser-based javascript tests and the related race conditions.
 
-While this project isn't a real-world example which are the best sources of flaky specs, sometimes real-world examples are hard to easily understand. Many of the examples in this project were extracted from real world examples. If you really want to dive into a fully developed complex code base that has Flay specs, the best source that with tagged flay specs comes from [@ samsaffron](https://twitter.com/samsaffron)/[discourse.org](https://discourse.org/) in their tagged collection of [flaky heisentest](https://review.discourse.org/tags/heisentest) which is described more in the excellent post, [tests that sometimes fail](https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail).
+While this project isn't a real-world example which are the best sources of flaky specs, sometimes real-world examples are hard to easily understand. Many of the examples in this project were extracted from real world examples. If you really want to dive into a fully developed complex code base that has Flaky specs, the best source for that with tagged flaky specs comes from [@ samsaffron](https://twitter.com/samsaffron)/[discourse.org](https://discourse.org/) in their tagged collection of [flaky heisentest](https://review.discourse.org/tags/heisentest) which is described more in the excellent post, [tests that sometimes fail](https://samsaffron.com/archive/2019/05/15/tests-that-sometimes-fail).
 
 This project allows devs, to run spec examples, see the failures, and try to fix the flaky specs either themselves or with a small group. If they get stuck example solutions are readily available. It should also be relatively easy to extend the project to add examples extracted from real-world projects. I would love to get some flaky test submissions for difficult flaky spec issues.
 
@@ -58,16 +58,16 @@ With these dynamic tags and a default `.rspec` with `--tag ~solved:true` we can 
 
 # Example: Solving A Flaky Spec
 
-Let me know how one can work with the project...
+Let me show the expected workflow when learning with the project...
 
 1. Run the suite and pick a failure that looks interesting...
 2. Read the Related Code
-3. Modify The Spec, trying to fix it
+3. Modify the Spec, try to fix it
 4. Compare your answer to the provided solution (remember the is more than one way to solve many of these issues)
 
 ## 1. Pick a Failure
 
-Let's run the suite and pick a failure. In this case `spec/models/post_example_e_spec.rb:10` Post post ordered expect many order posts to be in alphabetical order looks interesting.
+Let's run the suite and pick a failure. In this case `spec/models/post_example_e_spec.rb`, Post ordered expect many order posts to be in alphabetical order, looks interesting.
 
 
 ```
@@ -180,4 +180,6 @@ Here are some other helpful links related to flaky Rails tests.
 * make it easier to debug flaky tests, [5-ways to improve flaky test debugging](https://building.buildkite.com/5-ways-weve-improved-flakey-test-debugging-4b3cfb9f27c8)
 * test-smells, [examples of bad JS and Ruby test patterns](https://github.com/testdouble/test-smells)
 * [fixing flaky tests like a detective](https://sonja.codes/fixing-flaky-tests-like-a-detective)
+* [Tips and Tricks for Dubugging and Fixing Slow/Flaky Capybara Specs](http://johnpwood.net/2015/04/23/tips-and-tricks-for-dubugging-and-fixing-slowflaky-capybara-specs/)
+* [How CSS Animations Can Break Your Tests](https://marcgg.com/blog/2015/01/05/css-animations-failing-capybara-specs/)
 
