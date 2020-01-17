@@ -182,4 +182,4 @@ Here are some other helpful links related to flaky Rails tests.
 * [fixing flaky tests like a detective](https://sonja.codes/fixing-flaky-tests-like-a-detective)
 * [Tips and Tricks for Dubugging and Fixing Slow/Flaky Capybara Specs](http://johnpwood.net/2015/04/23/tips-and-tricks-for-dubugging-and-fixing-slowflaky-capybara-specs/)
 * [How CSS Animations Can Break Your Tests](https://marcgg.com/blog/2015/01/05/css-animations-failing-capybara-specs/)
-
+* [Flaky Tests - A War that Never Ends](https://hackernoon.com/flaky-tests-a-war-that-never-ends-9aa32fdef359)
