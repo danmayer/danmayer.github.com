@@ -3,7 +3,7 @@ layout: post
 title: "Ruby: Patching StdLib in Gems"
 image: /assets/img/patches.jpg
 category: Ruby
-tags: [Ruby, Testing, RSpec]
+tags: [Ruby, Gems]
 ---
 
 {% include JB/setup %}
@@ -61,3 +61,4 @@ This is the [PR that was merged](https://github.com/danmayer/coverband/pull/383)
 In the end, it is a pretty simple fix, but it took time and various folks participating in the bug report to understand. If you see an open github issue that still seems relevant, add some comments and details. You never know if you will be the trigger that helps folks understand and resolve the issue.
 
 I know patching always gets a bad wrap in Ruby, and it can be hard to fully understand and debug, but it is also extremely powerful. It is good to understand the gotcha's that can occur, and how to work around those issues, especially if you are shipping shared code that can patch other shared code like Ruby's StdLib.
+ 
