@@ -12,7 +12,7 @@ tags: [Ruby, Rails, Performance, JSON, API]
 
 > photo credit [Tumisu lt: @pixabay](https://pixabay.com/illustrations/compare-comparison-scale-balance-643305/)
 
-# Performance Benchmarks between `OJ` & `SimdJSON`
+# Performance Benchmarks between OJ & SimdJSON
 
 I was recently looking at the performance of some endpoints that process large amounts of JSON, and I wondered if we could do even better than we do in terms of performance for that processing. Across our company we have recently switch most of our apps from the Ruby StdLib JSON to [OJ](https://github.com/ohler55/oj), but I had read about [SimdJSON](https://github.com/saka1/simdjson_ruby) and was curious if we should look further into it as well. In this article I will tell you a bit about each of the Ruby JSON options and why you might want to consider them.
 
