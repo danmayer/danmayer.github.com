@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "benchmarking JSON Parsers (OJ vs SimdJson)"
-image: /assets/img/find-or-create.jpg
+image: /assets/img/compare.png
 category: Ruby
 tags: [Ruby, Rails, Performance, JSON, API]
 ---
