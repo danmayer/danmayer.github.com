@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "benchmarking JSON Parsers (OJ vs SimdJson)"
+title: "benchmarking JSON Parsers (OJ, SimdJson, FastJsonParser)"
 image: /assets/img/compare.png
 category: Ruby
 tags: [Ruby, Rails, Performance, JSON, API]
@@ -12,7 +12,7 @@ tags: [Ruby, Rails, Performance, JSON, API]
 
 > photo credit [Tumisu lt: @pixabay](https://pixabay.com/illustrations/compare-comparison-scale-balance-643305/)
 
-## UPDATE: Added FastJsonparser
+## UPDATE: Added FastJsonParser
 
 After some feedback on [reddit (thx @f9ae8221b)](https://www.reddit.com/r/ruby/comments/jvv6fa/benchmarking_json_parsers_oj_vs_simdjson_2x/gco1khd/?utm_source=reddit&utm_medium=web2x&context=3), pointing out a JSON gem I wasn't aware of, I updated the benchmarks to also support `FastJSONparser` and cover symbolize_keys, which is important for my companies use cases (which a co-worker pointed out) and can cause significant performance issues if you have to do that independently of JSON parsing.
 
