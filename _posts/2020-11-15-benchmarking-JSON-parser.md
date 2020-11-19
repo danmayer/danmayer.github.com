@@ -89,20 +89,20 @@ json = {
     4,
     6
   ]
-}.as_json.to_json
+}.as_json.to_json.freeze
 
 puts "ensure these match"
-puts  Oj.load(json.dup, symbol_keys: false) == Simdjson.parse(json.dup) &&
-        Simdjson.parse(json.dup) == JSON.parse(json.dup, symbolize_names: false) &&
-        FastJsonparser.parse(json.dup, symbolize_keys: false) == Simdjson.parse(json.dup)
+puts  Oj.load(json, symbol_keys: false) == Simdjson.parse(json) &&
+        Simdjson.parse(json) == JSON.parse(json, symbolize_names: false) &&
+        FastJsonparser.parse(json, symbolize_keys: false) == Simdjson.parse(json)
 
 Benchmark.ips do |x|
   x.config(:time => 15, :warmup => 3)
 
-  x.report("oj parse") { Oj.load(json.dup, symbol_keys: false) }
-  x.report("simdjson parse") { Simdjson.parse(json.dup) }
-  x.report("FastJsonparser parse") { FastJsonparser.parse(json.dup, symbolize_keys: false) }
-  x.report("stdlib JSON parse") { JSON.parse(json.dup, symbolize_names: false) }
+  x.report("oj parse") { Oj.load(json, symbol_keys: false) }
+  x.report("simdjson parse") { Simdjson.parse(json) }
+  x.report("FastJsonparser parse") { FastJsonparser.parse(json, symbolize_keys: false) }
+  x.report("stdlib JSON parse") { JSON.parse(json, symbolize_names: false) }
 
   x.compare!
 end
@@ -127,24 +127,51 @@ report.pretty_print
 This shows as claimed that SimdJSON and FastJsonparser outperform OJ even on pretty small and contrived JSON examples. The Performance gap holds up or sometimes looks more significant when looking at more realistic production payloads seen in some of the product systems I work with. Note if you need `symbolize_keys` or want a bit more community support I would go with `FastJsonparser`.
 
 ```
-ensure these match
-true
-Warming up --------------------------------------
-            oj parse    16.495k i/100ms
-      simdjson parse    22.860k i/100ms
-FastJsonparser parse    23.926k i/100ms
-   stdlib JSON parse    11.668k i/100ms
-Calculating -------------------------------------
-            oj parse    149.274k (± 8.4%) i/s -      2.227M in  15.031016s
-      simdjson parse    169.879k (± 3.2%) i/s -      2.560M in  15.088022s
-FastJsonparser parse    185.817k (± 2.8%) i/s -      2.799M in  15.077123s
-   stdlib JSON parse     91.765k (± 2.4%) i/s -      1.377M in  15.012718s
+require 'benchmark/ips'
+require 'json'
+require 'oj'
+require 'simdjson'
+require 'fast_jsonparser'
+require 'memory_profiler'
+require 'rails'
 
-Comparison:
-FastJsonparser parse:   185816.8 i/s
-      simdjson parse:   169879.3 i/s - 1.09x  (± 0.00) slower
-            oj parse:   149273.7 i/s - 1.24x  (± 0.00) slower
-   stdlib JSON parse:    91765.3 i/s - 2.02x  (± 0.00) slower
+json = {
+  "one":1,
+  "two":2,
+  "three": "3",
+  "nested": {
+    "I": "go",
+    "deep": "when",
+    "i": "need",
+    a: 2
+  },
+  "array":[
+    true,
+    false,
+    "mixed",
+    "types",
+    2,
+    4,
+    6
+  ]
+}.as_json.to_json.freeze
+
+puts "ensure these match"
+puts  Oj.load(json, symbol_keys: true) == Simdjson.parse(json).deep_symbolize_keys! &&
+        Simdjson.parse(json).deep_symbolize_keys! == JSON.parse(json, symbolize_names: true) &&
+        FastJsonparser.parse(json) == Simdjson.parse(json).deep_symbolize_keys!
+
+
+Benchmark.ips do |x|
+  x.config(:time => 15, :warmup => 3)
+
+  x.report("oj parse") { Oj.load(json, symbol_keys: true) }
+  x.report("simdjson parse") { Simdjson.parse(json).deep_symbolize_keys! }
+  x.report("FastJsonparser parse") { FastJsonparser.parse(json) }
+  x.report("stdlib JSON parse") { JSON.parse(json, symbolize_names: true) }
+
+  x.compare!
+end
 ```
 
 ## Benchmarking JSON Parsing (with symbolize_keys)
@@ -205,21 +232,21 @@ This is the other main reason to use `FastJsonparser` depending on the integrati
 ensure these match
 true
 Warming up --------------------------------------
-            oj parse    16.538k i/100ms
-      simdjson parse     7.507k i/100ms
-FastJsonparser parse    19.536k i/100ms
-   stdlib JSON parse     8.586k i/100ms
+            oj parse    13.455k i/100ms
+      simdjson parse     7.752k i/100ms
+FastJsonparser parse    19.458k i/100ms
+   stdlib JSON parse     8.546k i/100ms
 Calculating -------------------------------------
-            oj parse    151.280k (± 3.9%) i/s -      2.282M in  15.110596s
-      simdjson parse     86.504k (± 5.0%) i/s -      1.299M in  15.052659s
-FastJsonparser parse    227.812k (± 6.2%) i/s -      3.419M in  15.067773s
-   stdlib JSON parse     89.145k (± 5.7%) i/s -      1.339M in  15.071458s
+            oj parse    134.285k (± 4.5%) i/s -      2.018M in  15.060313s
+      simdjson parse     75.825k (± 7.2%) i/s -      1.132M in  15.022033s
+FastJsonparser parse    208.199k (± 3.1%) i/s -      3.133M in  15.061737s
+   stdlib JSON parse     86.504k (± 3.5%) i/s -      1.299M in  15.035736s
 
 Comparison:
-FastJsonparser parse:   227811.8 i/s
-            oj parse:   151280.2 i/s - 1.51x  (± 0.00) slower
-   stdlib JSON parse:    89144.7 i/s - 2.56x  (± 0.00) slower
-      simdjson parse:    86504.2 i/s - 2.63x  (± 0.00) slower
+FastJsonparser parse:   208199.1 i/s
+            oj parse:   134285.4 i/s - 1.55x  (± 0.00) slower
+   stdlib JSON parse:    86503.7 i/s - 2.41x  (± 0.00) slower
+      simdjson parse:    75825.4 i/s - 2.75x  (± 0.00) slower
 ```
 
 ## Using Large JSON Data
