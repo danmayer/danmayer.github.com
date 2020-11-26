@@ -1,8 +1,8 @@
-<img src="/assets/img/dan_mayer_right_rail.jpg" width='100%' align="center" alt="Dan Mayer Profile Pic" />
+<img src="/assets/img/dan-family-sm.jpg" width='100%' align="center" alt="Dan Mayer Profile Pic" />
 <div class="intro">
 Welcome to Dan Mayer's development blog. I primary write about Ruby
 development, distributed teams, and dev/PM process. The archives go
-back to my first CS classes during college when I was first learning programming. I contribute to a few OSS projects and often work on my own projects. You can find <a href="http://github.com/danmayer">my code on github</a>.
+back to my first CS classes during college when I was learning to write software. I contribute to a few OSS projects and often work on my own projects. You can find <a href="http://github.com/danmayer">my code on github</a>.
 
 <h4 class="side-header">Twitter <a href="http://twitter.com/danmayer">@danmayer</a></h4>
 <h4 class="side-header">Github <a href="http://github.com/danmayer">@danmayer</a></h4>
