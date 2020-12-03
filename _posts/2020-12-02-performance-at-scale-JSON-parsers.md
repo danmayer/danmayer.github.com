@@ -24,6 +24,9 @@ As often the case microbenchmarks come with a lot of issues. In this case, my mi
 
 Given that we had previously seen 40% latency improvements when moving to OJ, it seemed like another `50%` speed lift would be worth it, so I set out to test `FastJsonParser` on some of our production systems.
 
+![40 percent improvement graph](/assets/img/40_perc_latency.png)
+> Last week / Yesterday -> OJ released with 40% latency improvement
+
 ## What Does Real World & At Scale Mean?
 
 In my case, I started with a single app having all API calls use `FastJsonParser` to parse responses as well as when pulling JSON out of caches. The single app had a smaller JSON payload than I benchmarked with but had a very high throughput. After deployment, there was no detectable change in latency... Why not?
