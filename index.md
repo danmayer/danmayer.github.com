@@ -13,7 +13,7 @@ tagline: Dan Mayer's Dev Blog
 
       <h3 class="index-title">
         <a href="{{ post.url }}" class="noStyle">{{ post.title }}</a> <small>{{post.sub_title}}</small>
-        <span>{{ post.date | date_to_long_string }}</span>
+        <br/><span>{{ post.date | date_to_long_string }}</span>
       </h3>
       {{ post.excerpt }}
 
