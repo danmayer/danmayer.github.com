@@ -8,7 +8,13 @@ require 'time'
 
 desc "Start jekyll server"
 task :start_server do
- `jekyll serve`
+ `bundle exec jekyll serve`
+end
+
+desc "Start jekyll build"
+task :build do
+ `bundle exec jekyll build`
+ puts "open files from _site/index.html"
 end
 
 SOURCE = "."
