@@ -24,14 +24,6 @@ Many different companies and posts talk about why and how to run Game Days. I wo
 
 I will outline a few recent Game Day examples, with some details of what we did, what we learned, how we broke something in a "safe" manner, and what happened after the game days. In all cases one important factor of running the Game Day is having a way to stop if the simulated incident starts to cause a real incident. When planning a simulated emergency make sure you have a planned way to escape out of the test if something unexpected is occurring.
 
-## Recent Examples
-
-* freeze rollback
-* upstream Partner timeouts
-* traffic Spikes
-* cache servers failing
-* event bus is down
-
 ## Safe and Confident Deployments
 
 For various reasons some of our systems were relatively slow to deploy. This means if something bad happened, it could take awhile to revert, pass CI, deploy etc... We finally got access to a `rollback` tool which was much faster than the normal deploy process to jump back to a recently deployed version of the code. While the tool was available for awhile many folks had their first experience using it during a real incident... Trying to find docs and understand the commands while stressed about some service being broken. Not the ideal way to learn... We got a group together with a preplanned and scheduled time, we then broke a 'hidden' endpoint on production, used rollback, fixed the code and showed how to "roll forward" back into the standard development flow. Since our tool did a bunch of cool things like freezing the deploy when you roll back, alerting various folks that it was going on, etc we got to see and feel the full experience. We had folks running the commands who had never had to do a rollback in production before, which made the exercise really valuable.
