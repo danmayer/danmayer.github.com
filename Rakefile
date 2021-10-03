@@ -6,6 +6,13 @@ require 'time'
 #enable just for importing
 #require './importer'
 
+desc "remove symbolic link used to serve when editting local"
+task :remove_link do
+  #ls -la _posts/assets
+  #lrwxr-xr-x  1 danmayer  staff  6 Nov 20  2019 _posts/assets -> assets
+  `rm _posts/assets`
+end
+
 desc "Start jekyll server"
 task :start_server do
  `bundle exec jekyll serve`
