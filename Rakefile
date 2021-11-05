@@ -13,6 +13,11 @@ task :remove_link do
   `rm _posts/assets`
 end
 
+desc "add symbolic link used to serve when editting local outside of jekyll serve"
+task :add_link do
+  `ln -s assets _posts/assets`
+end
+
 desc "Start jekyll server"
 task :start_server do
  `bundle exec jekyll serve`

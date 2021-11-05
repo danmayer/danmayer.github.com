@@ -6,9 +6,21 @@ Dan Mayer's Developer Blog
 * let's update the entire style and look:
    * inspiration 
    * https://brandur.org/idempotency-keys
+   * move to tailwind to better learn it?
 * update formatting / theme, font size etc (look at using one of the nicer plugin fonts)
 * pick using tags or categories or both and import them
 * Coderwall integration (Achievements, projects, etc)
+
+## Integrations
+
+* script to help post to promotion lists
+ * ruby weekly
+ * hackernews?
+ * https://dev.to/
+ * twitter
+ * linkedin
+ * rubyflow
+ * reddit (ruby or programming)
 
 ## Topic / Post Ideas
 
