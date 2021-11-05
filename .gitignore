@@ -12,3 +12,5 @@ Thumbs.db
 Movable_Type-Backup.xml
 .ruby-version
 _posts/assets
+node_modules
+_site

@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "prod": "NODE_ENV=production npx webpack",
+    "dev": "NODE_ENV=development npx webpack",
+    "watch": "NODE_ENV=development npx webpack --watch"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
+    "autoprefixer": "^10.2.6",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^5.2.6",
+    "cssnano": "^5.0.6",
+    "mini-css-extract-plugin": "^1.6.0",
+    "postcss": "^8.3.5",
+    "postcss-loader": "^6.1.0",
+    "postcss-nested": "^5.0.5",
+    "style-loader": "^2.0.0",
+    "tailwindcss": "^2.2.2",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-manifest-plugin": "^3.1.1"
+  }
+}
