@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Setting mime-type / content-type when uploading files to S3"
 category: ruby
 tags: [s3, aws, ruby]

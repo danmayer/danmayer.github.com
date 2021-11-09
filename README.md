@@ -11,6 +11,10 @@ Dan Mayer's Developer Blog
 * pick using tags or categories or both and import them
 * Coderwall integration (Achievements, projects, etc)
 
+## Build Tailwind
+
+* `npm run prod` build CSS / JS assets
+
 ## Integrations
 
 * script to help post to promotion lists

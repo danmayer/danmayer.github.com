@@ -1,0 +1,16 @@
+{% assign author_name = include.author | replace: " ", "_" | downcase %}
+{% assign show_author_name = include.show_author_name %}
+{% assign author_object = site.data.authors[author_name] %}
+{% assign style = include.style | default: 'inline' %}
+
+{% if author_object %}
+<div class="flex items-center mr-2 -ml-4">
+  {% if author_object.image %}
+    <img width="28" height="28" class="rounded-full border-white border-2" src="{{ author_object.image | relative_url }}" alt="{{ author_object.name }}"/>
+  {% endif %}
+
+  {% if show_author_name %}
+    <span class="font-medium text-sm ml-1">{{ author_object.name}}</span>
+  {% endif %}
+</div>
+{% endif %}

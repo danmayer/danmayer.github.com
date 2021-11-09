@@ -13,7 +13,11 @@ exclude: [
   "drafts/*",
   "*.config.js",
   "package*.json",
-  "node_modules"
+  "node_modules",
+  ".liquidrc",
+  "postcss.config.js",
+  "tailwind.config.js",
+   "netlify.toml"
   ]
 safe: true
 lsi: false
@@ -60,6 +64,21 @@ social:
 
 twitter:
   username: danmayer
+
+####### 
+## New Tailwind Settings
+#######
+
+logo_data:
+  logo_desktop_image: assets/img/dan-family-sm.jpg
+  logo_desktop_text: "Continuously Deployed"
+  logo_mobile_image: assets/img/dan-family-sm.jpg
+  logo_mobile_text: "Continuously Deployed"
+  logo_desktop_height: "36px"
+  logo_desktop_width: "36px"
+  logo_mobile_height: "36px"
+  logo_mobile_width: "36px"
+
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
