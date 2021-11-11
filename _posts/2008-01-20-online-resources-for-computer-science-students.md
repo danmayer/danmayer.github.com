@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "online resources for computer science students"
 category:
 tags: []

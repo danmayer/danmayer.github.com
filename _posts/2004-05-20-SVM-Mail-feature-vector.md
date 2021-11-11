@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "SVM Mail feature vector"
 category:
 tags: []

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "fast start rails with composer"
 category: Ruby
 tags: [rails, ruby, programming, practices]

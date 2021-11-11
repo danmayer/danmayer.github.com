@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Most Valuable Code"
 image: /assets/img/obama_code.jpg
 category: Programming
@@ -7,7 +8,9 @@ tags: [Programming, Development, Tips, Rails]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image detect](/assets/img/obama_code.jpg)
+{% endunless %}
 > Obama writing JS with [code.org](https://twitter.com/codeorg/status/541997370356269057?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Fmashable.com%2F2014%2F12%2F09%2Fpresident-obama-code%2F).
 
 # The Value of Code

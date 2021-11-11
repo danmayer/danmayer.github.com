@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Performance of JSON Parsers at Scale"
 image: /assets/img/performance-scale.jpg
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Rails, Performance, JSON, API]
 
 {% include JB/setup %}
 
+{% unless page.image %}
 ![performance](/assets/img/performance-scale.jpg)
+{% endunless %}
 
 > photo credit [qimono@pixabay](https://pixabay.com/photos/scale-question-importance-balance-2635397/)
 

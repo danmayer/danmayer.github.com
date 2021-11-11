@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Best Tech Travel Articles"
+image: /assets/img/dan-fishes.gif
 category: Programming
 tags: [Programming, Career]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image](/assets/img/dan-fishes.gif)
+{% endunless %}
 
 I posted the [best articles I read while traveling](http://millermayersadventures.com/2015/01/24/best-articles-i-read-while-traveling/) and my [travel book list](http://millermayersadventures.com/2015/01/18/reading-while-traveling/) on our family blog. On my dev blog, I figured I could share my slightly nerdier posts.
 

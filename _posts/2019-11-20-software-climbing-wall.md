@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "What I learned about Software Development from building a Climbing Wall"
 image: /assets/img/theo_mama_wall.jpg
 category: Software
@@ -7,7 +8,9 @@ tags: [Programming, Climbing, Learniings]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Theo Copies Erin on The Wall](/assets/img/theo_mama_wall.jpg?cache=buster)
+{% endunless %}
 > Theo liked to imitate as he was learning to walk.
 
 # TL;DR: This post is just for fun!

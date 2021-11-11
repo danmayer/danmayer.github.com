@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "introducing Blog2Ebook"
 category: Ruby
 tags: [Ruby, Development, Products, Ebooks]

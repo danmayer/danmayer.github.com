@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Mobile Development and My Recommendation for PhoneGap"
 category:
 tags: []

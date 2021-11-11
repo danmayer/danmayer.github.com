@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Impacting Work"
+image: /assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG
 category: Programming
 tags: [Programming, Development]
 ---
@@ -12,7 +14,9 @@ The work we do at [Off Grid Electric](https://medium.com/@Offgrid), has a clear 
 
 Our team is amazing, and driven to rise to a challenge. We face unique challenges operating without physical addresses,  60% network coverage, and customer support for people without internet. We take distributed work both challenges and benefits seriously, building a team and process to enjoy it's freedoms.
 
-[![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+[{% unless page.image %}
+![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)
+{% endunless %}](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 > installing our system on a roof in a remote village of Karatu, Tanzania
 

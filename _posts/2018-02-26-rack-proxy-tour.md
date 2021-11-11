@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Rack Proxy Tour"
 image: /assets/img/rack-mouse.jpg
 category: Ruby
@@ -12,7 +13,9 @@ tags: [Ruby, Rails, Rack, Proxy, CORs]
 
 I wanted to share a quick tour of a flexible Ruby tool. I have turned to [rack-proxy](https://github.com/ncr/rack-proxy) a number of times, throughout the years. It is a tiny and super useful Rack middleware that can quickly be adapted to perform a number of useful functions. While it is a small library it is a tool that has been handy for quick and lasting workarounds a number of times. It is a sharp tool, so be careful with it... Especially because it is severely lacking documentation... Perhaps I should send a documentation PR one of these days.
 
+{% unless page.image %}
 ![Job Challenge](/assets/img/rack-mouse.jpg)
+{% endunless %}
 > image from [pixabay](https://pixabay.com/en/moose-moose-rack-male-bull-animal-70254/)
 
 ### Rack Proxy Examples

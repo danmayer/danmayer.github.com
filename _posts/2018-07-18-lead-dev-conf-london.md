@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Lead Developer London"
 image: /assets/img/leaddev_london_stickers.jpg
 category: Programming
@@ -11,7 +12,9 @@ tags: [Programming, Conference, Stickers, Talks]
 
 I attended [#LeadDevLondon](https://twitter.com/hashtag/LeadDevLondon) this year, it was a nice and different conference. Generally, I have attended more language-specific conferences. There were basically no language-specific talks at all during the conf, as everything was a bit more general about building and working well with technology teams. Given that these days a large part of what I do is manage teams of devs, it was good to hear other folks talk through some of the challenges and solutions they have gone through during their journey.
 
+{% unless page.image %}
 ![leaddev london stickers](/assets/img/leaddev_london_stickers.jpg)
+{% endunless %}
 > My swag bag full of stickers
 
 # Some Favorite Slides

@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Unused DB Columns"
+image: /assets/img/polar_bear_sm.jpg
 category: Programming
 tags: [Programming, Development, Database, Refactoring]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image detect](/assets/img/polar_bear_sm.jpg)
+{% endunless %}
 > a search for 'unused database' brings up this awesome [wikimedia](https://upload.wikimedia.org/wikipedia/commons/3/3c/Polar_bear_%28Ursus_maritimus%29_in_the_drift_ice_region_north_of_Svalbard.jpg) image for some reason.
 
 # Detecting DB Column Usage

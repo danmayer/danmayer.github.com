@@ -1,6 +1,7 @@
 ---
 layout: posttail
 authors: ["Dan Mayer"]
+authors: ["Dan Mayer"]
 title: "Grep a filtered list of files"
 category:
 tags: []

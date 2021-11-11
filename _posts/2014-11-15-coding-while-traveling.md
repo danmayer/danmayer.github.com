@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Coding while traveling"
 category: Programming
 tags: [Programming, Development, LifeHacks, Travel]

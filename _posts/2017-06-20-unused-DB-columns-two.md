@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Unused DB Columns, via logs"
+image: /assets/img/unused_columns.jpg
 category: Programming
 tags: [Programming, Development, Database, Refactoring]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image columns](/assets/img/unused_columns.jpg)
+{% endunless %}
 > a search for 'unused columns' brings up this image from Flickr user [@denisbin](https://www.flickr.com/photos/82134796@N03/32824004562).
 
 # Detecting DB Column Usage

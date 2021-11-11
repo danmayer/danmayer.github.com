@@ -52,22 +52,33 @@ namespace :port do
     # clean up tags? 
     # clean up categories?
     # remove all old jekyll bootstrap stuff
-
-    # TODO: before go live  
-    # convert first image to the image:tag
     # move image credit to image credit:tag
     # add description to meta data, like: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
-    # add author to meta data
-    #authors: ["Dan Mayer"]
-    # layout: posttail
-authors: ["Dan Mayer"]
     Dir.glob('_posts/*.md').select { |file| File.file? file }.each do |file|
+      puts "modifying #{file}"
       data = File.read(file)
+      # convert to tailwind layout
       unless data.match('layout: posttail')
-        data.gsub("layout: post\n", "layout: posttail\n")
+        data.gsub!("layout: post\n", "layout: posttail\n")
       end
+      # add author data
       unless data.match('authors: ["Dan Mayer"]')
-        data.gsub("layout: posttail\n", "layout: posttail\nauthors: ["Dan Mayer"]\n")
+        data.gsub!("layout: posttail\n", "layout: posttail\nauthors: [\"Dan Mayer\"]\n")
+      end
+      # extract and add image tag
+      unless data.match('image:')
+        image_url = data.match(/\!\[.*?\]\((.*?)\)/)[1] rescue nil
+        if image_url
+          title_line = data.match(/title:.*\n/)[0] 
+          data.gsub!(title_line, "#{title_line}image: #{image_url}\n")
+        end 
+      end
+      # don't double show image
+      if data.match('image:')
+        image_markdown= data.match(/\!\[.*?\]\((.*?)\)/)[0] rescue nil
+        if image_markdown
+          data.gsub!(image_markdown, "{% unless page.image %}\n#{image_markdown}\n{% endunless %}")
+        end 
       end
       File.open(file, 'w') { |f| f.write(data) }
     end

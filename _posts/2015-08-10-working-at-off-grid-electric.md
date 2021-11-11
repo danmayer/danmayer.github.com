@@ -1,13 +1,17 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Working at Off Grid Electric"
+image: /assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG
 category: Programming
 tags: [Programming, Development]
 ---
 {% include JB/setup %}
 
 
-[![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
+[{% unless page.image %}
+![image](/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2-md.JPG)
+{% endunless %}](https://www.mayerdan.com/assets/img/Offgrid-Tanzania/Dan-Roof-Install-2.JPG)
 
 Some folks have asked about how I ended up at a job like [Off Grid Electric](https://medium.com/@Offgrid), so I thought I would share a bit of that. I recently took a sabbatical to travel for about 5 months with my wife. While I was traveling, I was thinking about my career, the future, and what is important to me. I felt like I hadn't been pushing myself enough lately, and I had lost some of the passion I always liked to bring into my work. 
 

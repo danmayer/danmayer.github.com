@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Zola Electric Career"
 image: /assets/img/dan_rooftop_solar.jpg
 category: Ruby
@@ -11,7 +12,9 @@ tags: [Ruby, Jobs]
 
 Tomorrow is my last day at [Zola Electric](http://offgrid-electric.com/), it is time for a different challenge. It has been an amazing ride over the last 4+ years. Helping grown from a single country with non connected devices to smart devices that can power a large variety of appliances. During my time with Zola it has grown to provide energy access to over 1 million people without grid access in Africa. It has been a rewarding and challenging experience. I wanted to share my favorite story from working at Zola over the last few years.
 
+{% unless page.image %}
 ![Installing Solar](/assets/img/dan_rooftop_solar.jpg)
+{% endunless %}
 > My first installation in Tanzania
 
 Want to see it in action, visit the [Coverband Demo Site](https://coverband-demo.herokuapp.com/), visit a few pages and watch the coverage report change as you use the site.

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Repetitive Hash Syntax, My quest for a Self Referring Hash"
 category: ruby
 tags: [ruby, code-quality]

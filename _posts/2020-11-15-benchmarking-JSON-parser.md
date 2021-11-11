@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "benchmarking JSON Parsers (OJ, SimdJson, FastJsonParser)"
 image: /assets/img/compare.png
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Rails, Performance, JSON, API]
 
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Compare](/assets/img/compare.png)
+{% endunless %}
 
 > photo credit [Tumisu lt: @pixabay](https://pixabay.com/illustrations/compare-comparison-scale-balance-643305/)
 

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Ruby Gems Benchmarks"
 image: /assets/img/stopwatch-3206383_1280.jpg
 category: Ruby
@@ -12,7 +13,9 @@ tags: [Ruby, Rails, Performance, Benchmarking, Coverband]
 
 This follows up on my previous post focused on [Ruby Benchmarking](https://www.mayerdan.com/ruby/2018/03/25/ruby-benchmarking). This post will focus on benchmarking a gem as part of it's long term maintenance. Building a community [standard around Gem Benchmarking](https://youtu.be/kJDOpucaUR4?t=31m28s) has even been suggested as a good way to help Ruby fine tune performance over time.
 
+{% unless page.image %}
 ![Stopwatch](/assets/img/stopwatch-3206383_1280.jpg)
+{% endunless %}
 
 > image from [pixabay](https://pixabay.com/en/stopwatch-time-stop-time-training-3206383/)
 

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Ruby: Patching StdLib in Gems"
 image: /assets/img/patches.jpg
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Gems]
 
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Bugs](/assets/img/patches.jpg)
+{% endunless %}
 
 > photo credit [patches: AnnaER @pixabay](https://pixabay.com/photos/hand-labor-sew-patchwork-187951/)
 

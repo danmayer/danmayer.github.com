@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "JS bookmarklet to switch between environment and shell function to open branch in github"
 category: javascript
 tags: [javascript]

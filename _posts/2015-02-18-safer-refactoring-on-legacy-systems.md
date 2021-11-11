@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Safer Refactoring on Legacy Systems"
 category: Programming
 tags: [Programming, Refactoring, Process, Ruby]

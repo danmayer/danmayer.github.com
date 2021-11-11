@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Configuring a new OS X Mavericks development machine"
 category: Programming
 tags: [Programming, Development, OSX, DevOps]

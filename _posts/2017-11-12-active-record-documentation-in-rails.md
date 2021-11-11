@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Active Record Database Documentation"
 image: /assets/img/ring-binders.jpg
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Rails, Database, AWS, Postgres]
 {% include JB/setup %}
 
 
+{% unless page.image %}
 ![Database Documentation](/assets/img/ring-binders.jpg)
+{% endunless %}
 > Documentation Folders [CC image from Pixabay](https://pixabay.com/en/ring-binders-aligned-organization-2654130/)
 
 # Active Record Database Documentation

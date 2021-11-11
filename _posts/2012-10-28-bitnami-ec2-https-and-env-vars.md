@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: Bitnami EC2 https and environment variables setup"
 category: ruby
 tags: [aws, ec2, ruby, bitnami, sysadmin]

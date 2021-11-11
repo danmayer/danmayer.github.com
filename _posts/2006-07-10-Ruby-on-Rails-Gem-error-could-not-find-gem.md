@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Ruby on Rails Gem error could not find gem"
 category:
 tags: []

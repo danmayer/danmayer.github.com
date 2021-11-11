@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Self learning Programming, teach yourself to code"
 category: Programming
 tags: [Programming, Development, Learnings, Education]

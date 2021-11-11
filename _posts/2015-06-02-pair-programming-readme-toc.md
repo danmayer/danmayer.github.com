@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "pair programming readme toc"
+image: /assets/img/gh_toc.png
 category: Programming
 tags: [Programming, Development]
 ---
@@ -10,7 +12,9 @@ tags: [Programming, Development]
 
 I met a number of [Ruby devs when traveling](http://www.mayerdan.com/programming/2015/01/21/ruby-in-south-east-asia/). One developer I met [Samnang Chhun](http://samnang.me/) have been keeping in touch and wanting to pair on something. We hooked up online for a bit, while chatting we thought it would be nice if github readme's had a nice table of contents. So we decided to hack something up real quick. 
 
+{% unless page.image %}
 ![image](/assets/img/gh_toc.png)
+{% endunless %}
 
 <script src="https://gist.github.com/samnang/cb9515ffcf5b0ab03f8f.js"></script>
 

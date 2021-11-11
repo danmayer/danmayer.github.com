@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Rails Flaky Spec Solutions"
 image: /assets/img/flaky-wall.jpg
 category: Ruby
@@ -7,7 +8,9 @@ tags: [Ruby, Testing, RSpec]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Bugs](/assets/img/flaky-wall.jpg)
+{% endunless %}
 > photo credit [flaky wall: pixabay](https://pixabay.com/illustrations/banner-header-plaster-cracks-old-902587/)
 
 # Introducing Rails Flaky Spec Examples

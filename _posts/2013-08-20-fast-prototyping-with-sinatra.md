@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Fast Prototyping with Sinatra"
 category: Ruby
 tags: [sinatra, ruby, programming, practices]

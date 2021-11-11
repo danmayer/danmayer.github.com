@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Benchmarks Bugs"
 image: /assets/img/ladybugs.jpg
 category: Ruby
@@ -11,7 +12,9 @@ tags: [Ruby, Rails, Performance, Benchmarking, Coverband]
 
 On my previous post I covered [benchmarking Rubygems](https://www.mayerdan.com/ruby/2018/05/29/rubygems_benchmarks)... I was working on some follow up to improve the benchmarks and discovered a bug rendering one of the benchmark comparisons invalid. In this post we will cover what I had missed, how to avoid some gotchas, and ways to improve the readability of your benchmarks.
 
+{% unless page.image %}
 ![Bugs](/assets/img/ladybugs.jpg)
+{% endunless %}
 > image from [pixabay](https://pixabay.com/en/ladybugs-ladybirds-bugs-insects-1593406/)
 
 ## Spot The Bug

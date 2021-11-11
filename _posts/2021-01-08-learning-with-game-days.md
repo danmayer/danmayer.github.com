@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Learning with Game Days"
 image: /assets/img/football-gameday.jpg
 category: Management
@@ -8,9 +9,9 @@ tags: [Team, Management, Tech, Learning]
 
 {% include JB/setup %}
 
-{% if page_image_shown!=true %}
-  ![performance](/assets/img/football-gameday.jpg)
-{% endif %}
+{% unless page.image %}
+![performance](/assets/img/football-gameday.jpg)
+{% endunless %}
 
 > photo credit [Neramitevent@pixabay](https://pixabay.com/photos/football-colored-sports-gear-1166205/)
 

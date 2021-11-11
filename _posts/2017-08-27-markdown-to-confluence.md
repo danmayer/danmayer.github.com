@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Markdown to Confluence Wikis"
 image: /assets/img/Markdown-Confluence.png
 category: Programming
@@ -7,7 +8,9 @@ tags: [Programming, Development, Tips, Ruby, Confluence]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image DB Schema Changes](/assets/img/Markdown-Confluence.png)
+{% endunless %}
 > Markdown converted for Atlassian's Confluence
 
 

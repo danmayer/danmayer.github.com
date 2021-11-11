@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Databases Across Environments"
 image: /assets/img/database-sync.jpg
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Rails, Database, AWS, Postgres]
 {% include JB/setup %}
 
 
+{% unless page.image %}
 ![Random Links](/assets/img/database-sync.jpg)
+{% endunless %}
 > DB Syncs [CC image from Pixabay](https://pixabay.com/p-1954920/?no_redirect)
 
 # Syncing Databases Across Environments

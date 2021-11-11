@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Thoughts on Continuous Deployment"
 category: Programming
 tags: [Programming, Development, Deployment, Practices]

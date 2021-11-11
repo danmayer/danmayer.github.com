@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Git clone from local filesystem to fetch local branches"
 category:
 tags: []

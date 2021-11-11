@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "working with Facebook  Dialog Feed and urls with params"
 category:
 tags: []

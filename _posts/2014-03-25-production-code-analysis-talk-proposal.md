@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Talk Proposal Help"
 category: Programming
 tags: [Programming, Talks, Ruby]

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "October Software Links"
 image: /assets/img/chain-links.jpg
 category: Programming
@@ -42,5 +43,7 @@ A few days late for the end of the month, but that is OK... Some of my favorite 
 * [Helpful Google Slides templates](https://slidemodel.com/google-slides/)
 * [Great Free stock photos, I use frequently on my blog](https://pixabay.com/), thanks [@brwngrldev](https://twitter.com/brwngrldev)
 
+{% unless page.image %}
 ![Random Links](/assets/img/chain-links.jpg)
+{% endunless %}
 > Links by [wsyperek](https://pixabay.com/en/chain-metal-chain-link-257490/)

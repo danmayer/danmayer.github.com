@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Adding Custom JavaScript Handlers for PhoneGap Android"
 category:
 tags: []

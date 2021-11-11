@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "How to improve profit from tourists for small international businesses"
+image: https://millermayersadventures.files.wordpress.com/2014/12/dsc_0013-e1418910268449.jpg
 category: Tips
 tags: [Tips, LifeHacks, Travel]
 ---
@@ -8,7 +10,9 @@ tags: [Tips, LifeHacks, Travel]
 
 As we have traveled for months we often have to rely on online reviews. We are forced to as we often show up in cities with no contacts on the ground and plans to see some attractions. This means when it comes to hotels, food, ATMs, taxis, bars, and other activities we turn to the net. It seems many smaller hotels and restaurants don't know how to leverage the internet to increase their business. For instance we are in [Elmina, Ghana and it only has 1 restaurant according to TripAdvisor](http://www.tripadvisor.com.my/Restaurants-g303867-Elmina_Central_Region.html), which I am here to tell you is not true.
 
+{% unless page.image %}
 ![image](https://millermayersadventures.files.wordpress.com/2014/12/dsc_0013-e1418910268449.jpg)
+{% endunless %}
 
 Some little B&B and restaurants do become active with basic online presence and often tell us about massive growth in their business. It becomes so important they protect there online reputations, diligently responding to any complaints and trying to improve on common customer issues. So how can you attract international travelers, with a low amount of effort? I thought I should share what I consider to be the basic steps for having an online presence that tourists can find.
 

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "On Tech Challenges"
 category: Tech Management
 image: /assets/img/job-challenge.jpg
@@ -11,7 +12,9 @@ tags: [Management, Hiring, Teams]
 
 The company I am with, [Offgrid-Electric](http://tech.offgrid-electric.com), has evolved our hiring process over time to try to ensure we can find a diverse and strong distributed team. There are many interesting processes related to hiring a distributed team, but I will quickly focus on the coding challenge, technical challenge, or whatever folks are calling it these days.
 
+{% unless page.image %}
 ![Job Challenge](/assets/img/job-challenge.jpg)
+{% endunless %}
 > image by [FotografieLink](https://pixabay.com/en/to-reach-looking-career-job-sun-2697951/)
 
 # Offer Challenge Options

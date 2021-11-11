@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "November Software Links"
 image: /assets/img/chain-links.jpg
 category: Programming
@@ -64,5 +65,7 @@ Some of my favorite links from November. If you have any good links I missed pas
 * [Parental Leave in the US vs the World](http://www.investmentzen.com/data-visualization/parental-leave-in-the-united-states-vs-the-world/)
 
 
+{% unless page.image %}
 ![Random Links](/assets/img/chain-links.jpg)
+{% endunless %}
 > Links by [wsyperek](https://pixabay.com/en/chain-metal-chain-link-257490/)

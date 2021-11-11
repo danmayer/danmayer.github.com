@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Ruby: Understanding create_or_find_by vs find_or_create_by"
 image: /assets/img/find-or-create.jpg
 category: Ruby
@@ -8,7 +9,9 @@ tags: [Ruby, Rails, ActiveRecord]
 
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Bugs](/assets/img/find-or-create.jpg)
+{% endunless %}
 
 > photo credit [geralt: @pixabay](https://pixabay.com/photos/alzheimer-s-dementia-words-3068938/)
 

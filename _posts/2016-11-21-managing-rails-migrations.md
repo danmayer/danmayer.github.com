@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Managing DB Schema & Data Changes"
 category: Programming 
 tags: [Database, Ruby, Database]

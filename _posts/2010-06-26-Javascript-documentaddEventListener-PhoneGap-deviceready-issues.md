@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Javascript document.addEventListener PhoneGap deviceready issues"
 category:
 tags: []

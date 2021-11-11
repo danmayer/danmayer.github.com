@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Making A Programming Presentation"
 category: Programming
 tags: [Programming, Talks, Ruby]

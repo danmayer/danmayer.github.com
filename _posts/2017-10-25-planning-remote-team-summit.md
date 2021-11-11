@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Planning A Remote Team Summit"
 image: /assets/img/team_summit_top.jpeg
 category: Management
@@ -11,7 +12,9 @@ tags: [Distributed Teams, Software]
 
 It is essential for distributed teams to have face to face time. We try to get the entire department to get together at least once a year. In general, smaller groups within our department also get together from time to time to collaborate on specific projects as well. If you read about organizations that do remote work well, they organize one or more team summits/retreats a year.
 
+{% unless page.image %}
 ![Team Summit](/assets/img/team_summit_top.jpeg)
+{% endunless %}
 > The team enjoying the rare chance to use post-its in person
 
 ## Value of Distributed Team Summits

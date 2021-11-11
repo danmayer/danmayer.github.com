@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Staying Organized with Markdown"
 category: Programming
 tags: [Programming, Tech Management]

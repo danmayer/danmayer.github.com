@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Introducing Churn Site to measure code churn"
+image: /assets/churn-graph.png
 category: ruby
 tags: [ruby, sinatra, code-quality, metrics]
 ---
@@ -18,7 +20,9 @@ I put the app together pretty quickly using Sinatra (using [Sinatra-Template](ht
 
 
 
-&nbsp; | ![Churn Graph](/assets/churn-graph.png) | &nbsp;
+&nbsp; | {% unless page.image %}
+![Churn Graph](/assets/churn-graph.png)
+{% endunless %} | &nbsp;
 :----------- | :-----------: | -----------:
 &nbsp;         | [churn data for Metric-Fu](http://churn.picoappz.com/metricfu/metric_fu)         | &nbsp; 
 

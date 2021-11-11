@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Easily Pushing Static Sites to S3"
 category: Programming
 tags: [Programming, Ruby, Static-Site, S3, AWS, Practices]

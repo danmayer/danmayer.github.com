@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Introducing Ruby Resume, a project to create and host your resume"
 category:
 tags: []

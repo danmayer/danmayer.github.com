@@ -10,7 +10,7 @@ tagline: Dan Mayer's Dev Blog
 
 {% for post in site.posts limit: 7 %}
      <div class="index-summary">
-
+      <img width="50%" height="50%" src="{{ post.image }}"/>
       <h3 class="index-title">
         <a href="{{ post.url }}" class="noStyle">{{ post.title }}</a> <small>{{post.sub_title}}</small>
         <br/><span>{{ post.date | date_to_long_string }}</span>

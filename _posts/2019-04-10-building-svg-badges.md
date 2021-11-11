@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Building SVG Badges in Ruby"
+image: /assets/img/example.svg
 category: Ruby
 tags: [Ruby]
 ---
@@ -10,7 +12,9 @@ tags: [Ruby]
 
 A while ago I needed to create a simple dynamic SVG. After a bit of tinkering, it was easy enough to build a simple Ruby class to do what I needed to do. 
 
+{% unless page.image %}
 ![Example Badge](/assets/img/example.svg)
+{% endunless %}
 > SVG created from the below code
 
 It was a super quick thing to put together and solved a problem I was having. I was reminded of that today when I had another quick issue that I wanted to resolve. I wanted to pull some data not available by a services APIs, the data I needed was easily accessible to me in their webviews, so I quickly hacked together a web scraper, pulling the data I needed into a google sheet.

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Feature Branch Staging Servers"
 category: Programming
 tags: [Programming, Development, Management, Process, Planning]

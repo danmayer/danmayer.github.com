@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "iTunes Stalling on Windows XP"
 category:
 tags: []

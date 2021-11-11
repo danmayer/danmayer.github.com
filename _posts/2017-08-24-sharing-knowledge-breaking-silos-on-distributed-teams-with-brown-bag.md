@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Sharing Knowledge & Breaking Silos on Distributed Teams with Brown Bags"
 image: /assets/img/little_brown_bag.jpeg
 category: Management
@@ -8,7 +9,9 @@ tags: [Distributed Teams, Software]
 {% include JB/setup %}
 
 
+{% unless page.image %}
 ![Brown Bags](/assets/img/little_brown_bag.jpeg)
+{% endunless %}
 > Over the last 2 years or so our team has built up a collection of about 80 internal talks -credit [arcticpenguin](https://www.flickr.com/photos/arcticpenguin/3489763194)
 
 I have worked with distributed teams for years now. At Offgrid-Electric (OGE), our tech team is extremely distributed (across timezones, continents, and cultures). One thing that can always be a challenge is feeling like a part of the team. One thing that I have found useful both with team building, and to help with knowledge sharing through the team is brown bags. The term might take you back a bit, but the concept is easy enough. A less formal presentation, talk, or discussion generally with coffee, lunch, or a snack. Obviously, this can be done with co-located teams as well, but with a distributed team and a few best practices they can be very effective.

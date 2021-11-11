@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Safely Removing Image Assets from Rails"
 image: /assets/img/vacuum-cleaner.jpg
 category: Ruby
@@ -7,7 +8,9 @@ tags: [Ruby, Testing, Deployment]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![Bugs](/assets/img/vacuum-cleaner.jpg)
+{% endunless %}
 > photo credit [cleaning: pixabay](https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/)
 
 # Why Cleanup Rails Image Assets?

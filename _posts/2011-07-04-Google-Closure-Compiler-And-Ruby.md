@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Google Closure Compiler And Ruby"
 category:
 tags: []

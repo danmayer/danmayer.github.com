@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Research, Proof of Concept, Pilot template"
 category: Tech Management
 tags: [Programming, Development, Management, Process, Planning]

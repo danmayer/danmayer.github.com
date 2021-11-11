@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Rails tests gotcha with I18n.locale"
 category:
 tags: [Ruby, Rails, Testing]

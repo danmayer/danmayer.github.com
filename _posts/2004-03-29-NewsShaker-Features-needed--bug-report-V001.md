@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "NewsShaker: Features needed / bug report V.001"
 category:
 tags: []

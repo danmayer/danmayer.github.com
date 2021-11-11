@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Storing and deploying graphite configs"
 category: Programming
 tags: [Programming, Development]

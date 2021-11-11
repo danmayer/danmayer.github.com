@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Cleanup your DB, find unused tables"
 category: Programming
 tags: [Programming, Ruby, Tips]

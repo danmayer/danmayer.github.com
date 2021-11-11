@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Build robots with my nephew"
+image: /assets/img/lego-mindstorms-ev3.jpg
 category: Education
 tags: [learning, robots, education, fun]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image](/assets/img/lego-mindstorms-ev3.jpg)
+{% endunless %}
 
 My nephew is interested in robots. I told him that we could build a robot together and he got really excited. Originally my plan was to get Lego mindstorms, but considering it is $350. I am hoping to find a cheaper way to test out the waters. Also, at his current age I assume he will want to keep what we build and may be a bit rough with it. I figure when he is a bit older Lego mindstorms is the way to go.
 

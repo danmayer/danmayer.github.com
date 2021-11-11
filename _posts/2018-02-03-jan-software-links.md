@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "January Software Links"
 image: /assets/img/chain-links.jpg
 category: Programming
@@ -45,5 +46,7 @@ Some of my favorite links from January. Also, I will use this month to highlight
 * [Amazon & Netflix leading the way on paternity leave](https://www.recode.net/2018/1/31/16944976/new-parents-tech-companies-google-hp-facebook-twitter-netflix)
      
 
+{% unless page.image %}
 ![Random Links](/assets/img/chain-links.jpg)
+{% endunless %}
 > Links by [wsyperek](https://pixabay.com/en/chain-metal-chain-link-257490/)

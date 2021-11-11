@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Appcelerator Titanium older SDKs"
 category:
 tags: []

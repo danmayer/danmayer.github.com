@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "September Software Links"
 image: /assets/img/random_links.jpg
 category: Programming
@@ -33,5 +34,7 @@ tags: [programming, ruby, database]
 
 * [The moon blew up without warning](https://jasmcole.com/2017/09/20/the-moon-blew-up-without-warning-and-for-no-apparent-reason/)
 
+{% unless page.image %}
 ![Random Links](/assets/img/random_links.jpg)
+{% endunless %}
 > Random Links by [Sean MacEntee](https://www.flickr.com/photos/smemon/5144379598)

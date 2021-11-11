@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Weekly Software Updates"
+image: /assets/img/weekly_update_sm.png
 category: Tech Management
 tags: [Programming, Development, practices, Career, Process, Management]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image](/assets/img/weekly_update_sm.png)
+{% endunless %}
 
 ## Stay in Sync
 

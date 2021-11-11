@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Investigating Api Developer Tooling"
+image: /assets/api_tools.jpg
 category: Programming
 tags: [Programming, Development, APIs, Tools]
 ---
@@ -14,7 +16,9 @@ If you can generate any sort of interesting data eventually people will want it 
 
 I had been playing around with some API tools such as [Apiary](http://apiary.io/), and [Fdoc](https://github.com/square/fdoc) on my side projects. At work, various discussions about the future of our APIs has recently become a focus. [Adam Keys](http://therealadam.com/), [Cloves Carneiro](https://twitter.com/ccjr), and [Tim Schmelmer](http://www.timschmelmer.com/) are leading the charge in having better tooling around our APIs. The discussions lead to some features we wanted to support, which caused me to start to take a much closer look at some of the API tools available. I decided to try to take notes as I dug in to research a variety of options.
 
-![image](/assets/api_tools.jpg)  
+{% unless page.image %}
+![image](/assets/api_tools.jpg)
+{% endunless %}  
 image courtesy of [marc_smith](http://www.flickr.com/photos/marc_smith/8924975889/)
 
 ### Features we wanted

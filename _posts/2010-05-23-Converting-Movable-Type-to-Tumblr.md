@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Converting Movable Type to Tumblr"
 category:
 tags: []

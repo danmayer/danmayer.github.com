@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Quick Application Diagrams with Yard"
+image: /assets/churn_app_diagram.jpg
 category: Ruby
 tags: [ruby, rails, yard]
 ---
@@ -17,7 +19,9 @@ Above was all that was needed to get rails app diagrams like those below.
 
 Churn  
 
+{% unless page.image %}
 ![Churn Diagram](/assets/churn_app_diagram.jpg)
+{% endunless %}
 
 Small Rails apps, Hearno
 

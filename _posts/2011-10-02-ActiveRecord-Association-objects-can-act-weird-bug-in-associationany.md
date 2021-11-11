@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "ActiveRecord Association objects can act weird (bug in association#any?)"
 category:
 tags: []

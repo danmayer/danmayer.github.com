@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Information Architecture Changes"
 image: /assets/img/information_architecture_changes.png
 category: Programming
@@ -7,7 +8,9 @@ tags: [Programming, Development, Tips, Rails]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image DB Schema Changes](/assets/img/information_architecture_changes.png)
+{% endunless %}
 > Visualizing DB Schema Changes, even at a quick glance better structures stand out 
 
 # Information Architecture Changes

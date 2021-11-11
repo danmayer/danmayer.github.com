@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Force all Sinatra traffic to https"
 category:
 tags: []

@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Building Your Own Ruby"
 category: Ruby
 tags: [Ruby, Development]

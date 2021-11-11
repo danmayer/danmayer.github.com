@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: ratio of bugs per line of code
 category: ruby
 tags: [programming, development, ruby]

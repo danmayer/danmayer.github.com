@@ -1,6 +1,8 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Advice from my grandfather"
+image: /assets/img/dan_with_grandfather.jpg
 category: Programming
 tags: [Programming, Development, LifeHacks, Career]
 ---
@@ -16,7 +18,9 @@ Or the short version, "show up". Faced with something hard, keep showing up and 
 
 I think in the end this is a bit related to the common advice that it takes [10,000 hours to become a expert](http://en.wikipedia.org/wiki/Outliers_%28book%29). Want to get to 10,000 hours? Keep showing up and working at your craft, it can [take over 10 years](http://www.newyorker.com/online/blogs/sportingscene/2013/08/psychology-ten-thousand-hour-rule-complexity.html) to become an expert.
 
+{% unless page.image %}
 ![image](/assets/img/dan_with_grandfather.jpg)
+{% endunless %}
 
 ### Showing up: motivates me
 

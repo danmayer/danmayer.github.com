@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "SVMMail vs Apple Mail"
 category:
 tags: []

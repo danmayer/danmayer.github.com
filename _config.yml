@@ -14,10 +14,11 @@ exclude: [
   "*.config.js",
   "package*.json",
   "node_modules",
+  "ideas.md",
   ".liquidrc",
   "postcss.config.js",
   "tailwind.config.js",
-   "netlify.toml"
+  "netlify.toml"
   ]
 safe: true
 lsi: false

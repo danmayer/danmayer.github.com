@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Sinatra using respond_to with url extensions (.json)"
 category: ruby
 tags: [ruby, sinatra]

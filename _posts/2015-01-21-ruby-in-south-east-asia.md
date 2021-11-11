@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Ruby in South East Asia"
+image: /assets/img/rubyists_malaysia_2.jpg
 category: Programming
 tags: [Programming, Development, Career]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image](/assets/img/rubyists_malaysia_2.jpg)
+{% endunless %}
 
 ### Rubyists are a welcoming community everywhere
 

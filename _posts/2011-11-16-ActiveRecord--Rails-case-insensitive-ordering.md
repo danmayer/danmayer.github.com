@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "ActiveRecord / Rails case insensitive ordering"
 category:
 tags: []

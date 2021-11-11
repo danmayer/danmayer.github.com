@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Paternity Leave"
 image: /assets/img/theo_pooper.jpg
 category: Tips
@@ -7,7 +8,9 @@ tags: [Programming, Career, Tips, LifeHacks]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image detect](/assets/img/theo_pooper.jpg)
+{% endunless %}
 
 I am on paternity leave, actually my second of 2 staggered Paternity leaves. I am about 1 week into my second leave, hanging out with little Theo. I have some time off to bond with my kid, but more importantly my wife has some time to go back to work and stay focused knowing, I've got this.
 

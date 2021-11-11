@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Flaky Ruby Tests"
 image: /assets/img/flaky_paint.jpg
 category: Ruby
@@ -44,7 +45,9 @@ This is often a hard one for some teams. An honest discussion of the purpose and
 
 The primary cause of our unstable deploy pipeline was flaky tests. Given we were having deployments fail 45% of the time we had a large number of flaky tests causing issues. Let's dive into some of the techniques for resolving flaky test failures.
 
+{% unless page.image %}
 ![Flaky Paint](/assets/img/flaky_paint.jpg)
+{% endunless %}
 > - [andrewhalliday](https://www.flickr.com/photos/andrewhalliday/4599220963/in/photostream/)
 
 ### Divide and Conquer, with Rspec-Retry

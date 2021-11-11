@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Simplifying new gemset creation for RVM"
 category:
 tags: []

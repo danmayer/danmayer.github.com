@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Eclipse Plugin Callisto"
 category:
 tags: []

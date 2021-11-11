@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Cache me if you can"
+image: /assets/img/cache-me-if-you-can-poster.jpg
 category: Programming
 tags: [Performance, Ruby, Caching, Tips]
 ---
 {% include JB/setup %}
 
+{% unless page.image %}
 ![image](/assets/img/cache-me-if-you-can-poster.jpg)
+{% endunless %}
 
 Recently, I was looking at a few endpoints to speed up. We were expecting to send large volumes of traffic to a few URLs and wanted to make sure they were fast. While digging in, I found about 10,000 unexected requests per minute (RPM), going between one of our back end services and another. Sometimes the same internal service request was occurring multiple times in a single front end request. I thought this can't be right, what is going on? Let's take a look.
 

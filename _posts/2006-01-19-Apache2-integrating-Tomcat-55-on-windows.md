@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Apache2 integrating Tomcat 5.5 on windows"
 category:
 tags: []

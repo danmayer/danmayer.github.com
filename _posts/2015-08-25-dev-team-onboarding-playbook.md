@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Developer Team Onboarding Playbook"
+image: /assets/img/playbook.png
 category: Tech Management
 tags: [Programming, Development, Management, Process]
 ---
 {% include JB/setup %}
 
-> ![image](/assets/img/playbook.png)
+> {% unless page.image %}
+![image](/assets/img/playbook.png)
+{% endunless %}
 > 
 > photo credit: [opensourceway](https://www.flickr.com/photos/opensourceway/5537336155)
 

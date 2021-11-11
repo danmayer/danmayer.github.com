@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "December Software Links"
 image: /assets/img/chain-links.jpg
 category: Programming
@@ -49,5 +50,7 @@ Some of my favorite links from December. If you have any good links I missed pas
 
      
 
+{% unless page.image %}
 ![Random Links](/assets/img/chain-links.jpg)
+{% endunless %}
 > Links by [wsyperek](https://pixabay.com/en/chain-metal-chain-link-257490/)

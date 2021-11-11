@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Smokescreen: Smoke tests for Ruby"
 category: ruby
 tags: [ruby, testing]

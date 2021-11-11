@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: posttail
+authors: ["Dan Mayer"]
 title: "Phone Number DB Types"
+image: /assets/img/twitter_convo_start.png
 category: Programming
 tags: [Programming, Development, Database]
 ---
 {% include JB/setup %}
 
-[![image columns](/assets/img/twitter_convo_start.png)](https://twitter.com/danmayer/status/879033778169151488)
+[{% unless page.image %}
+![image columns](/assets/img/twitter_convo_start.png)
+{% endunless %}](https://twitter.com/danmayer/status/879033778169151488)
 > tweeting about DB phone number formats
 
 # How to best store & query phone numbers in Postgres DB
