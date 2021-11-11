@@ -3,17 +3,17 @@ main:
     url: "/"
     weight: 1
   - name: "About"
-    url: "/about/"
+    url: "/about"
     weight: 2
   - name: "Archive"
-    url: "/archive/"
+    url: "/archive"
     weight: 3
   - name: "Categories"
-    url: "/categories/"
+    url: "/categories"
     weight: 4
   - name: "Pages"
-    url: "/pages/"
+    url: "/pages"
     weight: 5
   - name: "Tags"
-    url: "/tags/"
+    url: "/tags"
     weight: 6
