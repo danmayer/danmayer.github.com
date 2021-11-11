@@ -15,7 +15,8 @@ layout: taildefault
 {% endif %}
 
 {% if page.image %}
-<img width="1600" height="900" src="{{ page.image }}"/>
+  {% assign page_image_shown = true %}  
+  <img width="1600" height="900" src="{{ page.image }}"/>
 {% endif %}
 
 <div class="flex flex-col md:flex-row py-6 md:py-12">

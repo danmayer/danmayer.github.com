@@ -43,26 +43,35 @@ CONFIG = {
 }
 
 # 
-module Port
+namespace :port do
   desc "port from older template to jekyll tailwind templates "
   task :posts do
-    # what to do with menu? for now just 2 links (add projects, coverband, etc?)
-    # put back discus?
-    # test on older post in prod before writing logic (do two)
-    # is CSS compression working?
+    # TODO: later
+    # put back discus? #maybe later
+    # is CSS compression working? YES
+    # clean up tags? 
+    # clean up categories?
+    # remove all old jekyll bootstrap stuff
+
+    # TODO: before go live  
     # convert first image to the image:tag
     # move image credit to image credit:tag
+    # add description to meta data, like: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
     # add author to meta data
-    # clean up tags?
-    # clean up categories?
-    # sidebar to footer?
-    # drop license?
+    #authors: ["Dan Mayer"]
+    # layout: posttail
+authors: ["Dan Mayer"]
+    Dir.glob('_posts/*.md').select { |file| File.file? file }.each do |file|
+      data = File.read(file)
+      unless data.match('layout: posttail')
+        data.gsub("layout: post\n", "layout: posttail\n")
+      end
+      unless data.match('authors: ["Dan Mayer"]')
+        data.gsub("layout: posttail\n", "layout: posttail\nauthors: ["Dan Mayer"]\n")
+      end
+      File.open(file, 'w') { |f| f.write(data) }
+    end
   end
-
-  # categories page
-  # rss page
-  # tags page
-  # index
 end
 
 # Path configuration helper

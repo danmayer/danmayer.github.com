@@ -8,7 +8,9 @@ tags: [Team, Management, Tech, Learning]
 
 {% include JB/setup %}
 
-![performance](/assets/img/football-gameday.jpg)
+{% if page_image_shown!=true %}
+  ![performance](/assets/img/football-gameday.jpg)
+{% endif %}
 
 > photo credit [Neramitevent@pixabay](https://pixabay.com/photos/football-colored-sports-gear-1166205/)
 

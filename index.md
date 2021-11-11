@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagetail
 title: 
 tagline: Dan Mayer's Dev Blog
 ---

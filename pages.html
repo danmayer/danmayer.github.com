@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pagetail
 title: Pages 
 header: Pages
 group: navigation
@@ -9,7 +9,16 @@ group: navigation
 <h2>All Pages</h2>
 <ul>
 {% assign pages_list = site.pages %}
-{% include JB/pages_list %}
+{% for node in pages_list %}
+  {% if group == null or group == node.group %}
+    {% if page.url == node.url %}
+    <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+    {% else %}
+    <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
   <li>
   <a
   href="https://www.mayerdan.com/ia_change/IA_Change_Process.pdf">Information
