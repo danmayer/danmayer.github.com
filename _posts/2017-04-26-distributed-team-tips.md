@@ -3,8 +3,8 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Distributed Team Tips"
 image: /assets/img/Centralised-decentralised-distributed.png
-category: Tech Management
-tags: [Programming, Development, practices, Career, Process, Management]
+category: Management
+tags: [Programming, Development, Practices, Career, Process, Management]
 ---
 {% include JB/setup %}
 

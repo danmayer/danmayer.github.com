@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Repetitive Hash Syntax, My quest for a Self Referring Hash"
-category: ruby
-tags: [ruby, code-quality]
+category: Ruby
+tags: [Ruby, Code-quality]
 ---
 {% include JB/setup %}
 

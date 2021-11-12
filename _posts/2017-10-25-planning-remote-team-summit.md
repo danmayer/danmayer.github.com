@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Planning A Remote Team Summit"
 image: /assets/img/team_summit_top.jpeg
 category: Management
-tags: [Distributed Teams, Software]
+tags: [Distributed teams, Software]
 ---
 {% include JB/setup %}
 

@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Performance of JSON Parsers at Scale"
 image: /assets/img/performance-scale.jpg
 category: Ruby
-tags: [Ruby, Rails, Performance, JSON, API]
+tags: [Ruby, Rails, Performance, Json, Api]
 ---
 
 {% include JB/setup %}

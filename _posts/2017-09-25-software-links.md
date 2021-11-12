@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "September Software Links"
 image: /assets/img/random_links.jpg
 category: Programming
-tags: [programming, ruby, database]
+tags: [Programming, Ruby, Database]
 ---
 {% include JB/setup %}
 

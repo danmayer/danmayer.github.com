@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "How to improve profit from tourists for small international businesses"
 image: https://millermayersadventures.files.wordpress.com/2014/12/dsc_0013-e1418910268449.jpg
 category: Tips
-tags: [Tips, LifeHacks, Travel]
+tags: [Tips, Lifehacks, Travel]
 ---
 {% include JB/setup %}
 

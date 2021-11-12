@@ -3,7 +3,7 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "fast start rails with composer"
 category: Ruby
-tags: [rails, ruby, programming, practices]
+tags: [Rails, Ruby, Programming, Practices]
 ---
 {% include JB/setup %}
     

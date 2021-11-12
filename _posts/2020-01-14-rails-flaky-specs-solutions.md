@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Rails Flaky Spec Solutions"
 image: /assets/img/flaky-wall.jpg
 category: Ruby
-tags: [Ruby, Testing, RSpec]
+tags: [Ruby, Testing, Rspec]
 ---
 {% include JB/setup %}
 

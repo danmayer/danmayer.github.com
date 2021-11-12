@@ -3,8 +3,8 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Coverband Production Code Coverage"
 image: https://raw.github.com/danmayer/coverband/master/docs/coverband_details.png
-category: ruby
-tags: [ruby, metrics]
+category: Ruby
+tags: [Ruby, Metrics]
 ---
 {% include JB/setup %}
 

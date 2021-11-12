@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Jekyll JS code formatting and running"
-category: javascript
-tags: [javascript]
+category: Javascript
+tags: [Javascript]
 ---
 {% include JB/setup %}
 

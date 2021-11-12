@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Databases Across Environments"
 image: /assets/img/database-sync.jpg
 category: Ruby
-tags: [Ruby, Rails, Database, AWS, Postgres]
+tags: [Ruby, Rails, Database, Aws, Postgres]
 ---
 {% include JB/setup %}
 

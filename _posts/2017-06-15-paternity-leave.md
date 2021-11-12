@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Paternity Leave"
 image: /assets/img/theo_pooper.jpg
 category: Tips
-tags: [Programming, Career, Tips, LifeHacks]
+tags: [Programming, Career, Tips, Lifehacks]
 ---
 {% include JB/setup %}
 

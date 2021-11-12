@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Investigating Api Developer Tooling"
 image: /assets/api_tools.jpg
 category: Programming
-tags: [Programming, Development, APIs, Tools]
+tags: [Programming, Development, Apis, Tools]
 ---
 {% include JB/setup %}
 

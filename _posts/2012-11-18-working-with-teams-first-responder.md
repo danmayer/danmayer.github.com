@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: First Responder, helping large development teams coordinate and work together
-category: ruby
-tags: [programming, development, ruby]
+category: Ruby
+tags: [Programming, Development, Ruby]
 ---
 {% include JB/setup %}
 

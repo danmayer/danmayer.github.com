@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "January Software Links"
 image: /assets/img/chain-links.jpg
 category: Programming
-tags: [programming, ruby, management]
+tags: [Programming, Ruby, Management]
 ---
 {% include JB/setup %}
 

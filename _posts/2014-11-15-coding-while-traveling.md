@@ -3,7 +3,7 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Coding while traveling"
 category: Programming
-tags: [Programming, Development, LifeHacks, Travel]
+tags: [Programming, Development, Lifehacks, Travel]
 ---
 {% include JB/setup %}
 

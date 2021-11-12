@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Build robots with my nephew"
 image: /assets/img/lego-mindstorms-ev3.jpg
 category: Education
-tags: [learning, robots, education, fun]
+tags: [Learning, Robots, Education, Fun]
 ---
 {% include JB/setup %}
 

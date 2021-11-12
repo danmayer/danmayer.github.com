@@ -3,8 +3,8 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Weekly Software Updates"
 image: /assets/img/weekly_update_sm.png
-category: Tech Management
-tags: [Programming, Development, practices, Career, Process, Management]
+category: Management
+tags: [Programming, Development, Practices, Career, Process, Management]
 ---
 {% include JB/setup %}
 

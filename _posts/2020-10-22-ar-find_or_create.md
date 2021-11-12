@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Ruby: Understanding create_or_find_by vs find_or_create_by"
 image: /assets/img/find-or-create.jpg
 category: Ruby
-tags: [Ruby, Rails, ActiveRecord]
+tags: [Ruby, Rails, Activerecord]
 ---
 
 {% include JB/setup %}

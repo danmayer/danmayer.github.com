@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Alexa Compliment My Wife"
 image: /assets/img/Erin_Pretty_Theo_verticle_sm4.jpg
 category: Programming
-tags: [Programming, javascript, Alexa]
+tags: [Programming, Javascript, Alexa]
 ---
 {% include JB/setup %}
 

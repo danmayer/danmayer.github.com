@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Active Record Database Documentation"
 image: /assets/img/ring-binders.jpg
 category: Ruby
-tags: [Ruby, Rails, Database, AWS, Postgres]
+tags: [Ruby, Rails, Database, Aws, Postgres]
 ---
 {% include JB/setup %}
 

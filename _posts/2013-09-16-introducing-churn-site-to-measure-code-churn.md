@@ -3,8 +3,8 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Introducing Churn Site to measure code churn"
 image: /assets/churn-graph.png
-category: ruby
-tags: [ruby, sinatra, code-quality, metrics]
+category: Ruby
+tags: [Ruby, Sinatra, Code-quality, Metrics]
 ---
 {% include JB/setup %}
 

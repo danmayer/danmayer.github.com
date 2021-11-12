@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Fix to install Nokogiri on bitnami EC2 instance"
-category: ruby
-tags: [aws, ec2, ruby, bitnami, sysadmin]
+category: Ruby
+tags: [Aws, Ec2, Ruby, Bitnami, Sysadmin]
 ---
 {% include JB/setup %}
 

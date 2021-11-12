@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Rack Proxy Tour"
 image: /assets/img/rack-mouse.jpg
 category: Ruby
-tags: [Ruby, Rails, Rack, Proxy, CORs]
+tags: [Ruby, Rails, Rack, Proxy, Cors]
 ---
 {% include JB/setup %}
 

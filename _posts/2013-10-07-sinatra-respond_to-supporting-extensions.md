@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Sinatra using respond_to with url extensions (.json)"
-category: ruby
-tags: [ruby, sinatra]
+category: Ruby
+tags: [Ruby, Sinatra]
 ---
 {% include JB/setup %}
 

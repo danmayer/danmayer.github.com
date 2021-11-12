@@ -2,7 +2,7 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "On Tech Challenges"
-category: Tech Management
+category: Management
 image: /assets/img/job-challenge.jpg
 tags: [Management, Hiring, Teams]
 ---

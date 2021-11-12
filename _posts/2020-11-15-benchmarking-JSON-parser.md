@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "benchmarking JSON Parsers (OJ, SimdJson, FastJsonParser)"
 image: /assets/img/compare.png
 category: Ruby
-tags: [Ruby, Rails, Performance, JSON, API]
+tags: [Ruby, Rails, Performance, Json, Api]
 ---
 
 {% include JB/setup %}

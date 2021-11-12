@@ -7,8 +7,18 @@ group: navigation
 {% include JB/setup %}
 
 <ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
+  {% capture tags %}
+    {% for tag in site.tags %}
+      {{ tag[1].size | plus: 1000 }}#{{ tag[0] }}#{{ tag[1].size }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedtags = tags | split:' ' | sort %}
+  {% for tag in sortedtags reversed %}
+      {% assign tagitems = tag | split: '#' %}
+      {% if tagitems[1] !='1' and  tagitems[1] !='2' %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tagitems[1] }}-ref">{{ tagitems[1] }} <span>{{ tagitems[2] }}</span></a></li>
+      {% endif %}
+  {% endfor %}
 </ul>
 
 

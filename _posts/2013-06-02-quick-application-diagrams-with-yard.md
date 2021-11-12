@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Quick Application Diagrams with Yard"
 image: /assets/churn_app_diagram.jpg
 category: Ruby
-tags: [ruby, rails, yard]
+tags: [Ruby, Rails, Yard]
 ---
 {% include JB/setup %}
 

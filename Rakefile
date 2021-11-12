@@ -47,13 +47,10 @@ namespace :port do
   desc "port from older template to jekyll tailwind templates "
   task :posts do
     # TODO: later
-    # put back discus? #maybe later
-    # is CSS compression working? YES
+    # put back discus? Maybe later
+    # is CSS compression working? YES, not really using JS yet much
     # clean up tags? 
-    # clean up categories?
     # remove all old jekyll bootstrap stuff
-    # move image credit to image credit:tag
-    # add description to meta data, like: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
     Dir.glob('_posts/*.md').select { |file| File.file? file }.each do |file|
       data = File.read(file)
       original = data.dup
@@ -93,6 +90,25 @@ namespace :port do
           # whatever
         end
       end
+      # uppercase categories, Note: stick to one word categories, due to how we sort them in liquid
+      if data.match('category: ruby')
+        data.sub!('category: ruby', "category: Ruby")
+      end
+      if data.match('category: javascript')
+        data.sub!('category: javascript', "category: Javascript")
+      end
+      if data.match('category: Tech Management')
+        data.sub!('category: Tech Management', "category: Management")
+      end
+      # uppercase tags, TODO: still should review and standardize similar sometime
+      # Note: stick to one word categories, due to how we sort them in liquid
+      if tags = data.match(/tags: \[(.*)\]/)
+        old_tags = tags[1]
+        uppercase_tags = tags[1].split(',').map{|tag| tag.strip.capitalize }.join(', ')
+        data.sub!(old_tags, uppercase_tags) unless old_tags == uppercase_tags
+      end
+
+      # if post was changed write the update output
       if data != original
         puts "modifying #{file}"
         File.open(file, 'w') { |f| f.write(data) }

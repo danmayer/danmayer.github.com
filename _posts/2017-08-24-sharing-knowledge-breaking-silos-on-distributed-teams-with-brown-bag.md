@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Sharing Knowledge & Breaking Silos on Distributed Teams with Brown Bags"
 image: /assets/img/little_brown_bag.jpeg
 category: Management
-tags: [Distributed Teams, Software]
+tags: [Distributed teams, Software]
 ---
 {% include JB/setup %}
 

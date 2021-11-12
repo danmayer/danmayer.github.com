@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Smokescreen: Smoke tests for Ruby"
-category: ruby
-tags: [ruby, testing]
+category: Ruby
+tags: [Ruby, Testing]
 ---
 {% include JB/setup %}
 

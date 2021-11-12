@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Advice from my grandfather"
 image: /assets/img/dan_with_grandfather.jpg
 category: Programming
-tags: [Programming, Development, LifeHacks, Career]
+tags: [Programming, Development, Lifehacks, Career]
 ---
 {% include JB/setup %}
 

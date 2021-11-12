@@ -2,8 +2,8 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Executable Ruby in embeddable widgets and other terrible ideas"
-category: javascript
-tags: [ruby, javascript]
+category: Javascript
+tags: [Ruby, Javascript]
 ---
 {% include JB/setup %}
 
