@@ -7,7 +7,7 @@ tags: [Programming, Talks, Ruby]
 ---
 {% include JB/setup %}
 
-I wrote this shortly after I gave my talk, but never cleaned up the draft. I cleaned it up a bit this morning and thought I should just publish it as is.
+I wrote this shortly after I gave my talk, but never cleaned up the draft. I cleaned it up a bit this morning and thought I should just publish it as <!--more--> is.
 
 I don't think there are many posts talking about how to get into presenting at programming conferences. I doubt I'm even particularly good at it, but I still felt I might have some information to share. If you are interested in speaking at programming conferences and think you have knowledge to share, hopefully this post can help you on your path.
 

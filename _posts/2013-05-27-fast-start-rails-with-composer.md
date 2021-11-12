@@ -9,7 +9,7 @@ tags: [rails, ruby, programming, practices]
     
 ## Quickly getting started with Rails 3.2
 
-This post explains how I quickly get an application started for Rails 3.2.x.The post is part of a series covering quickly prototyping projects.
+This post explains how I <!--more--> quickly get an application started for Rails 3.2.x.The post is part of a series covering quickly prototyping projects.
 
 When I start a new rails project, I want to quickly get going with a login system, admin and other user roles, a nice default app template / style, and a JS framework I can build on. After looking at several options I ended up going with [Rails Composer](http://railsapps.github.io/rails-composer/). It has a number of packages that work out of the box. It is very configurable, it is very easy to get up and running. [Railsapps](https://railsapps.org) used to have a lot of free tutorials coving using rails-composer, now they [sell detailed tutorials to support their work](https://tutorials.railsapps.org/). You can still generally just read the read me for a project and go through the basic options to get everything working. I generally follow the [Rails App for Devise with CanCan and Twitter Bootstrap](https://github.com/RailsApps/rails3-bootstrap-devise-cancan) example for my basic app base and further configure it myself from there.
 

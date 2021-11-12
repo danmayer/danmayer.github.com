@@ -23,7 +23,7 @@ At our summits we work through pain points in our processes and structure, we bu
 
 ## Summit Planning
 
-Planning required for a proper summit shouldn’t be underestimated. At OGE, we put together a small workgroup that met weekly to plan the event. The group developed a schedule, planned sessions, activities, and assigned follow up tasks to specific people. Our workgroup used slack, confluence, and weekly video chats to plan our summit.
+Planning required for a proper summit shouldn’t be underestimated. At OGE, we put together a small workgroup that met weekly to plan the event. The group developed a schedule, planned sessions, activities, and assigned follow up tasks to specific people. Our workgroup <!--more--> used slack, confluence, and weekly video chats to plan our summit.
 
 ### Logistics:
 

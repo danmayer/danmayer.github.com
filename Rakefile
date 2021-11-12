@@ -55,14 +55,14 @@ namespace :port do
     # move image credit to image credit:tag
     # add description to meta data, like: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
     Dir.glob('_posts/*.md').select { |file| File.file? file }.each do |file|
-      puts "modifying #{file}"
       data = File.read(file)
+      original = data.dup
       # convert to tailwind layout
       unless data.match('layout: posttail')
         data.gsub!("layout: post\n", "layout: posttail\n")
       end
       # add author data
-      unless data.match('authors: ["Dan Mayer"]')
+      unless data.match('authors: \[\"Dan Mayer\"\]')
         data.gsub!("layout: posttail\n", "layout: posttail\nauthors: [\"Dan Mayer\"]\n")
       end
       # extract and add image tag
@@ -74,13 +74,29 @@ namespace :port do
         end 
       end
       # don't double show image
-      if data.match('image:')
+      if data.match('image:') && !data.match("unless page.image")
         image_markdown= data.match(/\!\[.*?\]\((.*?)\)/)[0] rescue nil
         if image_markdown
           data.gsub!(image_markdown, "{% unless page.image %}\n#{image_markdown}\n{% endunless %}")
         end 
       end
-      File.open(file, 'w') { |f| f.write(data) }
+      # generate a short excerpt for long posts by adding <!--more-->
+      # note this isn't perfect and required hand fixing 3-4 files
+      if !data.match('<!--more-->') && data.length > 5000
+        begin
+          summary_word = data.split[250]
+          while summary_word == nil || summary_word == " " do
+            summary_word = data.split[250 + rand(20)]
+          end
+          data.sub!(/.*\K#{summary_word} /, "#{summary_word} <!--more--> ")
+        rescue RegexpError
+          # whatever
+        end
+      end
+      if data != original
+        puts "modifying #{file}"
+        File.open(file, 'w') { |f| f.write(data) }
+      end
     end
   end
 end

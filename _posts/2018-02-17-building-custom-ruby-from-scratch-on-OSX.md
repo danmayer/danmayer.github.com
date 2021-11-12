@@ -29,7 +29,7 @@ Before you make any modifications, I recommend you get the current trunk buildin
 
 I recommend using the Ruby-buil instructions below as I continued to hit issues with building from scatch with my own options related to SSL.
 
-If you want to give it a shot thought, run the 4 commands below and it will compile and install Ruby from src on your system.
+If you want to give it a shot thought, run the 4 commands below and it will compile and install Ruby from src <!--more--> on your system.
 
 ```
 aclocal

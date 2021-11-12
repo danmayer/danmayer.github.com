@@ -17,7 +17,7 @@ tags: [Ruby, Rails, Performance, JSON, API]
 
 # Performance of JSON Parsers at Scale
 
-In a recent post, [benchmarking JSON Parsers (OJ, SimdJson, FastJsonParser)](https://www.mayerdan.com/ruby/2020/11/15/benchmarking-JSON-parser). This compared the parsers based on local microbenchmarks. In the end, I recommended for almost all general use cases go with OJ. Saying that FastJsonParser might be worth it for specific use cases. I want to do a quick follow up on sharing what happens when microbenchmarks meet real-world data, scale, and systems.
+In a recent post, [benchmarking JSON Parsers (OJ, SimdJson, FastJsonParser)](https://www.mayerdan.com/ruby/2020/11/15/benchmarking-JSON-parser). This compared the parsers based on local microbenchmarks. In the end, I recommended for almost all general use cases go with OJ. Saying that FastJsonParser might be worth it for specific use cases. I want to do a quick follow up on sharing what happens when microbenchmarks meet real-world <!--more--> data, scale, and systems.
 
 __TL; DR;__ you probably just want to use [OJ](https://github.com/ohler55/oj) as originally recommended, even on data where FastJsonParser wins in a microbenchmark, the real-world data was undetectable. While moving from StdLib to OJ was a 40% latency improvement holding up across multiple services.
 

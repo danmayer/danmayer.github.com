@@ -23,7 +23,7 @@ This follows up on my previous post focused on [Ruby Benchmarking](https://www.m
 
 If you maintain a Gem, which could have large performance impacts on folks integrating the gem. It can make sense to try to build performance testing into the Gem, helping to ensure that changes and new features don't impact the performance in unexpected ways overtime. It also will help for you to publish performance impacts to give confidence to folks adding your gem as a dependency.
 
-For example I maintain a Gem, [Coverband](https://github.com/danmayer/coverband), which records production code coverage. Obviously, this can have a major impact on performance as it tracks every line executed on production. During the life of Coverband, nearly every decision about features and Gem release involved some Benchmarking. The project was initially developed to help remove dead code from a large old monolithic rails app, before the first release could be put on production it went through a number of performance tests and only ran on staging until the perf impact could be acceptably controlled.
+For example I maintain a Gem, [Coverband](https://github.com/danmayer/coverband), which records production code coverage. Obviously, this can have a major impact on performance as it tracks every line executed on production. During the life of Coverband, nearly every decision about features and Gem release involved some Benchmarking. The project was initially developed to help remove dead code from a large old monolithic rails app, before the first release could be put on production it went through a number of performance tests and only ran on staging until the perf impact could be acceptably <!--more--> controlled.
 
 ## Coverband Benchmark Timeline
 

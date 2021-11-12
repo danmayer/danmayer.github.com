@@ -17,7 +17,7 @@ You can see the source code for [PicoAppz on Github](https://github.com/danmayer
 
 ## Static Site Publishing Code
 
-The primary piece of code you would want to look at to grok the static site generation flow would be [lib/pico_appz](https://github.com/danmayer/picoappz/blob/master/lib/pico_appz.rb).
+The primary piece of code you would want to look at to grok the static site generation flow <!--more--> would be [lib/pico_appz](https://github.com/danmayer/picoappz/blob/master/lib/pico_appz.rb).
 
 __Two primary entry points called from rake__
 

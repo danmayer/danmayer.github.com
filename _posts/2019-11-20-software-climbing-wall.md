@@ -36,7 +36,7 @@ I started really small, initially with a [training board](https://www.amazon.com
 
 ## Iterate
 
-I then added a few holds directly into the wall near the original board so I could string together a few moves.
+I then added a few holds directly into the wall <!--more--> near the original board so I could string together a few moves.
 
 ![iterate on wall](/assets/img/iterate_collage.jpg)
 > A first box of bulk climbing holds, a test mounting on a board

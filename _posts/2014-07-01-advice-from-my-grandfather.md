@@ -26,7 +26,7 @@ I think in the end this is a bit related to the common advice that it takes [10,
 
 * if there is there a really important project that no one seems to find 'cool' enough to work on, show up
 * if there are unexpected issues days before a release, dig in and solve it for the release.
-* if the team is finished with the 90% interesting part of the project but that last mile needs to get done, show up for the team to help pull it through to the end.
+* if the team is finished with the 90% interesting <!--more--> part of the project but that last mile needs to get done, show up for the team to help pull it through to the end.
 * If production issues are taking systems down and no one seems to remember how it works, dig in.
 
 Showing up is important for a variety of reasons. The actions you take shape the person you are. Being ready to pitch in often, and your team will appreciate your efforts and know your willing to help get whatever job done. Your manager and your company will appreciate you for it. You will be trusted to make other good decisions because you have shown up and come through in the past.

@@ -32,7 +32,7 @@ I also think we want to add human context to our information in same tools we bu
 
 When we embed our database documentation in our standard code change process we easily get many advantages.
 
-* See DB comments change over time because they are part of Git
+* See <!--more--> DB comments change over time because they are part of Git
 * Search in code editor tools (and github)
 * Documentation can be reviewed as part of PRs by a data team, analysts, or other folks who might be the target documentation audience
 

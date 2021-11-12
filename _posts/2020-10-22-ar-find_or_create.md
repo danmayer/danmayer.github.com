@@ -29,7 +29,7 @@ This lead to Rails 6 adding the newer methods...
 
 ## `create_or_find_by`
 
-The new [`create_or_find_by`](https://apidock.com/rails/v6.0.0/ActiveRecord/Relation/create_or_find_by) methods have a more rare race condition (on deleted ids), but can prevent a more common insert race condition on duplicates... It is well described in this post, [Rails 6 adds `create_or_find_by`](https://blog.bigbinary.com/2019/03/25/rails-6-adds-create_or_find_by.html), along with some downsides. For example without a unique DB constraint it will create duplicates (ex: `add_index :posts, :title, unique: true`). These issues are also called out in the docs linked above, excerpt below.
+The new [`create_or_find_by`](https://apidock.com/rails/v6.0.0/ActiveRecord/Relation/create_or_find_by) methods have a more rare race condition (on deleted ids), but can prevent a more common insert race condition on duplicates... It is well described in this post, [Rails 6 adds `create_or_find_by`](https://blog.bigbinary.com/2019/03/25/rails-6-adds-create_or_find_by.html), along with some downsides. For example without a unique DB constraint it will create duplicates (ex: `add_index :posts, :title, unique: true`). These issues are also called out in the docs <!--more--> linked above, excerpt below.
 
 - The underlying table must have the relevant columns defined with unique constraints.
 

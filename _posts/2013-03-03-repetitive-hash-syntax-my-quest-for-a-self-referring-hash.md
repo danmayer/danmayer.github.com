@@ -32,7 +32,7 @@ In the end what I wanted was a way to create a hash that would looks something l
     
 {% endhighlight %}
 
-
+<!--more-->
 ###Inspiring a solution
 
 I mentioned this annoyance years ago to [Ara Howard](https://github.com/ahoward), and he whipped up a [example very quickly](http://drawohara.com/post/151193800/ruby-symbol-to-hash), but it didn't feel quite right. Ara proposed a [few iterations](https://gist.github.com/ahoward/157787) with various syntax's `:result.to_h{}` or `[:a, :b, :c].to_h{}` but the syntax was distracting. So I kind of forgot about the issue and forgot about the issue for awhile.

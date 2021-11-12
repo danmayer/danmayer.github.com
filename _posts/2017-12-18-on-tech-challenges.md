@@ -10,7 +10,7 @@ tags: [Management, Hiring, Teams]
 
 # Coding Challenge
 
-The company I am with, [Offgrid-Electric](http://tech.offgrid-electric.com), has evolved our hiring process over time to try to ensure we can find a diverse and strong distributed team. There are many interesting processes related to hiring a distributed team, but I will quickly focus on the coding challenge, technical challenge, or whatever folks are calling it these days.
+The company I am with, [Offgrid-Electric](http://tech.offgrid-electric.com), has evolved our hiring process over time to try to ensure we can find a diverse and strong distributed team. There are many <!--more--> interesting processes related to hiring a distributed team, but I will quickly focus on the coding challenge, technical challenge, or whatever folks are calling it these days.
 
 {% unless page.image %}
 ![Job Challenge](/assets/img/job-challenge.jpg)

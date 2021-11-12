@@ -15,7 +15,7 @@ tags: [Programming, Development, practices, Career, Process, Management]
 {% endunless %}
 > credit: [wikimedia.org](http://wikimedia.org)
 
-A awhile ago a developer friend [@Qrush](https://twitter.com/qrush) asked folks for thoughts on how distributed teams should work on twitter. He asked specific questions, I responded and thought it might be helpful to share the slightly cleaned up answers with others.
+A awhile ago a developer friend [@Qrush](https://twitter.com/qrush) asked folks for thoughts on how distributed teams should work on twitter. He asked specific questions, I responded and thought it might be helpful to share the slightly cleaned up answers with <!--more--> others.
 
 ## How Distributed?
 

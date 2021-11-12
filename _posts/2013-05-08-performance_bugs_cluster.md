@@ -1,7 +1,7 @@
 ---
 layout: posttail
 authors: ["Dan Mayer"]
-title: "Performance Issues and Bug Clusters"
+title: "Performance Issues and <!--more--> Bug Clusters"
 category: Programming
 tags: [Programming, Development, Learnings]
 ---

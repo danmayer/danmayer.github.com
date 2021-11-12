@@ -25,7 +25,7 @@ I was recently looking at the performance of some endpoints that process large a
 
 ## OJ
 
-[OJ](https://github.com/ohler55/oj) is a Ruby library for both parsing and generating JSON with a ton of options. I would basically say if you don't want to think too much but care about JSON performance just set up the OJ gem, and it should be the best option for most folks. It is well known, tested, and trusted in the community with a ton of support.
+[OJ](https://github.com/ohler55/oj) is a Ruby library for both parsing and generating JSON with a ton of options. I would basically say if you don't want to think too much but care about JSON performance just set up the OJ gem, and it should be <!--more--> the best option for most folks. It is well known, tested, and trusted in the community with a ton of support.
 
 - A drop in replacement, set it forget it, it is faster and better
 - Has built in Rails support, for some Rails JSON quirks

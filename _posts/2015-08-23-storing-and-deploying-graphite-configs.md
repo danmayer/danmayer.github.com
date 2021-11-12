@@ -21,7 +21,7 @@ The format is a bit verbose, so it is best to download an existing dashboard to 
       curl -u user:pass https://graphite.host.com/dashboard/load/DashName.json > temp.json
     end
     
-Curling an existing graph will pull down JSON that looks something like this.
+Curling an existing graph will pull down JSON <!--more--> that looks something like this.
 
     {
       "state": {

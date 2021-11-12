@@ -20,7 +20,7 @@ This is different than team stand ups or more formal processes and can be looser
 
 ## Software Update Template
 
-As I have been helping keep a fully distributed team working together and up to speed. I have found it helpful as well. I have slightly changed the format over time, but the basics are in the template below.
+As I have been helping keep a fully distributed team working together and up to speed. I have found it helpful as well. I have slightly changed the format over time, but the basics are in the template <!--more--> below.
 
 ```
 As another week starts, ...funny_or_motivating line...

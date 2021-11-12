@@ -13,7 +13,7 @@ I have instead followed a different practice for years, that I have shown a few 
 
 Markdown notes work well because it is quick and free form. I still occasionally take notes on paper, but I transfer things into my Markdown notes at the end of each day. I have different sections and templates that I can use for weekly, quarterly, and yearly tasks. Nothing is faster than a few bullet lists of todos for day to day work, which keeps me focused on what I need to get done each day. It also lets me quickly throw in anything that came up suddenly which took my attention, letting me see why any goals for today slipped to tomorrow.
 
-These notes eventually turn into a story and keep my history, when I reflect back on OKRs each quarter, I go through my daily standups to pull out the bigger picture of what I accomplished for the quarter. My history of work I have captured for the last 3 or 4 years this way and can extract patterns and themes, and if I want to accomplish something over the long term build it into the short term goals to see improvements over the years.
+These notes eventually turn into a story and keep my history, when I reflect back on OKRs each quarter, I go through my daily standups to pull out the bigger picture <!--more--> of what I accomplished for the quarter. My history of work I have captured for the last 3 or 4 years this way and can extract patterns and themes, and if I want to accomplish something over the long term build it into the short term goals to see improvements over the years.
 
 I have refined this system for a few years, and it has been the best thing at keeping me on track and focused for a long while now. I hope you can find parts of it helpful as well.
 

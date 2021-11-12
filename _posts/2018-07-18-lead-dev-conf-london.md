@@ -37,7 +37,7 @@ For my very favorite slide see the section with my tweets below ;) Otherwise, en
 > [@tara_ojo](https://twitter.com/tara_ojo) on how to help Jr's with good 1:1s
 
 ![leaddev london slides](/assets/img/leaddev_london/destroyed_island.jpg)
-> [@nmeans](https://twitter.com/nmeans) lessons learn from 3 mile island
+> [@nmeans](https://twitter.com/nmeans) lessons learn from <!--more--> 3 mile island
 
 ![leaddev london slides](/assets/img/leaddev_london/no_elitism.jpg)
 > [@ClareSudbery](https://twitter.com/ClareSudbery)

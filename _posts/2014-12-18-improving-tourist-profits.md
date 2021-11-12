@@ -19,7 +19,7 @@ Some little B&B and restaurants do become active with basic online presence and 
 1. Have at least a basic website
 2. Ensure correct location information on your establishments on mapping sites
 3. Ensure correct additional information and photos of your establishments pages
-4. For lodging that includes a restaurant ensure both hotel and food listings
+4. For lodging that includes <!--more--> a restaurant ensure both hotel and food listings
 5. For lodging, include an option to pay with credit card
 
 Let's dive a bit more into the details of the list.

@@ -1,4 +1,4 @@
----
+---| <!--more--> 
 layout: posttail
 authors: ["Dan Mayer"]
 title: "The Ruby-fitbit API has been updated"

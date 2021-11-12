@@ -20,7 +20,7 @@ As I have worked with a few teams, it is worth calling out some issues and learn
 
 ## Team Policies
 
-At [Offgrid Electric](http://offgrid-electric.com), we have shared github wikis with documentation, process, and policies. Over time the team has built up processes related to making database changes to our application. These policies help us avoid some off the pitfalls, while encouraging good communication. We adjust them over time, but it might be helpful for other organizations as they begin to run into any issues around database change process. Below is a partial scrubbed version of our documentation. 
+At [Offgrid Electric](http://offgrid-electric.com), we have shared github wikis with documentation, process, and policies. Over time the team has built up processes related to making database changes to our application. These policies help us avoid some off the pitfalls, while encouraging good communication. We adjust them over time, but it might <!--more--> be helpful for other organizations as they begin to run into any issues around database change process. Below is a partial scrubbed version of our documentation. 
 
 ---
 

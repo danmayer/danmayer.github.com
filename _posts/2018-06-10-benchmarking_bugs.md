@@ -64,7 +64,7 @@ namespace :benchmarks do
 
   desc 'runs benchmarks coverage'
   task run_coverage: :setup_coverage do
-    puts 'Coverband Coverage configured with to use default redis store'
+    puts 'Coverband <!--more--> Coverage configured with to use default redis store'
     SAMPLINGS = 5
     run_work
   end

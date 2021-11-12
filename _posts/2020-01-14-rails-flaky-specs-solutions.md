@@ -24,7 +24,7 @@ In this post, I want to introduce a new project [Rails Flaky Spec Examples](http
 
 # Why A Rails Suite? One Problem with Flaky Test Posts
 
-While there are a number of great blog posts on flaky specs:
+While <!--more--> there are a number of great blog posts on flaky specs:
 
 * [eliminating flaky ruby tests](https://engineering.gusto.com/eliminating-flaky-ruby-tests/)
 * [why rspec tests fail and how to fix them](https://medium.com/better-programming/why-rspec-tests-fail-and-how-to-fix-them-402f1c7dce16)

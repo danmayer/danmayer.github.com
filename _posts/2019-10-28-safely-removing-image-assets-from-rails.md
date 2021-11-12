@@ -11,7 +11,7 @@ tags: [Ruby, Testing, Deployment]
 {% unless page.image %}
 ![Bugs](/assets/img/vacuum-cleaner.jpg)
 {% endunless %}
-> photo credit [cleaning: pixabay](https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/)
+> photo <!--more--> credit [cleaning: pixabay](https://pixabay.com/photos/vacuum-cleaner-vacuuming-cleaning-268179/)
 
 # Why Cleanup Rails Image Assets?
 

@@ -25,7 +25,7 @@ Stories illustrating the importance of our mission, and meeting our customers in
 
 There is a great post by [how stuff works called can travel change you?](http://adventure.howstuffworks.com/travel-change-you.htm) I would say it can change you if your open to it. I was thinking about my position in the world and looking to change things up. So I started getting interested in international positions, that could improve some of the major challenges in the world.
 
-Seeing many different countries in my world definitely changed my thoughts on what were major challenges in the world:
+Seeing many different countries in my world definitely changed <!--more--> my thoughts on what were major challenges in the world:
 
 * clean water
 * sufficient sewage systems

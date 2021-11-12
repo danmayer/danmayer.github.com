@@ -33,7 +33,7 @@ Our Software team is hiring the positions below. There are other non software po
 
 > "Across sub-Saharan Africa, fully 590 million people lack access to power. And it's a life-or-death issue: Indoor air pollution from wood stoves now kills 3.5 million people per year, more than AIDS and malaria combined." --[Brad Plumer: Washington Post](http://www.washingtonpost.com/blogs/wonkblog/wp/2013/07/02/a-closer-look-at-obamas-7-billion-plan-to-bring-electricity-to-africa/)
 
-Over the years, I have learned to respect [Bill Gates](https://www.gatesnotes.com/) for his passionate endeavors to change the world. His recent post highlighted the importance of the work we do at Offgrid. We deliver directly on #1 and provide free power to schools helping enable #4.
+Over the years, I have learned to respect [Bill Gates](https://www.gatesnotes.com/) for his passionate endeavors to change the world. His <!--more--> recent post highlighted the importance of the work we do at Offgrid. We deliver directly on #1 and provide free power to schools helping enable #4.
 
 > There are four objectives I think we should prioritize:
 > 

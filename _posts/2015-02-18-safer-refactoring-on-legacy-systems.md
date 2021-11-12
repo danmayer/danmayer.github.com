@@ -20,7 +20,7 @@ As you can see from the time between these two tweets it also, was burning away 
 
 TLDR; I did a refactoring, which I believe should have been done. After I completed the release, I realized how I could have done it safer and with less stress all around. Read the breakdown and two solutions to see a better way to handle situations like this.
 
-First let me start by saying I am very aware of [responsible refactoring](http://naildrivin5.com/blog/2013/08/08/responsible-refactoring.html), which is a great thing to keep in mind. I knew when I first started this refactoring it would be a little dangerous, but decided to take it on for a few reasons.
+First let me start by saying I am very aware of [responsible refactoring](http://naildrivin5.com/blog/2013/08/08/responsible-refactoring.html), which is a great <!--more--> thing to keep in mind. I knew when I first started this refactoring it would be a little dangerous, but decided to take it on for a few reasons.
 
 * we had extracted the functionally of the app into a gem
 * the gem had made it into usage in ALL other consumer facing applications

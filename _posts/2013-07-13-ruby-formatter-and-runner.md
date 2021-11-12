@@ -35,7 +35,7 @@ class Client
 
 end
 
-ClientTest = Class.new Test::Unit::TestCase do
+ClientTest = Class.new <!--more--> Test::Unit::TestCase do
 
    def test_can_drink
      client = Client.new('bruce', 20)

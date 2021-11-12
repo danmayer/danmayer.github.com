@@ -15,7 +15,7 @@ The ideal web software deployment process lets you quickly deploy features as th
 2. Stakeholder feedback
 3. Long running branches (large groups of related features, 3rd party integrations, etc)
 
-We had each of the above cases, at [Offgrid-Electric](http://offgrid-electric.com/). All the cases point towards a staging environment. In normal feature development flow is a time where you want share your work, which should be deployed and available to some set of users. Let's explore how a single staging doesn't solve everything.
+We had each <!--more--> of the above cases, at [Offgrid-Electric](http://offgrid-electric.com/). All the cases point towards a staging environment. In normal feature development flow is a time where you want share your work, which should be deployed and available to some set of users. Let's explore how a single staging doesn't solve everything.
 
 # Staging Servers
 

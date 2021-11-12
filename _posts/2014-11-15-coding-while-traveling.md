@@ -11,7 +11,7 @@ I set off to travel for about 5 months, during this time I wouldn't be working. 
 
 The Macbook has nearly all the advantages, but they are expensive and a theft target. A target to the point that some people I been traveling with hide the fact that they have macs (cases, stickers, etc). To cover the cost I looked into a older used Air, but I couldn't find a good one at the time. Since we are spending a lot on the trip and spending time on my computer wasn't the trip's goal I was still interested in the Chromebook.
 
-Any Chromebook has the advantage of being extremely cheap and having amazing battery life. If it is broken, lost or stolen you can buy one or have one shipped to nearly any country for a reasonable price. In the end I went with a Samsung Chromebook. I bought it a few months before my trip to make sure I would be pretty happy using it.
+Any Chromebook has the advantage of being extremely cheap and having amazing battery life. If it is broken, lost or stolen you can buy one or have one shipped to nearly any country for a reasonable price. In the end I went with a Samsung Chromebook. I bought it a few months before my trip to make sure <!--more--> I would be pretty happy using it.
 
 I knew developing on the Chromebook wouldn't be at all like I was used to, but I thought it would still work out well for me to write some blog posts, edit some photos, learn some new libraries, and work on some of my Open Source Software projects.
 

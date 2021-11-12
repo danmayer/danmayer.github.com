@@ -24,7 +24,7 @@ __Automated Continuous Deployment:__
 * Automated by CI server, deploys after non failing test suite run
 * Each commit is tested individually and deployed individually
 
-At first look every developer is probably thinking clearly automated deploy is the way to go. We should remove repetitive processes from the developer flow! Trusting developers with check lists is error prone, it is hard to coordinate deploys. I would agree that in the ideal project with a perfect infrastructure, that is the correct choice. The reality is most large projects have some baggage and state of the project means it might not be the best or a realistic choice for every project.
+At first look every developer is probably thinking clearly automated deploy is the way to go. We should remove repetitive processes from the developer <!--more--> flow! Trusting developers with check lists is error prone, it is hard to coordinate deploys. I would agree that in the ideal project with a perfect infrastructure, that is the correct choice. The reality is most large projects have some baggage and state of the project means it might not be the best or a realistic choice for every project.
 
 ## Issues associated with automated continuous deployment
 

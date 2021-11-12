@@ -21,7 +21,7 @@ This post will talk about measuring the performance of Ruby and benchmarking you
 
 # Ruby Benchmarking Projects
 
-A number of projects have been proposed and have support from the community for benchmarking Ruby... These project all will help the community improve the performance of Ruby, and can be used to help you measure the impact or Ruby or Gem changes you would like to try. If you are interested in contributing to Ruby or helping the community with improved performance or better benchmarking I encourage you to check out these projects. A great way to learn more about benchmarking is to dig into projects that are already out available and looking for more contributors.
+A number of projects have been proposed and have support from the community for benchmarking Ruby... These project all will help the community improve the performance of Ruby, and can be used to help you measure the impact or Ruby or Gem changes you would like <!--more--> to try. If you are interested in contributing to Ruby or helping the community with improved performance or better benchmarking I encourage you to check out these projects. A great way to learn more about benchmarking is to dig into projects that are already out available and looking for more contributors.
 
 * [OptCarrot (Ruby NES Emulator)](http://engineering.appfolio.com/appfolio-engineering/2017/9/22/optcarrot-an-excellent-cpu-benchmark-for-ruby-3x3)
 * [Rails Ruby Bench](https://github.com/noahgibbs/rails_ruby_bench)
