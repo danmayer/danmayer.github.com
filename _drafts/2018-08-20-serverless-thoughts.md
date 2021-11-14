@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Benchmarks Bugs"
+title: "Serverless Thoughts"
 image: /assets/img/ladybugs.jpg
 category: Ruby
 tags: [Ruby, Rails, Performance, Benchmarking, Coverband]

@@ -8,6 +8,10 @@ I have been developing application code and working with teams of developers for
 
 ---
 
+Folks say make code easy to change or delete, but we need to be thinking that same way about our data, every object, field, etc we need a way to see when it is in use and who is using it.
+
+---
+
 ways to improve
 
 * [Data Change Management Process](https://www.mayerdan.com/programming/2016/11/21/managing-rails-migrations)

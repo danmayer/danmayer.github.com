@@ -108,6 +108,10 @@ namespace :port do
         data.sub!(old_tags, uppercase_tags) unless old_tags == uppercase_tags
       end
 
+      # Find all posts without a category or tags set and fix them
+      # what about moving to having the photo credit as part of the meta data?
+      # move photo credit into templates
+
       # if post was changed write the update output
       if data != original
         puts "modifying #{file}"

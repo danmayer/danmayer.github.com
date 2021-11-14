@@ -1,1 +1,0 @@
-https://tablegroup.com/hub/post/05/21/2017/virtual-teams-are-worse-than-i-thought
