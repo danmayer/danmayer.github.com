@@ -5,6 +5,7 @@ Dan Mayer's Developer Blog
 
 * pick using tags or categories or both and import them
 * Coderwall integration (Achievements, projects, etc)
+* republish after master -> main
 
 ## Build Tailwind
 
