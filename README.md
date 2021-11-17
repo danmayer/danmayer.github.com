@@ -7,6 +7,8 @@ Dan Mayer's Developer Blog
 * Coderwall integration (Achievements, projects, etc)
 * remove all the old bootstrap stuff
 * upgrade to latest jekyll
+* add resource pages (Ruby, Puma, front end with Ruby, Postgres, etc...)
+  * folks as for best resources have a page and update it from time to time
 
 ## Build Tailwind
 

@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: posttail
 title: "Configuring a new OS X Yosemite development machine"
 category: Programming
 tags: [Programming, Development, OSX, DevOps]
 ---
 {% include JB/setup %}
 
-This is a update from how I setup [OS X Yosemite](http://www.mayerdan.com/programming/2013/12/01/configuring-osx-mavericks-dev-machine/) years ago. Basically, it is more for my own reference, but that post seemed to be helpful to some others.
+This is a update from how I setup [OS X Mavericks](http://www.mayerdan.com/programming/2013/12/01/configuring-osx-mavericks-dev-machine/) years ago. Basically, it is more for my own reference, but that post seemed to be helpful to some others.
 
 These are the steps I took to setup a new OS X 10.10.3 (Yosemite) machine for development. I have heard on twitter that each time you setup a new machine you get 1% better and at this rate you can become good at it in a few hundred years! Ha while that seems to be true I am getting happier with the process and I am now at least trying to document it. This post won't serve as a rich tutorial on the configuration process, but should give some ideas on good ways to setup your own machine or ideas on how to fix some common gotchas I ran into with my setup.
 
