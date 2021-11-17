@@ -9,6 +9,7 @@ Dan Mayer's Developer Blog
 * upgrade to latest jekyll
 * add resource pages (Ruby, Puma, front end with Ruby, Postgres, etc...)
   * folks as for best resources have a page and update it from time to time
+  * see drafts folder (Ruby profiling links, rails benchmarks, rails JS frontend, testing)
 
 ## Build Tailwind
 

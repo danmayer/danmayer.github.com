@@ -1,7 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
 <html> 
   <head>
-    <title>WWW Flow Chart</title>
+    <title>Experiments Visualizing Web Request Flows</title>
     <style>
       .node rect {
         cursor: move;
@@ -29,7 +29,10 @@
   </head>
 
   <body>
-    <h1>D3 Flow</h1>
+    <h1>D3 Sankey Request Flow</h1>
+    <p>
+      In this example I am using Sankey diagrams to attempt to visualize the flow of a request from clients through our infrastructure stack.
+    </p>
     <div id="div_customContent"></div>
     <p id="chart"></p>
 
@@ -389,21 +392,26 @@ let content_html = `
 var graph = {
   links: [
     // graph
-    { source: "entry", target: "two", value: "75" },
-    { source: "two", target: "last", value: "95" },
+    { source: "CDN", target: "Load Balancer (with WAF)", value: "75" },
+    { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5" },
+    { source: "Load Balancer (with WAF)", target: "Application Server", value: "95" },
   ],
   nodes: [
     {
-      name: "entry",
+      name: "CDN",
       //url: "https://www.mayerdan.com"
-      url: content_html
+      url: content_html2
       },
     {
-      name: "two",
+      name: "Load Balancer (with WAF)",
       url: content_html
     },
     {
-      name: "last",
+      name: "WAF Blocked",
+      url: content_html
+    },
+    {
+      name: "Application Server",
       url: content_html
     }
   ]
