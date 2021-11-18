@@ -377,6 +377,10 @@ var tooltip2 = d3.select("#div_customContent")
     .html("<p>I'm a tooltip written in HTML</p><img src='https://github.com/holtzy/D3-graph-gallery/blob/master/img/section/ArcSmal.png?raw=true'></img><br>Fancy<br><span style='font-size: 40px;'>Isn't it?</span>");
 
 //////////////////////////////////////////////////////////
+function iframe_content(name) {
+  html = `<iframe src="./${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  return html;
+};
 
 let content_html2 = `
 <iframe src="./iframe_content.html" title="content" width="100%" height="400px"></iframe>
@@ -392,15 +396,14 @@ let content_html = `
 var graph = {
   links: [
     // graph
-    { source: "CDN", target: "Load Balancer (with WAF)", value: "75" },
+    { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
     { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5" },
     { source: "Load Balancer (with WAF)", target: "Application Server", value: "95" },
   ],
   nodes: [
     {
       name: "CDN",
-      //url: "https://www.mayerdan.com"
-      url: content_html2
+      url: iframe_content("cdn")
       },
     {
       name: "Load Balancer (with WAF)",
