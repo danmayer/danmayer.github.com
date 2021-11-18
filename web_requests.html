@@ -45,17 +45,19 @@ group: navigation
     {% include mobile-menu.html %}
     <div class="container mx-auto px-6 md:px-4">
       {% include header.html %}
-      <h1>D3 Sankey Request Flow</h1>
-      <p>
-        In this example I am using Sankey diagrams to attempt to visualize the flow of a request from clients through an example infrastructure stack.
-      </p>
-      <ul>
-        <li>
-          A single request (like a request for an html page or single API request)
-        </li>
-      </ul>
-      <div id="div_customContent"></div>
-      <p id="chart"></p>  
+      <div class="prose">
+        <h1>D3 Sankey Request Flow</h1>
+        <p>
+          In this example I am using Sankey diagrams to attempt to visualize the flow of a request from clients through an example infrastructure stack.
+        </p>
+        <ul>
+          <li>
+            A single request (like a request for an html page or single API request)
+          </li>
+        </ul>
+        <div id="div_customContent"></div>
+        <p id="chart"></p>  
+      </div>
       {% include footer.html %}
     </div>
     {% include google-analytics.html %}
