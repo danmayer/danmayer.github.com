@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Experiments Visualizing Web Request Flows</title>
+
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="/{{ site.data.manifest['docs.css'] }}" rel="stylesheet">
+    <style>
+      .node rect {
+        cursor: move;
+        fill-opacity: .9;
+        shape-rendering: crispEdges;
+      }
+      
+      .node text {
+        pointer-events: none;
+        text-shadow: 0 1px 0 #fff;
+      }
+      
+      .link {
+        fill: none;
+        stroke: #000;
+        stroke-opacity: .2;
+      }
+      
+      .link:hover {
+        stroke-opacity: .5;
+      }
+    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js' type='text/javascript'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js' type='text/javascript'></script>
+  </head>
+  <body class="page {{page.bodyClass}}">
+    {% include mobile-menu.html %}
+    <div class="container mx-auto px-6 md:px-4">
+      {% include header.html %}
+      <h1>D3 Sankey Request Flow</h1>
+      <p>
+        In this example I am using Sankey diagrams to attempt to visualize the flow of a request from clients through our infrastructure stack.
+      </p>
+      <div id="div_customContent"></div>
+      <p id="chart"></p>  
+      {% include footer.html %}
+    </div>
+    {% include google-analytics.html %}
+    <script type="text/javascript" src="{{ '/assets/javascript/hamburger.js' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/visualization/requests.js' | relative_url }}"></script>
+  </body>
+</html>
