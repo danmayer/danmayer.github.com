@@ -357,15 +357,30 @@ let content_html = `
 var graph = {
   links: [
     // graph
+    { source: "iOS", target: "CDN", value: "45" },
+    { source: "android", target: "CDN", value: "25" },
+    { source: "Web", target: "CDN", value: "30" },
     { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
     { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5" },
     { source: "Load Balancer (with WAF)", target: "Application Server", value: "95" },
   ],
   nodes: [
     {
+      name: "iOS",
+      url: content_html
+    },
+    {
+      name: "android",
+      url: content_html
+    },
+    {
+      name: "Web",
+      url: content_html
+    },
+    {
       name: "CDN",
       url: iframe_content("cdn")
-      },
+    },
     {
       name: "Load Balancer (with WAF)",
       url: content_html
