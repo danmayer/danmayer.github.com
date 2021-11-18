@@ -339,12 +339,12 @@ var tooltip2 = d3.select("#div_customContent")
 
 //////////////////////////////////////////////////////////
 function iframe_content(name) {
-  html = `<iframe src="./${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
 
 let content_html2 = `
-<iframe src="./iframe_content.html" title="content" width="100%" height="400px"></iframe>
+<iframe src="./visualization/iframe_content.html" title="content" width="100%" height="400px"></iframe>
 `
 
 let content_html = `
