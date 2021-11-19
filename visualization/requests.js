@@ -328,18 +328,25 @@ d3.sankey = function() {
 // create a tooltip
 var tooltip2 = d3.select("#div_customContent")
   .append("div")
-    // .style("position", "absolute")
+    .style("position", "fixed")
+    .style("top", "50px")
+    .style("width", "75%")
     .style("visibility", "hidden")
     .style("background-color", "white")
     .style("border", "solid")
     .style("border-width", "1px")
     .style("border-radius", "5px")
     .style("padding", "10px")
-    .html("<p>I'm a tooltip written in HTML</p><img src='https://github.com/holtzy/D3-graph-gallery/blob/master/img/section/ArcSmal.png?raw=true'></img><br>Fancy<br><span style='font-size: 40px;'>Isn't it?</span>");
+    .html("");
+
+d3.select("close-btn").on("click", function(d) {
+  tooltip2.style("visibility", "hidden");
+  d3.select("#displayContent").html("");
+});
 
 //////////////////////////////////////////////////////////
 function iframe_content(name) {
-  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="500px"></iframe>`;
   return html;
 };
 
@@ -471,6 +478,7 @@ var path = sankey.link();
   });
 
   // add in the nodes
+  // TODO: add support for click (url) or iframe (content)
   var node = svg
     .append("g")
     .selectAll(".node")
@@ -481,7 +489,7 @@ var path = sankey.link();
     .attr("transform", d => `translate(${d.x},${d.y})`)
     .on("click", function(d) {
       tooltip2.style("visibility", "visible");
-      tooltip2.html(d.url);
+      d3.select("#displayContent").html(d.url);
     })
 
   // add the rectangles for the nodes
