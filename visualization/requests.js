@@ -320,6 +320,10 @@ d3.sankey = function() {
     return link.value;
   }
 
+  function note(link) {
+    return link.note;
+  }
+
   return sankey;
 };
 
@@ -436,7 +440,8 @@ var path = sankey.link();
     return {
       source: nodeMap[x.source],
       target: nodeMap[x.target],
-      value: x.value
+      value: x.value,
+      note: x.note
     };
   });
 
