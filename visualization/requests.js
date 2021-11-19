@@ -329,7 +329,6 @@ d3.sankey = function() {
 var tooltip2 = d3.select("#div_customContent");
 
 d3.select("#close-btn").on("click", function(d) {
-  console.log("clicked modal close");
   d3.select("#div_customContent").style("visibility", "hidden");
   d3.select("#displayContent").html("");
 });
