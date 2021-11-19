@@ -326,21 +326,11 @@ d3.sankey = function() {
 //////// infowindow /////
 
 // create a tooltip
-var tooltip2 = d3.select("#div_customContent")
-  .append("div")
-    .style("position", "fixed")
-    .style("top", "50px")
-    .style("width", "75%")
-    .style("visibility", "hidden")
-    .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "1px")
-    .style("border-radius", "5px")
-    .style("padding", "10px")
-    .html("");
+var tooltip2 = d3.select("#div_customContent");
 
 d3.select("close-btn").on("click", function(d) {
-  tooltip2.style("visibility", "hidden");
+  console.log("clicked modal close");
+  d3.select("#div_customContent").style("visibility", "hidden");
   d3.select("#displayContent").html("");
 });
 
