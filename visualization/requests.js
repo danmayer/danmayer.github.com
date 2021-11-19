@@ -353,12 +353,12 @@ let content_html = `
 var graph = {
   links: [
     // graph
-    { source: "iOS", target: "CDN", value: "45" },
-    { source: "android", target: "CDN", value: "25" },
-    { source: "Web", target: "CDN", value: "30" },
+    { source: "iOS", target: "CDN", value: "45", note: "iOS API calls through the CDN" },
+    { source: "android", target: "CDN", value: "25", note: "android API calls through the CDN" },
+    { source: "Web", target: "CDN", value: "30", note: "Web calls through the CDN" },
     { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
-    { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5" },
-    { source: "Load Balancer (with WAF)", target: "Application Server", value: "95" },
+    { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5", note: "Traffic that was blocked by the WAF" },
+    { source: "Load Balancer (with WAF)", target: "Application Server", value: "95", note: "Traffic routed through the load balancer" },
   ],
   nodes: [
     {
@@ -394,7 +394,7 @@ var graph = {
 
 /////////////////////////////////////////////////////////
 
-var units = "Traffic Percentage";
+var units = "% Traffic";
 
 var margin = { top: 10, right: 10, bottom: 10, left: 10 },
   width = 1200 - margin.left - margin.right,
@@ -463,7 +463,7 @@ var path = sankey.link();
 
   // add the link titles
   link.append("title").text(function(d) {
-    return d.source.name + " → " + d.target.name + "\n" + format(d.value);
+    return d.source.name + " → " + d.target.name + "\n" + format(d.value) + "\n" + d.note;
   });
 
   // add in the nodes
