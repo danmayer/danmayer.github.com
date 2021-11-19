@@ -362,7 +362,8 @@ var graph = {
     { source: "Web", target: "CDN", value: "30", note: "Web calls through the CDN" },
     { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
     { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5", note: "Traffic that was blocked by the WAF" },
-    { source: "Load Balancer (with WAF)", target: "Application Server", value: "95", note: "Traffic routed through the load balancer" },
+    { source: "Load Balancer (with WAF)", target: "Application Server A", value: "55", note: "Load Balancer target rules routed to App A" },
+    { source: "Load Balancer (with WAF)", target: "Application Server B", value: "40", note: "Load Balancer target rules routed to App B" },
   ],
   nodes: [
     {
@@ -390,7 +391,11 @@ var graph = {
       url: content_html
     },
     {
-      name: "Application Server",
+      name: "Application Server A",
+      url: content_html
+    },
+    {
+      name: "Application Server B",
       url: content_html
     }
   ]
