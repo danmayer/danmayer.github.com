@@ -46,23 +46,13 @@ group: navigation
     <div class="container mx-auto px-6 md:px-4">
       {% include header.html %}
       <div class="prose">
-        <h1>A way to visualize Network Flow for Requests</h1>
+        <h2>Micro Service Requests</h2>
         <p>
-          These are examples of how to visualize request flows of calls into a teams infrastructure.
+          An Example of a Microservice Architecture.
           <ul>
-            <li>Made with D3 Sankey Diagrams</li>
-            <li>Illustrate Different Levels of Complexity</li>
+            <li>Includes: a web front-end, API service, and common supporting services (DB and Redis Cache)</li>
           </ul>
         </p>
-        <h2>Basic Single Application Stack Request Flow</h1>
-        <p>
-          In this example I am using Sankey diagrams to attempt to visualize the flow of a request from clients through an example infrastructure stack.
-        </p>
-        <ul>
-          <li>
-            A single request (like a request for an html page or single API request)
-          </li>
-        </ul>
         <div id="div_customContent" style="visibility: hidden; position: fixed; top: 30%; width: 80%; height: 60%; background-color:white; border: 1px solid; border-radius: 5px; padding: 10px;">
           <div id="displayContent" style="padding: 10px;">
           </div>
@@ -78,6 +68,6 @@ group: navigation
     </div>
     {% include google-analytics.html %}
     <script type="text/javascript" src="{{ '/assets/javascript/hamburger.js' | relative_url }}"></script>
-    <script type="text/javascript" src="{{ '/visualization/requests.js?cache=9' | relative_url }}"></script>
+    <script type="text/javascript" src="{{ '/visualization/micro_service_requests.js?cache=1' | relative_url }}"></script>
   </body>
 </html>
