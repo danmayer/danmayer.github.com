@@ -368,6 +368,7 @@ var graph = {
     { source: "Application Server (Api)", target: "Redis Cache (Api)", value: "95", note: "Requests leveraging the Cache" },
     { source: "Application Server (Api)", target: "Postgres (RDS Service)", value: "100", note: "Requests leveraging the DB" },
   ],
+  // all AWS SLAs https://cloudonaut.io/aws-sla-are-you-able-to-keep-your-availability-promise/
   nodes: [
     {
       name: "iOS",
@@ -381,11 +382,13 @@ var graph = {
       name: "Web",
       url: content_html
     },
+    // 99.9
+    // more nines: https://newbedev.com/aws-cloudfront-availability-sla
     {
       name: "CDN",
       url: iframe_content("cdn")
     },
-    // ALB
+    // ALB 99.99
     {
       name: "Load Balancer (with WAF)",
       url: content_html
@@ -394,6 +397,7 @@ var graph = {
       name: "WAF Blocked",
       url: content_html
     },
+    // ECS 99.9
     {
       name: "Application Server (Frontend)",
       url: content_html

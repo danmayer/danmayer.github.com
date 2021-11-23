@@ -1,0 +1,180 @@
+---
+layout: empty
+title: Experiments Visualizing Micro Services SLAs
+header: Web Requests
+group: hidden
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>{{page.title}}</title>
+
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="/{{ site.data.manifest['docs.css'] }}" rel="stylesheet">
+    <style>
+      .node rect {
+        cursor: move;
+        fill-opacity: .9;
+        shape-rendering: crispEdges;
+      }
+      
+      .node text {
+        pointer-events: none;
+        text-shadow: 0 1px 0 #fff;
+      }
+      
+      .link {
+        fill: none;
+        stroke: #000;
+        stroke-opacity: .2;
+      }
+      
+      .link:hover {
+        stroke-opacity: .5;
+      }
+    </style>
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js' type='text/javascript'></script>
+  </head>
+  <body class="page {{page.bodyClass}}">
+    {% include mobile-menu.html %}
+    <div class="container mx-auto px-6 md:px-4">
+      {% include header.html %}
+      <div class="prose">
+        <h2>Micro Service SLAs</h2>
+        <p>
+          The issue with SLAs is that folks often want to aim for extremly high SLAs like "five nines" 99.999% uptime... Companies also want high fully independent teams running and managing microservices...
+          Let's take a look at how this plays out.
+        </p>
+        <pre>
+> (0.999) * 100
+ => 99.9
+> (0.999 * 0.999) * 100
+ => 99.8001
+> (0.999 * 0.999 * 0.999) * 100
+ => 99.7002999
+> (0.999 * 0.999 * 0.999 * 0.999) * 100
+ => 99.6005996001
+> (0.999 * 0.999 * 0.999 * 0.999 * 0.999) * 100
+ => 99.5009990004999
+> (0.999 * 0.999 * 0.999 * 0.999 * 0.999 * 0.999) * 100
+ => 99.4014980014994
+        </pre>
+        <div id="my_dataviz"></div>
+        <br/>
+
+        <h2>Impacts of the internet</h2>
+        Now let's consider that even if one has achived all of this, are your customers actually receiving "five nines" of service?
+        If we consider their provider ISP (assuming home internet connections via ISPs), local wifi setup, or even worse a mobile connection... You can already drop expectations to at least %99.9, really you are trying to make your service appear as stable as their internet, with as many network failures as the customer has to endure with any other serivce.
+        <br/><br/>
+        <blockquote>
+          If failures are being measured from the end-user perspective and it is possible to drive the error rate for the service below the background error rate, those errors will fall within the noise for a given user’s Internet connection. While there are significant differences between ISPs and protocols (e.g., TCP versus UDP, IPv4 versus IPv6), we’ve measured the typical background error rate for ISPs as falling between 0.01% and 1%.
+          -- <a href="https://sre.google/sre-book/embracing-risk/">Embracing Risk, Site Reliability Engineering</a>
+        </blockquote>
+      </div>
+      <br/>
+      <br/>
+      {% include footer.html %}
+    </div>
+    {% include google-analytics.html %}
+    <script type="text/javascript" src="{{ '/assets/javascript/hamburger.js' | relative_url }}"></script>
+    <script>
+      // set the dimensions and margins of the graph
+      var margin = {top: 30, right: 30, bottom: 70, left: 60},
+          width = 460 - margin.left - margin.right,
+          height = 400 - margin.top - margin.bottom;
+      
+      // append the svg object to the body of the page
+      var svg = d3.select("#my_dataviz")
+        .append("svg")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+          .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+      
+      // Parse the Data
+      d3.csv("./visualization/micro_service_slas.csv", function(data) {
+      
+        // sort data
+        data.sort(function(b, a) {
+          return a.Value - b.Value;
+        });
+      
+        // X axis
+        var x = d3.scaleBand()
+          .range([ 0, width ])
+          .domain(data.map(function(d) { return d.Services; }))
+          .padding(0.2);
+        svg.append("g")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(x))
+          .selectAll("text")
+            .attr("transform", "translate(-10,0)rotate(-45)")
+            .style("text-anchor", "end");
+      
+        // Add Y axis
+        var y = d3.scaleLinear()
+          .domain([95, 100])
+          .range([ height, 0]);
+        svg.append("g")
+          .call(d3.axisLeft(y));
+      
+        // ----------------
+        // Create a tooltip
+        // https://www.d3-graph-gallery.com/graph/barplot_stacked_hover.html
+        // ----------------
+        var tooltip = d3.select("#my_dataviz")
+          .append("div")
+          .style("opacity", 0)
+          .attr("class", "tooltip")
+          .style("background-color", "white")
+          .style("border", "solid")
+          .style("border-width", "1px")
+          .style("border-radius", "5px")
+          .style("padding", "10px")
+
+        // Three function that change the tooltip when user hover / move / leave a cell
+        var mouseover = function(d) {
+          var subgroupName = d.Services;
+          console.log(d);
+          var subgroupValue = d.Value;
+          tooltip
+              .html("Count: " + subgroupName + "<br>" + "Max SLA: " + subgroupValue)
+              .style("opacity", 1)
+        }
+        var mousemove = function(d) {
+          tooltip
+            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+            .style("top", (d3.mouse(this)[1]) + "px")
+        }
+        var mouseleave = function(d) {
+          tooltip
+            .style("opacity", 0)
+        }  
+
+        // Bars
+        svg.selectAll("mybar")
+          .data(data)
+          .enter()
+          .append("rect")
+            .attr("x", function(d) { return x(d.Services); })
+            .attr("y", function(d) { return y(d.Value); })
+            .attr("width", x.bandwidth())
+            .attr("height", function(d) { return height - y(d.Value); })
+            .attr("fill", "#69b3a2")
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave)
+      
+      })
+      
+      </script>
+  </body>
+</html>

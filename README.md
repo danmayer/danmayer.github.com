@@ -5,15 +5,12 @@ Dan Mayer's Developer Blog
 
 * pick using tags or categories or both and import them
 * Coderwall integration (Achievements, projects, etc)
-* remove all the old bootstrap stuff
-* upgrade to latest jekyll
-* add resource pages (Ruby, Puma, front end with Ruby, Postgres, etc...)
-  * folks as for best resources have a page and update it from time to time
-  * see drafts folder (Ruby profiling links, rails benchmarks, rails JS frontend, testing)
+* different drafts support, using group hidden like I setup for pages
 
 ## Build Tailwind
 
-* `npm run prod` build CSS / JS assets
+* `npm run prod` # build CSS / JS assets
+* `bundle exec jekyll serve` # local server
 
 ## Integrations
 
@@ -93,7 +90,9 @@ Dan Mayer's Developer Blog
   * mysql someone was like you can dump the request that goes in and the log of changes that come out that is your transaction... how is that different
   * the thoughts on this were related to using soap, binarary, thrift other protocals for APIs
   * my thoughts are even with mysql you have to capture and log in and out in some way it isn't really part of the final protocal, that is the same as logging AFTER binarary or thrift is converted to a human format and logging... All is fine so long as the conversion always works and no data is ever thrown away or lost in the process.... but thrift for instance expects a schema and ignores additional attributes debugging some client that can't pass a param because they typoed it won't be so helpful if the converted message doesn't include the ignored information.
- 
+* resilience / stability
+  * microservice SLA calculator for combining AWS services / custom apps for a total SLA 
+  * note google's SRE post on 0.1-1.0% ISP reliability 
 
 ## Possible Project Ideas
 
@@ -107,10 +106,6 @@ Dan Mayer's Developer Blog
     * custom sherlock book insert you or a friends name as one of the characters
     * sell ebook versions of highly rated output
     * other ways to extend the sherlock value online
-
-## Post Ideas I might do on LS techblog or clear with work to post here
-* Rails 2.3.X view tracking, about the work I did track all the view layouts, templates, in partials in deals to remove dead files
-* Smokescreen, to discuss the importance of fast feedback loops and when a test suite grows to large good ways to focus in on the important changes (I actually run `bundle exec rake test:smokescreen:all_current` on almost all changes now which runs the critical tests along with test files that are likely to be affected by current changes)
 
 ## Possible short posts more likely tweet sometime, if I can't elaborate enough for a post
 
