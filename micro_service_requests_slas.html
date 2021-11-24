@@ -50,7 +50,7 @@ group: hidden
         <h2>Micro Service SLAs</h2>
         <p>
           The issue with SLAs is that folks often want to aim for extremly high SLAs like "five nines" 99.999% uptime... Companies also want high fully independent teams running and managing microservices...
-          Let's take a look at how this plays out.
+          Let's take a look at how this plays out. Every time you add another service dependency you reduce the theoritical maximum SLA you could provide.
         </p>
         <pre>
 > (0.999) * 100
@@ -66,7 +66,18 @@ group: hidden
 > (0.999 * 0.999 * 0.999 * 0.999 * 0.999 * 0.999) * 100
  => 99.4014980014994
         </pre>
+
         <div id="my_dataviz"></div>
+        <br/>
+
+        Let's look at this from the perspective of a typical AWS applications, assuming a single app stack (no micro services), a pretty standard setup with app code of 99.9% still leaves a total SLA max of %99.6
+        <br/>
+        <a href="https://aws.amazon.com/legal/service-level-agreements/?aws-sla-cards.sort-by=item.additionalFields.serviceNameLower&aws-sla-cards.sort-order=asc&awsf.tech-category-filter=*all">AWS Service SLAs</a>
+        <pre>
+cloudfront   ALB       ECS      YOUR APP    Elasticache   RDS (Postgres)
+(0.999   *  0.9999  * 0.9999  *  0.999   *    0.999        *  0.9995)   * 100
+=> 99.63052065660449
+        </pre>
         <br/>
 
         <h2>Impacts of the internet</h2>
@@ -77,6 +88,8 @@ group: hidden
           If failures are being measured from the end-user perspective and it is possible to drive the error rate for the service below the background error rate, those errors will fall within the noise for a given user’s Internet connection. While there are significant differences between ISPs and protocols (e.g., TCP versus UDP, IPv4 versus IPv6), we’ve measured the typical background error rate for ISPs as falling between 0.01% and 1%.
           -- <a href="https://sre.google/sre-book/embracing-risk/">Embracing Risk, Site Reliability Engineering</a>
         </blockquote>
+        <br/>
+        WHAT ABOUT COST ^^ Google covers as well
       </div>
       <br/>
       <br/>
@@ -87,7 +100,7 @@ group: hidden
     <script>
       // set the dimensions and margins of the graph
       var margin = {top: 30, right: 30, bottom: 70, left: 60},
-          width = 460 - margin.left - margin.right,
+          width = 1000 - margin.left - margin.right,
           height = 400 - margin.top - margin.bottom;
       
       // append the svg object to the body of the page
@@ -99,81 +112,87 @@ group: hidden
           .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
       
-      // Parse the Data
-      d3.csv("./visualization/micro_service_slas.csv", function(data) {
-      
-        // sort data
-        data.sort(function(b, a) {
-          return a.Value - b.Value;
-        });
-      
-        // X axis
-        var x = d3.scaleBand()
-          .range([ 0, width ])
-          .domain(data.map(function(d) { return d.Services; }))
-          .padding(0.2);
-        svg.append("g")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x))
-          .selectAll("text")
-            .attr("transform", "translate(-10,0)rotate(-45)")
-            .style("text-anchor", "end");
-      
-        // Add Y axis
-        var y = d3.scaleLinear()
-          .domain([95, 100])
-          .range([ height, 0]);
-        svg.append("g")
-          .call(d3.axisLeft(y));
-      
-        // ----------------
-        // Create a tooltip
-        // https://www.d3-graph-gallery.com/graph/barplot_stacked_hover.html
-        // ----------------
-        var tooltip = d3.select("#my_dataviz")
-          .append("div")
+      // number of services
+      var serviceStart = 1;
+      var serviceEnd = 15;
+
+      var data = [];
+
+      while(serviceStart < serviceEnd+1){
+        data.push({ Services: serviceStart, Value: Math.pow(0.999,serviceStart) * 100.0});
+        serviceStart++;
+      }
+
+      // sort data
+      data.sort(function(b, a) {
+        return a.Value - b.Value;
+      });
+    
+      // X axis
+      var x = d3.scaleBand()
+        .range([ 0, width ])
+        .domain(data.map(function(d) { return d.Services; }))
+        .padding(0.2);
+      svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+          .attr("transform", "translate(-10,0)rotate(-45)")
+          .style("text-anchor", "end");
+    
+      // Add Y axis
+      var y = d3.scaleLinear()
+        .domain([95, 100])
+        .range([ height, 0]);
+      svg.append("g")
+        .call(d3.axisLeft(y));
+    
+      // ----------------
+      // Create a tooltip
+      // https://www.d3-graph-gallery.com/graph/barplot_stacked_hover.html
+      // ----------------
+      var tooltip = d3.select("#my_dataviz")
+        .append("div")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "1px")
+        .style("border-radius", "5px")
+        .style("padding", "10px")
+
+      // Three function that change the tooltip when user hover / move / leave a cell
+      var mouseover = function(d) {
+        var subgroupName = d.Services;
+        console.log(d);
+        var subgroupValue = d.Value;
+        tooltip
+            .html("Number Of Services: " + subgroupName + "<br>" + "Max Theoretical SLA: " + subgroupValue)
+            .style("opacity", 1)
+      }
+      var mousemove = function(d) {
+        tooltip
+          .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
+          .style("top", (d3.mouse(this)[1]) + "px")
+      }
+      var mouseleave = function(d) {
+        tooltip
           .style("opacity", 0)
-          .attr("class", "tooltip")
-          .style("background-color", "white")
-          .style("border", "solid")
-          .style("border-width", "1px")
-          .style("border-radius", "5px")
-          .style("padding", "10px")
+      }  
 
-        // Three function that change the tooltip when user hover / move / leave a cell
-        var mouseover = function(d) {
-          var subgroupName = d.Services;
-          console.log(d);
-          var subgroupValue = d.Value;
-          tooltip
-              .html("Count: " + subgroupName + "<br>" + "Max SLA: " + subgroupValue)
-              .style("opacity", 1)
-        }
-        var mousemove = function(d) {
-          tooltip
-            .style("left", (d3.mouse(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-            .style("top", (d3.mouse(this)[1]) + "px")
-        }
-        var mouseleave = function(d) {
-          tooltip
-            .style("opacity", 0)
-        }  
-
-        // Bars
-        svg.selectAll("mybar")
-          .data(data)
-          .enter()
-          .append("rect")
-            .attr("x", function(d) { return x(d.Services); })
-            .attr("y", function(d) { return y(d.Value); })
-            .attr("width", x.bandwidth())
-            .attr("height", function(d) { return height - y(d.Value); })
-            .attr("fill", "#69b3a2")
-            .on("mouseover", mouseover)
-            .on("mousemove", mousemove)
-            .on("mouseleave", mouseleave)
-      
-      })
+      // Bars
+      svg.selectAll("mybar")
+        .data(data)
+        .enter()
+        .append("rect")
+          .attr("x", function(d) { return x(d.Services); })
+          .attr("y", function(d) { return y(d.Value); })
+          .attr("width", x.bandwidth())
+          .attr("height", function(d) { return height - y(d.Value); })
+          .attr("fill", "#69b3a2")
+          .on("mouseover", mouseover)
+          .on("mousemove", mousemove)
+          .on("mouseleave", mouseleave)
       
       </script>
   </body>

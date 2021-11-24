@@ -339,9 +339,13 @@ d3.select("#close-btn").on("click", function(d) {
 
 //////////////////////////////////////////////////////////
 function iframe_content(name) {
-  html = `<iframe src="/visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
+
+let content_html2 = `
+<iframe src="./visualization/iframe_content.html" title="content" width="100%" height="400px"></iframe>
+`
 
 let content_html = `
   <ul>
@@ -358,9 +362,13 @@ var graph = {
     { source: "Web", target: "CDN", value: "30", note: "Web calls through the CDN" },
     { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
     { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5", note: "Traffic that was blocked by the WAF" },
-    { source: "Load Balancer (with WAF)", target: "Application Server A", value: "55", note: "Load Balancer target rules routed to App A" },
-    { source: "Load Balancer (with WAF)", target: "Application Server B", value: "40", note: "Load Balancer target rules routed to App B" },
+    { source: "Load Balancer (with WAF)", target: "Application Server (Frontend)", value: "55", note: "Load Balancer target rules routed to App Frontend" },
+    { source: "Application Server (Frontend)", target: "Redis Cache (Frontend)", value: "85", note: "Requests leveraging the Cache" },
+    { source: "Application Server (Frontend)", target: "Application Server (Api)", value: "95", note: "Front End Requests Leveraging API Backend" },
+    { source: "Application Server (Api)", target: "Redis Cache (Api)", value: "95", note: "Requests leveraging the Cache" },
+    { source: "Application Server (Api)", target: "Postgres (RDS Service)", value: "100", note: "Requests leveraging the DB" },
   ],
+  // all AWS SLAs https://cloudonaut.io/aws-sla-are-you-able-to-keep-your-availability-promise/
   nodes: [
     {
       name: "iOS",
@@ -374,10 +382,13 @@ var graph = {
       name: "Web",
       url: content_html
     },
+    // 99.9
+    // more nines: https://newbedev.com/aws-cloudfront-availability-sla
     {
       name: "CDN",
       url: iframe_content("cdn")
     },
+    // ALB 99.99
     {
       name: "Load Balancer (with WAF)",
       url: content_html
@@ -386,14 +397,27 @@ var graph = {
       name: "WAF Blocked",
       url: content_html
     },
+    // ECS 99.9
     {
-      name: "Application Server A",
+      name: "Application Server (Frontend)",
       url: content_html
     },
     {
-      name: "Application Server B",
+      name: "Redis Cache (Frontend)",
       url: content_html
-    }
+    },
+    {
+      name: "Application Server (Api)",
+      url: content_html
+    },
+    {
+      name: "Redis Cache (Api)",
+      url: content_html
+    },
+    {
+      name: "Postgres (RDS Service)",
+      url: content_html
+    },
   ]
 };
 
@@ -413,7 +437,7 @@ var formatNumber = d3.format(",.0f"), // zero decimal places
 
 // append the svg canvas to the page
 var svg = d3
-  .select("#web_requests")
+  .select("#chart")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)

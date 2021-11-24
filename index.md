@@ -9,8 +9,12 @@ tagline: Dan Mayer's Dev Blog
 
 <main class="py-6">
   {% for post in site.posts limit: 7 %}
-  <div class="mb-12">
-    {% include summary.html post=post %}
-  </div>
+    {% if post.group == "draft" %}
+      <!--- hidden {{ BASE_PATH }}{{post.url}}--->
+    {% else %}
+      <div class="mb-12">
+        {% include summary.html post=post %}
+      </div>
+    {% endif %}
   {% endfor %}
 </main>%

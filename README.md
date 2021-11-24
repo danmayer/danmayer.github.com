@@ -6,6 +6,7 @@ Dan Mayer's Developer Blog
 * pick using tags or categories or both and import them
 * Coderwall integration (Achievements, projects, etc)
 * different drafts support, using group hidden like I setup for pages
+* fix styling on the search box on about page (tailwind)
 
 ## Build Tailwind
 

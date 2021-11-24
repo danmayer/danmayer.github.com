@@ -1,0 +1,33 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js' type='text/javascript'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js' type='text/javascript'></script>
+<style>
+  .node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+  }
+  
+  .node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+  }
+  
+  .link:hover {
+    stroke-opacity: .5;
+  }
+</style> 
+<div id="div_customContent" style="visibility: hidden; position: fixed; top: 30%; width: 1100px; height: 60%; background-color:white; border: 1px solid; border-radius: 5px; padding: 10px;">
+  <div id="displayContent" style="padding: 10px;">
+  </div>
+  <button id="close-btn" style="position: relative;" class="px-4 py-2 bg-red-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+    close
+  </button>
+</div>
+<p id="web_requests"></p>
+<script type="text/javascript" src="{{ '/visualization/requests.js?cache=10' | relative_url }}"></script>
