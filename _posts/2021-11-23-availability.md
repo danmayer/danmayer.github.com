@@ -83,7 +83,7 @@ In this example I am using Sankey diagrams to attempt to visualize the flow of a
 
 An Example of a Microservice Architecture.
 
-*  Includes: a web front-end, API service, and common supporting services (DB and Redis Cache)</li>
+*  Includes: a web front-end, API service, and common supporting services (DB and Redis Cache)
 
 <div style="margin-left: -400px">
   {% include micro_service_requests.html %}

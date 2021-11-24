@@ -330,24 +330,20 @@ d3.sankey = function() {
 //////// infowindow /////
 
 // create a tooltip
-var tooltip2 = d3.select("#div_customContent");
+var tooltip2 = d3.select("#micro_service-customContent");
 
-d3.select("#close-btn").on("click", function(d) {
-  d3.select("#div_customContent").style("visibility", "hidden");
-  d3.select("#displayContent").html("");
+d3.select("#micro_service-close-btn").on("click", function(d) {
+  d3.select("#micro_service-customContent").style("visibility", "hidden");
+  d3.select("#micro_service-displayContent").html("");
 });
 
 //////////////////////////////////////////////////////////
-function iframe_content(name) {
-  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+function micro_service_iframe_content(name) {
+  html = `<iframe src="/visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
 
-let content_html2 = `
-<iframe src="./visualization/iframe_content.html" title="content" width="100%" height="400px"></iframe>
-`
-
-let content_html = `
+let micro_service_content_html = `
   <ul>
    <li>hi</li>
    <li><a href="#">link</a></li>
@@ -372,51 +368,51 @@ var graph = {
   nodes: [
     {
       name: "iOS",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "android",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "Web",
-      url: content_html
+      url: micro_service_content_html
     },
     // 99.9
     // more nines: https://newbedev.com/aws-cloudfront-availability-sla
     {
       name: "CDN",
-      url: iframe_content("cdn")
+      url: micro_service_iframe_content("cdn")
     },
     // ALB 99.99
     {
       name: "Load Balancer (with WAF)",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "WAF Blocked",
-      url: content_html
+      url: micro_service_content_html
     },
     // ECS 99.9
     {
       name: "Application Server (Frontend)",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "Redis Cache (Frontend)",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "Application Server (Api)",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "Redis Cache (Api)",
-      url: content_html
+      url: micro_service_content_html
     },
     {
       name: "Postgres (RDS Service)",
-      url: content_html
+      url: micro_service_content_html
     },
   ]
 };
@@ -437,7 +433,7 @@ var formatNumber = d3.format(",.0f"), // zero decimal places
 
 // append the svg canvas to the page
 var svg = d3
-  .select("#chart")
+  .select("#micro_service")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -459,8 +455,6 @@ var path = sankey.link();
   graph.nodes.forEach(function(x) {
     nodeMap[x.name] = x;
   });
-  console.log("graph", graph);
-  console.log("nodeMap", nodeMap);
   graph.links = graph.links.map(function(x) {
     return {
       source: nodeMap[x.source],
@@ -508,7 +502,7 @@ var path = sankey.link();
     .attr("transform", d => `translate(${d.x},${d.y})`)
     .on("click", function(d) {
       tooltip2.style("visibility", "visible");
-      d3.select("#displayContent").html(d.url);
+      d3.select("#micro_service-displayContent").html(d.url);
     })
 
   // add the rectangles for the nodes
