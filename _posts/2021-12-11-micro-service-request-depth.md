@@ -10,10 +10,6 @@ group: draft
 
 {% include JB/setup %}
 
-## TODOs
-
-* consider other links
-
 # Micro-Service Request Depth Availability
 
 In systems that use micro-services, often the growth and interaction of the services grow organically over time. While it is enabling teams to move quickly and integrate whatever they need it leads to some known bad patterns in terms of micro-service interactions that have serious impacts on availability. This post explains two of [micro-service integration anti-patterns](https://akfpartners.com/growth-blog/microservices-for-breadth-libraries-for-depth) calling them "The Mesh" (I prefer Distributed Monolith) and "Services in Depth". In both, the issue is a single request into your system can fan out to many individual services both in breadth and depth. Most micro-service systems I have seen have a mix of both fan-outs in-breadth and deep lines of service depths in some cases.
