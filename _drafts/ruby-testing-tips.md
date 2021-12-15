@@ -1,4 +1,5 @@
 * [test only adapters for external services](https://thoughtbot.com/blog/faking-external-services-in-tests-with-adapters)
+* [integrated tests are a scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
 
 # Refactoring
 

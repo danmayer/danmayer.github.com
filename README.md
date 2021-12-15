@@ -10,7 +10,7 @@ Dan Mayer's Developer Blog
 
 ## Build Tailwind
 
-* `npm run prod` # build CSS / JS assets
+	* `npm run prod` # build CSS / JS assets
 * `bundle exec jekyll serve` # local server
 
 ## Integrations
@@ -26,6 +26,8 @@ Dan Mayer's Developer Blog
 
 ## Topic / Post Ideas
 
+* SLA calculator in JS.
+* async comparisons
 * DCI is sort of interesting but seems to go against LOC==bugs and Kingdom of Nouns post which really makes me upset to see DCI with .excute methods seems close to what I like and envision but actually to heavy weight
   * http://vimeo.com/8235574
 * post about JS titles I saw and incorporated along with having JS runner allow users to activate some of the example code.

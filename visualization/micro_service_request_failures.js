@@ -139,7 +139,7 @@ d3.sankey = function() {
       ++x;
     }
 
-    //
+    // disable sinks
     moveSinksRight(x);
     scaleNodeBreadths((size[0] - nodeWidth) / (x - 1));
   }
@@ -330,24 +330,20 @@ d3.sankey = function() {
 //////// infowindow /////
 
 // create a tooltip
-var tooltip2 = d3.select("#div_customContent");
+var tooltip2 = d3.select("#micro_service_fail-customContent");
 
-d3.select("#close-btn").on("click", function(d) {
-  d3.select("#div_customContent").style("visibility", "hidden");
-  d3.select("#displayContent").html("");
+d3.select("#micro_service_fail-close-btn").on("click", function(d) {
+  d3.select("#micro_service_fail-customContent").style("visibility", "hidden");
+  d3.select("#micro_service_fail-displayContent").html("");
 });
 
 //////////////////////////////////////////////////////////
-function iframe_content(name) {
-  html = `<iframe src="./visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+function micro_service_fail_iframe_content(name) {
+  html = `<iframe src="/visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
 
-let content_html2 = `
-<iframe src="./visualization/iframe_content.html" title="content" width="100%" height="400px"></iframe>
-`
-
-let content_html = `
+let micro_service_fail_content_html = `
   <ul>
    <li>hi</li>
    <li><a href="#">link</a></li>
@@ -356,67 +352,68 @@ let content_html = `
 
 var graph = {
   links: [
-    // graph
-    { source: "iOS", target: "CDN", value: "45", note: "iOS API calls through the CDN" },
-    { source: "android", target: "CDN", value: "25", note: "android API calls through the CDN" },
-    { source: "Web", target: "CDN", value: "30", note: "Web calls through the CDN" },
-    { source: "CDN", target: "Load Balancer (with WAF)", value: "100", note: "CDN targeting rules" },
-    { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "5", note: "Traffic that was blocked by the WAF" },
-    { source: "Load Balancer (with WAF)", target: "Application Server (Frontend)", value: "55", note: "Load Balancer target rules routed to App Frontend" },
-    { source: "Application Server (Frontend)", target: "Redis Cache (Frontend)", value: "85", note: "Requests leveraging the Cache" },
-    { source: "Application Server (Frontend)", target: "Application Server (Api)", value: "95", note: "Front End Requests Leveraging API Backend" },
-    { source: "Application Server (Api)", target: "Redis Cache (Api)", value: "95", note: "Requests leveraging the Cache" },
-    { source: "Application Server (Api)", target: "Postgres (RDS Service)", value: "100", note: "Requests leveraging the DB" },
+    // graph TODO: totals on nodes are funny like 200% or 40% vs total at level
+    { source: "iOS", target: "CDN", value: "45.0", note: "iOS API calls through the CDN" },
+    { source: "android", target: "CDN", value: "25.0", note: "android API calls through the CDN" },
+    { source: "Web", target: "CDN", value: "30.0", note: "Web calls through the CDN" },
+    { source: "CDN", target: "Load Balancer (with WAF)", value: "99.9", note: "CDN targeting rules" },
+    { source: "CDN", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Load Balancer (with WAF)", target: "WAF Blocked", value: "1.9", note: "Traffic that was blocked by the WAF" },
+    { source: "Load Balancer (with WAF)", target: "Application Server (Frontend)", value: "98.0", note: "Load Balancer target rules routed to App Frontend" },
+    { source: "Load Balancer (with WAF)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Application Server (Frontend)", target: "Redis Cache (Frontend)", value: "14.9", note: "Requests leveraging the Cache" },
+    { source: "Application Server (Frontend)", target: "Application Server (Api)", value: "82.8", note: "Front End Requests Leveraging API Backend" },
+    { source: "Application Server (Frontend)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Application Server (Api)", target: "Redis Cache (Api)", value: "30.0", note: "Requests leveraging the Cache" },
+    { source: "Application Server (Api)", target: "Postgres (RDS Service)", value: "52.8", note: "Requests leveraging the DB" },
+    { source: "Application Server (Api)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Redis Cache (Frontend)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Redis Cache (Frontend)", target: "Request Success", value: "14.8", note: "Expected Request Success" },
+    { source: "Redis Cache (Api)", target: "Request Success", value: "29.9", note: "Expected Request Success" },
+    { source: "Redis Cache (Api)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Postgres (RDS Service)", target: "Request Failed", value: "0.1", note: "Expected Request Failures" },
+    { source: "Postgres (RDS Service)", target: "Request Success", value: "52.7", note: "Expected Request Success" },
   ],
-  // all AWS SLAs https://cloudonaut.io/aws-sla-are-you-able-to-keep-your-availability-promise/
   nodes: [
     {
       name: "iOS",
-      url: content_html
     },
     {
       name: "android",
-      url: content_html
     },
     {
       name: "Web",
-      url: content_html
     },
-    // 99.9
-    // more nines: https://newbedev.com/aws-cloudfront-availability-sla
     {
       name: "CDN",
-      url: iframe_content("cdn")
+      url: micro_service_fail_iframe_content("cdn")
     },
-    // ALB 99.99
     {
       name: "Load Balancer (with WAF)",
-      url: content_html
     },
-    {
-      name: "WAF Blocked",
-      url: content_html
-    },
-    // ECS 99.9
     {
       name: "Application Server (Frontend)",
-      url: content_html
     },
     {
       name: "Redis Cache (Frontend)",
-      url: content_html
     },
     {
       name: "Application Server (Api)",
-      url: content_html
     },
     {
       name: "Redis Cache (Api)",
-      url: content_html
     },
     {
       name: "Postgres (RDS Service)",
-      url: content_html
+    },
+    {
+      name: "WAF Blocked",
+    },
+    {
+      name: "Request Failed",
+    },
+    {
+      name: "Request Success",
     },
   ]
 };
@@ -429,7 +426,7 @@ var margin = { top: 10, right: 10, bottom: 10, left: 10 },
   width = 1200 - margin.left - margin.right,
   height = 740 - margin.top - margin.bottom;
 
-var formatNumber = d3.format(",.0f"), // zero decimal places
+var formatNumber = d3.format(",.2f"), // zero decimal places
   format = function(d) {
     return formatNumber(d) + " " + units;
   },
@@ -437,7 +434,7 @@ var formatNumber = d3.format(",.0f"), // zero decimal places
 
 // append the svg canvas to the page
 var svg = d3
-  .select("#chart")
+  .select("#micro_service_fail")
   .append("svg")
   .attr("width", width + margin.left + margin.right)
   .attr("height", height + margin.top + margin.bottom)
@@ -459,8 +456,6 @@ var path = sankey.link();
   graph.nodes.forEach(function(x) {
     nodeMap[x.name] = x;
   });
-  console.log("graph", graph);
-  console.log("nodeMap", nodeMap);
   graph.links = graph.links.map(function(x) {
     return {
       source: nodeMap[x.source],
@@ -498,6 +493,7 @@ var path = sankey.link();
 
   // add in the nodes
   // TODO: add support for click (url) or iframe (content)
+  // also support simple text or small content in iframe without a full html page
   var node = svg
     .append("g")
     .selectAll(".node")
@@ -507,8 +503,10 @@ var path = sankey.link();
     .attr("class", "node")
     .attr("transform", d => `translate(${d.x},${d.y})`)
     .on("click", function(d) {
-      tooltip2.style("visibility", "visible");
-      d3.select("#displayContent").html(d.url);
+      if(d.url) {
+        tooltip2.style("visibility", "visible");
+        d3.select("#micro_service_fail-displayContent").html(d.url);
+      }
     })
 
   // add the rectangles for the nodes
@@ -539,18 +537,4 @@ var path = sankey.link();
     .filter(d => d.x < width / 2)
     .attr("x", 6 + sankey.nodeWidth())
     .attr("text-anchor", "start");
-
-  // the function for moving the nodes
-  function dragmove(d) {
-    d3.select(this).attr(
-      "transform",
-      "translate(" +
-        (d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))) +
-        "," +
-        (d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))) +
-        ")"
-    );
-    sankey.relayout();
-    link.attr("d", path);
-  }
 })(graph);

@@ -3,39 +3,35 @@
   <head>
     <title>CDN</title>
     <style>
-      .node rect {
-        cursor: move;
-        fill-opacity: .9;
-        shape-rendering: crispEdges;
-      }
-      
-      .node text {
-        pointer-events: none;
-        text-shadow: 0 1px 0 #fff;
-      }
-      
-      .link {
-        fill: none;
-        stroke: #000;
-        stroke-opacity: .2;
-      }
-      
-      .link:hover {
-        stroke-opacity: .5;
-      }
     </style>
   </head>
 
   <body>
-    <h1>CDN</h1>
+    <h1>CDN (content delivery network)</h1>
     <p>
-      Links about CDNs
-
-      * <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html">Optimizing high availability with CloudFront origin failover</a>]
-      * <a href="https://aws.amazon.com/cloudfront/sla/">Cloudfront SLA</a>
-      * <a href="https://www.channelfutures.com/cloud-2/amazon-cloudfront-dns-service-suffers-pre-thanksgiving-outage">Cloudfront 2 hour outage</a>
-      * <a href="https://www.theguardian.com/technology/2021/jun/08/edge-cloud-error-tuesday-internet-outage-fastly-speed">When a CDN goes down</a>
-         * The best defense for this is DNS fallback routing around the CDN... If you configure a failover routing policy. For example on AWS, Route53 would check the health of your Cloudfront distribution and if it's not healthy then the traffic would failover directly to your load balancer.
+      A content delivery network, or content distribution network (CDN), is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and performance by distributing the service spatially relative to end users. CDNs came into existence in the late 1990s as a means for alleviating the performance bottlenecks of the Internet[1][2] as the Internet was starting to become a mission-critical medium for people and enterprises. Since then, CDNs have grown to serve a large portion of the Internet content today...
+      <br/>
+      Links about CDNs:
     </p>
+
+    <ul>
+      <li>
+        <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/high_availability_origin_failover.html">
+          Optimizing high availability with CloudFront origin failover
+        </a>
+      </li>
+      <li>
+        <a href="https://aws.amazon.com/cloudfront/sla/">Cloudfront SLA</a>
+      </li>
+      <li>
+        <a href="https://www.channelfutures.com/cloud-2/amazon-cloudfront-dns-service-suffers-pre-thanksgiving-outage">Cloudfront 2 hour outage</a>
+      </li>
+      <li>
+        <a href="https://www.theguardian.com/technology/2021/jun/08/edge-cloud-error-tuesday-internet-outage-fastly-speed">When a CDN goes down</a>
+      </li>
+      <ul>
+        <li>The best defense for this is DNS fallback routing around the CDN... If you configure a failover routing policy. For example on AWS, Route53 would check the health of your Cloudfront distribution and if it's not healthy then the traffic would failover directly to your load balancer.</li>
+      </ul>
+    </ul>
   </body>
 </html>

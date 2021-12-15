@@ -1,0 +1,34 @@
+<style>
+</style>
+
+<div id="micro_service_calculator" class="w-full max-w-xs">
+  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="Service Count">
+        Service Count
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="service_count" type="text" placeholder="10">
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="Service Count">
+        Service Aggregate Availability
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="service_avail" type="text" placeholder="99.9">
+    </div>
+    <div class="flex items-center justify-between">
+      <button id="service_calculator" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Caclulate
+      </button>
+    </div>
+    <div class="mb-4">
+      <label class="block text-gray-700 text-sm font-bold mb-2" for="Avail Result">
+        Combined Multi-Service Aggregate Availability
+      </label>
+      <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="avail_result" type="text" placeholder="N/A">
+    </div>
+  </form>
+  <p class="text-center text-gray-500 text-xs">
+    Micro-Service Call Depth Availibility Calculator
+  </p>
+</div>
+<script type="text/javascript" src="{{ '/visualization/micro_service_request_calculator.js?cache=2' | relative_url }}"></script>

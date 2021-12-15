@@ -1,24 +1,42 @@
 ---
 layout: posttail
 authors: ["Dan Mayer"]
-title: "Availability"
-image: /assets/img/football-gameday.jpg
+title: "Availability, Outages, Reliability, and SLAs"
+image: /assets/img/request_success.png
 category: SRE
-tags: [SRE, Management, Tech, Resilience]
+tags: [SRE, Tech, Resilience]
 group: draft
 ---
 
 {% include JB/setup %}
 
-{% unless page.image %}
-![performance](/assets/img/football-gameday.jpg)
-{% endunless %}
+## TODO: 
 
-> photo credit [Neramitevent@pixabay](https://pixabay.com/photos/football-colored-sports-gear-1166205/)
+* Grammarly
 
-# Availability
+# Availability, Outages, Reliability, and SLAs
 
-Chasing five 9s... Doesn't work and isn't worth it... Google doesn't do it, Amazon Doesn't do it, and if you build off their clouds you really aren't either.
+As companies mature, eventually downtime moves from speculative loss of revenue or customer growth, to directly impacting revenue and decreasing active customer trust. The tradeoffs of move fast and find market fit changes when a business shifts to driving revenue from a working business plan. This shifts the dynamics and companies working with processes and models that worked during early startup growth often struggle with the shift, understanding where new products and features can still learn and change fast, while more established critical systems require different approaches. In this post, I want to take a look at some of the different and related concerns around building reliable services.
+
+# Outages and Uptime
+
+When talking about reliability folks can mean different things... Measuring uptime in terms of total site availability. When talking about outages and uptime, folks generally mean the entire experience is available and aren't concenred with invididual request level success. If the site is generally a bit slow and functions within normal bonds it is considered to be available and not suffering from an outage, even if the p99 is not looking good.
+
+# Planned Vs Unplanned Downtime
+
+In all the discussion below we are focused on unplanned downtime and the risk assement to a business and service. Planned downtime should be part of the plan and help with risk mitagation. It is built in and schedulable for nearly all cloud services, because one way to mitagate risk is controlling for planned downtime during the lowest impact to users and the business. Further discussion of planned downtime is out of scope of this post.
+
+# Why not just build for High Availability and Five Nines from the Start?
+
+A quick note since some folks try to push for massive scale or availability far before it is needed. I recommend not not [Five nines: chasing the dream?](https://www.continuitycentral.com/feature0267.htm), from the start. It doesn't really work and it isn't worth it, and most companies have learned that it isn't worth the opportunity cost.
+
+* [Google doesn't do it](https://sre.google/sre-book/embracing-risk/)
+* [Amazon Doesn't do it](https://aws.amazon.com/legal/service-level-agreements/?aws-sla-cards.sort-by=item.additionalFields.serviceNameLower&aws-sla-cards.sort-order=asc&awsf.tech-category-filter=*all)
+* If you build off cloud services, and if you build off their clouds you likely really aren't either (we will cover this more later)
+
+I have worked at a number of companies at various sizes and stages of growth, and seen companies grow to global scale while still never reaching high availability at a multi-region level. This isn't to say you may not want to design for that level of resilience depending on your business, but you might be surpised at the number of companies that have gone public before needed to tackle that problem.
+
+> users typically don’t notice the difference between high reliability and extreme reliability in a service, because the user experience is dominated by less reliable components like the cellular network or the device they are working with. Put simply, a user on a 99% reliable smartphone cannot tell the difference between 99.99% and 99.999% service reliability! --[Google SRE Book](https://sre.google/sre-book/embracing-risk/)
 
 # Difference between Outages and Normal Operations
 
@@ -28,10 +46,12 @@ One thing to note is most of the time core services don't have total outages any
 
 Much of this is outside your control and you are dependent on your provides, but there are some patterns with providers or across multiple providers to mitgate incrustructure issues. The ability to change these more often lies with platform and infrastructure teams, but often comes with high cost, increased complexity, and little value outside of the risk mitigation. Having high availability around redundant CDN providers with DNS failovers as an example is an expensive solution to a problem that seems to occur every few years for CDN providers.
 
-* AWS cloudfront
-* AWS region
+* AWS Cloudfront
+* AWS Region
 * AWS S3
 * Fastly outage
+
+This category, is where you might want to be thinking more in terms of __Time-based availability__ opposed to __Aggregate availability__ These are often rare occurances where massive systems fail and the only way to prepare for them is building multiple redundant systems ahead of time. 
 
 ### Total Application Services Outages
 
@@ -39,9 +59,12 @@ These are system level issues that cause outages that are under your application
 
 * configuration change mistake
 * application code logic mistake
+* data store failure (DB migration mistake)
 * system overload
 * bad host issues
 * thundering herd
+
+This category, is where you might want to be thinking more in terms of __Time-based availability__, as these types of outages aren't just expected built in failure rates that all services should be built to handle as part of normal opperations, these are trigged by faulty changes, unexpected load, out of expectation infrastructure issues. 
 
 ### Total 3rd Party Integration Outages
 
@@ -50,7 +73,7 @@ You might have some 3rd parties that are in portions of your critical path... Si
 * braintree
 * paypay
 * stripe
-* FB auth
+* FB Auth
 * Google Auth
 * Apple ID
 * authzero
@@ -59,10 +82,6 @@ You might have some 3rd parties that are in portions of your critical path... Si
 ### Daily Service Quality
 
 This is the impact of day to day expected success rates, latency, and failures that should be expected during normal operations. The effect of these issues is somehting your application teams have the ability to impact and control the outcomes of. Note: that all your third parties also have spikes in latency, error rates, and can for partial outages be mitigated by eng and platform teams.
-
-
-
-# Margeen left doesn't work for mobile look at tailwind solution?
 
 ## Micro Service SLAs
 
@@ -75,7 +94,7 @@ In this example I am using Sankey diagrams to attempt to visualize the flow of a
 
 * A single request (like a request for an html page or single API request)
 
-<div style="margin-left: -400px">
+<div>
   {% include web_requests.html %}
 </div>
 
@@ -85,8 +104,8 @@ An Example of a Microservice Architecture.
 
 *  Includes: a web front-end, API service, and common supporting services (DB and Redis Cache)
 
-<div style="margin-left: -400px">
-  {% include micro_service_requests.html %}
+<div>
+  {% include micro_service_request_failures.html %}
 </div>
 
 ## Microservice SLAs

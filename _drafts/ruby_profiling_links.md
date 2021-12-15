@@ -15,6 +15,7 @@ Ruby Benchmark: https://medium.com/@k0kubun/benchmark-driver-designed-for-ruby-3
 Rails:
 
 https://github.com/schneems/derailed_benchmarks
+https://github.com/zombocom/derailed_benchmarks
 
 Method profiling:
 https://samsaffron.com/archive/2017/10/18/fastest-way-to-profile-a-method-in-ruby
