@@ -87,7 +87,7 @@ You can see as you stack AWS services, regardless of your application stability,
 
 When you realize as the system scales and grows and the number of total microservice dependencies a typical request into your system may have, it is worth thinking about and considering some mitigation strategies. Opposed to pushing towards [Five Nines: Chasing The Dream?](https://www.continuitycentral.com/feature0267.htm), embrace failure and resilience, find an acceptable and achievable level of availability for your service. Then invest in mitigation techniques and strategies to deliver a reliable client experience on unreliable internet. A few examples of mitigations are listed below.
 
-* Client Side Retries: A good reason to have client-side retries and avoid implementing retries at all levels of the infrastructure (some other special cases may make sense to avoid full round trips). See Google's SRE book, sections [Client-Side Throttling](https://sre.google/sre-book/handling-overload/) and[Deciding to Retry](https://sre.google/sre-book/handling-overload/) from the Handling Overload chapter.
+* Client Side Retries: A good reason to have client-side retries and avoid implementing retries at all levels of the infrastructure (some other special cases may make sense to avoid full round trips). See Google's SRE book, sections [Client-Side Throttling](https://sre.google/sre-book/handling-overload/) and [Deciding to Retry](https://sre.google/sre-book/handling-overload/) from the Handling Overload chapter.
 
 * Be Wary of Circular Graphs: Detect circular graphs, even if this can technically be supported in your infrastructure, it may be best to avoid as a way to force folks to think through more robust and scalable solutions.
 
