@@ -3,6 +3,7 @@
 A good list of practices and processes to help manage software teams. Particularly skewed towards distributed teams.
 
 * [Distributed Team Tips](https://www.mayerdan.com/tech%20management/2017/04/26/distributed-team-tips)
+* [How Hashicorp is Async and Document Driven](https://works.hashicorp.com/)
 
 ### Management
 

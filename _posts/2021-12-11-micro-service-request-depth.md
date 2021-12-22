@@ -41,7 +41,7 @@ This is likely a lot lower than teams expected. Also, often depending on your in
 
 # Visualizing The Request Failure Rate
 
-A nice way to think about the combined success rate is by thinking of each network hop as having a small opportunity for failure. These failure threads peel off as requests navigate the micro-service call stack. As the complexity of the network communications increases and the call depth deepens, the likelihood of failure increases as well. This would include things like your load balancer, DBs, App servers, and application caches.
+A nice way to think about the combined success rate is by thinking of each network hop as having a small opportunity for failure. These failure threads peel off as requests navigate the micro-service call stack. As the complexity of the network communications increases and the call depth deepens, the likelihood of failure increases as well. This would include things like your load balancer, DBs, App servers, and application caches.
 
 <div style="margin-left: -300px">
 {% include micro_service_request_failures.html %}
@@ -92,7 +92,7 @@ When you realize as the system scales and grows and the number of total microser
 * Be Wary of Circular Graphs: Detect circular graphs, even if this can technically be supported in your infrastructure, it may be best to avoid as a way to force folks to think through more robust and scalable solutions.
 
 * Avoid Duplicate Service Calls: This happens when you might have a very common piece of data that a service calls, before you know it all your micro-services call this in high demand service. You might have an initial request fan out to 3 micro-services that all call this common data service under the hood. This often happens for something like user data.
-   * Consider common data and look at data forwarding, which can early in the request processing add metadata that is sent to all upstream requests. Avoiding all upstream requests from making individual network requests for the data.
+  * Consider common data and look at data forwarding, which can early in the request processing add metadata that is sent to all upstream requests. Avoiding all upstream requests from making individual network requests for the data.
 
 * Agree on Constraints: Consider alerting on requests that exceed an agreed maximum service call depth or circular call graphs.
 
