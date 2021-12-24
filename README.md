@@ -7,6 +7,7 @@ Dan Mayer's Developer Blog
 * Coderwall integration (Achievements, projects, etc)
 * different drafts support, using group hidden like I setup for pages
 * fix styling on the search box on about page (tailwind)
+* fix that recent shows my drafts
 
 ## Build Tailwind
 
