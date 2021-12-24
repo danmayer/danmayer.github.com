@@ -10,7 +10,7 @@ Dan Mayer's Developer Blog
 
 ## Build Tailwind
 
-	* `npm run prod` # build CSS / JS assets
+* `npm run prod` # build CSS / JS assets
 * `bundle exec jekyll serve` # local server
 
 ## Integrations
