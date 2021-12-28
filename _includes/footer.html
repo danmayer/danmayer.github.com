@@ -6,8 +6,12 @@
           <li class="nav-header">
             <h2>Recent Posts</h2>
           </li>
-          {% for post in site.posts limit: 5 %}
-            <li><span>{{ post.date | date_to_string }}</span> &raquo; <a class="text-green-500" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+          {% for post in site.posts limit: 9 %}
+            {% if post.group == "draft" %}
+              <!--- hidden {{ BASE_PATH }}{{post.url}}--->
+            {% else %}
+              <li><span>{{ post.date | date_to_string }}</span> &raquo; <a class="text-green-500" href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>

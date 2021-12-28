@@ -39,6 +39,7 @@ There are many good articles as well, but obviously these are more of one offs.
 * [Becoming a Sr Technical Leader](https://blog.coinbase.com/on-becoming-a-senior-technical-leader-14106f1383b8)
 * [An incomplete list of skills senior engineers need, beyond coding](https://skamille.medium.com/an-incomplete-list-of-skills-senior-engineers-need-beyond-coding-8ed4a521b29f)
 * [Defining a Distinguished Engineer](https://blog.jessfraz.com/post/defining-a-distinguished-engineer/)
+* [A Thread on Sr. Software Skills](https://twitter.com/norootcause/status/1475518692041510915?t=5Ee9lvL9tC269L8LyIuigw&s=19)
 
 # Keeping Up with Tech in General
 
