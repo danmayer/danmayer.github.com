@@ -1,7 +1,7 @@
 ---
 layout: posttail
 authors: ["Dan Mayer"]
-title: "Pricipal / Staff Engineer Resources"
+title: "Principal / Staff Engineer Resources"
 image: /assets/img/sr_dev_fam.jpg
 category: Career
 tags: [Tech, Career, Learnings]
