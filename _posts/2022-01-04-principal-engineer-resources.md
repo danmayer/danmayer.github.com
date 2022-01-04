@@ -5,7 +5,6 @@ title: "Pricipal / Staff Engineer Resources"
 image: /assets/img/sr_dev_fam.jpg
 category: Career
 tags: [Tech, Career, Learnings]
-group: draft
 ---
 
 {% include JB/setup %}
