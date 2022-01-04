@@ -2,6 +2,12 @@
 
 various links on diagrams
 
+# Inspirtion
+
+* https://exploring-data.com/
+* https://visual.ly/community/Interactive/computers/spiral-platforms-security-exploits
+* https://visual.ly/tag/d3js
+
 # zoomables open sea dragon Diagram
 
 * https://openseadragon.github.io/examples/tilesource-image/
@@ -15,3 +21,7 @@ various links on diagrams
 * d3 zoom https://observablehq.com/@d3/delaunay-find-zoom?collection=@d3/d3-zoom
 * https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js
 * https://manning-content.s3.amazonaws.com/download/0/00ee823-128d-43de-b8bb-7e2d4313eecd/D3js_ch05.pdf
+
+# Diagramming as Code
+
+https://mermaid-js.github.io/mermaid/#/
