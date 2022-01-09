@@ -18,6 +18,16 @@ people often talk about how important it is for folks to feel like their work is
 
 The ceo doesn't spent the majority of there time coaching and mentoring and if they do, be worried... having Sr devs that are good mentors is key and critical to growing a dev team, but if all you have is mentors you are likely missing experts, innovators, and those still keeping up and growing with the constantly expanding tech. 
 
+## Look Out For Your Growth
+
+No matter how great your company is, or your manager, or your peer group... A lot of systems are set up and built in to slow career and salary growth. Often times even folks with the best intentions are helping keep the status quo... I am not saying you need to always be job-hopping, but you do need to look out and pay attention to your career and know what you are worth and how folks are growing around you.
+
+https://twitter.com/danmayer/status/1479606539740606467
+
+https://twitter.com/danmayer/status/1395564252308541440
+
+I honestly don't know why companies set things up this way as it is bad for both sides... Companies seem to not realize or undervalue institutional knowledge... Setting up roadblocks to growing internally at a company... while developers who get to focus on making the next career or salary band, miss out on all the learnings that come from working on and maintaining a system over a long period of time. A kind of growth that will help inform long-term thinking and push past some of the self-imposed paper-cuts that folks and teams often make when every problem disappears by moving on soon after. I will be very clear though, it is for companies to provide the right incentives, I am just saying devs that move around a lot also miss out in some ways they might not realize.
+
 ## Habits
 
 * [20 Micro-Habits Of High-Impact Software Engineers](https://davidxiang.com/2021/07/18/20-micro-habits-of-high-impact-software-engineers/)
