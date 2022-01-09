@@ -27,7 +27,6 @@ Dan Mayer's Developer Blog
 
 ## Topic / Post Ideas
 
-* post on before after on design / moving to tailwind
 * async comparisons
 * DCI is sort of interesting but seems to go against LOC==bugs and Kingdom of Nouns post which really makes me upset to see DCI with .excute methods seems close to what I like and envision but actually to heavy weight
   * http://vimeo.com/8235574

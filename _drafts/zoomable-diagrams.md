@@ -25,3 +25,7 @@ various links on diagrams
 # Diagramming as Code
 
 https://mermaid-js.github.io/mermaid/#/
+
+# D3 relationships
+
+https://www.d3indepth.com/hierarchies/
