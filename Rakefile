@@ -42,7 +42,6 @@ CONFIG = {
   'theme_package_version' => "0.1.0"
 }
 
-# 
 namespace :port do
   desc "port from older template to jekyll tailwind templates "
   task :posts do

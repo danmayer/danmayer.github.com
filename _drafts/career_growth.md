@@ -28,6 +28,11 @@ https://twitter.com/danmayer/status/1395564252308541440
 
 I honestly don't know why companies set things up this way as it is bad for both sides... Companies seem to not realize or undervalue institutional knowledge... Setting up roadblocks to growing internally at a company... while developers who get to focus on making the next career or salary band, miss out on all the learnings that come from working on and maintaining a system over a long period of time. A kind of growth that will help inform long-term thinking and push past some of the self-imposed paper-cuts that folks and teams often make when every problem disappears by moving on soon after. I will be very clear though, it is for companies to provide the right incentives, I am just saying devs that move around a lot also miss out in some ways they might not realize.
 
+## Know How Your Org Works
+
+This is a great post by [@copyconstruct](https://twitter.com/copyconstruct) called [Know How Your Org Works](https://copyconstruct.medium.com/know-how-your-org-works-or-how-to-become-a-more-effective-engineer-1a3287d1f58d). It is an excellent post that distills great advice on how to thrive even when you disagree with parts of your org, or consider parts to be a mess. Knowing how to get things done and not getting lost in the weeds or always trying to fix everything first... I couldn't have writen something as good on this topic if I tried... Know how things really work, especially if you are going to spend time trying to change improve them.
+
+
 ## Habits
 
 * [20 Micro-Habits Of High-Impact Software Engineers](https://davidxiang.com/2021/07/18/20-micro-habits-of-high-impact-software-engineers/)
