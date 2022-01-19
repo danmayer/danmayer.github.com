@@ -4,6 +4,8 @@ Various sources of inspiration
 
 # Blog Inspiration
 
+* https://www.codeotaku.com/index
+
 * https://simonwillison.net/
    * bookmark integration
 	 * weekly updates

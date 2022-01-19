@@ -5,7 +5,6 @@ title: "Micro-Service Request Depth Availability"
 image: /assets/img/request_success.png
 category: SRE
 tags: [SRE, Tech, Resilience]
-group: draft
 ---
 
 {% include JB/setup %}
