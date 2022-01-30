@@ -339,7 +339,7 @@ d3.select("#close-btn").on("click", function(d) {
 
 //////////////////////////////////////////////////////////
 function iframe_content(name) {
-  html = `<iframe src="/visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  html = `<iframe src="/${name}" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
 
@@ -376,7 +376,7 @@ var graph = {
     },
     {
       name: "CDN",
-      url: iframe_content("cdn")
+      url: iframe_content("cdns")
     },
     {
       name: "Load Balancer (with WAF)",

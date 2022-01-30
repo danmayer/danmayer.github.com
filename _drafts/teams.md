@@ -13,3 +13,10 @@ I feel like somewhere in this there has to be a way where supportive leadership 
 
 https://twitter.com/jmwind/status/1477399261700526080
 
+### Conways Law and Microservices
+
+https://ardalis.com/conways-law-ddd-and-microservices/
+
+> It would be unusual, and probably inefficient, to have a microservice that any number of different teams all share responsibility for maintaining and deploying.
+
+> How you decompose and attach a large problem comes down to how you organize multiple teams of people, and if these teams aren't aligned with the software modules you're building and shipping, you're going to have problems.

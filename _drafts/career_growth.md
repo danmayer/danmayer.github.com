@@ -8,6 +8,14 @@ See my post on Markdown standups
 
 Review and reflect what you are learning and if you are making progress on the things you want. If you feel like you are headed a direction purpusefully or un-intentionally... Ignoring where your current work takes you means you are letting others drive your career or falling into paths unintentionally.
 
+## early growth
+
+network, learn what options are out there, open source (build and release something of your own, get a PR accepted to something you love/respect), speak, blog, build things and throw them away after sharing and having someone tell you how terrible it was and pointing out a better solution...
+
+speak https://twitter.com/mooreds/status/1485463283561689090
+
+see if annyce has anything about how blogging and speaking accelerated her  career...
+
 ## Mentoring
 
 > If you start dedicating even a couple hours a week to developing the team around you, it’s quite likely that will become your legacy long after your tech specs and pull requests are forgotten.

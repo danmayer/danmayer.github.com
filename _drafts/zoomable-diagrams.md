@@ -2,11 +2,16 @@
 
 various links on diagrams
 
+## github org charts and visualizations of github teams/repos
+
+* note github has something internal called services that allows a mapping to repo -> service -> team (staffeng)
+
 # Inspirtion
 
 * https://exploring-data.com/
 * https://visual.ly/community/Interactive/computers/spiral-platforms-security-exploits
 * https://visual.ly/tag/d3js
+* https://next.github.com/projects/repo-visualization
 
 # zoomables open sea dragon Diagram
 
@@ -25,6 +30,9 @@ various links on diagrams
 # Diagramming as Code
 
 https://mermaid-js.github.io/mermaid/#/
+mermaid live
+
+[![](https://mermaid.ink/img/pako:eNqFkE1vgzAMhv-K5XM_DrtxmESgt7WqxE4j1RQlXkElBOVDCAH_fUHQqbf55Fd-_PqVR5RGESZ4t6Kr4DPnLcT6Kpk1vSN72zTs9--Qln3fHwYT7Lc0B2k0ZPnltowm0dXHyutmAjamH2zm7brItmnXDGBN8HV7BxsachNk4ykrIL1eIZ3_hfM_mM3wNF9TXUrhHHn3Guz4mqyDFZjgPBZvkC4CWJAP8vEw7lCT1aJW8QvjYszRV6SJYxJbJeyDI2_nyIVOCU8nVXtjMfkRjaMdiuBNMbQSE28DPaG8FvGjeqPmXxz7dgg)](https://mermaid.live/edit/#pako:eNqFkE1vgzAMhv-K5XM_DrtxmESgt7WqxE4j1RQlXkElBOVDCAH_fUHQqbf55Fd-_PqVR5RGESZ4t6Kr4DPnLcT6Kpk1vSN72zTs9--Qln3fHwYT7Lc0B2k0ZPnltowm0dXHyutmAjamH2zm7brItmnXDGBN8HV7BxsachNk4ykrIL1eIZ3_hfM_mM3wNF9TXUrhHHn3Guz4mqyDFZjgPBZvkC4CWJAP8vEw7lCT1aJW8QvjYszRV6SJYxJbJeyDI2_nyIVOCU8nVXtjMfkRjaMdiuBNMbQSE28DPaG8FvGjeqPmXxz7dgg)
 
 # D3 relationships
 

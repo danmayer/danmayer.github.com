@@ -1,0 +1,28 @@
+---
+layout: empty
+title: CDNs
+header: CDNs
+group: hidden
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>CDNs</title>
+
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+    <link href="/{{ site.data.manifest['docs.css'] }}" rel="stylesheet">
+    <style>
+    </style>
+  </head>
+  <body class="page {{page.bodyClass}}">
+    <div class="prose">
+      {% capture my-include %}{% include cdn.md %}{% endcapture %}
+      {{ my-include | markdownify }}
+    </div>
+  </body>
+</html>

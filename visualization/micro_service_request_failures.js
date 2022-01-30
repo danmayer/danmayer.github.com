@@ -339,7 +339,7 @@ d3.select("#micro_service_fail-close-btn").on("click", function(d) {
 
 //////////////////////////////////////////////////////////
 function micro_service_fail_iframe_content(name) {
-  html = `<iframe src="/visualization/${name}.html" title="content" width="100%" height="400px"></iframe>`;
+  html = `<iframe src="/${name}" title="content" width="100%" height="400px"></iframe>`;
   return html;
 };
 
@@ -386,7 +386,7 @@ var graph = {
     },
     {
       name: "CDN",
-      url: micro_service_fail_iframe_content("cdn")
+      url: micro_service_fail_iframe_content("cdns")
     },
     {
       name: "Load Balancer (with WAF)",
