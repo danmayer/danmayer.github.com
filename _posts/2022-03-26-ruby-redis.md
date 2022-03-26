@@ -2,7 +2,7 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Ruby & Redis"
-image: /assets/img/redis-logo.png
+image: /assets/img/redis-logo.png?cache=1
 category: Ruby
 tags: [Ruby, Redis, Notes, Tips]
 ---
