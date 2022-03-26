@@ -12,6 +12,7 @@ various links on diagrams
 * https://visual.ly/community/Interactive/computers/spiral-platforms-security-exploits
 * https://visual.ly/tag/d3js
 * https://next.github.com/projects/repo-visualization
+* https://www.d3indepth.com/hierarchies/
 
 # zoomables open sea dragon Diagram
 
