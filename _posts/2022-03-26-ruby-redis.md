@@ -100,7 +100,25 @@ If you have an app that is making many sequential Redis calls, there is a good c
 * [Flipper usage of Mget](https://github.com/jnunemaker/flipper/blob/master/lib/flipper/adapters/redis_cache.rb#L147)
 * [Leverage read_multi & write_multi though the Rails Cache Redis Adapter](https://api.rubyonrails.org/classes/ActiveSupport/Cache/RedisCacheStore.html#method-i-read_multi)
 
+### Pipeline Syntax Change
+
+As long as we are updating some of our calls, worth being aware of another depracation. "Pipelining commands on a Redis instance is deprecated and will be removed in Redis 5.0.0."
+
+```ruby
+redis.pipelined do
+  redis.get("key")
+end
+
+# should be replaced by
+
+redis.pipelined do |pipeline|
+  pipeline.get("key")
+end
+```
+
 # Exciting Things Are Happening with Ruby Redis
+
+A good deal of things will be changing in Redis-rb 5.0, we mentioned `Redis.current` and the `redis.pipelined` changes. These changes and others help support a move to a simpler and faster redis-client under the hood. 
 
 A move to simplify the [redis-rb codebase and drop a mutex looks like it will roll out redis-client](https://github.com/redis/redis-rb/issues/1070#issuecomment-1074094773), which can significantly speed up some use cases. It looks like sidekiq for example with move to this in the near future.
 
