@@ -94,7 +94,7 @@ config.cache_store = :redis_cache_store, {
 
 # Investigate Combining Redis Calls
 
-If you have an app that is making many sequential Redis calls, there is a good chance you could make a significant improvement by leveraging [Redis pipelining](https://redis.io/docs/manual/pipelining/) or Mget. I think that that the Flipper codebase is a great way to learn and see various Ruby techniques. It is high quality and has a wide adoption so you can trust it has been put through the paces.
+If you have an app that is making many sequential Redis calls, there is a good chance you could make a significant improvement by leveraging [Redis pipelining](https://redis.io/docs/manual/pipelining/) or Mget. I think that that the Flipper codebase is a great way to learn and see various Ruby techniques. It is high quality and has a wide adoption so you can trust it has been put through the paces. If you want to dig into combinging calls, [read about the differences between pipeline and mget in terms of code and latency.](https://medium.com/@jychen7/redis-get-pipeline-vs-mget-6e41aeaecef)
 
 * [Flipper PR adding in pipelining](https://github.com/jnunemaker/flipper/commit/033bb20e288436d357f81002de7b2aa1d5bd7c18)
 * [Flipper usage of Mget](https://github.com/jnunemaker/flipper/blob/master/lib/flipper/adapters/redis_cache.rb#L147)
