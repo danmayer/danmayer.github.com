@@ -124,3 +124,6 @@ A move to simplify the [redis-rb codebase and drop a mutex looks like it will ro
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">New prototype Redis driver cuts Sidekiq job processing time from 61 sec to 39 sec. Incredible improvement! <a href="https://t.co/ZzIw7koMiq">https://t.co/ZzIw7koMiq</a></p>&mdash; Mike Perham 🇺🇦 (@getajobmike) <a href="https://twitter.com/getajobmike/status/1506709040952356865?ref_src=twsrc%5Etfw">March 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+__Update:__ Looks like that perf win was a bit to good to be true.
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sadly I have to walk this back. Looks like there was a bug in the new driver and the performance is not significantly different. <a href="https://t.co/2o7cgAUX0K">https://t.co/2o7cgAUX0K</a></p>&mdash; Mike Perham 🇺🇦 (@getajobmike) <a href="https://twitter.com/getajobmike/status/1508487013950918658?ref_src=twsrc%5Etfw">March 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
