@@ -55,7 +55,7 @@ Doing the math on various Sidekiq operations: how much will they impact Redis?
 Some additional reading if you want to dig in further on working with Sidekiq and Redis
 
 * [Sidekiq Best Practices](https://github.com/mperham/sidekiq/wiki/Best-Practices) has some useful tips and calls out gotchas
-* [https://nateberk.gumroad.com/l/sidekiqinpractice](Sidekiq in Practice) book, fastest way to get it right the first time if you are just learning Sidekiq
+* [Sidekiq in Practice](https://nateberk.gumroad.com/l/sidekiqinpractice) book, fastest way to get it right the first time if you are just learning Sidekiq
 * [Blog Post on Sidekiq testing](https://sloboda-studio.com/blog/testing-sidekiq-jobs/)
 * [Sidekiq Testing Wiki Entry](https://github.com/mperham/sidekiq/wiki/Testing)
 * [Redis Commands Documentation](https://redis.io/commands/)
