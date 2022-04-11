@@ -116,6 +116,11 @@ redis.pipelined do |pipeline|
 end
 ```
 
+# Redis Usage Beyond The Basics
+
+If you are looking to do a bit more than the default `Rails.cache` capabilities with Redis, you will find it supports a lot of powerful feature, and can along with pipelining be extremely performant. If you are looking to push for as performant as you can, setup [hiredis-rb](https://github.com/redis/hiredis-rb) as your connection for redis-rb. It uses C extensions to be as performant as possible. This post goes into some details where [direct caching wiht Redis](https://www.keypup.io/blog/use-redis-sets-to-track-and-expire-cache-keys-in-rails) can provide more powerful capabilities than using `Rails.cache`
+
+
 # Exciting Things Are Happening with Ruby Redis
 
 A good deal of things will be changing in Redis-rb 5.0, we mentioned `Redis.current` and the `redis.pipelined` changes. These changes and others help support a move to a simpler and faster redis-client under the hood. 
@@ -127,3 +132,4 @@ A move to simplify the [redis-rb codebase and drop a mutex looks like it will ro
 __Update:__ Looks like that perf win was a bit to good to be true.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sadly I have to walk this back. Looks like there was a bug in the new driver and the performance is not significantly different. <a href="https://t.co/2o7cgAUX0K">https://t.co/2o7cgAUX0K</a></p>&mdash; Mike Perham 🇺🇦 (@getajobmike) <a href="https://twitter.com/getajobmike/status/1508487013950918658?ref_src=twsrc%5Etfw">March 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
