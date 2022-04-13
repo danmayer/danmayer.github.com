@@ -30,6 +30,8 @@ These charts are from after the incident. We moved to a new Redis to get things 
 
 ## Code Culprit
 
+__NOTE: Update Mike responded that he doesn't think the `latency` call is the [issue so we are further investigating](https://github.com/mperham/sidekiq/issues/5282)__
+
 As mentioned it wasn't any of our normal code that was really the problem, it was this line that was part of our instrumentation and observability tooling. `Sidekiq::Queue.new(queue_name).latency`. As with any incident, there were a ton of other related things, but it is worth noting that this seemingly simple line could have some hidden gotchas or an outsized impact on your Redis performance. As that `latency` call scales linearly with queue size, it is calling Redis's [`Lrange`](https://redis.io/commands/lrange/) under the hood which is an `O(S+N)` operation.
 
 # Sidekiq / Redis Performance
