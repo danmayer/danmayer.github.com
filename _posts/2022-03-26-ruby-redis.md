@@ -120,6 +120,16 @@ end
 
 If you are looking to do a bit more than the default `Rails.cache` capabilities with Redis, you will find it supports a lot of powerful feature, and can along with pipelining be extremely performant. If you are looking to push for as performant as you can, setup [hiredis-rb](https://github.com/redis/hiredis-rb) as your connection for redis-rb. It uses C extensions to be as performant as possible. This post goes into some details where [direct caching wiht Redis](https://www.keypup.io/blog/use-redis-sets-to-track-and-expire-cache-keys-in-rails) can provide more powerful capabilities than using `Rails.cache`
 
+# Redis CLI
+
+A few useful tips around using Redis and understanding how your application is using Redis.
+
+* `brew install redis`: install redis via homebrew
+* `brew uninstall redis`: uninstall redis via homebrew
+* `brew info redis`: Get info on currently installed redis
+* `redis-cli ping`: Check if redis service is running
+* `redis-cli monitor`
+* `redis-cli slowlog get 100`
 
 # Exciting Things Are Happening with Ruby Redis
 

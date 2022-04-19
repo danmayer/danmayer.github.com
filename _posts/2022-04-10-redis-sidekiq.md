@@ -28,9 +28,13 @@ We got into trouble when moving from Resque to Sidekiq because our observability
 
 These charts are from after the incident. We moved to a new Redis to get things back up and running during the incident, and after things were under control worked on draining the old full Redis, in a isolated way that couldn't impact production load. In this graph, you can see as we reduce the queue size the latency of our Redis calls also reduces in step. I included CPU to show how hard we were taxing our Redis, this chart isn't 1:1 as we were adding and removing workers and making some other tweaks, but the queue size -> latency is a direct correlation. 
 
-## Code Culprit
+## Code Culprite
 
 __NOTE: Update Mike responded that he doesn't think the `latency` call is the [issue so we are further investigating](https://github.com/mperham/sidekiq/issues/5282)__
+
+
+__UPDATE:__ We no longer think the line below is the culprite, we observe latency growth and decline with queue size, but we are unsure of the cause and unable to reproduce. As seen, in the `NOTE` above the Sidekiq latency call is `O(1+1)` and therefor fast and predictable.
+
 
 As mentioned it wasn't any of our normal code that was really the problem, it was this line that was part of our instrumentation and observability tooling. `Sidekiq::Queue.new(queue_name).latency`. As with any incident, there were a ton of other related things, but it is worth noting that this seemingly simple line could have some hidden gotchas or an outsized impact on your Redis performance. As that `latency` call scales linearly with queue size, it is calling Redis's [`Lrange`](https://redis.io/commands/lrange/) under the hood which is an `O(S+N)` operation.
 
