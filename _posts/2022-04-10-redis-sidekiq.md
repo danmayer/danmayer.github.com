@@ -21,6 +21,8 @@ A common usage of Redis for Rubyists is for background jobs. Two popular librari
 
 # A Incident Caused by our Sidekiq/Redis Observability
 
+__UPDATE:__ We no longer think the line below is the culprite, we observe latency growth and decline with queue size, but we are unsure of the cause and unable to reproduce. As seen, in the `NOTE` above the Sidekiq latency call is `O(1+1)` and therefor fast and predictable.
+
 We got into trouble when moving from Resque to Sidekiq because our observability instrumentation was frequently making an `O(S+N)` call (Sidekiq's queue `latency`). It wasn't much of a problem until we had one of our common traffic spikes that results in a brief deep queue depth. Our previous Resque code didn't have any issues and had some similar instrumentation being sent to Datadog. While our Sidekiq code had been live for days, this behavior where our processing speed decreased with queue depth hadn't been observed or noticed. The problem came to light when on a weekend (of course) a small spike caused a background job backlog, as we an expected common case. The latency went way up due to our instrumentation and we started processing jobs slower than we enqueued them. This fairly quickly filled our entire Redis leading to OOM errors.
 
 ![Redis Sidekiq Analytics](/assets/img/redis_sidekiq.png)
