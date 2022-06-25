@@ -2,7 +2,7 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "Remarkable2 Review"
-image: assets/img/remarkable2_review.jpg
+image: /assets/img/remarkable2_review.jpg
 category: Fun
 tags: [Tips, Tech, Reviews]
 ---
