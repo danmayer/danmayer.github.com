@@ -15,6 +15,8 @@ There are a number of reasons and times when trying to find the specific origin 
 
 A really helpful tool for Rails is [Marginalia](https://github.com/basecamp/marginalia), which can append comments about the source of a query to the query itself as a comment. This lets one leverage traditional DB tools like slow query logs, etc, and cross-reference from the query back to the code source. The output would look something like the below, depending on the tool you used to look at the queries.
 
+NOTE: A new Ruby query commenter has recently come up as an option. Implementing an open standard that integrates with open tracing and can join with trace-ids to other observability data. It is an implementation of [Google's SqlCommenter standard](https://google.github.io/sqlcommenter/), which has a [Rails Implementation](https://google.github.io/sqlcommenter/ruby/rails/) which extends Marginalia with additional information.
+
 ```sql
 my-service 	SELECT COUNT(*) FROM some_table WHERE some_table.some_reference_id = ??? /*application:my-service,controller:endpoint_a,action:show*/ 	1,181
 my-service 	SELECT some_table.* FROM some_table WHERE some_table.id = ??? LIMIT ??? /*application:my-service,controller:endpoint_b,action:create*/ 	3,227

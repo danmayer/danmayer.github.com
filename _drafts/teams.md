@@ -9,6 +9,10 @@
 This is a great post and I agree with much of it, but one problem I see, in this and other fully self-suffienct team models... Is that while each team might solve any problem on their own, it doesn't mean it is a good overall solution across the architecture... For example each team using entirely independant technology and rebuilding duplicate implementations of various feature... The maintence drag will eventually be as much friection as bad management.
 I feel like somewhere in this there has to be a way where supportive leadership pushes constraints which lets all the independant teams work directionally towards a world that make collaboritve features and integrations easier not harder... As a few simple examples, setting a set of list of supported languages (and ensuring those languages have fully expected operational support end to end), API protocals, end to end tracing/observability across systems and languages, etc... I am sure most folks feel like this is supportive, but also the articles talk about an empowering a team and getting out of there way, I think it needs to be a bit more setting the constraints and letting that breed creativity... Teams that are continually trying to side step constraints aren't your fast moving inovators they don't understand collective collaboration and are making short term wins to benifits their team at a cost to everyone else. 
 
+### How teams maintain systems
+
+https://blog.thepete.net/blog/2021/06/17/patterns-of-cross-team-collaboration/
+
 ### Growing Teams
 
 https://twitter.com/jmwind/status/1477399261700526080
