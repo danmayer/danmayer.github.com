@@ -11,3 +11,9 @@ https://lethain.com/first-ninety-days-cto-vpe/
 > These system changes are slow to show effect for good or ill, and your organization can only tolerate the overhead of adopting a small number concurrently. This is why to be a truly effective executive you must start by understanding the organizations and systems at play before you move towards changing them.
 
 > leadership requires succeeding in both the short and long-term, so don’t get so distracted by the joy of fixing emergencies that you forgo the strategic.
+
+# strategy
+
+collect some links and thoughts on writing on strategy
+
+https://cutlefish.substack.com/p/tbm-3052-why-do-we-have-no-strategy

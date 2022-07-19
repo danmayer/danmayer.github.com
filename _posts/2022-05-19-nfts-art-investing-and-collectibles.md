@@ -2,7 +2,7 @@
 layout: posttail
 authors: ["Dan Mayer"]
 title: "NFTs, Art Investing, and Collectibles"
-image: assets/img/spiderman_grid.jpg
+image: /assets/img/spiderman_grid.jpg
 category: Fun
 tags: [Tips, Tech, Crypto, NFTs]
 ---
