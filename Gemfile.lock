@@ -74,6 +74,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.7)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    webrick (1.7.0)
     zeitwerk (2.5.1)
 
 PLATFORMS
@@ -88,6 +89,7 @@ DEPENDENCIES
   jemoji
   nokogiri (>= 1.10.4)
   rake
+  webrick
 
 BUNDLED WITH
-   2.1.4
+   2.2.32

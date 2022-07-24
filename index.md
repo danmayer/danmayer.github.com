@@ -17,4 +17,4 @@ tagline: Dan Mayer's Dev Blog
       </div>
     {% endif %}
   {% endfor %}
-</main>%
+</main>

@@ -9,6 +9,7 @@ gem 'jekyll-seo', group: :jekyll_plugins
 gem 'jemoji'
 gem 'rake'
 gem "nokogiri", ">= 1.10.4"
+gem "webrick" 
 
 # moving to tailwind ideal
 # gem "jekyll", "~> 4.1"
