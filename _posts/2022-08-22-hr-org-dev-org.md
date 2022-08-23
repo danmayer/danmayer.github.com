@@ -45,7 +45,7 @@ Depending on the current situationm needs folks end up having to try to use diff
 
 | Company Org Chart   |      PagerDuty Teams      |  Github Teams |
 |---------------------|---------------------------|---------------|
-| ![Eng Org Chart](/assets/img/company_eng_org_chart.png) |  ![PagerDuty Chart](/assets/img/pager_duty_chart.png) | ![Github Teams Chart](/assets/img/github_teams_chart.png) |
+| ![Eng Org Chart](/assets/img/company_eng_org_chart.png) |  ![PagerDuty Chart](/assets/img/pager_duty_chart.png) | ![Github Teams Chart](/assets/img/github_teams_chart_two.png) |
 
 > diagrams showing the teams in terms of org charts, operations (PagerDuty), and code owners (Github)
 
