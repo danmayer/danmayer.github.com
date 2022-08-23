@@ -60,7 +60,7 @@ The value in having teams with consistent naming across multiple views makes it 
 * customer relations support: user voice queue
 * pagers / on-call: pager-duty
 * code owners: github
-* metric owners: Datadog?
+* metric owners: Datadog, can we map to services or teams?
 * real-time discussions: Slack, which channel for the team? or a project channel?
 
 ## How to fix it...
