@@ -4,6 +4,7 @@ title: "Ownership in an age of microservices"
 image: /assets/img/code_detective.png
 category: SRE
 tags: [SRE, Tech, Resilience]
+group: draft
 ---
 {% include JB/setup %}
 

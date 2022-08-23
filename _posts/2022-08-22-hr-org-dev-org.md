@@ -5,7 +5,6 @@ title: "Operations vs Ownership vs HR Organizational Structures"
 image: /assets/img/organizational_drift.png
 category: SRE
 tags: [SRE, Tech, Resilience]
-group: draft
 ---
 
 {% include JB/setup %}
