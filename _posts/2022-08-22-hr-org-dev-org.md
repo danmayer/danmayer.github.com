@@ -42,9 +42,11 @@ If you have been around the block a few times you have likely seen unhealthy sys
 
 Depending on the current situationm needs folks end up having to try to use different tools and shared-language to find the right folks to help solve the problem. Below is some fake/scrubbed data based on Company Org charts mapping to apps, the PagerDuty teams mapped to apps, and Github teams mapped to apps (using [CODEOWNERS files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners))
 
+
 | Company Org Chart   |      PagerDuty Teams      |  Github Teams |
-|:--------:|:-------------:|:------:|
+|---------------------|---------------------------|---------------|
 | ![Eng Org Chart](/assets/img/company_eng_org_chart.png) |  ![PagerDuty Chart](/assets/img/pager_duty_chart.png) | ![Github Teams Chart](/assets/img/github_teams_chart.png) |
+
 > diagrams showing the teams in terms of org charts, operations (PagerDuty), and code owners (Github)
 
 Just from a visual check these diagrams diverge. When one starts to talk about the differences, various organizational issues become extremely obvious. From teams with far too many apps and responsibilities, to teams that simply do not exist anymore in terms of the org chart, but have sets of employees maintaining legacy systems in terms of code ownership or operational support.
