@@ -20,7 +20,7 @@ When your HR/Management org structure starts to drift from your operational and 
 
 ## How org structure drift happens
 
-If org charts, mangers, and teams are reorged a few times eventually a newly formed team can inherit some legacy systems as it fits their newly defined mission.  These inherited systems somehow have moved away from the original authors or recent operators. One day the company will find out that a critical system seems to be owned by a team totally unfamiliar with it, often during an incident. This poor outcome does clarify the issue of re-orgs that don't reflect operation and code ownership responsibilities.
+If org charts, managers, and teams are reorged a few times eventually a newly formed team can inherit some legacy systems as it fits their newly defined mission.  These inherited systems somehow have moved away from the original authors or recent operators. One day the company will find out that a critical system seems to be owned by a team totally unfamiliar with it, often during an incident. This poor outcome does clarify the issue of re-orgs that don't reflect operation and code ownership responsibilities.
 
 ## The tale of the teams from before...
 
