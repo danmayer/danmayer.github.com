@@ -3,8 +3,8 @@ layout: posttail
 authors: ["Dan Mayer"]
 title: "Operations vs Ownership vs HR Organizational Structures"
 image: /assets/img/organizational_drift.png
-category: SRE
-tags: [SRE, Tech, Resilience]
+category: Management
+tags: [Management, SRE, Tech, Resilience]
 ---
 
 {% include JB/setup %}
