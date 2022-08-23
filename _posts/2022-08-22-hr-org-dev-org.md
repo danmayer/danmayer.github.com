@@ -38,7 +38,7 @@ At this point during an incident, possibly in the middle of the night, you have 
 
 If you have been around the block a few times you have likely seen unhealthy system maintenance before. It might happen slowly over time as teams come and go, without paying attention organizational structure drift has started to result in increased risk, increased burnout, lowered productivity.
 
-## What Does Organizational Drift Look Like?
+## What does organizational drift look like?
 
 Depending on the current situationm needs folks end up having to try to use different tools and shared-language to find the right folks to help solve the problem. Below is some fake/scrubbed data based on Company Org charts mapping to apps, the PagerDuty teams mapped to apps, and Github teams mapped to apps (using [CODEOWNERS files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners))
 
