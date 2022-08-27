@@ -14,3 +14,7 @@ https://www.youtube.com/watch?v=I9zpROdDf48
 https://twitter.com/johncutlefish/status/1454846471891611650
 
 https://martinfowler.com/articles/scaling-architecture-conversationally.html
+
+---
+
+https://twitter.com/buritica/status/1523801669619834880?s=20&t=i-LqMz3yxvmSkuGO1ApgKg

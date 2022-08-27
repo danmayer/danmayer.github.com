@@ -1,10 +1,9 @@
 ---
 layout: posttail
 title: "Ownership in an age of microservices"
-image: /assets/img/ownership_of_services.png
+image: /assets/img/org_to_team.png
 category: Management
 tags: [Management, Microservices, Tech, Resilience]
-group: draft
 ---
 {% include JB/setup %}
 
