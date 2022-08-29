@@ -7,23 +7,23 @@ tags: [Management, Microservices, Tech, Resilience]
 ---
 {% include JB/setup %}
 
-This is the second post in a series thinking about [organization structures](/management/2022/08/22/hr-org-dev-org), teams and ownership, and finally I will cover application health.
+This is the second post in a series about [organization structures](/management/2022/08/22/hr-org-dev-org), teams and ownership, and application health.
 
 # Ownership challenges abound in microservices
 
-While there are some great discussions about when  microservice are or are not a [good fit](https://www.martinfowler.com/bliki/MicroservicePremium.html), with recent examples of [Segment, moving back to a monolith](https://segment.com/blog/goodbye-microservices/). Here, I am going to focus on some of the unique challenges of ownership in microservices and some of the approaches where companies are making larger macro-services (these tend to be aggregation services focused on a specific domain) to help address the issue. For example, [Uber working towards macro-services with a Domain-Oriented Microservice Architecture](https://www.uber.com/blog/microservice-architecture/). One of the common problems called out as a pain point with microservices is ownership, both the Uber example and the [macro-service Domain aggregation evolution at AirBnB](https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f) are aiming to specifically improve the clarity and ownership of domains of data and the teams and services that support them.
+While there are many great resources out there that discuss microservices, where they may or may not be a [good fit](https://www.martinfowler.com/bliki/MicroservicePremium.html), and how some companies have decided to [move away from them, and back to a monolith](https://segment.com/blog/goodbye-microservices/), in this post I am going to focus on some of the unique challenges that microservices present with regard to **ownership**. Ownership is frequently called out as a common problem with microservices, and both [Uber, working towards macro-services with a Domain-Oriented Microservice Architecture](https://www.uber.com/blog/microservice-architecture/), and [AirBnb's journey towards macro-service Domain aggregation](https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f) are aimed at improving the clarity of ownership of domains of data and the teams and services that support them.
 
-# microservices and evolving models of ownership
+# Microservices and evolving models of ownership
 
-There are many different models of ownership, and one of the reasons microservices took off was to avoid the tragedy of the commons that often occurs in large shared codebases. We break the systems apart to try to avoid shared codebases that tend to degrade over time. As companies moved to many smaller systems a number of different ownership models emerged:
+There are many different models of ownership, and one of the reasons microservices took off was to avoid the tragedy of the commons that often occurs in large shared codebases. We break the systems apart to try to avoid shared codebases that tend to degrade over time. As companies moved to many smaller systems, a number of different ownership models emerged:
 
-* Single Owner
-* Orphan codebase
-* Modular Monolith
+* Single Owner (is this a single dev?)
+* Orphan codebase (no owner?)
+* Modular Monolith (shared ownership?)
 * Team Ownership (my preferred)
 * Workgroup/Guild/Steering Committee Ownership
 
-Along with some more modern code collaboration patterns
+With these came some more modern code collaboration patterns, such as
 
 * Internal tickets
 * Internal open-source (my preferred)
@@ -31,19 +31,19 @@ Along with some more modern code collaboration patterns
 * Tour of duty
 * Embedded expert
 
-These are all explained very well in a post [patterns of cross-team collaboration](https://blog.thepete.net/blog/2021/06/17/patterns-of-cross-team-collaboration/). I personally like team ownership acting as stewards of the long term vision and domain of services, influencing changes via an internal open-source model. The teams in these cases are similar to the primary contributors to open source projects.
+These are all explained very well in a post [patterns of cross-team collaboration](https://blog.thepete.net/blog/2021/06/17/patterns-of-cross-team-collaboration/). I personally like team ownership, acting as stewards of the long term vision and domain of services, and influencing changes via an internal open-source model. The team, in this model, plays a similar role to that of the primary contributors in an open source project.
 
-# Ownership, strong ownership takes time
+# Strong ownership takes time
 
-In the decomposed microservices world, I personally believe that having a team with a long history of knowledge building and maintaining an app will lead to better outcomes. The institutional knowledge of operating the service, feeds back into the development practices of the system. Learning how to avoid risk, anticipate needs, and more quickly and flexibly change and update the system over time. It also helps with communications, especially at times of incident response when everyone knows the team that owns an app and is confident that the team has deep knowledge of the system and will be able to support it. A stable relationship between business domain, services, and team brings clarity and shared knowledge of where responsibilities and vision for the domain belongs. In my last post, I explain how reorgs and diverging team names across systems causes [organizational drift](/management/2022/08/22/hr-org-dev-org) and confusion.
+In the decomposed microservices world, I personally believe that having a team with a long history of knowledge building and maintaining an app will lead to better outcomes. The institutional knowledge of operating the service feeds back into the development practices of the system (team?). Over time, the team learns how to mitigate risk, anticipate needs, and more quickly and flexibly change and evolve the system. Strong team ownership also helps with communication, especially during incident response as everyone knows which team owns an app, and is confident that the team also has deep knowledge of the system and will be able to support it. A stable relationship between business domain, services, and team brings clarity and shared knowledge of where responsibilities and vision for the domain belongs. In my last post, I will discuss how reorgs and diverging team names across systems causes [organizational drift](/management/2022/08/22/hr-org-dev-org) and confusion.
 
 # Who is responsible for the Distributed Monolith?
 
-One issue that comes up in microservices is the emergence of a distributed Monolith. As microservices have been around for a fairly long time at this point (in tech life cycles that is) there are places that have "legacy"  microservice systems, perhaps better called a distributed monolith. As a company first splits up a legacy monolith, they often make many learning mistakes (bad boundaries leading to distributed transactions) shortcuts (hello shared DB my old friend). The early set of services often have some winners that prove the value of well done extractions, as well as some less than ideal systems that make up a distributed monolith. The remains of the monolith that folks have failed to ever finish extracting. At some point, companies need to refactor, delete, and reduce the maintenance of microservices the same way companies end up building strategies to unravel or [modernize legacy monoliths, via Modular Monolith](https://shopify.engineering/shopify-monolith) and other techniques.
+One issue that comes up in microservices is the emergence of a distributed monolith. As microservices have been around for a fairly long time at this point (in tech life cycles that is) there are places that have "legacy" microservice systems, perhaps better described as a distributed monolith. As a company first splits up a legacy monolith, they often make many learning mistakes, like setting up poor system boundaries which lead to distributed transactions, and taking shortcuts like sharing a database between multiple applications (hello shared DB, my old friend). The early set of services often have some winners that prove the value of well done extractions, as well as some less than ideal systems that make up a distributed monolith, the remains of the monolith that folks have failed to finish extracting. At some point, companies need to refactor, delete, and reduce the maintenance of microservices the same way companies end up building strategies to unravel or [modernize legacy monoliths, via Modular Monolith](https://shopify.engineering/shopify-monolith) and other techniques.
 
-The problem with the poorly extracted and very tightly coupled services is they don't have clear domain boundaries and often are difficult to build up strong ownership and historical knowledge of. These services end up with the same tragedy of the common issues of a large shared code base.
+The problem with poorly extracted and tightly coupled services is that they don't have clear domain boundaries and are often difficult to build up strong ownership and historical knowledge of. These services end up with the same tragedy of the commons issues of a large, shared code base.
 
-As part of any thinking about reorgs, considering these systems is key. The new structure should have more clear domain boundaries, and make future ownership of those clear. A steering group, architects, etc can help think through high friction boundaries and make recommendations. Often, I see companies try to re-org only thinking about the new work, opposed to taking into account these hard to maintain poorly understood systems that create a lot of technical drag for any teams trying to own them, or any team that has feature requirements that have yet to be extracted out of these systems. If the reorg doesn't take this into account, it might make the situation worse by trying to brush these problem areas under a rug. 
+As part of any thinking about reorgs, considering these systems is key. The new structure should have clear domain boundaries, and take future ownership of  these systems into account. A steering group, architects, etc can help think through high friction boundaries and make recommendations. Often, I see companies try to re-org only thinking about the new work, as opposed to taking into account these hard to maintain poorly understood systems. This creates a lot of technical drag on the team(s) trying to own them, as well as on any team that owns a feature that is yet to be extracted from these systems. If the reorg doesn't take this into account, it might make the situation worse by trying to brush these problem areas under a rug. 
 
 [![Microservices Architecture Journey at Airbnb](https://miro.medium.com/max/700/1*IlxBthy_kQMJh3YgHabJlw.png)](https://medium.com/qe-unit/airbnbs-microservices-architecture-journey-to-quality-engineering-d5a490e6ba4f)
 > Reorgs and technology investments to help address confusing ownership at Airbnb
