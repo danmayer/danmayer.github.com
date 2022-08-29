@@ -58,12 +58,12 @@ As leadership sees some of the issues falling out of the current org structures,
 
 > changing structure and process without addressing leadership, cultural and ways of working issues, usually exacerbates existing problems rather than improving performance. --[The Structure and Process Fallacy](https://medium.com/nick-tune-tech-strategy-blog/the-structure-and-process-fallacy-40640e844230)
 
-In terms of clear ownership in microservices some even propose that, ["Ideally each team has only one service"](https://microservices.io/patterns/decomposition/service-per-team.html). If you are a growing company that has been evolving microservices, I doubt this is the situation. After a number of reorgs and folks coming and going a team's responsibilities more often look like a giant group of only semi-related services and libraries. 
+In terms of clear ownership in microservices some even propose that, ["Ideally each team has only one service"](https://microservices.io/patterns/decomposition/service-per-team.html). If you are a growing company that has been evolving microservices, I doubt this is the situation. After a number of reorgs, and folks coming and going, a team's responsibilities more often look like a giant group of only semi-related services and libraries. 
 
 ![overloaded but not entirely uncommon diagram showing a teams repo ownership](/assets/img/example_team.png)
 > A overloaded but not entirely uncommon diagram showing a teams repo ownership
 
-If you end up having teams with ownership responsibilities as shown above, with more services than team members. It is unlikely there is strong ownership with deep understanding of all the systems involved.
+If you end up having teams with ownership responsibilities as shown above, with more services than team members, it is unlikely there is strong ownership with deep understanding of all the systems involved.
 
 # What do we need to know about our teams?
 
@@ -87,9 +87,9 @@ We need to better understand the reality of what our teams are working on and if
 
 ## What do we need to know about our repos and apps?
 
-We can't just talk about teams without looking at the details, at some point we want to also look at all the repos they own, what they most actively work on, and the health of those systems. Especially after several wild rounds of reorgs, teams often end up with some things that don't fit well into their teams goals, but the system's responsibility has to end up somewhere. It is best to at least make it clear where the responsibility ends up, even if it immediately requires some discussion about how the legacy load might not be healthy, so that it can be fixed. I will follow up on this question in a future post, digging into how to think about the health of repos and the value and risk they create for companies.
+We can't just talk about teams without looking at the details. At some point we want to also look at all the repos they own, what they most actively work on, and the health of those systems. Especially after several rounds of reorgs, teams often end up with some things that don't fit well into their charter, but responsibility for a system has to end up somewhere. It is best to at least make it clear where the responsibility ends up, even if it immediately requires some discussion about how the legacy load might not be healthy, so that it can be addressed. I will follow up on this question in a future post, digging into how to think about the health of repos and the value and risk they create for companies.
 
 # Strong ownership drives quality
 
-There are many other posts talking about the [impacts on ownership of microservices](https://bennorthrop.com/Essays/2022/code-ownership-stewardship-or-free-for-all.php). I think there are still a lot of good questions on how best to handle it. I am mostly trying to make the case that thinking through the domain boundaries is not enough, one has to think of what it takes to have deep knowledge and strong ownership of a domain. It takes having a healthy team without too many responsibilities with a cohesive set of services and responsibilities that form a common domain. If you move teams into what seems like better domains as part of re-orgs but don't look at or address the other responsibilities a team may already have, strong ownership and the attempts at more clarity of domains will not succeed.
+There are many other posts talking about the [impacts on ownership of microservices](https://bennorthrop.com/Essays/2022/code-ownership-stewardship-or-free-for-all.php). I think there are still a lot of good questions on how best to handle it. I am mostly trying to make the case that thinking through the domain boundaries is not enough, one has to think of what it takes to have deep knowledge and strong ownership of a domain. It takes having a healthy team that isn't spread too thin. Ideally they have a cohesive set of services and responsibilities that form a common domain. If you move teams into what seems like better domains as part of a re-org but don't look at or address the other responsibilities a team may already have, strong ownership and the attempts at more clarity of domains will not succeed.
 
