@@ -17,9 +17,9 @@ While there are many great resources out there that discuss microservices, where
 
 There are many different models of ownership, and one of the reasons microservices took off was to avoid the "tragedy of the commons" problem that often occurs in large shared codebases. We break the systems apart in an attempt to avoid shared codebases that tend to degrade over time. As companies moved to many smaller systems, a number of different ownership models emerged:
 
-* Single Owner (is this a single dev?)
-* Orphan codebase (no owner?)
-* Modular Monolith (shared ownership?)
+* Single person owner
+* Orphan codebase, due to attrition or team re-assignment
+* Modular Monolith, shared ownership, whether clear or unclear
 * Team Ownership (my preferred)
 * Workgroup/Guild/Steering Committee Ownership
 
@@ -35,7 +35,7 @@ These are all explained very well in a post [patterns of cross-team collaboratio
 
 # Strong ownership takes time
 
-In a decomposed, microservices ecosystem I personally believe that having a team with a long history of knowledge-building and maintaining an app will lead to better outcomes. The institutional knowledge of operating the service feeds back into the development practices of the system (team?). Over time, the team learns how to mitigate risk, anticipate needs, and more quickly and flexibly change and evolve the system. Strong team ownership also helps with communication, especially during incident response as everyone knows which team owns a given app, which adds confidence that the team also has deep knowledge of the system and will be able to support it. A stable relationship between business domain, services, and team brings clarity and shared knowledge of where responsibilities and vision for the domain belongs. In my last post, I will discuss how reorgs and diverging team names across systems causes [organizational drift](/management/2022/08/22/hr-org-dev-org) and confusion.
+In a decomposed, microservices ecosystem I personally believe that having a team with a long history of knowledge-building and maintaining an app will lead to better outcomes. The institutional knowledge of operating the service feeds back into the development practices of the team. Over time, the team learns how to mitigate risk, anticipate needs, and more quickly and flexibly change and evolve the system. Strong team ownership also helps with communication, especially during incident response as everyone knows which team owns a given app, which adds confidence that the team also has deep knowledge of the system and will be able to support it. A stable relationship between business domain, services, and team brings clarity and shared knowledge of where responsibilities and vision for the domain belongs. In my last post, I will discuss how reorgs and diverging team names across systems causes [organizational drift](/management/2022/08/22/hr-org-dev-org) and confusion.
 
 # Who is responsible for the Distributed Monolith?
 
