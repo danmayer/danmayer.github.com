@@ -8,5 +8,10 @@
     "name": "Twitter",
     "link": "https://twitter.com/danmayer",
     "image": "https://simpleicons.org/icons/twitter.svg"
+  },
+  {
+    "name": "Mastodon",
+    "link": "https://ruby.social/@danmayer",
+    "image": "https://simpleicons.org/icons/mastodon.svg"
   }
 ]
