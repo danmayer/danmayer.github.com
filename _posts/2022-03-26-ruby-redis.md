@@ -32,10 +32,10 @@ A better setup adding in configurable options:
 ```ruby
 Redis.new(
   url: ENV['REDIS_URL'],
-  timeout: ENV.fetch("REDIS_TIMEOUT", 1),
-  reconnect_attempts: ENV.fetch("REDIS_RECONNECT_ATTEMPTS", 3),
-  reconnect_delay: ENV.fetch("REDIS_RECONNECT_DELAY", 0.5),
-  reconnect_delay_max: ENV.fetch("REDIS_RECONNECT_DELAY_MAX", 5)
+  timeout: ENV.fetch("REDIS_TIMEOUT", 1).to_i,
+  reconnect_attempts: ENV.fetch("REDIS_RECONNECT_ATTEMPTS", 3).to_i,
+  reconnect_delay: ENV.fetch("REDIS_RECONNECT_DELAY", 0.5).to_f,
+  reconnect_delay_max: ENV.fetch("REDIS_RECONNECT_DELAY_MAX", 5).to_f
 )
 ```
 
@@ -47,10 +47,10 @@ pool_size = ENV.fetch("RAILS_MAX_THREADS", 10)
 redis_pool = ConnectionPool.new(size: pool_size) do
   Redis.new(
     url: ENV['REDIS_URL'],
-    timeout: ENV.fetch("REDIS_TIMEOUT", 1),
-    reconnect_attempts: ENV.fetch("REDIS_RECONNECT_ATTEMPTS", 3),
-    reconnect_delay: ENV.fetch("REDIS_RECONNECT_DELAY", 0.5),
-    reconnect_delay_max: ENV.fetch("REDIS_RECONNECT_DELAY_MAX", 5)
+    timeout: ENV.fetch("REDIS_TIMEOUT", 1).to_i,
+    reconnect_attempts: ENV.fetch("REDIS_RECONNECT_ATTEMPTS", 3).to_i,
+    reconnect_delay: ENV.fetch("REDIS_RECONNECT_DELAY", 0.5).to_f,
+    reconnect_delay_max: ENV.fetch("REDIS_RECONNECT_DELAY_MAX", 5).to_f
   )
 end
 ```
