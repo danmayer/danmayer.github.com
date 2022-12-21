@@ -21,7 +21,7 @@ I was playing around with some of the newer AI tools. Originally, using [GPT3](h
 
 1. Find a topic the kid is interested in. I generally took a favorite classic fairy tale story
 2. Generate some of the pages with GPT3, allowing the child to accept or reject pages or add in details of interest
-  * for example, My son wanted to become a squirrel and feature squirrels in the book  
+  * for example, My son wanted to become a squirrel and feature squirrels in the book
   * My daughter wanted to be dressed as a puppy and have pigs in the book
 3. Once you have a good story, move on to illustrations. I created one image per page.
   * I often tried the exact text of the page to make an image but found it needed adjusting
