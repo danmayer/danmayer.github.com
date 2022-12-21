@@ -21,17 +21,17 @@ I was playing around with some of the newer AI tools. Originally, using [GPT3](h
 
 1. Find a topic the kid is interested in. I generally took a favorite classic fairy tale story
 2. Generate some of the pages with GPT3, allowing the child to accept or reject pages or add in details of interest
-	* for example, My son wanted to become a squirrel and feature squirrels in the book  
-	* My daughter wanted to be dressed as a puppy and have pigs in the book
+  * for example, My son wanted to become a squirrel and feature squirrels in the book  
+  * My daughter wanted to be dressed as a puppy and have pigs in the book
 3. Once you have a good story, move on to illustrations. I created one image per page.
-   * I often tried the exact text of the page to make an image but found it needed adjusting
-   * I most often used `my prompt, digital art` to get art-like images as opposed to anything looking like photos, 3d, or the like
+  * I often tried the exact text of the page to make an image but found it needed adjusting
+  * I most often used `my prompt, digital art` to get art-like images as opposed to anything looking like photos, 3d, or the like
 4. Build out the format in a Google Doc or word doc, print it out, and read it to the kids, taking edit notes
 5. Finalize the book
-   * make final edits
-   * decide on the final formats, which likely have requirements
-     * I used Amazon Kindle Direct Publishing: Self Publishing
-     * This requires specific margins, 24 pages of content, making a cover, etc
+  * make final edits
+  * decide on the final formats, which likely have requirements
+    * I used Amazon Kindle Direct Publishing: Self Publishing
+    * This requires specific margins, 24 pages of content, making a cover, etc
 
 ![My Son Theo as a squirrel](/assets/img/a_theo2_squ.png)
 
