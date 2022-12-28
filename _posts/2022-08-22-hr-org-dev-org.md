@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Operations vs Ownership vs HR Organizational Structures"
 image: /assets/img/organizational_drift.png
 category: Management
-tags: [Management, SRE, Tech, Resilience]
+tags: [Management, SRE, Tech, Resilience, Visualization]
 ---
 
 {% include JB/setup %}

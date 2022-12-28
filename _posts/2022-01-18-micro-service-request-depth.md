@@ -4,7 +4,7 @@ authors: ["Dan Mayer"]
 title: "Micro-Service Request Depth Availability"
 image: /assets/img/request_success.png
 category: SRE
-tags: [SRE, Tech, Resilience]
+tags: [SRE, Tech, Resilience, Visualization]
 ---
 
 {% include JB/setup %}
