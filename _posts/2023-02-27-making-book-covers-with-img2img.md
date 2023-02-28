@@ -13,8 +13,8 @@ I have been having fun making [children's books with my kids using AI](https://w
 
 Below are some examples of the kinds of image options I get when working from photos to make images for the books.
 
-![A young girl as a puppy doctor](/assets/img/aDocSashaCollage.jpeg)  
-![A young boy wizard](/assets/img/aboywizard-collage.png)
+[![A young girl as a puppy doctor](/assets/img/aDocSashaCollage.jpeg)](https://www.amazon.com/dp/B0BW3G1491)  
+[![A young boy wizard](/assets/img/aboywizard-collage.png)](https://www.amazon.com/dp/B0BV3732Y8)
 
 # Book Cover Process
 
