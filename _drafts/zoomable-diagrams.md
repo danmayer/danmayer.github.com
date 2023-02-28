@@ -27,6 +27,7 @@ various links on diagrams
 * d3 zoom https://observablehq.com/@d3/delaunay-find-zoom?collection=@d3/d3-zoom
 * https://coderwall.com/p/psogia/simplest-way-to-add-zoom-pan-on-d3-js
 * https://manning-content.s3.amazonaws.com/download/0/00ee823-128d-43de-b8bb-7e2d4313eecd/D3js_ch05.pdf
+https://observablehq.com/@didoesdigital/d3-circle-packing-with-data-wrangling-and-interactive-grou
 
 # Diagramming as Code
 

@@ -10,3 +10,5 @@ https://githubnext.com/projects/repo-visualization/
 https://www.visualcinnamon.com/2015/09/placing-text-on-arcs/
 
 https://bl.ocks.org/mbostock/6fead6d1378d6df5ae77bb6a719afcb2
+
+https://observablehq.com/@didoesdigital/d3-circle-packing-with-data-wrangling-and-interactive-grou
