@@ -1,0 +1,454 @@
+<script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+<style>
+.flip-book {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  display: none;
+  background-size: cover;
+}
+
+.page {
+  padding: 20px;
+  background-color: hsl(35deg, 55%, 98%);
+  color: hsl(35deg, 35%, 35%);
+  border: solid 1px hsl(35deg, 20%, 70%);
+  overflow: hidden;
+}
+.page .page-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.page .page-content .page-header {
+  height: 30px;
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+}
+.page .page-content .page-image {
+  height: 100%;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.page .page-content .page-text {
+  height: 100%;
+  flex-grow: 1;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 40px;
+  box-sizing: border-box;
+  border-top: solid 1px hsl(35deg, 55%, 90%);
+}
+.page .page-content .page-footer {
+  height: 30px;
+  border-top: solid 1px hsl(35deg, 55%, 90%);
+  font-size: 80%;
+  color: hsl(35deg, 20%, 50%);
+}
+.page.--left {
+  border-right: 0;
+  box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+.page.--right {
+  border-left: 0;
+  box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+}
+.page.--right .page-footer {
+  text-align: right;
+}
+.page.hard {
+  /* background-color: hsl(35deg, 50%, 90%); */
+  border: solid 1px hsl(35deg, 20%, 50%);
+}
+.page.page-cover {
+  /* background-color: hsl(35deg, 45%, 80%); */
+  /* color: hsl(35deg, 35%, 35%); */
+  border: solid 1px hsl(35deg, 20%, 50%);
+}
+.page.page-cover h1 {
+  text-align: center;
+  /* padding-top: 50%; */
+  font-size: 410%;
+}
+.page.page-cover h2 {
+  text-align: center;
+  /* padding-top: 50%; */
+  font-size: 210%;
+}
+.page.page-cover.page-cover-top {
+  box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+}
+.page.page-cover.page-cover-bottom {
+  box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+}
+</style>
+
+<div class="container">
+    <div class="flip-book" id="demoBookExample">
+        <div class="page page-cover page-cover-top" data-density="hard">
+          <div class="page-content">
+            <h1 class="flip-page-header">Theo The Great</h1>
+              <h2 class="page-header">The World At Sleep</h2>
+            <div class="page-image" style="background-image: url('/ebooks/generated_images/img2img/00030-2555139399-a young boy w.png')"></div>
+            <div class="page-text">&nbsp;</div>
+            <div class="page-footer">Daniel Mayer</div>
+          </div>
+        </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675130624.png')"></div>
+                <div class="page-text">Once upon a time, there was a boy named Theo. He always wanted to learn magic.</div>
+                <div class="page-footer">1</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00558.png')"></div>
+                <div class="page-text">One day, when he was playing in the back yard, a great magician appeared before him.</div>
+                <div class="page-footer">2</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00015.png')"></div>
+                <div class="page-text">&quot;Hello, Theo,&quot; the wizard greeted.
+
+Theo&#39;s eyes opened wide as he saw the wizard appear.
+
+&quot;Theo, we need you to help fight an evil spreading over the land.&quot;</div>
+                <div class="page-footer">3</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00521.png')"></div>
+                <div class="page-text">&quot;Wow, how can I help?&quot; asked Theo. 
+
+&quot;We need you to battle the evil Dr. Sleep. This wizard has gone bad and is trying to make every child go to sleep before their bedtime!&quot;</div>
+                <div class="page-footer">4</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675129214.png')"></div>
+                <div class="page-text">&quot;That is terrible! Kids need time to play! I don&#39;t understand. How can I help? I don&#39;t even know magic.&quot; Theo said.
+
+&quot;Well, young child. I can teach you. If you are ready to learn?&quot; he asked.</div>
+                <div class="page-footer">5</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675135888.png')"></div>
+                <div class="page-text">&quot;Hooray, I have always wanted to learn magic!&quot; Theo cheered.
+
+&quot;But why me?&quot; Theo Asked.
+
+The great wizard said, &quot;Only a child can stop the evil Dr. sleep after learning magic. I know that you can help me.&quot;</div>
+                <div class="page-footer">6</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00466.png')"></div>
+                <div class="page-text">&quot;As time is of the essence, I won&#39;t be able to teach you everything, but I will teach you what you need to know to defeat the evil doctor Dr. sleep. Are you ready to learn magic, Theo?&quot; the wizard asked.</div>
+                <div class="page-footer">7</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00730.png')"></div>
+                <div class="page-text">&quot;Of course,&quot; Theo said as he jumped for joy!
+</div>
+                <div class="page-footer">8</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00651.png')"></div>
+                <div class="page-text">The wizard handed Theo a wand. &quot;Point it at that tree over there and say, alakazam.&quot;</div>
+                <div class="page-footer">9</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00565.png')"></div>
+                <div class="page-text">Theo pointed his wand, &quot;Alakazam!&quot;
+
+The tree exploded and a branch fell on the wizard&#39;s head.</div>
+                <div class="page-footer">10</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00655.png')"></div>
+                <div class="page-text">The wizard yelled, &quot;Ouch, I was not expecting that. Your magic is so powerful you exploded the tree.&quot;
+
+That will come as a surprise to the evil Dr. sleep. 
+
+Be ready to use that trick to defeat him.</div>
+                <div class="page-footer">11</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675302395.png')"></div>
+                <div class="page-text">The wizard said, &quot;Here is another spell you can cast. Swish your wand from side to side and say, alakazoodle!&quot;
+
+</div>
+                <div class="page-footer">12</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00509.png')"></div>
+                <div class="page-text">Theo moved his wand back and forth and said, &quot;Alakazoodle!&quot;
+
+A large glass ball appeared in the sky and fell to the ground.</div>
+                <div class="page-footer">13</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00656.png')"></div>
+                <div class="page-text">The wizard smiled and clapped, &quot;very well done, Theo.&quot;
+
+You will need only one more trick to defeat the evil Dr. sleep. So that all kids can stay up and play as they should.&quot;</div>
+                <div class="page-footer">14</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00512.png')"></div>
+                <div class="page-text">The great wizard said, &quot;For the final magic trick, we will need to turn the magic of sleep against the evil wizard. 
+
+You must make a circle with your wand and say, abrakasleep!&quot;</div>
+                <div class="page-footer">15</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00851.png')"></div>
+                <div class="page-text">Theo moved his wand in a circle, pointing it at a nearby bunny. &quot;Abrakasleep!&quot;
+
+Magical music begins playing out of nowhere. The bunny quickly falls asleep.</div>
+                <div class="page-footer">16</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00794.png')"></div>
+                <div class="page-text">The great wizard says, you now know all you need to defeat the evil Dr. sleep. I will teach you one more trick for fun as a reward for helping us.
+
+Theo, make a letter C with your wand and say, &quot;incakazoo!&quot;</div>
+                <div class="page-footer">17</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/01097.png')"></div>
+                <div class="page-text">Theo made a swishing C with his wand, saying, &quot;incakazoo!&quot;
+
+A bowl of candy appeared before him. 
+
+Theo said, &quot;Wow, thanks, this is amazing.&quot;</div>
+                <div class="page-footer">18</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00574.png')"></div>
+                <div class="page-text">The great wizard said, &quot;Theo you are now ready to face the evil Dr. sleep.&quot; I can not help you as I will fall asleep as soon as we see him, but you will not, and if you defeat him I will wake and be able to return him to the wizard school to make him good again.&quot;
+
+&quot;Are you ready Theo?&quot; The wizard asked.</div>
+                <div class="page-footer">19</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00575.png')"></div>
+                <div class="page-text">Theo tightly grabbed his magic wand, &quot;Yes, I am ready!&quot;
+
+The wizard waved his wand and they disappeared into purple smoke</div>
+                <div class="page-footer">20</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00737.png')"></div>
+                <div class="page-text">The great wizard and Theo appeared in a dark forest. Theo turned and saw the evil Dr. sleep. 
+
+The great wizard collapsed to the ground quickly falling asleep.</div>
+                <div class="page-footer">21</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00577.png')"></div>
+                <div class="page-text">Dr. Sleep looked at Theo, &quot;Well, it looks like they found a child who is immune to my sleep magic, but don&#39;t worry, I have other tricks to have you sleeping in no time.&quot;
+
+Without waiting, Theo raised his wand and waved it  back and forth, saying, &quot;Alakazoodle!&quot;</div>
+                <div class="page-footer">22</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00757.png')"></div>
+                <div class="page-text">A glass ball appeared above Dr. Sleep, who was amazed to see the powerful magic that young Theo could summon. 
+
+He stepped to the side, narrowly avoiding the ball as it fell to the ground.</div>
+                <div class="page-footer">23</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675149158.png')"></div>
+                <div class="page-text">As the evil wizard was dodging his first spell. Theo  pointed his wand at a nearby tree, yelling Alakazam!&quot;
+
+The tree exploded, dropping a large branch onto the head of the unprepared Dr. sleep.
+</div>
+                <div class="page-footer">24</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1675529079.png')"></div>
+                <div class="page-text">As the wizard was trapped under the branch, dazed and confused. Theo cast a spell making a circle with his wand and saying, &quot;Abrakasleep!&quot;
+
+The beautiful music returned, and Dr. sleep succumbed to sleep the fate the evil wizard was forced on all the people of the world.</div>
+                <div class="page-footer">25</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/old_samples/00857.png')"></div>
+                <div class="page-text">The great wizard awoke and said that Dr. sleep was defeated!
+
+&quot;Thank you! I knew you could defeat him. You are beginning your journey with magic, and you shall now be known as Theo the Great!&quot;
+
+Then the great wizard and evil wizard disappeared.</div>
+                <div class="page-footer">26</div>
+            </div>
+          </div>
+          <div class="page">
+            <div class="page-content">
+                <h2 class="page-header"></h2>
+                <div class="page-image" style="background-image: url('/ebooks/generated_images/book/2/1674944239.png')"></div>
+                <div class="page-text">Theo appeared back in his own yard, unsure of what would come next. He made a &quot;C&quot; with his magic wand, softly saying &quot;incakazoo!&quot;
+
+a bowl of candy canes appeared before him, Theo figured he had earned a treat.</div>
+                <div class="page-footer">27</div>
+            </div>
+          </div>
+        <div class="page page-cover page-cover-bottom" data-density="hard">
+            <div class="page-content">
+              <h1>Theo The Great</h1>
+                <h2>The World At Sleep</h2>
+              <h3>Daniel Mayer</h3>
+              Dan Mayer has been helping his kids write customized books inserting themselves into favorite stories.
+              <div class="page-text">
+                <h3>Other Titles:</h3>
+                <ul>
+                    <li>
+                      <a href="/books/4">Sasha The Puppy Doctor: </a>
+                    </li>
+                    <li>
+                      <a href="/books/6">Theo Becomes An Astronaut: </a>
+                    </li>
+                    <li>
+                      <a href="/books/8">Lucy and Mia&#39;s Magic Stone: Adventures Around the World</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const pageFlip = new St.PageFlip(
+      document.getElementById("demoBookExample"),
+      {
+          width: 550, // base page width
+          height: 733, // base page height
+
+          size: "stretch",
+          // set threshold values:
+          minWidth: 315,
+          maxWidth: 1000,
+          minHeight: 420,
+          maxHeight: 1350,
+
+          maxShadowOpacity: 0.5, // Half shadow intensity
+          showCover: false,
+          mobileScrollSupport: false // disable content scrolling on mobile devices
+      }
+  );
+
+  // load pages
+  pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+
+  document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+  document.querySelector(
+      ".page-orientation"
+  ).innerText = pageFlip.getOrientation();
+
+  document.querySelector(".btn-prev").addEventListener("click", () => {
+      pageFlip.flipPrev(); // Turn to the previous page (with animation)
+  });
+
+  document.querySelector(".btn-next").addEventListener("click", () => {
+      pageFlip.flipNext(); // Turn to the next page (with animation)
+  });
+
+  // triggered by page turning
+  pageFlip.on("flip", (e) => {
+      document.querySelector(".page-current").innerText = e.data + 1;
+  });
+
+  // triggered when the state of the book changes
+  pageFlip.on("changeState", (e) => {
+      document.querySelector(".page-state").innerText = e.data;
+  });
+
+  // triggered when page orientation changes
+  pageFlip.on("changeOrientation", (e) => {
+      document.querySelector(".page-orientation").innerText = e.data;
+  });
+
+});
+</script>

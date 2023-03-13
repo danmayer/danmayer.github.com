@@ -7,7 +7,7 @@ tags: [Software, Process, Management]
 ---
 {% include JB/setup %}
 
-__NOTE: this was originally a [mastodon thread](https://ruby.social/@danmayer/109385071308169183), but feels like small linked blog posts are a better format
+__NOTE:__ this was originally a [mastodon thread](https://ruby.social/@danmayer/109385071308169183), but feels like small linked blog posts are a better format
 
 As there seems to be a tech crunch going on, several companies are responding in different ways, including layoffs which increase the maintenance cost per developer... This naturally leads to companies looking at re-orgs, shutting down services, and current maintenance costs.  
 
