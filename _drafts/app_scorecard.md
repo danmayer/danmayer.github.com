@@ -12,7 +12,7 @@ For all these things we need a way to talk about the health of a code repository
 
 # Code Repository Metrics
 
-Everyone knows there are a bunch of vanity metrics, and yes every metric can be gamed... I still think some metrics can be good signals, at least to help take a bit of a closer look.
+Developers know there are a bunch of vanity metrics, and yes most metric can be gamed. That doesn't mean that metrics aren't good signals.
 
 * Recent Changes:
   * Dependency Updates: We have a dependency update policy requiring dependency updates at least once a month
@@ -26,8 +26,6 @@ Everyone knows there are a bunch of vanity metrics, and yes every metric can be 
      * bonus points: we recommend having a CI job run `bin/setup` on a bare machine
   * bin/start: runs the most common developer mode (ie boots a webserver and outputs the port)
     * bonus points: we also run this on CI and curl a endpoint to ensure the server starts successfully
-
-
 
 * tbd
 
