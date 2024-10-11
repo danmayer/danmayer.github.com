@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Gardyn 2.0 four years later"
-image: assets/img/PXL_20241006_173746005.jpg
+image: /assets/img/PXL_20241006_173746005.jpg
 category: Fun
 tags: [Fun, Gardening, Tech, Parenting, Products]
 ---
