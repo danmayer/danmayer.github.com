@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Ruby Caches - Rails Cache Initialization"
-image: /assets/img/gardyn_repairs.webp
+image: /assets/img/computer-cache.webp
 category: Ruby
 tags: Ruby, Rails, ActiveSupport, Cache, Memcached, Redis, Tips]
 ---
