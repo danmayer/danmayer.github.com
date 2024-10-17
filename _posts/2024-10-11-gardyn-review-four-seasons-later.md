@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Gardyn 2.0 four years later"
-image: /assets/img/PXL_20241006_173746005.jpg
+image: /assets/img/gardyn_repairs.webp
 category: Fun
 tags: [Fun, Gardening, Tech, Parenting, Products]
 ---
@@ -29,7 +29,7 @@ I don't do all the required deep cleanings and water dumps that Gardyn recommend
 
 I have twice had most of my plants die because the pump died... The first time, it took me a long time to sort things out, request the official part, repair, and get back up and running. It was not a fun repair, and I lost a lot of plants... The second time which was less than a year after the first repair the pump gave out in late spring, so I just shut the Gardyn down for the summar a bit early, and I had already cleared many of my plants. So it was no big deal, but I wanted to be able to more easily fix it going forward... So I bought a small external water pump and timer, which was cheaper than the official pump and looked more robust... I drilled holes and ran the cables (grey in the image). This works great as I am starting off my new season. Replacing this pump will now only cost about $20m, and if the Gardyn LEDs go out, I might replace them with more external LED grow lights, while I keep using the tub towers and base for growing.
 
-![How I Gardyn](/assets/img/PXL_20241006_173746005.jpg)
+![How I Gardyn](/assets/img/gardyn_repairs.webp)
 
 I have read that the newer Gardyns are easier to clean and disassemble, and have made the pump less likely to have water get in an corroding the connections, which is the problem I have had.
 

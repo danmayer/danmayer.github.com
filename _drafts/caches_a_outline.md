@@ -10,6 +10,10 @@ https://guides.rubyonrails.org/caching_with_rails.html
 
 ## Cache Initialization
 
+## Cache Pools
+
+## Rails Local Cache
+
 ## Cache Runtime
 
 # Cache Metrics
