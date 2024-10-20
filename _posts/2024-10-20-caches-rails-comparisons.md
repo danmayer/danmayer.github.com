@@ -25,13 +25,14 @@ Rails offers many caching options, most of the difference will matter more  as y
 We can cover a quick overview of the various cache stores and their trade offs. Also, note you can make a custom store that builds off any of these or offers interesting options like layered caching combining both a machine local cache and a remote cache.
 
 
-|  Store          | serializes  | compresison | supports local store  | cross proccess  |  node-local | remote | load balanced cluster |
-|  (memory store)[https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memorystore] | ✓ | No | No | No | No | No | No |
-|  (file store)[https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-filestore] | ✓ | ✓  | No  | kinda | ✓ | No | No |
-|  (memcached store)[https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memcachestore] | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
-|  (redis store)[https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-rediscachestore] |✓ | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
-|  (solid cache store)[https://github.com/rails/solid_cache] |✓ | ✓ | ✓ | ✓ | ✓  | Kinda | ✓  | ✓  |
-----
+| Store | Serializes  | Compression | Local Store | Cross Proccess | Node Local | Remote | Cluster |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| [memory store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memorystore) | ✓ | No | No | No | No | No | No |
+| [file store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-filestore) | ✓ | ✓  | No  | ✓ | ✓ | No | No |
+| [memcached store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memcachestore) | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
+| [redis store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-rediscachestore) |✓ | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
+| [solid cache store](https://github.com/rails/solid_cache) |✓ | ✓ | ✓ | ✓ | Kinda  | ✓ | ✓  | ✓  |
+
 
 Another point that is harder to list in the table is what is memory limited vs disk space limited. The majority of the cache systems are memory limited, but the file store and solid cache (which is backed by a database) is disk space limited.
 
