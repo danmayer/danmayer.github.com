@@ -30,8 +30,8 @@ We can cover a quick overview of the various cache stores and their trade offs. 
 | [memory store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memorystore) | ✓ | No | No | No | No | No | No |
 | [file store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-filestore) | ✓ | ✓  | No  | ✓ | ✓ | No | No |
 | [memcached store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-memcachestore) | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
-| [redis store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-rediscachestore) |✓ | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  | ✓  |
-| [solid cache store](https://github.com/rails/solid_cache) |✓ | ✓ | ✓ | ✓ | Kinda  | ✓ | ✓  | ✓  |
+| [redis store](https://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-rediscachestore) |✓ | ✓ | ✓ | ✓ | ✓  | ✓  | ✓  |
+| [solid cache store](https://github.com/rails/solid_cache) |✓ | ✓ | ✓ | ✓ | Maybe  | ✓ | ✓  |
 
 
 Another point that is harder to list in the table is what is memory limited vs disk space limited. The majority of the cache systems are memory limited, but the file store and solid cache (which is backed by a database) is disk space limited.
