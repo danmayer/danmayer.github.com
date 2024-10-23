@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Creating Consistent Characters Across Images"
-image: /assets/img/cache_comparison.webp
+image: /assets/img/fun_family.webp
 category: Programming
 tags: [Programming, Development, APIs, AI, Stable-Diffusion]
 ---
@@ -36,7 +36,7 @@ My first attempts to resolve this were just improved prompts. I would add a tric
 
 ![Theo The Astronaut](/assets/img/theo_promots.webp)
 ![A Purple Wizard](/assets/img/purple_wizard.webp)
-![Wilbur the Whale](/assets/img/purple_wizard.webp)
+![Wilbur the Whale](/assets/img/whale_mountains.webp)
 > Prompts included consistent characters Theo the astronaut, a purple good wizard, and Wilbur the Whale
 
 ### Image2Image Support
