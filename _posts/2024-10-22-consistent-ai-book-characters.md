@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: posttail
 title: "Creating Consistent Characters Across Images"
+image: /assets/img/cache_comparison.webp
 category: Programming
 tags: [Programming, Development, APIs, AI, Stable-Diffusion]
 ---
@@ -49,7 +50,7 @@ I next allowed the book creator to select and upload images that would be used a
 * It was extremely time-consuming, now resulting in photo shoots just to seed the book generation
 * I don't want to upload a bunch of pictures of my kids to any of the cloud AI companies, so I run it all locally on my own machine
 
-I was stuck at this for a while, so I made a post about the process of using [img2img to make book covers](https://www.mayerdan.com/software/2023/02/27/making-book-covers-with-img2img). Combining this with different Stable Diffusion models and styles can get good results, but sometimes it takes many iterations or is difficult to get a cartoon or children's book illustration-like style while also still being recognizable as the character.
+I was stuck at this for a while, so I made a post about the process of using [img2img to make book covers](/software/2023/02/27/making-book-covers-with-img2img). Combining this with different Stable Diffusion models and styles can get good results, but sometimes it takes many iterations or is difficult to get a cartoon or children's book illustration-like style while also still being recognizable as the character.
 
 ![img2img results](/assets/img/dr_sasha-COLLAGE.webp)
 > While time-consuming, this technique allowed me to put my kids into their books finally
