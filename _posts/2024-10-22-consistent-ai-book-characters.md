@@ -62,7 +62,7 @@ I was stuck at this for a while, so I made a post about the process of using [im
 
 Eventually, I learned how to take a small collection of high-quality images of one of my kids and train a LoRA model. The tools for local training are a bit hard to work with, but they also can be run in the cloud fairly quickly. Making a LoRA model for use to generate images on a local machine takes about one hour of machine time on my RTX 480. After some trial and error, I can build Stable Diffusion 1.5 or XL models that could fairly frequently build recognizable characters in any situation. The quality of any given image varied a lot, and the older Stable Diffusion models couldn't set scenes in the books very well. It was close, but not good enough to take the quality of the books to the next level. Combining this technique and custom Stable Diffusion models that better match the scene/theme of the book would help, but only a little, and it was a lot of work. These could occasionally produce very good results, but a large number of image generations per page were required.
 
-![img2img results](/assets/img/Lora-COLLAGE.webp)
+![img2img results](/assets/img/lora-COLLAGE.webp)
 > Training local LoRA models, was a pretty big breakthrough in terms of more easily making repeatable recognizable characters
 
 I will post on how to train LoRAs on your local machine sometime easily, but you can check out [Flux Gym](https://github.com/cocktailpeanut/fluxgym) to get started.
