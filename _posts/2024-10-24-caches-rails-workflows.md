@@ -56,7 +56,7 @@ What does this do? It depends, but let's assume we have the Rails MemCache Store
 
 All the above can occur in __less than 1ms__ for a remote network cache call when on a fast cloud regional deployment. It is a lot to take in, let's [diagram it](https://mermaid.live/edit#pako:eNp9Us1ugzAMfpUo1wEPkAMTguukae0RqfKCaREJYfmZxKq--wx0G2OwXOI434-d-MqlqZAL7vAtYCexaOBsQZcdo5X1PYvT9OEFGuUSCfKCiUWoBGtxEEwPJ9pn6Boy0p5Q52Pi4I2dsyfsvB026HvQUaYApZrkjP435Tt9t5q8qbRj_syckS16RpfsdfDoWG3s2m_Grwwm9Lb-TisLxn9N5PTMNlFmfLwKpdG9Reciih3aBlTzgUupH3gcp_G--9TEfNjqcbscqif--6UUydY9LiWTd1ABdz54VKEBEazIjhmPuEaroalolq4jo-T-ghpLLiissIagfMnL7kZQCN4chk5y4W3AiFsTzhcualCOTqGvwH8N4j17-wSb-unY).
 
-![Rails.cache.read](/assets/img/cache_read.webp)
+[![Rails.cache.read](/assets/img/cache_read.webp)](/assets/img/cache_read.webp)
 
 ## Rails.cache.write
 
@@ -84,7 +84,7 @@ What does this do? It depends, but let's assume we have the Rails MemCache Store
 
 All the above can occur in __less than 1ms__ for a remote network cache call when on a fast cloud regional deployment. It is a lot to take in, let's [diagram it](https://mermaid.live/edit#pako:eNqNkk1uwyAQha-C2NbxAVhEqpxdVbVqurQUTWEco_DjwqDKjXL3Qu0mUuOoZQMM73szMBy59Aq54BHfEzqJGw37ALZ1LI_7YWCr9fruBbSJtQTZY_0RNKFgBxwFs-MuzxVTQDARV8qCP6JtSmRLPszhHToKiw43xcWpycWGWiU7CBYxaDD6Exk4xaS3Q8AY_-u0AWN0HZEuNbyNhHFCz6dz-d8XUoK9Ns8senlAyulpIljnw-xxzjvpf-V5elg2v_U2FBL-dZNssVrozgW9bkhBcmMnEa-4xWBBq_wHjgVpOfVoseUiLxV2kAy1vHWnLIVEfjs6yUVhKx582vdcdGBi3qUhv_3PB5qjpy8eWNGO).
 
-![Rails.cache.write](/assets/img/cache_write.webp)
+[![Rails.cache.write](/assets/img/cache_write.webp)](/assets/img/cache_write.webp)
 
 # Rails.cache.fetch
 
