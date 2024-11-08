@@ -28,7 +28,7 @@ Let's not look at serialization or compression but at what is going on to get da
 
 ## Rails Cache Network Calls
 
-In the previous post, [Rails cache workflows](/ruby/2024/10/24/caches-rails-workflows), we covered how a `Rails.cache.get` will make a network request to the memcached Server to get the data.
+In the previous post, [Rails cache workflows](/ruby/2024/10/24/caches-rails-workflows), we covered how a `Rails.cache.read` will make a network request to the memcached Server to get the data.
 
 ```ruby
 Rails.cache.write("key", "my cached value")
@@ -37,7 +37,7 @@ puts result
 => "my cached value"
 ```
 
-The `Rails.cache.get` call will use the Dalli Ruby client to request data from a Memcached server. What does that look like? Let's look at the code to use Dalli directly to better understand what is happening. The Rails memcached store just provides helpers for working with Dalli.
+The `Rails.cache.read` call will use the Dalli Ruby client to request data from a Memcached server. What does that look like? Let's look at the code to use Dalli directly to better understand what is happening. The Rails memcached store just provides helpers for working with Dalli.
 
 ```ruby
 dalli_key = "dalli_key"
@@ -79,7 +79,7 @@ Simple enough, but as with anything over the network, what happens if the networ
 That isn't good; we can't have trying to use a cache raise exceptions on misses. Well, Rails actually doesn't. While it uses Dalli under the hood, it has a nicer API that helps avoid things like that.
 
 ```ruby
-Rails.cache.get("some_non_existing_key")
+Rails.cache.read("some_non_existing_key")
 => nil
 ```
 
