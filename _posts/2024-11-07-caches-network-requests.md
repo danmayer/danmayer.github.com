@@ -74,7 +74,10 @@ puts result
 
 Simple enough, but as with anything over the network, what happens if the network goes down?
 
-`No server available (Dalli::RingError)`
+```ruby
+dalli.get("dalli_key")
+=> No server available (Dalli::RingError)
+```
 
 That isn't good; we can't have trying to use a cache raise exceptions on misses. Well, Rails actually doesn't. While it uses Dalli under the hood, it has a nicer API that helps avoid things like that.
 
