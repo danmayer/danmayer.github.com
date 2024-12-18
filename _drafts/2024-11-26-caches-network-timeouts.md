@@ -1,13 +1,13 @@
 ---
 layout: posttail
-title: "Ruby Caches - Rails Cache Network Requests"
+title: "Ruby Caches - Rails Cache Network Timeouts"
 image: /assets/img/data_cache_cloud.webp
 category: Ruby
 tags: Ruby, Rails, ActiveSupport, Cache, Memcached, Redis, Tips]
 ---
 {% include JB/setup %}
 
-A series of posts will explore and detail some of the current Rails caching code. This post takes a deeper look at the network requests involved in caching.
+A series of posts will explore and detail some of the current Rails caching code. A deeper look at timeouts and how they relate to caching.
 
 These posts attempt to explain in more detail, but please do read the official [Rails Caching Guide](https://guides.rubyonrails.org/caching_with_rails.html#cache-stores) docs, which are also very good.
 
@@ -16,59 +16,41 @@ Rails Cache Posts:
 1. [Rails Cache Initialization](/ruby/2024/10/17/caches-rails-initialization)
 2. [Rails Cache Comparisons](/ruby/2024/10/20/caches-rails-comparisons)
 3. [Rails Cache Workflows](/ruby/2024/10/24/caches-rails-workflows)
-4. Rails Cache Network Requests
+4. [Rails Cache Network Requests](/ruby/2024/11/07/caches-network-requests)
 
-# Rails Cache Network Requests
+# Rails Cache Network Timeouts
 
-Most of the larger Rails applications end up using a cache server that is accessed over the network. This is because many of the simpler caches, like filestore and memory, do not work for a horizontally scaling Rails deployment. In contrast, you can set up a localhost Redis or Memcached server, which is generally just for development or small-scale applications. Let's look at what happens with a typical Rails cache configured with a memcached server.
+In the last post we covered the network calls related to cache reads, we talked about how Rails handles errors as cache misses, how the Dalli memcache gem uses sockets under the hood to make network calls, we even looked a bit at raw socket calls. We showed how we can use toxi-proxy to better test and understand connection errors.
 
 [![Rails.cache.read](/assets/img/cache_read.webp)](/assets/img/cache_read.webp)
 
-Let's not look at serialization or compression but at what is going on to get data over the network.
+Let's take a closer look at timeouts and how those are handled.
 
-## Rails Cache Network Calls
+## Rails Memcached Timeout Configuration
 
-In the previous post, [Rails cache workflows](/ruby/2024/10/24/caches-rails-workflows), we covered how a `Rails.cache.read` will make a network request to the memcached Server to get the data.
+When configuring memcached as the Rails Cache the default timeout is 1s, which is often fairly long for cache operations.
 
-```ruby
-Rails.cache.write("key", "my cached value")
-result = Rails.cache.read("key")
-puts result
-=> "my cached value"
-```
-
-The `Rails.cache.read` call will use the Dalli Ruby client to request data from a Memcached server. What does that look like? Let's look at the code to use Dalli directly to better understand what is happening. The Rails memcached store just provides helpers for working with Dalli.
+You can adjust this to something more reasonable like `0.2` when configuring your cache store in your `development.rb` or production configs.
 
 ```ruby
-dalli_key = "dalli_key"
-dalli = Dalli::Client.new('localhost:11211')
-dalli.set(dalli_key, "my cached value")
-result = dalli.get(dalli_key)
-puts result
-=> "my cached value"
+config.cache_store = :mem_cache_store, {
+  socket_timeout: 0.2,   # Defaults to 1
+  expires_in: 1.hour,
+  error_handler: ->(method:, returning:, exception:) {
+    Rails.logger.error "Memcached error: #{exception}, method: #{method}, returning: #{returning}"
+  }
+}
 ```
 
-Usually, when interacting with a cache, you will use `Rails.cache`; outside of Rails, you might use `Dalli` (or `Redis`) directly. While these gems are great, it is good to know that they are simple network clients under the hood. For example, instead of using Dalli, we could do all of this with far less robust error handling (IE don't use this code in production). Hopefully, this shows the layers of abstraction between Rails, the underlying caching library, and the Ruby code used to make network requests. Each layer of abstraction adds value and convience, but understanding all the layers can be helpful. For example, when you want to help performance optimize something, knowing which layer is slowing things down can be helpful.
+This will pass down the `socket_timeout` settings to the `dalli` gem that Rails uses under the hood when `Rails.cache` is setup for memcached.
+
+So this would be similar to to making a new dalli client like so:
 
 ```ruby
-sock = TCPSocket.new('127.0.0.1', '11211', connect_timeout: 1)
-sock.setsockopt(Socket::IPPROTO_TCP, Socket::TCP_NODELAY, true)
-sock.setsockopt(Socket::SOL_SOCKET, Socket::SO_KEEPALIVE, true)
-
-# set a cache value via a raw socket
-sock.write("set sock_key 0 3600 15\r\n")
-sock.write("my cached value")
-sock.write("\r\n")
-sock.flush
-sock.readline # clear the buffer
-
-# read a cache value via a raw socket
-sock.write("get sock_key\r\n")
-sock.readline
-result = sock.read(15)
-puts result
-=> "my cached value"
+Dalli::Client.new("localhost:11211", socket_timeout: 0.2)
 ```
+
+---
 
 ## Caches and Network Failures
 

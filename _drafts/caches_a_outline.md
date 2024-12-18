@@ -14,6 +14,8 @@ https://guides.rubyonrails.org/caching_with_rails.html
 
 ## Rails Local Cache
 
+## Connection Pools for caches
+
 ## Cache Runtime
 
 # Cache Metrics

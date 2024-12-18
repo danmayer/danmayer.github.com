@@ -7,7 +7,7 @@ tags: Ruby, Rails, ActiveSupport, Cache, Memcached, Redis, Tips]
 ---
 {% include JB/setup %}
 
-A series of posts will explore and detail some of the current Rails caching code. A good place to start is how the Rails cache is configured and loaded.
+A series of posts will explore and detail some of the current Rails caching code. This post compares a few of the cache store options.
 
 These posts attempts to explain in a bit more details, but please do read the official [Rails Caching Guide](https://guides.rubyonrails.org/caching_with_rails.html#cache-stores) docs, which are also very good.
 
