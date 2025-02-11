@@ -91,18 +91,18 @@ require 'benchmark/ips'
 ...a bunch more code...
 
 if %w[all set].include?(bench_target)
-  Benchmark.ips do |x|
- x.config(warmup: bench_warmup, time: bench_time, suite: suite)
- x.report('client set') { client.set('key', payload) }
- x.report('raw sock set') do
- sock.write("ms sock_key #{payload.bytesize} T3600 MS\r\n")
- sock.write(payload)
- sock.write("\r\n")
- sock.flush
- sock.readline # clear the buffer
-    end
- x.compare!
-  end
+  Benchmark.ips do |x|
+    x.config(warmup: bench_warmup, time: bench_time, suite: suite)
+    x.report('client set') { client.set('key', payload) }
+    x.report('raw sock set') do
+    sock.write("ms sock_key #{payload.bytesize} T3600 MS\r\n")
+    sock.write(payload)
+    sock.write("\r\n")
+    sock.flush
+    sock.readline # clear the buffer
+  end
+  x.compare!
+  end
 end
 ```
 
@@ -157,7 +157,7 @@ jobs:
  socket_get_multi_profile.json
  client_set_multi_profile.json
  socket_set_multi_profile.json
-```          
+```
 
 Similar to the benchmark, this installs the required things, gets the Memcached server up and running, and then kicks off our profile script. The action then uploads all of the profiling results, which can be retrieved after any CI run.
 
@@ -189,21 +189,21 @@ require 'vernier'
 ... lots more setup code...
 
 if %w[all set].include?(bench_target)
-  Vernier.profile(out: 'client_set_profile.json') do
-    start_time = Time.now
- client.set(dalli_key, payload, 3600, raw: true) while Time.now - start_time < bench_time
-  end
+  Vernier.profile(out: 'client_set_profile.json') do
+    start_time = Time.now
+    client.set(dalli_key, payload, 3600, raw: true) while Time.now - start_time < bench_time
+  end
 
-  Vernier.profile(out: 'socket_set_profile.json') do
-    start_time = Time.now
-    while Time.now - start_time < bench_time
- sock.write("ms sock_key #{payload.bytesize} T3600 MS\r\n")
- sock.write(payload)
- sock.write("\r\n")
- sock.flush
- sock.readline # clear the buffer
-    end
-  end
+  Vernier.profile(out: 'socket_set_profile.json') do
+    start_time = Time.now
+    while Time.now - start_time < bench_time
+      sock.write("ms sock_key #{payload.bytesize} T3600 MS\r\n")
+      sock.write(payload)
+      sock.write("\r\n")
+      sock.flush
+      sock.readline # clear the buffer
+    end
+  end
 end
 ```
 
@@ -219,14 +219,14 @@ We can capture a baseline by running the benchmark script and targetting the `se
 
 ```
 Warming up --------------------------------------
- client set   304.000 i/100ms
- raw sock set   827.000 i/100ms
+ client set   304.000 i/100ms
+ raw sock set   827.000 i/100ms
 Calculating -------------------------------------
- client set      2.998k (± 8.9%) i/s  (333.52 μs/i) -     29.792k in  10.009832s
- raw sock set      8.254k (± 2.8%) i/s  (121.15 μs/i) -     82.700k in  10.027442s
+ client set      2.998k (± 8.9%) i/s  (333.52 μs/i) -     29.792k in  10.009832s
+ raw sock set      8.254k (± 2.8%) i/s  (121.15 μs/i) -     82.700k in  10.027442s
 Comparison:
- raw sock set:     8254.3 i/s
- client set:     2998.4 i/s - 2.75x  slower
+ raw sock set:     8254.3 i/s
+ client set:     2998.4 i/s - 2.75x  slower
 ```
 
 ## Profile the Target method
@@ -234,6 +234,12 @@ Comparison:
 Then, we can profile the set method and look for unexpected spikes.
 
 ![flamegraph before fixing](/assets/img/dalli_old_set.jpg)
+> on this flame graph an important section with string manipulation jumps out
+
+![flamegraph before fixing](/assets/img/dalli_string_profile.jpg)
+> Why are we spending more than 6% of our time modifying a string?
+
+The profiles help you track down where time is spent and possibly where time is wasted.
 
 ## Refactor, iterate, fix hot spots
 
@@ -242,7 +248,7 @@ Now you have a good loop, make a small change, generate another profile run, and
 ![diff fixing set](/assets/img/git_diff.png)
 
 * primary win is by writing the value directly to the IO object
-  * This avoids copying a potentially very large string, which can cause numerous allocations when resizing the buffer
+  * This avoids copying a potentially very large string, which can cause numerous allocations when resizing the buffer
 * some smaller wins avoiding some other string manipulation 
 
 After each code change, you can look at the new profile flame graph and see if it fixes the issue you were targeting.
@@ -253,14 +259,14 @@ Then, finally, run your benchmarks again to see if fixing what you saw in the pr
 
 ```
 Warming up --------------------------------------
- client set   724.000 i/100ms
- raw sock set   828.000 i/100ms
+ client set   724.000 i/100ms
+ raw sock set   828.000 i/100ms
 Calculating -------------------------------------
- client set      7.434k (± 2.4%) i/s  (134.51 μs/i) -     74.572k in  10.037368s
- raw sock set      8.209k (± 4.5%) i/s  (121.82 μs/i) -     81.972k in  10.011659s
+ client set      7.434k (± 2.4%) i/s  (134.51 μs/i) -     74.572k in  10.037368s
+ raw sock set      8.209k (± 4.5%) i/s  (121.82 μs/i) -     81.972k in  10.011659s
 Comparison:
- raw sock set:     8208.7 i/s
- client set:     7434.2 i/s - 1.10x  slower
+ raw sock set:     8208.7 i/s
+ client set:     7434.2 i/s - 1.10x  slower
 ```
 
 ## Rerun the benchmark
@@ -274,9 +280,9 @@ You can now ship a PR that includes the before-and-after benchmark data and scre
 This basic workflow was followed for a real [PR improving the set performance for dalli](https://github.com/Shopify/dalli/pull/39), which you can check out for complete details.
 
 # Invest in the toolchain
- 
+
  Since we invested in making these benchmark and profile scripts both available to run locally for developers and as part of CI, it makes it easier for anyone to make performance improvements. It also simplifies any bugs reported around performance as we should be able to review it within our tool chain or we can add the new use case as a path to optimize in our scripts.
 
  Over time, this can help bring consistent improvement to a library and help avoid accidental regressions.
 
- __NOTE:__ At the moment, these improvements are on a research fork of Dalli, but we have talked with the Dalli maintainer and will start porting various improvements into the released gem.
+__NOTE:__ At the moment, these improvements are on a research fork of Dalli, but we have talked with the Dalli maintainer and will start porting various improvements into the released gem.
