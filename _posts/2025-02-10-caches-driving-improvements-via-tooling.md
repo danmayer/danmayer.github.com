@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Ruby Caches - Improving Caching Via Tooling"
-image: /assets/img/cache_local_strategy.webp
+image: /assets/img/cache_tooling.png
 category: Ruby
 tags: Ruby, Rails, ActiveSupport, Cache, Memcached, Tips]
 ---
