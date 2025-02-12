@@ -1,7 +1,7 @@
 ---
 layout: posttail
 title: "Ruby Caches - Improving Caching Via Tooling"
-image: /assets/img/cache_tooling.png
+image: /assets/img/dalli_string_profile.jpg
 category: Ruby
 tags: Ruby, Rails, ActiveSupport, Cache, Memcached, Tips]
 ---
