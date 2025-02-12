@@ -28,6 +28,8 @@ If you want to drive performance improvements for a library, you will need to un
 
 If we want to make something faster we want data to help drive the improvements, often the best way to speed something up is using benchmarks and profilers. When I reach for one of these tools, I usually want both. I can use the benchmarks to see where I am in a range of options and conditions, then use the profiler to dig into specific use cases that don't match my needs or expectations to target specific improvements. After fixing the profile, the increased performance is usually evident in the relevant benchmarks. Tooling like this can be a great feedback loop for driving improvements. It can also help avoid regressions. This is why, on many of the projects I work on, my team and I set up benchmarks and profiling as part of the CI pipeline. We have a complete history of performance improvements, and we can fail CI for significant regressions or at least investigate the regression, which is sometimes required for a bug fix or new feature.
 
+A [PR adding the benchmark and profile scripts to Dalli](https://github.com/petergoldstein/dalli/pull/1028).
+
 # Benchmarking Dalli with GitHub Actions
 
 Let's examine how we can set up a suite of benchmarks for the Dalli Rubygem, which powers the Memcached flavor of `Rails.cache`.
