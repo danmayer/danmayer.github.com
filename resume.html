@@ -1,86 +1,88 @@
----
-layout: pagetail
-title: Dan Mayer's Resume 
-header: Pages
----
-{% include JB/setup %}
-
-<p>Daniel Mayer<br>dan@mayerdan.com<br>503-819-3246<br>1905 East 28th Ave<br>Denver, CO 80205</p>
+<h2>Daniel Mayer</h2>
+<p>dan@mayerdan.com<br>503-819-3246<br>1905 East 28th Ave<br>Denver, CO 80205</p>
 <ul>
 <li>GitHub: <a href="https://github.com/danmayer">@danmayer</a></li>
 <li>Bsky: <a href="https://bsky.app/profile/mayerdan.bsky.social">@mayerdan</a></li>
 <li>Mastodon: <a href="https://ruby.social/@danmayer">@danmayer</a></li>
 <li>LinkedIn: <a href="https://www.linkedin.com/in/danmayer/">danmayer</a></li>
-<li>Blog: <a href="https://mayerdan.com">mayerdan.com</a>  </li>
+<li>Blog: <a href="https://mayerdan.com">mayerdan.com</a></li>
 </ul>
+<p>Distinguished Software Engineer with 20+ years of experience specializing in high-scale Ruby on Rails infrastructure and performance engineering. Proven track record of saving millions in OpEx through architectural refinements and leading distributed teams from startup to global scale.</p>
 <h2 id="skills">Skills</h2>
 <ul>
-<li><p>Expert Ruby Development</p>
+<li><p><strong>Ruby &mdash; 20 years of professional development</strong></p>
 <ul>
-<li>Frameworks & Libraries: Rails, Sinatra, Gems, Railties</li>
-<li>System Integration: Writing Ruby Extensions via C (and Rust) for performance-critical tasks</li>
-<li>Performance Engineering: Low-level optimization, benchmarking, and open-source tools (e.g., <a href="https://github.com/danmayer/coverband">Coverband</a> for code coverage)</li>
+<li>Frameworks &amp; Libraries: Rails, Sinatra, Gems, Railties</li>
+<li>System Integration: Writing Ruby Extensions via C (and Rust) for performance-critical tasks, low-level network tuning</li>
+<li>Performance Engineering: Low-level optimization, benchmarking, and open-source contributor</li>
+<li>Open source maintainer: <a href="https://github.com/danmayer/coverband">Coverband</a> production code coverage. <strong>30M+ downloads</strong>, used by hundreds of organizations.</li>
 </ul>
 </li>
-<li><p>Additional Languages</p>
+<li><p><strong>Additional Languages</strong></p>
 <ul>
 <li>Javascript, Go, Rust, Python, shellscript, Lua</li>
 </ul>
 </li>
-<li><p>Tools</p>
+<li><p><strong>Tools</strong></p>
 <ul>
 <li>Claude Code, Auto Research, Pi skills, Open Claw, OpenAI</li>
 <li>Google Cloud (Kubernetes, GCS, BigQuery, Bigtable, Pub/Sub)</li>
 <li>Amazon Web Services (EC2, ECS, Lambda, S3, SQS, Cloudformation)</li>
-<li>CircleCI, Github Actions, Jenkin, Terraform, Docker</li>
+<li>CircleCI, Github Actions, Jenkins, Terraform, Docker</li>
 <li>DBs: PostgreSQL, MySQL, Redshift, AWS Aurora DB, Redis, KeyDB, Tarantool</li>
 </ul>
-<li><p>Process</p>
+</li>
+<li><p><strong>Process</strong></p>
 <ul>
 <li>Distributed Teams</li>
 <li>Test-Focused Development, Continuous Delivery, Feature Flag Incremental Rollouts</li>
 <li>Agile Team management (PRs, code review, pairing, sprints, standups)</li>
 <li>Documentation, Jira, Confluence, Git Workflows, etc</li>
-<li>Community involvement (confs, blogs, podcasts, contributes to OSS) </li>
+<li>Community involvement (confs, blogs, podcasts, contributes to OSS)</li>
 </ul>
 </li>
 </ul>
 <h2 id="work-experience">Work Experience</h2>
 <p><strong>Shopify</strong>
 Senior Staff Engineer<br>
-Dec 2023 - May 1st<br>
+Dec 2023 - May 2026<br>
 Engineered and maintained globally deployed Memcached and Redis clusters on the Caching Infrastructure team. Significantly reduced custom library code complexity by migrating to open-source components and contributing internal learnings to open-source libraries. Successfully transitioned all caching off Redis to a more reliable and cost-effective Memcached solution.
 </p>
-<p>
 <ul>
-  <li>Led a project reducing annual caching costs by over $2M.</li>
-  <li>Decommissioned multiple Redis clusters, resulting in significant infrastructure cost reductions.</li>
-  <li>Developed a custom caching gateway built in Rust, replacing Mcrouter.</li>
+  <li>Led a project reducing annual caching costs by over $2M per year.</li>
+  <li>Black Friday capacity planning, hot key mitigation, and load shedding which handled 145 million/sec commands at peak.</li>
+  <li>Operated global Memcached and Redis fleets supporting cross regional fail overs.</li>
+  <li>Automated AI workflows for large refactorings of the Rails monolith, one of the largest Ruby applications in the world.</li>
+  <li>Decommissioned multiple Redis clusters, resulting in hundreds of thousands in yearly infrastructure savings.</li>
+  <li>Developed a custom caching gateway built in Rust, replacing Mcrouter, reducing latency, and enabling new topologies.</li>
   <li>Contributed to the development and optimization of the internal key-value distributed database.</li>
 </ul>
-</p>
 <p><strong>Stitchfix</strong>
 Software Architect<br>
 Feb 2019 - Dec 2023<br>
 </p>
-<p>
-  <ul>
-    <li>Founded the consumer platform team, scaling the group from 2 ICs to 7 specialized teams to support global feature development.</li>
-    <li>Optimized infrastructure and platform performance, reducing server costs by up to 90% for critical applications through advanced caching and architectural refinements.</li>
-    <li>Architected and led large-scale modernization initiatives, including legacy system extractions, REST to GraphQL migrations, and transitioning from ERB to React.</li>
-    <li>Established the client experience architecture group, implementing RFC/ADR processes to drive async decision-making and document multi-year technology roadmaps.</li>
-    <li>Improved engineering velocity by consolidating analytics pipelines and developing internal developer tooling and observability solutions.</li>
-  </ul>
+<ul>
+  <li>Founded the consumer platform team, scaling the group from 2 ICs to 7 specialized teams to support global feature development.</li>
+  <li>Architect on a major Rails platform supporting large fleet of microservices.</li>
+  <li>Optimized infrastructure and platform performance, reducing server costs by up to 90% for critical applications through advanced caching and architectural refinements.</li>
+  <li>Architected and led large-scale modernization initiatives, including legacy system extractions, REST to GraphQL migrations, and transitioning from ERB to React.</li>
+  <li>Established the client experience architecture group, implementing RFC/ADR processes to drive async decision-making and document multi-year technology roadmaps.</li>
+  <li>Improved engineering velocity by consolidating analytics pipelines and developing internal Ruby developer tooling and observability solutions.</li>
+</ul>
+<p><strong>Zola Electric</strong>
+Director of Software Engineering<br>
+May 2015 - Jan 2019<br>
 </p>
-<p>
-  <strong>Zola Electric</strong>
-  Director of Software Engineering<br>
-  May 2015 - Jan 2019<br>
-  Lead distributed Data Infrastructure, DevOps, and Software teams. The teams cross timezones and cultures with US, Nigeria, Tanzania, Amsterdam, and Russia representing. Built collaborative team processes and decision workflows. Documented decisions and learnings. Partner evaluation, selection, and integration plans. Initiated and planned distributed team global summits. Lead by example in the codebases as a still active Rails developer, and contributed to our Python Data and DevOps infrastructure code.</p>
+<ul>
+  <li>Led multidisciplinary distributed teams across Data Infrastructure, DevOps, and Software engineering, spanning five countries and multiple time zones (US, Nigeria, Tanzania, Amsterdam, and Russia).</li>
+  <li>Architected internal knowledge management by documenting key architectural decisions, partner evaluations, and integration roadmaps.</li>
+  <li>Spearheaded global engineering summits to align distributed teams on long-term strategy and foster a unified engineering culture.</li>
+  <li>Maintained technical leadership as an active individual contributor, writing production code daily in Ruby on Rails, Python, and infrastructure-as-code.</li>
+</ul>
 <p><strong>LivingSocial</strong>
-Software Developer<br>June 2010 - May 2015<br>Working with a small team of developers to grow LivingSocial. Working on mobile apps, mobile site, APIs, AB testing, performance, and backend tools.  </p>
+Software Developer<br>June 2010 - May 2015<br>Working with a small team of developers to grow LivingSocial one of the largest Ruby on Rails sites at that time. Working on mobile apps (Android app supporting ~12% of all revenue), mobile site, APIs, AB testing, performance, and backend tools.</p>
 <p><strong>Devver</strong>
-Founder / CTO / Ruby Software Developer<br>April 2008 - April 2010<br>Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.  </p>
+Founder / CTO / Ruby Software Developer<br>April 2008 - April 2010<br>Software startup to make the lives of developers easier. Originally developed accelerated testing for Ruby developers. More recently, launched getcaliper.com, which builds code analytics for all Rubygems and builds metrics for public and private git-based Ruby projects.</p>
 <ul>
 <li>Built accelerated testing tool, using distributed computing services to run developer tests</li>
 <li>Developed a cloud-based continuous integration server and notification services</li>
@@ -90,7 +92,7 @@ Founder / CTO / Ruby Software Developer<br>April 2008 - April 2010<br>Software s
 <li>Developed and deployed EventMachine, Merb, Rails, and Sinatra in production environments</li>
 </ul>
 <p><strong>Pretheory</strong>
-Founder<br>May 2007 - April 2008<br>Small Denver-based consumer web startup. Built <a href="http://seekler.com">Seekler.com</a> to help people find the best of everything online by user generated, community-based top 10 lists on topics or products. Seekler was a social way to rank things with friends or the entire community.  </p>
+Founder / CTO / Ruby Software Developer<br>May 2007 - April 2008<br>Small Denver-based consumer web startup. Built Ruby site <a href="http://seekler.com">Seekler.com</a> to help people find the best of everything online by user generated, community-based top 10 lists on topics or products. Seekler was a social way to rank things with friends or the entire community.</p>
 <h2 id="education">Education</h2>
-<p>University of Colorado<br>Boulder, CO<br>B.S., Computer Science<br>GPA: 3.185  </p>
-<p><em>References available on request</em>  </p>
+<p><strong>University of Colorado</strong><br>Boulder, CO<br>B.S., Computer Science</p>
+<p><em>References available on request</em></p>
