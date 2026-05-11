@@ -1,3 +1,9 @@
+---
+layout: taildefault
+title: Daniel Mayer
+tagline: Daniel Mayer's Resume
+---
+
 dan@mayerdan.com
 
 503-819-3246
