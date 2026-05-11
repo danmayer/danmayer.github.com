@@ -1,6 +1,6 @@
 ---
-layout: taildefault
 title: Daniel Mayer
+header: Daniel Mayer
 tagline: Daniel Mayer's Resume
 ---
 
