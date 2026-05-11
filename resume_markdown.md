@@ -1,5 +1,3 @@
-## Daniel Mayer
-
 dan@mayerdan.com
 
 503-819-3246
